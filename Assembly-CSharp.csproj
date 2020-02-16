@@ -71,7 +71,6 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\cameraMover.cs" />
     <Compile Include="Assets\Scripts\conversationManager.cs" />
-    <Compile Include="Assets\Scripts\playerJoystickMovement.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Scripts\spriteRenderOrder.cs" />
     <None Include="Assets\Tilemaps\Backyard - Free\Readme.txt" />
