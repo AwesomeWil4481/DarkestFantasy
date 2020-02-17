@@ -49,7 +49,7 @@ public class playerMovement : MonoBehaviour
         {
             playerAnimator.SetBool("moving", false);
         }
-        if (nextToObject == false)
+        if (nextToObject == false   )
         {
             if (botLeft <= 90 && botRight <= 90 && movement != zero)
             {

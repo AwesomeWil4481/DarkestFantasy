@@ -68,6 +68,8 @@ public class conversationManager : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 speechBubble.SetActive(false);
+                textBox.SetActive(true);
+                joyStick.SetActive(false);
 
             }
         }

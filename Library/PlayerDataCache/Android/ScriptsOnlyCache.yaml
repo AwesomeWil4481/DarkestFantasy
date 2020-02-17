@@ -176,7 +176,7 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: 4c4fd588e967458a046ce162b6dfb5aa
+      Hash: 826048d6f5661e73220dfc201ab019e1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: playerMovement
