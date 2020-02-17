@@ -5,10 +5,8 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     public float speed;
-    private float absoluteX;
-    private float absoluteY;
 
-    public bool isPlayer = true;
+    bool nextToObject = false;
 
     private Rigidbody2D PCRB;
 
@@ -51,37 +49,39 @@ public class playerMovement : MonoBehaviour
         {
             playerAnimator.SetBool("moving", false);
         }
-
-        if (botLeft <= 90 && botRight <= 90 && movement != zero)
+        if (nextToObject == false)
         {
-            playerAnimator.SetFloat("moveY", -1);
-            playerAnimator.SetFloat("moveX", 0);
-            playerAnimator.SetBool("moving", true);
+            if (botLeft <= 90 && botRight <= 90 && movement != zero)
+            {
+                playerAnimator.SetFloat("moveY", -1);
+                playerAnimator.SetFloat("moveX", 0);
+                playerAnimator.SetBool("moving", true);
 
-        }
+            }
 
-        if (topRight <= 90 && topLeft <= 90 && movement != zero)
-        {
-            playerAnimator.SetFloat("moveY", 1);
-            playerAnimator.SetFloat("moveX", 0);
-            playerAnimator.SetBool("moving", true);
+            if (topRight <= 90 && topLeft <= 90 && movement != zero)
+            {
+                playerAnimator.SetFloat("moveY", 1);
+                playerAnimator.SetFloat("moveX", 0);
+                playerAnimator.SetBool("moving", true);
 
-        }
+            }
 
-        if (botLeft <= 90 && topLeft <= 90 && movement != zero)
-        {
-            playerAnimator.SetFloat("moveX", -1);
-            playerAnimator.SetFloat("moveY", 0);
-            playerAnimator.SetBool("moving", true);
+            if (botLeft <= 90 && topLeft <= 90 && movement != zero)
+            {
+                playerAnimator.SetFloat("moveX", -1);
+                playerAnimator.SetFloat("moveY", 0);
+                playerAnimator.SetBool("moving", true);
 
-        }
+            }
 
-        if (topRight <= 90 && botRight <= 90 && movement != zero)
-        {
-            playerAnimator.SetFloat("moveX", 1);
-            playerAnimator.SetFloat("moveY", 0);
-            playerAnimator.SetBool("moving", true);
+            if (topRight <= 90 && botRight <= 90 && movement != zero)
+            {
+                playerAnimator.SetFloat("moveX", 1);
+                playerAnimator.SetFloat("moveY", 0);
+                playerAnimator.SetBool("moving", true);
 
+            }
         }
 
         if (PCRB.transform.rotation.y != 0)
@@ -95,11 +95,16 @@ public class playerMovement : MonoBehaviour
         playerMove();
         PCRB.velocity = new Vector2(joyStick.Horizontal * 4, joyStick.Vertical * 4);
 
-        absoluteX = Mathf.Abs(PCRB.velocity.x);
-        absoluteY = Mathf.Abs(PCRB.velocity.y);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        nextToObject = true;   
     }
 
-
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        nextToObject = false;
+    }
     private void playerMove()
     {
         if (change != Vector3.zero)
