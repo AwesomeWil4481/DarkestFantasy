@@ -29,10 +29,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -68,6 +68,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11198}
     - Class: 114
+      Script: {instanceID: 11328}
+    - Class: 114
       Script: {instanceID: 11346}
     - Class: 114
       Script: {instanceID: 11370}
@@ -78,14 +80,14 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11954}
     - Class: 114
-      Script: {instanceID: 12024}
+      Script: {instanceID: 12026}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12726}
     - Class: 114
-      Script: {instanceID: 12722}
-    - Class: 114
-      Script: {instanceID: 13108}
+      Script: {instanceID: 13112}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -320,7 +322,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 1f72d07fda0b694d44fe68556a2c3f3a
+      Hash: 4a1804a8d557edcfd29336f0ac3d6d00
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: conversationManager
@@ -330,6 +332,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 666802ec5df3fa65d732c1119b65b4be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: dialogueList
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -597,4 +605,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/wilhelm/Unity/Darkest Fantasy/Darkest-Fantasy/Build-1.apk
+  playerPath: C:/Users/wilhelm/Unity/Darkest Fantasy/Darkest-Fantasy/Build-2.apk

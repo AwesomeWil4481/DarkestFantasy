@@ -243,11 +243,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49310632ccd424cbf4eabc6191446b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcDialogues:
+  - whatHeSays: Hi
+    ID: 0
+  - whatHeSays: Wonderful weather we're having
+    ID: 0
   speechBubble: {fileID: 3531763810165278012}
   playerBody: {fileID: 8663785123257993756, guid: d312e6eb7960cff4da537ce596350005,
     type: 3}
   joyStick: {fileID: 0}
   textBox: {fileID: 0}
+  textBoxText: {fileID: 0}
 --- !u!61 &3531763811283915696
 BoxCollider2D:
   m_ObjectHideFlags: 0

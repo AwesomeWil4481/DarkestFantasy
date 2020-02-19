@@ -42,7 +42,7 @@ public class playerMovement : MonoBehaviour
         var topLeft = Vector3.Angle(movement, negPos);
         var topRight = Vector3.Angle(movement, posPos);
 
-        Debug.Log(" " + Mathf.Round( botLeft) + " " + Mathf.Round( botRight) + " " + Mathf.Round( topLeft) + " " + Mathf.Round( topRight));
+
 
         movement = PCRB.velocity;
         if (movement == zero)
