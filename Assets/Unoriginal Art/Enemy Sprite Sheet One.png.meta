@@ -1,0 +1,6487 @@
+fileFormatVersion: 2
+guid: 69680e9fc3049fb45a8c3e8e8c8784b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8677651782299659894
+    second: Enemy Sprite Sheet One_0
+  - first:
+      213: 5856111775574792908
+    second: Enemy Sprite Sheet One_1
+  - first:
+      213: 3076440844053710110
+    second: Enemy Sprite Sheet One_2
+  - first:
+      213: 1852128278809894828
+    second: Enemy Sprite Sheet One_3
+  - first:
+      213: -1469116092504185948
+    second: Enemy Sprite Sheet One_4
+  - first:
+      213: 3625172545039666966
+    second: Enemy Sprite Sheet One_5
+  - first:
+      213: 8778629882685574667
+    second: Enemy Sprite Sheet One_6
+  - first:
+      213: 1880010218119190860
+    second: Enemy Sprite Sheet One_7
+  - first:
+      213: -5709062840068615511
+    second: Enemy Sprite Sheet One_8
+  - first:
+      213: -3923892815058988151
+    second: Enemy Sprite Sheet One_9
+  - first:
+      213: -4121596169677984623
+    second: Enemy Sprite Sheet One_10
+  - first:
+      213: -2091750915394107710
+    second: Enemy Sprite Sheet One_11
+  - first:
+      213: 4221902374403530105
+    second: Enemy Sprite Sheet One_12
+  - first:
+      213: -7812181601313107127
+    second: Enemy Sprite Sheet One_13
+  - first:
+      213: -5446252936095117510
+    second: Enemy Sprite Sheet One_14
+  - first:
+      213: 5846299542017437667
+    second: Enemy Sprite Sheet One_15
+  - first:
+      213: 1921628555434978858
+    second: Enemy Sprite Sheet One_16
+  - first:
+      213: 4435446777557502400
+    second: Enemy Sprite Sheet One_17
+  - first:
+      213: -7301635560287845411
+    second: Enemy Sprite Sheet One_18
+  - first:
+      213: 6148034422025052094
+    second: Enemy Sprite Sheet One_19
+  - first:
+      213: -1085681908440003066
+    second: Enemy Sprite Sheet One_20
+  - first:
+      213: 7728829400744432095
+    second: Enemy Sprite Sheet One_21
+  - first:
+      213: 6359343670068772056
+    second: Enemy Sprite Sheet One_22
+  - first:
+      213: 6786165298051174254
+    second: Enemy Sprite Sheet One_23
+  - first:
+      213: 5519689376477202311
+    second: Enemy Sprite Sheet One_24
+  - first:
+      213: 3437909109393657390
+    second: Enemy Sprite Sheet One_25
+  - first:
+      213: -5570469723753591087
+    second: Enemy Sprite Sheet One_26
+  - first:
+      213: 4403280793644607415
+    second: Enemy Sprite Sheet One_27
+  - first:
+      213: 2335068013928066283
+    second: Enemy Sprite Sheet One_28
+  - first:
+      213: 4259229402759155244
+    second: Enemy Sprite Sheet One_29
+  - first:
+      213: 5192854714893799894
+    second: Enemy Sprite Sheet One_30
+  - first:
+      213: 1863448589973570652
+    second: Enemy Sprite Sheet One_31
+  - first:
+      213: 4734195694938014331
+    second: Enemy Sprite Sheet One_32
+  - first:
+      213: -1239670500351138666
+    second: Enemy Sprite Sheet One_33
+  - first:
+      213: -6614733785037696106
+    second: Enemy Sprite Sheet One_34
+  - first:
+      213: 846669221963648264
+    second: Enemy Sprite Sheet One_35
+  - first:
+      213: -4277366446364395756
+    second: Enemy Sprite Sheet One_36
+  - first:
+      213: 1436728718638643907
+    second: Enemy Sprite Sheet One_37
+  - first:
+      213: 4748600685591299643
+    second: Enemy Sprite Sheet One_38
+  - first:
+      213: -2094879682720183394
+    second: Enemy Sprite Sheet One_39
+  - first:
+      213: -8245156491610742978
+    second: Enemy Sprite Sheet One_40
+  - first:
+      213: 5223741581659747201
+    second: Enemy Sprite Sheet One_41
+  - first:
+      213: -3808419221057944748
+    second: Enemy Sprite Sheet One_42
+  - first:
+      213: -7340617958376675248
+    second: Enemy Sprite Sheet One_43
+  - first:
+      213: -8411178555920852090
+    second: Enemy Sprite Sheet One_44
+  - first:
+      213: 5000137440006613695
+    second: Enemy Sprite Sheet One_45
+  - first:
+      213: 1028980296920322148
+    second: Enemy Sprite Sheet One_46
+  - first:
+      213: -1804392152046713648
+    second: Enemy Sprite Sheet One_47
+  - first:
+      213: -7680805444666178394
+    second: Enemy Sprite Sheet One_48
+  - first:
+      213: -6632084341645627136
+    second: Enemy Sprite Sheet One_49
+  - first:
+      213: -5841780311624727626
+    second: Enemy Sprite Sheet One_50
+  - first:
+      213: -2785984084611200107
+    second: Enemy Sprite Sheet One_51
+  - first:
+      213: -6038505040490056384
+    second: Enemy Sprite Sheet One_52
+  - first:
+      213: -5384504958744407272
+    second: Enemy Sprite Sheet One_53
+  - first:
+      213: 2039755190353724786
+    second: Enemy Sprite Sheet One_54
+  - first:
+      213: -1046401460997473204
+    second: Enemy Sprite Sheet One_55
+  - first:
+      213: -4934975609633307623
+    second: Enemy Sprite Sheet One_56
+  - first:
+      213: 8142809139132734707
+    second: Enemy Sprite Sheet One_57
+  - first:
+      213: 3841517972705075678
+    second: Enemy Sprite Sheet One_58
+  - first:
+      213: -3599442411377419803
+    second: Enemy Sprite Sheet One_59
+  - first:
+      213: 6717326637687652922
+    second: Enemy Sprite Sheet One_60
+  - first:
+      213: 1888292575053896777
+    second: Enemy Sprite Sheet One_61
+  - first:
+      213: 9044708185581064105
+    second: Enemy Sprite Sheet One_62
+  - first:
+      213: -779883928126186921
+    second: Enemy Sprite Sheet One_0
+  - first:
+      213: -4425345093188757309
+    second: Enemy Sprite Sheet One_63
+  - first:
+      213: -5152710939733881903
+    second: Enemy Sprite Sheet One_64
+  - first:
+      213: -3642185384030571154
+    second: Enemy Sprite Sheet One_65
+  - first:
+      213: -3885869440796337031
+    second: Enemy Sprite Sheet One_66
+  - first:
+      213: 4963452542671077680
+    second: Enemy Sprite Sheet One_67
+  - first:
+      213: 5819475412171688769
+    second: Enemy Sprite Sheet One_68
+  - first:
+      213: -6478198104266342436
+    second: Enemy Sprite Sheet One_69
+  - first:
+      213: 416331127090670829
+    second: Enemy Sprite Sheet One_70
+  - first:
+      213: 6894588479035197995
+    second: Enemy Sprite Sheet One_71
+  - first:
+      213: 5463469127136886493
+    second: Enemy Sprite Sheet One_72
+  - first:
+      213: 8788825592937814408
+    second: Enemy Sprite Sheet One_73
+  - first:
+      213: -1031341920426657757
+    second: Enemy Sprite Sheet One_74
+  - first:
+      213: -2189639176096082685
+    second: Enemy Sprite Sheet One_75
+  - first:
+      213: 7867445743110315888
+    second: Enemy Sprite Sheet One_76
+  - first:
+      213: -1724064485145730215
+    second: Enemy Sprite Sheet One_77
+  - first:
+      213: -3249026691039556672
+    second: Enemy Sprite Sheet One_78
+  - first:
+      213: 3994983257270843784
+    second: Enemy Sprite Sheet One_79
+  - first:
+      213: -4895760724388764681
+    second: Enemy Sprite Sheet One_80
+  - first:
+      213: 7855001819858288995
+    second: Enemy Sprite Sheet One_81
+  - first:
+      213: 8438215450078113057
+    second: Enemy Sprite Sheet One_82
+  - first:
+      213: -8139878680857115177
+    second: Enemy Sprite Sheet One_83
+  - first:
+      213: 4625171047858612226
+    second: Enemy Sprite Sheet One_84
+  - first:
+      213: -8103020073498245290
+    second: Enemy Sprite Sheet One_85
+  - first:
+      213: 8651679638985081596
+    second: Enemy Sprite Sheet One_86
+  - first:
+      213: -7952435190055189158
+    second: Enemy Sprite Sheet One_87
+  - first:
+      213: 1167549175791212432
+    second: Enemy Sprite Sheet One_88
+  - first:
+      213: 4180213233670227271
+    second: Enemy Sprite Sheet One_89
+  - first:
+      213: 419382868380351405
+    second: Enemy Sprite Sheet One_90
+  - first:
+      213: 2192182299290905084
+    second: Enemy Sprite Sheet One_91
+  - first:
+      213: -1915441395182069582
+    second: Enemy Sprite Sheet One_92
+  - first:
+      213: -4612431604936774643
+    second: Enemy Sprite Sheet One_93
+  - first:
+      213: -7409519974484021254
+    second: Enemy Sprite Sheet One_94
+  - first:
+      213: 4211146277336072532
+    second: Enemy Sprite Sheet One_95
+  - first:
+      213: 4386085833246616381
+    second: Enemy Sprite Sheet One_96
+  - first:
+      213: -2282640384053143984
+    second: Enemy Sprite Sheet One_97
+  - first:
+      213: -1731589042759942361
+    second: Enemy Sprite Sheet One_98
+  - first:
+      213: -139627067188667334
+    second: Enemy Sprite Sheet One_99
+  - first:
+      213: 6038562264399850143
+    second: Enemy Sprite Sheet One_100
+  - first:
+      213: -8619481786930625907
+    second: Enemy Sprite Sheet One_101
+  - first:
+      213: -1312832982220690060
+    second: Enemy Sprite Sheet One_102
+  - first:
+      213: -789542435285832161
+    second: Enemy Sprite Sheet One_103
+  - first:
+      213: -1234459702763719269
+    second: Enemy Sprite Sheet One_104
+  - first:
+      213: -321790644200041935
+    second: Enemy Sprite Sheet One_105
+  - first:
+      213: 4404919873688206789
+    second: Enemy Sprite Sheet One_106
+  - first:
+      213: -529336874110270600
+    second: Enemy Sprite Sheet One_107
+  - first:
+      213: 282143545582146051
+    second: Enemy Sprite Sheet One_108
+  - first:
+      213: -2972584228511755774
+    second: Enemy Sprite Sheet One_109
+  - first:
+      213: 5064515081505382083
+    second: Enemy Sprite Sheet One_110
+  - first:
+      213: 670479408692229116
+    second: Enemy Sprite Sheet One_111
+  - first:
+      213: -6833875984227901382
+    second: Enemy Sprite Sheet One_112
+  - first:
+      213: 4280329116069466386
+    second: Enemy Sprite Sheet One_113
+  - first:
+      213: -6453167979557762896
+    second: Enemy Sprite Sheet One_114
+  - first:
+      213: -4065705324588104947
+    second: Enemy Sprite Sheet One_115
+  - first:
+      213: 3495646700583062491
+    second: Enemy Sprite Sheet One_116
+  - first:
+      213: 6587672735723402035
+    second: Enemy Sprite Sheet One_117
+  - first:
+      213: 7205008966953142297
+    second: Enemy Sprite Sheet One_118
+  - first:
+      213: 8464106725713031781
+    second: Enemy Sprite Sheet One_119
+  - first:
+      213: -7302208640974486521
+    second: Enemy Sprite Sheet One_120
+  - first:
+      213: 3850127704684781559
+    second: Enemy Sprite Sheet One_121
+  - first:
+      213: 8585250248727166469
+    second: Enemy Sprite Sheet One_122
+  - first:
+      213: -4990596345688070919
+    second: Enemy Sprite Sheet One_123
+  - first:
+      213: 5751904956938290736
+    second: Enemy Sprite Sheet One_124
+  - first:
+      213: -6675073877236316630
+    second: Enemy Sprite Sheet One_125
+  - first:
+      213: 4019049932306534365
+    second: Enemy Sprite Sheet One_126
+  - first:
+      213: -7999729766365376024
+    second: Enemy Sprite Sheet One_127
+  - first:
+      213: 4052420466643367812
+    second: Enemy Sprite Sheet One_128
+  - first:
+      213: -7313562294664048530
+    second: Enemy Sprite Sheet One_129
+  - first:
+      213: -2674606559283631727
+    second: Enemy Sprite Sheet One_130
+  - first:
+      213: -2095248667952656482
+    second: Enemy Sprite Sheet One_131
+  - first:
+      213: 4526357411782509771
+    second: Enemy Sprite Sheet One_132
+  - first:
+      213: 715199473729290773
+    second: Enemy Sprite Sheet One_133
+  - first:
+      213: 7119031066833092265
+    second: Enemy Sprite Sheet One_134
+  - first:
+      213: -8140405831056874058
+    second: Enemy Sprite Sheet One_135
+  - first:
+      213: -8772455833297411976
+    second: Enemy Sprite Sheet One_136
+  - first:
+      213: -6536206818843230706
+    second: Enemy Sprite Sheet One_137
+  - first:
+      213: 7271377628343918494
+    second: Enemy Sprite Sheet One_138
+  - first:
+      213: -8021309507661459152
+    second: Enemy Sprite Sheet One_139
+  - first:
+      213: -7927802537091275706
+    second: Enemy Sprite Sheet One_140
+  - first:
+      213: -5841464248908818170
+    second: Enemy Sprite Sheet One_141
+  - first:
+      213: 1032650713610086464
+    second: Enemy Sprite Sheet One_142
+  - first:
+      213: -5337242339776213498
+    second: Enemy Sprite Sheet One_143
+  - first:
+      213: 7570152924171374497
+    second: Enemy Sprite Sheet One_144
+  - first:
+      213: 3630167689553081356
+    second: Enemy Sprite Sheet One_145
+  - first:
+      213: 8880353799920329829
+    second: Enemy Sprite Sheet One_146
+  - first:
+      213: 6838299551755940988
+    second: Enemy Sprite Sheet One_147
+  - first:
+      213: -6465247296277404477
+    second: Enemy Sprite Sheet One_148
+  - first:
+      213: -7745086748440608121
+    second: Enemy Sprite Sheet One_149
+  - first:
+      213: -5655538477873860452
+    second: Enemy Sprite Sheet One_150
+  - first:
+      213: 1842297226987878358
+    second: Enemy Sprite Sheet One_151
+  - first:
+      213: -9090864211693434459
+    second: Enemy Sprite Sheet One_152
+  - first:
+      213: -6504248740946201287
+    second: Enemy Sprite Sheet One_153
+  - first:
+      213: -4289763299818760752
+    second: Enemy Sprite Sheet One_154
+  - first:
+      213: -5662117773238268618
+    second: Enemy Sprite Sheet One_155
+  - first:
+      213: 3204623917068892930
+    second: Enemy Sprite Sheet One_156
+  - first:
+      213: -5245075616596266434
+    second: Enemy Sprite Sheet One_157
+  - first:
+      213: 4499852819765074307
+    second: Enemy Sprite Sheet One_158
+  - first:
+      213: -8831272885061750871
+    second: Enemy Sprite Sheet One_159
+  - first:
+      213: -9166053908471223072
+    second: Enemy Sprite Sheet One_160
+  - first:
+      213: 627598865977380640
+    second: Enemy Sprite Sheet One_161
+  - first:
+      213: -8065305111476443033
+    second: Enemy Sprite Sheet One_162
+  - first:
+      213: -3519669938194105010
+    second: Enemy Sprite Sheet One_163
+  - first:
+      213: 191560276472146381
+    second: Enemy Sprite Sheet One_164
+  - first:
+      213: -7256017440836443340
+    second: Enemy Sprite Sheet One_165
+  - first:
+      213: 5326311446693534236
+    second: Enemy Sprite Sheet One_166
+  - first:
+      213: 5144280830590875058
+    second: Enemy Sprite Sheet One_167
+  - first:
+      213: -6928977764912123986
+    second: Enemy Sprite Sheet One_168
+  - first:
+      213: 8491408776295712270
+    second: Enemy Sprite Sheet One_169
+  - first:
+      213: 6318298363063810184
+    second: Enemy Sprite Sheet One_170
+  - first:
+      213: -726407896803184773
+    second: Enemy Sprite Sheet One_171
+  - first:
+      213: -8504823393703656687
+    second: Enemy Sprite Sheet One_172
+  - first:
+      213: 547123324344310231
+    second: Enemy Sprite Sheet One_173
+  - first:
+      213: -114298070059129319
+    second: Enemy Sprite Sheet One_174
+  - first:
+      213: -3482550784675116388
+    second: Enemy Sprite Sheet One_175
+  - first:
+      213: 5769125446477323857
+    second: Enemy Sprite Sheet One_176
+  - first:
+      213: -1338911563940690746
+    second: Enemy Sprite Sheet One_177
+  - first:
+      213: -9197368404355951964
+    second: Enemy Sprite Sheet One_178
+  - first:
+      213: -7738882084549273247
+    second: Enemy Sprite Sheet One_179
+  - first:
+      213: -8025002112535830087
+    second: Enemy Sprite Sheet One_180
+  - first:
+      213: 7874468665278185863
+    second: Enemy Sprite Sheet One_181
+  - first:
+      213: 1513442037338616128
+    second: Enemy Sprite Sheet One_182
+  - first:
+      213: -8817806074059643304
+    second: Enemy Sprite Sheet One_183
+  - first:
+      213: -4408689073797006832
+    second: Enemy Sprite Sheet One_184
+  - first:
+      213: 125374839738246919
+    second: Enemy Sprite Sheet One_185
+  - first:
+      213: -6810750169881079107
+    second: Enemy Sprite Sheet One_186
+  - first:
+      213: -8247082237665183166
+    second: Enemy Sprite Sheet One_187
+  - first:
+      213: -4944893594497896722
+    second: Enemy Sprite Sheet One_188
+  - first:
+      213: -377518806361348009
+    second: Enemy Sprite Sheet One_189
+  - first:
+      213: 4515677555246123195
+    second: Enemy Sprite Sheet One_190
+  - first:
+      213: -3941273029836851867
+    second: Enemy Sprite Sheet One_191
+  - first:
+      213: 4706255400216475353
+    second: Enemy Sprite Sheet One_192
+  - first:
+      213: 296642456432708084
+    second: Enemy Sprite Sheet One_193
+  - first:
+      213: 4193568522739261471
+    second: Enemy Sprite Sheet One_194
+  - first:
+      213: 5446980103740138158
+    second: Enemy Sprite Sheet One_195
+  - first:
+      213: 3177233952680661454
+    second: Enemy Sprite Sheet One_196
+  - first:
+      213: 1506196761077856430
+    second: Enemy Sprite Sheet One_197
+  - first:
+      213: -8157267364049702212
+    second: Enemy Sprite Sheet One_198
+  - first:
+      213: 1075335045724455459
+    second: Enemy Sprite Sheet One_199
+  - first:
+      213: 1505419699323515051
+    second: Enemy Sprite Sheet One_200
+  - first:
+      213: -1044207357135047851
+    second: Enemy Sprite Sheet One_201
+  - first:
+      213: 3405806760810810077
+    second: Enemy Sprite Sheet One_202
+  - first:
+      213: 6366571289355708315
+    second: Enemy Sprite Sheet One_203
+  - first:
+      213: -5877831910790335294
+    second: Enemy Sprite Sheet One_204
+  - first:
+      213: 6004617615031155276
+    second: Enemy Sprite Sheet One_205
+  - first:
+      213: -6731620582518275255
+    second: Enemy Sprite Sheet One_206
+  - first:
+      213: -7264289480068048800
+    second: Enemy Sprite Sheet One_207
+  - first:
+      213: 3646802402034139168
+    second: Enemy Sprite Sheet One_208
+  - first:
+      213: 3482850113422994967
+    second: Enemy Sprite Sheet One_209
+  - first:
+      213: 6456524564383098971
+    second: Enemy Sprite Sheet One_210
+  - first:
+      213: -5782092198942899652
+    second: Enemy Sprite Sheet One_211
+  - first:
+      213: 148466020778100590
+    second: Enemy Sprite Sheet One_212
+  - first:
+      213: -7147762530675910404
+    second: Enemy Sprite Sheet One_213
+  - first:
+      213: -3241645479935099200
+    second: Enemy Sprite Sheet One_214
+  - first:
+      213: -7053501701256073881
+    second: Enemy Sprite Sheet One_215
+  - first:
+      213: -3748273081980142917
+    second: Enemy Sprite Sheet One_216
+  - first:
+      213: -3148776473331706195
+    second: Enemy Sprite Sheet One_217
+  - first:
+      213: 4924559976267790838
+    second: Enemy Sprite Sheet One_218
+  - first:
+      213: -8761059193987625001
+    second: Enemy Sprite Sheet One_219
+  - first:
+      213: 5914622720580422923
+    second: Enemy Sprite Sheet One_220
+  - first:
+      213: 3303221665736884011
+    second: Enemy Sprite Sheet One_221
+  - first:
+      213: -4006071915478793907
+    second: Enemy Sprite Sheet One_222
+  - first:
+      213: 542293634849802445
+    second: Enemy Sprite Sheet One_223
+  - first:
+      213: -7289832860161924651
+    second: Enemy Sprite Sheet One_224
+  - first:
+      213: 4083703734283936113
+    second: Enemy Sprite Sheet One_225
+  - first:
+      213: 8870254673578031937
+    second: Enemy Sprite Sheet One_226
+  - first:
+      213: -6511339368279134145
+    second: Enemy Sprite Sheet One_227
+  - first:
+      213: -8686301902182312981
+    second: Enemy Sprite Sheet One_228
+  - first:
+      213: -3967654842965417712
+    second: Enemy Sprite Sheet One_229
+  - first:
+      213: -3329552115959416078
+    second: Enemy Sprite Sheet One_230
+  - first:
+      213: 465551944969225206
+    second: Enemy Sprite Sheet One_231
+  - first:
+      213: 1125628763475320247
+    second: Enemy Sprite Sheet One_232
+  - first:
+      213: -4413415402952779343
+    second: Enemy Sprite Sheet One_233
+  - first:
+      213: 41886423231030472
+    second: Enemy Sprite Sheet One_234
+  - first:
+      213: 3482280586560216309
+    second: Enemy Sprite Sheet One_235
+  - first:
+      213: -6502797952736240247
+    second: Enemy Sprite Sheet One_236
+  - first:
+      213: 6454333542037788258
+    second: Enemy Sprite Sheet One_237
+  - first:
+      213: 1285011785607068914
+    second: Enemy Sprite Sheet One_238
+  - first:
+      213: 6625295239365172833
+    second: Enemy Sprite Sheet One_239
+  - first:
+      213: -6155652102776407851
+    second: Enemy Sprite Sheet One_240
+  - first:
+      213: 4672870730354030680
+    second: Enemy Sprite Sheet One_241
+  - first:
+      213: -6154256193660731499
+    second: Enemy Sprite Sheet One_242
+  - first:
+      213: 3897004948841717619
+    second: Enemy Sprite Sheet One_243
+  - first:
+      213: -7912417100965849960
+    second: Enemy Sprite Sheet One_244
+  - first:
+      213: -5711023335395773723
+    second: Enemy Sprite Sheet One_245
+  - first:
+      213: -7371785740352074232
+    second: Enemy Sprite Sheet One_246
+  - first:
+      213: 7708962692163488276
+    second: Enemy Sprite Sheet One_247
+  - first:
+      213: 8573072818487050096
+    second: Enemy Sprite Sheet One_248
+  - first:
+      213: 1732291979032309200
+    second: Enemy Sprite Sheet One_249
+  - first:
+      213: 6835310927984437802
+    second: Enemy Sprite Sheet One_250
+  - first:
+      213: 7167332511830944138
+    second: Enemy Sprite Sheet One_251
+  - first:
+      213: -418817843048917460
+    second: Enemy Sprite Sheet One_252
+  - first:
+      213: 8821883517929638883
+    second: Enemy Sprite Sheet One_253
+  - first:
+      213: 4841215838068911210
+    second: Enemy Sprite Sheet One_254
+  - first:
+      213: 7093249626231871212
+    second: Enemy Sprite Sheet One_255
+  - first:
+      213: -1947054271620081781
+    second: Enemy Sprite Sheet One_256
+  - first:
+      213: 3721903786039889941
+    second: Enemy Sprite Sheet One_257
+  - first:
+      213: -5014634681339395091
+    second: Enemy Sprite Sheet One_258
+  - first:
+      213: 4044438871212911756
+    second: Enemy Sprite Sheet One_259
+  - first:
+      213: -4226727464144497642
+    second: Enemy Sprite Sheet One_260
+  - first:
+      213: -6193904474721970291
+    second: Enemy Sprite Sheet One_261
+  - first:
+      213: -2950930782140209843
+    second: Enemy Sprite Sheet One_262
+  - first:
+      213: -3575772936012214517
+    second: Enemy Sprite Sheet One_263
+  - first:
+      213: -6012118850695541154
+    second: Enemy Sprite Sheet One_264
+  - first:
+      213: 2347376638313786178
+    second: Enemy Sprite Sheet One_265
+  - first:
+      213: 8194798100353525170
+    second: Enemy Sprite Sheet One_266
+  - first:
+      213: 2537446164314050464
+    second: Enemy Sprite Sheet One_267
+  - first:
+      213: -2479631159027394955
+    second: Enemy Sprite Sheet One_268
+  - first:
+      213: -7066036651426934127
+    second: Enemy Sprite Sheet One_269
+  - first:
+      213: 1462910133535760246
+    second: Enemy Sprite Sheet One_270
+  - first:
+      213: -8850741313623206032
+    second: Enemy Sprite Sheet One_271
+  - first:
+      213: -2714566465739333776
+    second: Enemy Sprite Sheet One_272
+  - first:
+      213: 933793442961813787
+    second: Enemy Sprite Sheet One_273
+  - first:
+      213: 7615434376888935694
+    second: Enemy Sprite Sheet One_274
+  - first:
+      213: 4156018817775963983
+    second: Enemy Sprite Sheet One_275
+  - first:
+      213: 2734766016868442412
+    second: Enemy Sprite Sheet One_276
+  - first:
+      213: 2571200945475072940
+    second: Enemy Sprite Sheet One_277
+  - first:
+      213: -1621813692842342774
+    second: Enemy Sprite Sheet One_278
+  - first:
+      213: -5316837632766057235
+    second: Enemy Sprite Sheet One_279
+  - first:
+      213: 1526288350005508612
+    second: Enemy Sprite Sheet One_280
+  - first:
+      213: -2483576339146763486
+    second: Enemy Sprite Sheet One_281
+  - first:
+      213: -2420260100681998690
+    second: Enemy Sprite Sheet One_282
+  - first:
+      213: 5007223892995049098
+    second: Enemy Sprite Sheet One_283
+  - first:
+      213: -1415810883916421824
+    second: Enemy Sprite Sheet One_284
+  - first:
+      213: 7583394547955172494
+    second: Enemy Sprite Sheet One_285
+  - first:
+      213: 5666362231983624961
+    second: Enemy Sprite Sheet One_286
+  - first:
+      213: -4551291306074715053
+    second: Enemy Sprite Sheet One_287
+  - first:
+      213: 5861895530578791027
+    second: Enemy Sprite Sheet One_288
+  - first:
+      213: 7819301504598181999
+    second: Enemy Sprite Sheet One_289
+  - first:
+      213: 6667607481527340804
+    second: Enemy Sprite Sheet One_290
+  - first:
+      213: -7144279364521905380
+    second: Enemy Sprite Sheet One_291
+  - first:
+      213: -560580121645234305
+    second: Enemy Sprite Sheet One_292
+  - first:
+      213: -5199367056290960338
+    second: Enemy Sprite Sheet One_293
+  - first:
+      213: -2382637694426229785
+    second: Enemy Sprite Sheet One_294
+  - first:
+      213: 8162349556580791611
+    second: Enemy Sprite Sheet One_295
+  - first:
+      213: 1116768094331870085
+    second: Enemy Sprite Sheet One_296
+  - first:
+      213: -3166767653998879909
+    second: Enemy Sprite Sheet One_297
+  - first:
+      213: 8734364922318714399
+    second: Enemy Sprite Sheet One_298
+  - first:
+      213: -8079108060275645103
+    second: Enemy Sprite Sheet One_299
+  - first:
+      213: -243386125693643880
+    second: Enemy Sprite Sheet One_300
+  - first:
+      213: 3923272767932217047
+    second: Enemy Sprite Sheet One_301
+  - first:
+      213: 7522636654689969570
+    second: Enemy Sprite Sheet One_302
+  - first:
+      213: 1534001925083786969
+    second: Enemy Sprite Sheet One_303
+  - first:
+      213: -9092189379286436214
+    second: Enemy Sprite Sheet One_304
+  - first:
+      213: 8902347786363761327
+    second: Enemy Sprite Sheet One_305
+  - first:
+      213: -869148259836847329
+    second: Enemy Sprite Sheet One_306
+  - first:
+      213: 5404111473053955117
+    second: Enemy Sprite Sheet One_307
+  - first:
+      213: 5008480073689059805
+    second: Enemy Sprite Sheet One_308
+  - first:
+      213: 387201580566363112
+    second: Enemy Sprite Sheet One_309
+  - first:
+      213: 4019329241251659781
+    second: Enemy Sprite Sheet One_310
+  - first:
+      213: 72733603426205697
+    second: Enemy Sprite Sheet One_311
+  - first:
+      213: 2197212586840541803
+    second: Enemy Sprite Sheet One_312
+  - first:
+      213: -3622232722042358329
+    second: Enemy Sprite Sheet One_313
+  - first:
+      213: -5649080889360631666
+    second: Enemy Sprite Sheet One_314
+  - first:
+      213: 4952161457127256586
+    second: Enemy Sprite Sheet One_315
+  - first:
+      213: -831574498498444633
+    second: Enemy Sprite Sheet One_316
+  - first:
+      213: -8772232589569051168
+    second: Enemy Sprite Sheet One_317
+  - first:
+      213: 8455363795994441023
+    second: Enemy Sprite Sheet One_318
+  - first:
+      213: -604005194749226936
+    second: Enemy Sprite Sheet One_319
+  - first:
+      213: -5669307396623531993
+    second: Enemy Sprite Sheet One_320
+  - first:
+      213: 4530318447152838245
+    second: Enemy Sprite Sheet One_321
+  - first:
+      213: 6981046902286065682
+    second: Enemy Sprite Sheet One_322
+  - first:
+      213: -5043747813428540431
+    second: Enemy Sprite Sheet One_323
+  - first:
+      213: -3502891751773820165
+    second: Enemy Sprite Sheet One_324
+  - first:
+      213: 8030612392093753434
+    second: Enemy Sprite Sheet One_325
+  - first:
+      213: -1826675321175214644
+    second: Enemy Sprite Sheet One_326
+  - first:
+      213: 3711632914010014473
+    second: Enemy Sprite Sheet One_327
+  - first:
+      213: 5698773304156050245
+    second: Enemy Sprite Sheet One_328
+  - first:
+      213: 69042126566283853
+    second: Enemy Sprite Sheet One_329
+  - first:
+      213: 7118669567934846353
+    second: Enemy Sprite Sheet One_330
+  - first:
+      213: 5496673844846723293
+    second: Enemy Sprite Sheet One_331
+  - first:
+      213: -4643555201876303282
+    second: Enemy Sprite Sheet One_332
+  - first:
+      213: 1292050494987810969
+    second: Enemy Sprite Sheet One_333
+  - first:
+      213: -4278259296816302112
+    second: Enemy Sprite Sheet One_334
+  - first:
+      213: -4254237684714273701
+    second: Enemy Sprite Sheet One_335
+  - first:
+      213: -1584178986293024733
+    second: Enemy Sprite Sheet One_336
+  - first:
+      213: 2271348177751288230
+    second: Enemy Sprite Sheet One_337
+  - first:
+      213: -1395838093794701783
+    second: Enemy Sprite Sheet One_338
+  - first:
+      213: -8495617849728694792
+    second: Enemy Sprite Sheet One_339
+  - first:
+      213: 7265966295897153533
+    second: Enemy Sprite Sheet One_340
+  - first:
+      213: 4182918535558561471
+    second: Enemy Sprite Sheet One_341
+  - first:
+      213: -8009641074242259181
+    second: Enemy Sprite Sheet One_342
+  - first:
+      213: 7757884562994297733
+    second: Enemy Sprite Sheet One_343
+  - first:
+      213: 2271688661261513085
+    second: Enemy Sprite Sheet One_344
+  - first:
+      213: -2919335792352902093
+    second: Enemy Sprite Sheet One_345
+  - first:
+      213: 7864623836367499242
+    second: Enemy Sprite Sheet One_346
+  - first:
+      213: -7013434791509745599
+    second: Enemy Sprite Sheet One_347
+  - first:
+      213: -426975674321820874
+    second: Enemy Sprite Sheet One_348
+  - first:
+      213: 6213999049785875477
+    second: Enemy Sprite Sheet One_349
+  - first:
+      213: 8224069109527388128
+    second: Enemy Sprite Sheet One_350
+  - first:
+      213: 3068259917827425455
+    second: Enemy Sprite Sheet One_351
+  - first:
+      213: -8440886345332989060
+    second: Enemy Sprite Sheet One_352
+  - first:
+      213: -4156427300559787963
+    second: Enemy Sprite Sheet One_353
+  - first:
+      213: -6868979602839257855
+    second: Enemy Sprite Sheet One_354
+  - first:
+      213: 2491426829721510623
+    second: Enemy Sprite Sheet One_355
+  - first:
+      213: -4157148915830140251
+    second: Enemy Sprite Sheet One_356
+  - first:
+      213: -3966668765083024816
+    second: Enemy Sprite Sheet One_357
+  - first:
+      213: -6774702691172455758
+    second: Enemy Sprite Sheet One_358
+  - first:
+      213: 4611556346488165019
+    second: Enemy Sprite Sheet One_359
+  - first:
+      213: 5759344492890355801
+    second: Enemy Sprite Sheet One_360
+  - first:
+      213: 4716988599293130864
+    second: Enemy Sprite Sheet One_361
+  - first:
+      213: 3395650497891974371
+    second: Enemy Sprite Sheet One_362
+  - first:
+      213: -7088604847793398522
+    second: Enemy Sprite Sheet One_363
+  - first:
+      213: 7057918707618250979
+    second: Enemy Sprite Sheet One_364
+  - first:
+      213: -1786724244830304644
+    second: Enemy Sprite Sheet One_365
+  - first:
+      213: -7783715557987816510
+    second: Enemy Sprite Sheet One_366
+  - first:
+      213: -5205629275825329398
+    second: Enemy Sprite Sheet One_367
+  - first:
+      213: -3878784079638707682
+    second: Enemy Sprite Sheet One_368
+  - first:
+      213: 7258694328069260872
+    second: Enemy Sprite Sheet One_369
+  - first:
+      213: -8101008814883878277
+    second: Enemy Sprite Sheet One_370
+  - first:
+      213: 3037193798175137474
+    second: Enemy Sprite Sheet One_371
+  - first:
+      213: -786222818126478186
+    second: Enemy Sprite Sheet One_372
+  - first:
+      213: -5527843324037146874
+    second: Enemy Sprite Sheet One_373
+  - first:
+      213: -8627604502151680696
+    second: Enemy Sprite Sheet One_374
+  - first:
+      213: 4943888999937871230
+    second: Enemy Sprite Sheet One_375
+  - first:
+      213: -5247060908292050696
+    second: Enemy Sprite Sheet One_376
+  - first:
+      213: 976630098157392403
+    second: Enemy Sprite Sheet One_377
+  - first:
+      213: -4524307429409710336
+    second: Enemy Sprite Sheet One_378
+  - first:
+      213: 7779617129127721633
+    second: Enemy Sprite Sheet One_379
+  - first:
+      213: -2148409703133023107
+    second: Enemy Sprite Sheet One_380
+  - first:
+      213: -3497661861628960700
+    second: Enemy Sprite Sheet One_381
+  - first:
+      213: -390295200040779352
+    second: Enemy Sprite Sheet One_382
+  - first:
+      213: -2561575341096281457
+    second: Enemy Sprite Sheet One_383
+  - first:
+      213: 606105657045612013
+    second: Enemy Sprite Sheet One_384
+  - first:
+      213: 8898322221092589643
+    second: Enemy Sprite Sheet One_385
+  - first:
+      213: 8251589741024975109
+    second: Enemy Sprite Sheet One_386
+  - first:
+      213: -4018359185244998982
+    second: Enemy Sprite Sheet One_387
+  - first:
+      213: 5475640448364512917
+    second: Enemy Sprite Sheet One_388
+  - first:
+      213: -8310228552348722254
+    second: Enemy Sprite Sheet One_389
+  - first:
+      213: -6485977798699422811
+    second: Enemy Sprite Sheet One_390
+  - first:
+      213: 1966760000035059795
+    second: Enemy Sprite Sheet One_391
+  - first:
+      213: -5523368676034035047
+    second: Enemy Sprite Sheet One_392
+  - first:
+      213: -8555625781621264352
+    second: Enemy Sprite Sheet One_393
+  - first:
+      213: -7883367359704017377
+    second: Enemy Sprite Sheet One_394
+  - first:
+      213: -1420975917862337857
+    second: Enemy Sprite Sheet One_395
+  - first:
+      213: 2099475724721493253
+    second: Enemy Sprite Sheet One_396
+  - first:
+      213: -7744373364977873682
+    second: Enemy Sprite Sheet One_397
+  - first:
+      213: -3326428107427705662
+    second: Enemy Sprite Sheet One_398
+  - first:
+      213: 6320883899396861585
+    second: Enemy Sprite Sheet One_399
+  - first:
+      213: 3187515370140701493
+    second: Enemy Sprite Sheet One_400
+  - first:
+      213: -5771610217609927963
+    second: Enemy Sprite Sheet One_401
+  - first:
+      213: -7593258514225425368
+    second: Enemy Sprite Sheet One_402
+  - first:
+      213: 6552956709844127927
+    second: Enemy Sprite Sheet One_403
+  - first:
+      213: 2749100233413883012
+    second: Enemy Sprite Sheet One_404
+  - first:
+      213: -784913947595286060
+    second: Enemy Sprite Sheet One_405
+  - first:
+      213: 3654473854923792791
+    second: Enemy Sprite Sheet One_406
+  - first:
+      213: -2017909878099070135
+    second: Enemy Sprite Sheet One_407
+  - first:
+      213: 3100504569277953091
+    second: Enemy Sprite Sheet One_408
+  - first:
+      213: -3529826592244326525
+    second: Enemy Sprite Sheet One_409
+  - first:
+      213: 3921746043617201978
+    second: Enemy Sprite Sheet One_410
+  - first:
+      213: -4348413457575948401
+    second: Enemy Sprite Sheet One_411
+  - first:
+      213: -766220915354861316
+    second: Enemy Sprite Sheet One_412
+  - first:
+      213: -8510186051376479714
+    second: Enemy Sprite Sheet One_413
+  - first:
+      213: -8834164390511383458
+    second: Enemy Sprite Sheet One_414
+  - first:
+      213: 2468168992627496
+    second: Enemy Sprite Sheet One_415
+  - first:
+      213: 4315334305583306218
+    second: Enemy Sprite Sheet One_416
+  - first:
+      213: -1701824155816132523
+    second: Enemy Sprite Sheet One_417
+  - first:
+      213: -5152643526120885848
+    second: Enemy Sprite Sheet One_418
+  - first:
+      213: 8965228635686765374
+    second: Enemy Sprite Sheet One_419
+  - first:
+      213: -5710986991185671648
+    second: Enemy Sprite Sheet One_420
+  - first:
+      213: -8363826819022173556
+    second: Enemy Sprite Sheet One_421
+  - first:
+      213: 3658310941157950149
+    second: Enemy Sprite Sheet One_422
+  - first:
+      213: -7722044614536159573
+    second: Enemy Sprite Sheet One_423
+  - first:
+      213: -8936644114984180864
+    second: Enemy Sprite Sheet One_424
+  - first:
+      213: 8400870632728937469
+    second: Enemy Sprite Sheet One_425
+  - first:
+      213: 6798145897806682140
+    second: Enemy Sprite Sheet One_426
+  - first:
+      213: -9177247330265654050
+    second: Enemy Sprite Sheet One_427
+  - first:
+      213: 9001080575253627283
+    second: Enemy Sprite Sheet One_428
+  - first:
+      213: 8611289881367580552
+    second: Enemy Sprite Sheet One_429
+  - first:
+      213: 8373367718197517418
+    second: Enemy Sprite Sheet One_430
+  - first:
+      213: 6373193644155273056
+    second: Enemy Sprite Sheet One_431
+  - first:
+      213: 5550644383232880953
+    second: Enemy Sprite Sheet One_432
+  - first:
+      213: -1330997483992984962
+    second: Enemy Sprite Sheet One_433
+  - first:
+      213: -7734336917635212447
+    second: Enemy Sprite Sheet One_434
+  - first:
+      213: 4552753842386924168
+    second: Enemy Sprite Sheet One_435
+  - first:
+      213: 3983370210479728631
+    second: Enemy Sprite Sheet One_436
+  - first:
+      213: 6653605519740927882
+    second: Enemy Sprite Sheet One_437
+  - first:
+      213: 280346198305065785
+    second: Enemy Sprite Sheet One_438
+  - first:
+      213: -8921510762578435005
+    second: Enemy Sprite Sheet One_439
+  - first:
+      213: 1934682437270640387
+    second: Enemy Sprite Sheet One_440
+  - first:
+      213: 3885740074166152827
+    second: Enemy Sprite Sheet One_441
+  - first:
+      213: 6711449206147456843
+    second: Enemy Sprite Sheet One_442
+  - first:
+      213: -6720929152515414811
+    second: Enemy Sprite Sheet One_443
+  - first:
+      213: 8720666067108084823
+    second: Enemy Sprite Sheet One_444
+  - first:
+      213: 4341527455556172140
+    second: Enemy Sprite Sheet One_445
+  - first:
+      213: -7049077071511489596
+    second: Enemy Sprite Sheet One_446
+  - first:
+      213: 2902228232071089636
+    second: Enemy Sprite Sheet One_447
+  - first:
+      213: -5952999012238801930
+    second: Enemy Sprite Sheet One_448
+  - first:
+      213: 1160357499850850270
+    second: Enemy Sprite Sheet One_449
+  - first:
+      213: 8551958658042162025
+    second: Enemy Sprite Sheet One_450
+  - first:
+      213: -8534540595390754341
+    second: Enemy Sprite Sheet One_451
+  - first:
+      213: -1495441236659212292
+    second: Enemy Sprite Sheet One_452
+  - first:
+      213: -8946965418744183317
+    second: Enemy Sprite Sheet One_453
+  - first:
+      213: -7346386770113182110
+    second: Enemy Sprite Sheet One_454
+  - first:
+      213: 5941048791005357342
+    second: Enemy Sprite Sheet One_455
+  - first:
+      213: -36033275854009450
+    second: Enemy Sprite Sheet One_456
+  - first:
+      213: -4986683948690951455
+    second: Enemy Sprite Sheet One_457
+  - first:
+      213: 202066491301934583
+    second: Enemy Sprite Sheet One_458
+  - first:
+      213: -1124315461662580829
+    second: Enemy Sprite Sheet One_459
+  - first:
+      213: 8165020484610495651
+    second: Enemy Sprite Sheet One_460
+  - first:
+      213: -2504704369885356614
+    second: Enemy Sprite Sheet One_461
+  - first:
+      213: 5333221896155534201
+    second: Enemy Sprite Sheet One_462
+  - first:
+      213: 8997442954336794193
+    second: Enemy Sprite Sheet One_463
+  - first:
+      213: 5524803264590407531
+    second: Enemy Sprite Sheet One_464
+  - first:
+      213: -8844529606009726936
+    second: Enemy Sprite Sheet One_465
+  - first:
+      213: 4438654206689150918
+    second: Enemy Sprite Sheet One_466
+  - first:
+      213: 6444754029588925088
+    second: Enemy Sprite Sheet One_467
+  - first:
+      213: 7368673923798037955
+    second: Enemy Sprite Sheet One_468
+  - first:
+      213: 8374155673108798173
+    second: Enemy Sprite Sheet One_469
+  - first:
+      213: -7191870322266953460
+    second: Enemy Sprite Sheet One_470
+  - first:
+      213: -5941263377904974181
+    second: Enemy Sprite Sheet One_471
+  - first:
+      213: -3309086958946206789
+    second: Enemy Sprite Sheet One_472
+  - first:
+      213: -5831019600118113641
+    second: Enemy Sprite Sheet One_473
+  - first:
+      213: -1075967526999439280
+    second: Enemy Sprite Sheet One_474
+  - first:
+      213: 2302119074887388833
+    second: Enemy Sprite Sheet One_475
+  - first:
+      213: -10143304514767727
+    second: Enemy Sprite Sheet One_476
+  - first:
+      213: 3474427714870398323
+    second: Enemy Sprite Sheet One_477
+  - first:
+      213: -4763918995838423066
+    second: Enemy Sprite Sheet One_478
+  - first:
+      213: -6295683289909719038
+    second: Enemy Sprite Sheet One_479
+  - first:
+      213: -8678192765046247445
+    second: Enemy Sprite Sheet One_480
+  - first:
+      213: 7726975058615375
+    second: Enemy Sprite Sheet One_481
+  - first:
+      213: -2199240559437721872
+    second: Enemy Sprite Sheet One_482
+  - first:
+      213: 4173977283661634457
+    second: Enemy Sprite Sheet One_483
+  - first:
+      213: -3146524308271474718
+    second: Enemy Sprite Sheet One_484
+  - first:
+      213: -3691100843338098943
+    second: Enemy Sprite Sheet One_485
+  - first:
+      213: -6716427775116972787
+    second: Enemy Sprite Sheet One_486
+  - first:
+      213: 6286794268130795380
+    second: Enemy Sprite Sheet One_487
+  - first:
+      213: -791950863015393199
+    second: Enemy Sprite Sheet One_488
+  - first:
+      213: -1485874015471346600
+    second: Enemy Sprite Sheet One_489
+  - first:
+      213: 6195605076124511418
+    second: Enemy Sprite Sheet One_490
+  - first:
+      213: -6571223942721297778
+    second: Enemy Sprite Sheet One_491
+  - first:
+      213: -1579896655185787661
+    second: Enemy Sprite Sheet One_492
+  - first:
+      213: -6602485054005523340
+    second: Enemy Sprite Sheet One_493
+  - first:
+      213: 842627785810590648
+    second: Enemy Sprite Sheet One_494
+  - first:
+      213: 8028034373800895591
+    second: Enemy Sprite Sheet One_495
+  - first:
+      213: 1176795815665421764
+    second: Enemy Sprite Sheet One_496
+  - first:
+      213: -70671066116176226
+    second: Enemy Sprite Sheet One_497
+  - first:
+      213: 5200234803209648660
+    second: Enemy Sprite Sheet One_498
+  - first:
+      213: -8914491891194549886
+    second: Enemy Sprite Sheet One_499
+  - first:
+      213: 2122618585459844633
+    second: Enemy Sprite Sheet One_500
+  - first:
+      213: 8012522755939533156
+    second: Enemy Sprite Sheet One_501
+  - first:
+      213: 8490335329126285417
+    second: Enemy Sprite Sheet One_502
+  - first:
+      213: 7996801230308539829
+    second: Enemy Sprite Sheet One_503
+  - first:
+      213: -4400776261629685973
+    second: Enemy Sprite Sheet One_504
+  - first:
+      213: 4974270035325754150
+    second: Enemy Sprite Sheet One_505
+  - first:
+      213: 7701794957962412794
+    second: Enemy Sprite Sheet One_506
+  - first:
+      213: -7078723365338961213
+    second: Enemy Sprite Sheet One_507
+  - first:
+      213: -109369464472269832
+    second: Enemy Sprite Sheet One_508
+  - first:
+      213: 8178351172503260902
+    second: Enemy Sprite Sheet One_509
+  - first:
+      213: 7894579236073429058
+    second: Enemy Sprite Sheet One_510
+  - first:
+      213: -7041493298908396396
+    second: Enemy Sprite Sheet One_511
+  - first:
+      213: -6098245068286934402
+    second: Enemy Sprite Sheet One_512
+  - first:
+      213: -2660195978896508021
+    second: Enemy Sprite Sheet One_513
+  - first:
+      213: 4106532000130835990
+    second: Enemy Sprite Sheet One_514
+  - first:
+      213: -5669245922404269679
+    second: Enemy Sprite Sheet One_515
+  - first:
+      213: -1485853249595513811
+    second: Enemy Sprite Sheet One_516
+  - first:
+      213: 8951863612865775836
+    second: Enemy Sprite Sheet One_517
+  - first:
+      213: 4165325395087002946
+    second: Enemy Sprite Sheet One_518
+  - first:
+      213: -9202121718589517330
+    second: Enemy Sprite Sheet One_519
+  - first:
+      213: -3816507480753099379
+    second: Enemy Sprite Sheet One_520
+  - first:
+      213: 6624255085933249732
+    second: Enemy Sprite Sheet One_521
+  - first:
+      213: -4084931678597655953
+    second: Enemy Sprite Sheet One_522
+  - first:
+      213: -7353102657596198519
+    second: Enemy Sprite Sheet One_523
+  - first:
+      213: -4835998216832417903
+    second: Enemy Sprite Sheet One_524
+  - first:
+      213: -2021542477698278635
+    second: Enemy Sprite Sheet One_525
+  - first:
+      213: 6017961253681746491
+    second: Enemy Sprite Sheet One_526
+  - first:
+      213: -4337140664762089280
+    second: Enemy Sprite Sheet One_527
+  - first:
+      213: 5094034158503769647
+    second: Enemy Sprite Sheet One_528
+  - first:
+      213: 1106586400480118029
+    second: Enemy Sprite Sheet One_529
+  - first:
+      213: 8335556849218244123
+    second: Enemy Sprite Sheet One_530
+  - first:
+      213: -6220886785408548241
+    second: Enemy Sprite Sheet One_531
+  - first:
+      213: -4228882759804732809
+    second: Enemy Sprite Sheet One_532
+  - first:
+      213: 6705529812164220937
+    second: Enemy Sprite Sheet One_533
+  - first:
+      213: -6285044656589317238
+    second: Enemy Sprite Sheet One_534
+  - first:
+      213: 514788110720192364
+    second: Enemy Sprite Sheet One_535
+  - first:
+      213: -3321212616541565821
+    second: Enemy Sprite Sheet One_536
+  - first:
+      213: 6084312532972022923
+    second: Enemy Sprite Sheet One_537
+  - first:
+      213: 4132697610619565033
+    second: Enemy Sprite Sheet One_538
+  - first:
+      213: 6730276186916257894
+    second: Enemy Sprite Sheet One_539
+  - first:
+      213: -8172055570976565325
+    second: Enemy Sprite Sheet One_540
+  - first:
+      213: -3036568827035947503
+    second: Enemy Sprite Sheet One_541
+  - first:
+      213: 5606542581443113793
+    second: Enemy Sprite Sheet One_542
+  - first:
+      213: -1448596245227093856
+    second: Enemy Sprite Sheet One_543
+  - first:
+      213: -2427118780373032316
+    second: Enemy Sprite Sheet One_544
+  - first:
+      213: 8691997358741054449
+    second: Enemy Sprite Sheet One_545
+  - first:
+      213: 5475740861050740777
+    second: Enemy Sprite Sheet One_546
+  - first:
+      213: 1575465447517081762
+    second: Enemy Sprite Sheet One_547
+  - first:
+      213: -8407615091378886999
+    second: Enemy Sprite Sheet One_548
+  - first:
+      213: -2952144421786861278
+    second: Enemy Sprite Sheet One_549
+  - first:
+      213: -1068881290729587958
+    second: Enemy Sprite Sheet One_550
+  - first:
+      213: 3098733209256475650
+    second: Enemy Sprite Sheet One_551
+  - first:
+      213: -4915790193873904508
+    second: Enemy Sprite Sheet One_552
+  - first:
+      213: 397995710699486251
+    second: Enemy Sprite Sheet One_553
+  - first:
+      213: -3943500392825159860
+    second: Enemy Sprite Sheet One_554
+  - first:
+      213: 2783864068420254190
+    second: Enemy Sprite Sheet One_555
+  - first:
+      213: -4174076474770155525
+    second: Enemy Sprite Sheet One_556
+  - first:
+      213: 2119493919724437856
+    second: Enemy Sprite Sheet One_557
+  - first:
+      213: 1921301102707628650
+    second: Enemy Sprite Sheet One_558
+  - first:
+      213: 1114861029113519443
+    second: Enemy Sprite Sheet One_559
+  - first:
+      213: -3307768110671329005
+    second: Enemy Sprite Sheet One_560
+  - first:
+      213: -8587500623264043851
+    second: Enemy Sprite Sheet One_561
+  - first:
+      213: 7618131078742374036
+    second: Enemy Sprite Sheet One_562
+  - first:
+      213: 1685712459320011483
+    second: Enemy Sprite Sheet One_563
+  - first:
+      213: 4197690899259042483
+    second: Enemy Sprite Sheet One_564
+  - first:
+      213: -2685858873918002451
+    second: Enemy Sprite Sheet One_565
+  - first:
+      213: 8017669781801405960
+    second: Enemy Sprite Sheet One_566
+  - first:
+      213: -7571639690502443869
+    second: Enemy Sprite Sheet One_567
+  - first:
+      213: -1660023947842324688
+    second: Enemy Sprite Sheet One_568
+  - first:
+      213: -5989378902320579163
+    second: Enemy Sprite Sheet One_569
+  - first:
+      213: 8019678445002042432
+    second: Enemy Sprite Sheet One_570
+  - first:
+      213: 3663515296090314725
+    second: Enemy Sprite Sheet One_571
+  - first:
+      213: 7250907075113041748
+    second: Enemy Sprite Sheet One_572
+  - first:
+      213: 3443610807727080426
+    second: Enemy Sprite Sheet One_573
+  - first:
+      213: 1871227890268407244
+    second: Enemy Sprite Sheet One_574
+  - first:
+      213: -4865835102753928298
+    second: Enemy Sprite Sheet One_575
+  - first:
+      213: 978163673259070746
+    second: Enemy Sprite Sheet One_576
+  - first:
+      213: -7860397305815105656
+    second: Enemy Sprite Sheet One_577
+  - first:
+      213: -3456561866341320515
+    second: Enemy Sprite Sheet One_578
+  - first:
+      213: -2771862827712587503
+    second: Enemy Sprite Sheet One_579
+  - first:
+      213: 1933330256244638044
+    second: Enemy Sprite Sheet One_580
+  - first:
+      213: -333981224274413832
+    second: Enemy Sprite Sheet One_581
+  - first:
+      213: -2787617778750269520
+    second: Enemy Sprite Sheet One_582
+  - first:
+      213: 1970487090660623126
+    second: Enemy Sprite Sheet One_583
+  - first:
+      213: 7381313655366219589
+    second: Enemy Sprite Sheet One_584
+  - first:
+      213: -5541388356316866411
+    second: Enemy Sprite Sheet One_585
+  - first:
+      213: 3684684679449094087
+    second: Enemy Sprite Sheet One_586
+  - first:
+      213: -4567304004231010984
+    second: Enemy Sprite Sheet One_587
+  - first:
+      213: 5113810988618727593
+    second: Enemy Sprite Sheet One_588
+  - first:
+      213: 3375623212416479782
+    second: Enemy Sprite Sheet One_589
+  - first:
+      213: -2421769696373849691
+    second: Enemy Sprite Sheet One_590
+  - first:
+      213: 1551255258054878793
+    second: Enemy Sprite Sheet One_591
+  - first:
+      213: 4579023953024437296
+    second: Enemy Sprite Sheet One_592
+  - first:
+      213: -445140314068942858
+    second: Enemy Sprite Sheet One_593
+  - first:
+      213: 8036772041858220870
+    second: Enemy Sprite Sheet One_594
+  - first:
+      213: 3831257463202287463
+    second: Enemy Sprite Sheet One_595
+  - first:
+      213: 8573727831787262608
+    second: Enemy Sprite Sheet One_596
+  - first:
+      213: -5413983896396283548
+    second: Enemy Sprite Sheet One_597
+  - first:
+      213: 4908598710112617053
+    second: Enemy Sprite Sheet One_598
+  - first:
+      213: 2730600011999298964
+    second: Enemy Sprite Sheet One_599
+  - first:
+      213: 7091541945334900307
+    second: Enemy Sprite Sheet One_600
+  - first:
+      213: -7991066913202879344
+    second: Enemy Sprite Sheet One_601
+  - first:
+      213: 455474529780395482
+    second: Enemy Sprite Sheet One_602
+  - first:
+      213: -1415263803269684369
+    second: Enemy Sprite Sheet One_603
+  - first:
+      213: -8838621297617597533
+    second: Enemy Sprite Sheet One_604
+  - first:
+      213: 2049230884767909609
+    second: Enemy Sprite Sheet One_605
+  - first:
+      213: -8149511769821558361
+    second: Enemy Sprite Sheet One_606
+  - first:
+      213: 7853778063781253643
+    second: Enemy Sprite Sheet One_607
+  - first:
+      213: 3965481853188604178
+    second: Enemy Sprite Sheet One_608
+  - first:
+      213: 1029737220685645261
+    second: Enemy Sprite Sheet One_609
+  - first:
+      213: -4741664013577872966
+    second: Enemy Sprite Sheet One_610
+  - first:
+      213: -4725011840983136803
+    second: Enemy Sprite Sheet One_611
+  - first:
+      213: -3409263823606254253
+    second: Enemy Sprite Sheet One_612
+  - first:
+      213: -5888232664150508312
+    second: Enemy Sprite Sheet One_613
+  - first:
+      213: -2413248409816800685
+    second: Enemy Sprite Sheet One_614
+  - first:
+      213: -770482743750428153
+    second: Enemy Sprite Sheet One_615
+  - first:
+      213: -4337926961681022206
+    second: Enemy Sprite Sheet One_616
+  - first:
+      213: -2546159048540261020
+    second: Enemy Sprite Sheet One_617
+  - first:
+      213: -6571200325057765453
+    second: Enemy Sprite Sheet One_618
+  - first:
+      213: -1873544544831251132
+    second: Enemy Sprite Sheet One_619
+  - first:
+      213: 5867716402227781620
+    second: Enemy Sprite Sheet One_620
+  - first:
+      213: 5288123729798341438
+    second: Enemy Sprite Sheet One_621
+  - first:
+      213: -8738795164448205187
+    second: Enemy Sprite Sheet One_622
+  - first:
+      213: -535903322915840064
+    second: Enemy Sprite Sheet One_623
+  - first:
+      213: -7935918329069455884
+    second: Enemy Sprite Sheet One_624
+  - first:
+      213: 6149241330836560700
+    second: Enemy Sprite Sheet One_625
+  - first:
+      213: -2256082151924750207
+    second: Enemy Sprite Sheet One_626
+  - first:
+      213: -4837954446076870569
+    second: Enemy Sprite Sheet One_627
+  - first:
+      213: 1210655418441471548
+    second: Enemy Sprite Sheet One_628
+  - first:
+      213: 7094603372823872361
+    second: Enemy Sprite Sheet One_629
+  - first:
+      213: -7711868760616319957
+    second: Enemy Sprite Sheet One_630
+  - first:
+      213: 6328516985182611101
+    second: Enemy Sprite Sheet One_631
+  - first:
+      213: 2275708829764612476
+    second: Enemy Sprite Sheet One_632
+  - first:
+      213: 1395834456496920072
+    second: Enemy Sprite Sheet One_633
+  - first:
+      213: -5161245634832499012
+    second: Enemy Sprite Sheet One_634
+  - first:
+      213: 592926350189664558
+    second: Enemy Sprite Sheet One_635
+  - first:
+      213: 1334741969490707202
+    second: Enemy Sprite Sheet One_636
+  - first:
+      213: -4932720845003387049
+    second: Enemy Sprite Sheet One_637
+  - first:
+      213: -7711844519611957975
+    second: Enemy Sprite Sheet One_638
+  - first:
+      213: -8231948065900062238
+    second: Enemy Sprite Sheet One_639
+  - first:
+      213: -8507608952364489493
+    second: Enemy Sprite Sheet One_640
+  - first:
+      213: 5973823510918766058
+    second: Enemy Sprite Sheet One_641
+  - first:
+      213: -433824507642100694
+    second: Enemy Sprite Sheet One_642
+  - first:
+      213: 774565868004254158
+    second: Enemy Sprite Sheet One_643
+  - first:
+      213: -5373743451988298371
+    second: Enemy Sprite Sheet One_644
+  - first:
+      213: 571689108812651513
+    second: Enemy Sprite Sheet One_645
+  - first:
+      213: -5993452677253242291
+    second: Enemy Sprite Sheet One_646
+  - first:
+      213: 945253564262929928
+    second: Enemy Sprite Sheet One_647
+  - first:
+      213: 3035410691472635561
+    second: Enemy Sprite Sheet One_648
+  - first:
+      213: -8251860191309157727
+    second: Enemy Sprite Sheet One_649
+  - first:
+      213: 6361673863264004689
+    second: Enemy Sprite Sheet One_650
+  - first:
+      213: -1945661350448977932
+    second: Enemy Sprite Sheet One_651
+  - first:
+      213: -7563556291814979481
+    second: Enemy Sprite Sheet One_652
+  - first:
+      213: -4742401729289170170
+    second: Enemy Sprite Sheet One_653
+  - first:
+      213: 4042786167610382022
+    second: Enemy Sprite Sheet One_654
+  - first:
+      213: -8586270510149253291
+    second: Enemy Sprite Sheet One_655
+  - first:
+      213: 4534888268263666194
+    second: Enemy Sprite Sheet One_656
+  - first:
+      213: 7751918113340072805
+    second: Enemy Sprite Sheet One_657
+  - first:
+      213: -1413105606258132241
+    second: Enemy Sprite Sheet One_658
+  - first:
+      213: 286644898847913437
+    second: Enemy Sprite Sheet One_659
+  - first:
+      213: -8592514011103514271
+    second: Enemy Sprite Sheet One_660
+  - first:
+      213: -2746313373140811129
+    second: Enemy Sprite Sheet One_661
+  - first:
+      213: -2297131320743369182
+    second: Enemy Sprite Sheet One_662
+  - first:
+      213: -2916728581739264744
+    second: Enemy Sprite Sheet One_663
+  - first:
+      213: 2497464881130638612
+    second: Enemy Sprite Sheet One_664
+  - first:
+      213: 8799131582400001639
+    second: Enemy Sprite Sheet One_665
+  - first:
+      213: -3296733310576356763
+    second: Enemy Sprite Sheet One_666
+  - first:
+      213: -1057480397842183946
+    second: Enemy Sprite Sheet One_667
+  - first:
+      213: 5651724850036350890
+    second: Enemy Sprite Sheet One_668
+  - first:
+      213: -8663856337679938256
+    second: Enemy Sprite Sheet One_669
+  - first:
+      213: 2982751991070231783
+    second: Enemy Sprite Sheet One_670
+  - first:
+      213: -6876493573247722061
+    second: Enemy Sprite Sheet One_671
+  - first:
+      213: -4958619466436863774
+    second: Enemy Sprite Sheet One_672
+  - first:
+      213: 4662240470959824714
+    second: Enemy Sprite Sheet One_673
+  - first:
+      213: -3057803641516129717
+    second: Enemy Sprite Sheet One_674
+  - first:
+      213: -1460393989426489596
+    second: Enemy Sprite Sheet One_675
+  - first:
+      213: -8117527666119320556
+    second: Enemy Sprite Sheet One_676
+  - first:
+      213: -9086051465486730432
+    second: Enemy Sprite Sheet One_677
+  - first:
+      213: -2973481302299744427
+    second: Enemy Sprite Sheet One_678
+  - first:
+      213: -2059045673401365823
+    second: Enemy Sprite Sheet One_679
+  - first:
+      213: -6495309066744797356
+    second: Enemy Sprite Sheet One_680
+  - first:
+      213: 2319987228123640984
+    second: Enemy Sprite Sheet One_681
+  - first:
+      213: 7642332225260452754
+    second: Enemy Sprite Sheet One_682
+  - first:
+      213: -3544660754023304627
+    second: Enemy Sprite Sheet One_683
+  - first:
+      213: -444502518755717011
+    second: Enemy Sprite Sheet One_684
+  - first:
+      213: -7361279253762366501
+    second: Enemy Sprite Sheet One_685
+  - first:
+      213: 4873223081281643921
+    second: Enemy Sprite Sheet One_686
+  - first:
+      213: 8389503846793568024
+    second: Enemy Sprite Sheet One_687
+  - first:
+      213: 1020142461889693846
+    second: Enemy Sprite Sheet One_688
+  - first:
+      213: 196684070197684795
+    second: Enemy Sprite Sheet One_689
+  - first:
+      213: -993977975639180710
+    second: Enemy Sprite Sheet One_690
+  - first:
+      213: 3782907815678100270
+    second: Enemy Sprite Sheet One_691
+  - first:
+      213: 4687696848922842658
+    second: Enemy Sprite Sheet One_692
+  - first:
+      213: -7262188356637675622
+    second: Enemy Sprite Sheet One_693
+  - first:
+      213: 7290143338974089647
+    second: Enemy Sprite Sheet One_694
+  - first:
+      213: -2174100912017011331
+    second: Enemy Sprite Sheet One_695
+  - first:
+      213: -3182448104093104354
+    second: Enemy Sprite Sheet One_696
+  - first:
+      213: 9187645581713243106
+    second: Enemy Sprite Sheet One_697
+  - first:
+      213: -3550434360399143797
+    second: Enemy Sprite Sheet One_698
+  - first:
+      213: -4491599767181661896
+    second: Enemy Sprite Sheet One_699
+  - first:
+      213: -8207798294673325805
+    second: Enemy Sprite Sheet One_700
+  - first:
+      213: 8059911394061975144
+    second: Enemy Sprite Sheet One_701
+  - first:
+      213: -2425258883194295799
+    second: Enemy Sprite Sheet One_702
+  - first:
+      213: -2871099542631448279
+    second: Enemy Sprite Sheet One_703
+  - first:
+      213: -3068005720945232600
+    second: Enemy Sprite Sheet One_704
+  - first:
+      213: -1977216526842774129
+    second: Enemy Sprite Sheet One_705
+  - first:
+      213: -2257167691942973112
+    second: Enemy Sprite Sheet One_706
+  - first:
+      213: -4139128397649772969
+    second: Enemy Sprite Sheet One_707
+  - first:
+      213: 3484902520786640165
+    second: Enemy Sprite Sheet One_708
+  - first:
+      213: 635303707691811531
+    second: Enemy Sprite Sheet One_709
+  - first:
+      213: -1592553297499438192
+    second: Enemy Sprite Sheet One_710
+  - first:
+      213: -3764397730523959298
+    second: Enemy Sprite Sheet One_711
+  - first:
+      213: -7269025658032619950
+    second: Enemy Sprite Sheet One_712
+  - first:
+      213: -7212658143531105063
+    second: Enemy Sprite Sheet One_713
+  - first:
+      213: -1849548745526254122
+    second: Enemy Sprite Sheet One_714
+  - first:
+      213: -944115520663785347
+    second: Enemy Sprite Sheet One_715
+  - first:
+      213: -5908542193165669326
+    second: Enemy Sprite Sheet One_716
+  - first:
+      213: -1567243912162597560
+    second: Enemy Sprite Sheet One_717
+  - first:
+      213: 603658647915399845
+    second: Enemy Sprite Sheet One_718
+  - first:
+      213: 7016990722937766987
+    second: Enemy Sprite Sheet One_719
+  - first:
+      213: -2427921101380071368
+    second: Enemy Sprite Sheet One_720
+  - first:
+      213: 8552666818485454442
+    second: Enemy Sprite Sheet One_721
+  - first:
+      213: -8005352916980392048
+    second: Enemy Sprite Sheet One_722
+  - first:
+      213: -4704655895849573052
+    second: Enemy Sprite Sheet One_723
+  - first:
+      213: -621988106410987594
+    second: Enemy Sprite Sheet One_724
+  - first:
+      213: 7102537031385609338
+    second: Enemy Sprite Sheet One_725
+  - first:
+      213: 2797222795309569327
+    second: Enemy Sprite Sheet One_726
+  - first:
+      213: 5152118659920788314
+    second: Enemy Sprite Sheet One_727
+  - first:
+      213: -1454814542068791075
+    second: Enemy Sprite Sheet One_728
+  - first:
+      213: 2821576753108771354
+    second: Enemy Sprite Sheet One_729
+  - first:
+      213: -4958846246345034921
+    second: Enemy Sprite Sheet One_730
+  - first:
+      213: -1390572477479931697
+    second: Enemy Sprite Sheet One_731
+  - first:
+      213: 1797488809213493765
+    second: Enemy Sprite Sheet One_732
+  - first:
+      213: -5991537310072216537
+    second: Enemy Sprite Sheet One_733
+  - first:
+      213: -5698009568033645989
+    second: Enemy Sprite Sheet One_734
+  - first:
+      213: -3203025930441919999
+    second: Enemy Sprite Sheet One_735
+  - first:
+      213: -6856595645208464616
+    second: Enemy Sprite Sheet One_736
+  - first:
+      213: -1708565427749116914
+    second: Enemy Sprite Sheet One_737
+  - first:
+      213: 2390855662682646099
+    second: Enemy Sprite Sheet One_738
+  - first:
+      213: 5203325727386534963
+    second: Enemy Sprite Sheet One_739
+  - first:
+      213: -2490011064403774148
+    second: Enemy Sprite Sheet One_740
+  - first:
+      213: -4148661435588117224
+    second: Enemy Sprite Sheet One_741
+  - first:
+      213: -6298909815697760881
+    second: Enemy Sprite Sheet One_742
+  - first:
+      213: -7988979402797702755
+    second: Enemy Sprite Sheet One_743
+  - first:
+      213: -2379136623812692204
+    second: Enemy Sprite Sheet One_744
+  - first:
+      213: 5601163395314351282
+    second: Enemy Sprite Sheet One_745
+  - first:
+      213: -8943342182257445078
+    second: Enemy Sprite Sheet One_746
+  - first:
+      213: 7500009085677792661
+    second: Enemy Sprite Sheet One_747
+  - first:
+      213: -7173798297833980975
+    second: Enemy Sprite Sheet One_748
+  - first:
+      213: 8381654791468217909
+    second: Enemy Sprite Sheet One_749
+  - first:
+      213: -4101513157179214160
+    second: Enemy Sprite Sheet One_750
+  - first:
+      213: 5955931557358692725
+    second: Enemy Sprite Sheet One_751
+  - first:
+      213: 5074715516037204934
+    second: Enemy Sprite Sheet One_752
+  - first:
+      213: -3169683330358587868
+    second: Enemy Sprite Sheet One_753
+  - first:
+      213: -4798002693930480708
+    second: Enemy Sprite Sheet One_754
+  - first:
+      213: 3179519959066967872
+    second: Enemy Sprite Sheet One_755
+  - first:
+      213: -2645362273691137874
+    second: Enemy Sprite Sheet One_756
+  - first:
+      213: -3173089026834409180
+    second: Enemy Sprite Sheet One_757
+  - first:
+      213: -3977717729559450615
+    second: Enemy Sprite Sheet One_758
+  - first:
+      213: 1543741004776242672
+    second: Enemy Sprite Sheet One_759
+  - first:
+      213: -1597469978091843453
+    second: Enemy Sprite Sheet One_760
+  - first:
+      213: -8566905379728648037
+    second: Enemy Sprite Sheet One_761
+  - first:
+      213: -5920552219319659344
+    second: Enemy Sprite Sheet One_762
+  - first:
+      213: 5702591942503113121
+    second: Enemy Sprite Sheet One_763
+  - first:
+      213: 383850035384301081
+    second: Enemy Sprite Sheet One_764
+  - first:
+      213: 4479289501614761675
+    second: Enemy Sprite Sheet One_765
+  - first:
+      213: 1684410026999496595
+    second: Enemy Sprite Sheet One_766
+  - first:
+      213: 8478086032141220338
+    second: Enemy Sprite Sheet One_767
+  - first:
+      213: 6627608858777204120
+    second: Enemy Sprite Sheet One_768
+  - first:
+      213: 3024141339688649841
+    second: Enemy Sprite Sheet One_769
+  - first:
+      213: 2135754274613262221
+    second: Enemy Sprite Sheet One_770
+  - first:
+      213: -7149884099045239964
+    second: Enemy Sprite Sheet One_771
+  - first:
+      213: -3291370060548860964
+    second: Enemy Sprite Sheet One_772
+  - first:
+      213: 4833649291272120732
+    second: Enemy Sprite Sheet One_773
+  - first:
+      213: -5543074319359326482
+    second: Enemy Sprite Sheet One_774
+  - first:
+      213: 7482593981518950994
+    second: Enemy Sprite Sheet One_775
+  - first:
+      213: 1820898881604292729
+    second: Enemy Sprite Sheet One_776
+  - first:
+      213: 3296136551902972130
+    second: Enemy Sprite Sheet One_777
+  - first:
+      213: 4636947505799245977
+    second: Enemy Sprite Sheet One_778
+  - first:
+      213: 6551104396393225762
+    second: Enemy Sprite Sheet One_779
+  - first:
+      213: -4795377214980514061
+    second: Enemy Sprite Sheet One_780
+  - first:
+      213: -4592434616055931821
+    second: Enemy Sprite Sheet One_781
+  - first:
+      213: 4149959694690877980
+    second: Enemy Sprite Sheet One_782
+  - first:
+      213: -1822209437133654079
+    second: Enemy Sprite Sheet One_783
+  - first:
+      213: -8722324139170747436
+    second: Enemy Sprite Sheet One_784
+  - first:
+      213: 5778551386052359471
+    second: Enemy Sprite Sheet One_785
+  - first:
+      213: -4156215566441480423
+    second: Enemy Sprite Sheet One_786
+  - first:
+      213: -3518642899321388397
+    second: Enemy Sprite Sheet One_787
+  - first:
+      213: -5129489483082091737
+    second: Enemy Sprite Sheet One_788
+  - first:
+      213: 1803050412489600997
+    second: Enemy Sprite Sheet One_789
+  - first:
+      213: 8242655863712910886
+    second: Enemy Sprite Sheet One_790
+  - first:
+      213: -2842902184994788758
+    second: Enemy Sprite Sheet One_791
+  - first:
+      213: -4940013463757270726
+    second: Enemy Sprite Sheet One_792
+  - first:
+      213: 1254623097791293256
+    second: Enemy Sprite Sheet One_793
+  - first:
+      213: -5511075557603004714
+    second: Enemy Sprite Sheet One_794
+  - first:
+      213: -5476918179221064339
+    second: Enemy Sprite Sheet One_795
+  - first:
+      213: -5570049956788198978
+    second: Enemy Sprite Sheet One_796
+  - first:
+      213: 1917044270561342510
+    second: Enemy Sprite Sheet One_797
+  - first:
+      213: 5311161617314770146
+    second: Enemy Sprite Sheet One_798
+  - first:
+      213: 5794345506809694612
+    second: Enemy Sprite Sheet One_799
+  - first:
+      213: 8043956628681570352
+    second: Enemy Sprite Sheet One_800
+  - first:
+      213: -8948769237968328164
+    second: Enemy Sprite Sheet One_801
+  - first:
+      213: 4683815624284026365
+    second: Enemy Sprite Sheet One_802
+  - first:
+      213: 4949785899283535362
+    second: Enemy Sprite Sheet One_803
+  - first:
+      213: -7493666698239757935
+    second: Enemy Sprite Sheet One_804
+  - first:
+      213: 1799674821955253225
+    second: Enemy Sprite Sheet One_805
+  - first:
+      213: 972098281135942179
+    second: Enemy Sprite Sheet One_806
+  - first:
+      213: 2914194281603093100
+    second: Enemy Sprite Sheet One_807
+  - first:
+      213: -4138243985681283434
+    second: Enemy Sprite Sheet One_808
+  - first:
+      213: -2314614293047312441
+    second: Enemy Sprite Sheet One_809
+  - first:
+      213: -316436483971264880
+    second: Enemy Sprite Sheet One_810
+  - first:
+      213: 7276459934484404878
+    second: Enemy Sprite Sheet One_811
+  - first:
+      213: 1380570204208185479
+    second: Enemy Sprite Sheet One_812
+  - first:
+      213: -2647163870578804187
+    second: Enemy Sprite Sheet One_813
+  - first:
+      213: -7909850136479072905
+    second: Enemy Sprite Sheet One_814
+  - first:
+      213: -4571077332498908559
+    second: Enemy Sprite Sheet One_815
+  - first:
+      213: 6435861870158189203
+    second: Enemy Sprite Sheet One_816
+  - first:
+      213: 6037717098801987771
+    second: Enemy Sprite Sheet One_817
+  - first:
+      213: -630314108171177319
+    second: Enemy Sprite Sheet One_818
+  - first:
+      213: 4379140368771527658
+    second: Enemy Sprite Sheet One_819
+  - first:
+      213: 8376468336842351756
+    second: Enemy Sprite Sheet One_820
+  - first:
+      213: -4884131870326671773
+    second: Enemy Sprite Sheet One_821
+  - first:
+      213: 1317523686315772716
+    second: Enemy Sprite Sheet One_822
+  - first:
+      213: -2753554174365721383
+    second: Enemy Sprite Sheet One_823
+  - first:
+      213: -4326326788596762163
+    second: Enemy Sprite Sheet One_824
+  - first:
+      213: -3829873174436170236
+    second: Enemy Sprite Sheet One_825
+  - first:
+      213: 7446622743624889872
+    second: Enemy Sprite Sheet One_826
+  - first:
+      213: -234836043046526763
+    second: Enemy Sprite Sheet One_827
+  - first:
+      213: 8727782389822090039
+    second: Enemy Sprite Sheet One_828
+  - first:
+      213: -7970332921554006064
+    second: Enemy Sprite Sheet One_829
+  - first:
+      213: 8870511952097075692
+    second: Enemy Sprite Sheet One_830
+  - first:
+      213: -8751291510120731152
+    second: Enemy Sprite Sheet One_831
+  - first:
+      213: -1727821688042127008
+    second: Enemy Sprite Sheet One_832
+  - first:
+      213: 1897676182312579372
+    second: Enemy Sprite Sheet One_833
+  - first:
+      213: 8940136802848988146
+    second: Enemy Sprite Sheet One_834
+  - first:
+      213: -1648744254087906795
+    second: Enemy Sprite Sheet One_835
+  - first:
+      213: -6826150528624613676
+    second: Enemy Sprite Sheet One_836
+  - first:
+      213: 2194096106279899678
+    second: Enemy Sprite Sheet One_837
+  - first:
+      213: -5072531877659896120
+    second: Enemy Sprite Sheet One_838
+  - first:
+      213: 3866529464305480679
+    second: Enemy Sprite Sheet One_839
+  - first:
+      213: 540027350709415817
+    second: Enemy Sprite Sheet One_840
+  - first:
+      213: -6871936973735969221
+    second: Enemy Sprite Sheet One_841
+  - first:
+      213: -8570386187934827309
+    second: Enemy Sprite Sheet One_842
+  - first:
+      213: -5492721679710576185
+    second: Enemy Sprite Sheet One_843
+  - first:
+      213: -1190199567671644796
+    second: Enemy Sprite Sheet One_844
+  - first:
+      213: -8212179256481856724
+    second: Enemy Sprite Sheet One_845
+  - first:
+      213: 3353938975581047790
+    second: Enemy Sprite Sheet One_846
+  - first:
+      213: -8962549852796298425
+    second: Enemy Sprite Sheet One_847
+  - first:
+      213: 6031105300215055987
+    second: Enemy Sprite Sheet One_848
+  - first:
+      213: 5612182748015809293
+    second: Enemy Sprite Sheet One_849
+  - first:
+      213: 4173836040904345835
+    second: Enemy Sprite Sheet One_850
+  - first:
+      213: 1194042731242676904
+    second: Enemy Sprite Sheet One_851
+  - first:
+      213: -3419440447831033038
+    second: Enemy Sprite Sheet One_852
+  - first:
+      213: 7814253703760123995
+    second: Enemy Sprite Sheet One_853
+  - first:
+      213: -4490409226904377813
+    second: Enemy Sprite Sheet One_854
+  - first:
+      213: 4775804739554251270
+    second: Enemy Sprite Sheet One_855
+  - first:
+      213: 8468421114126617874
+    second: Enemy Sprite Sheet One_856
+  - first:
+      213: -7397531079457357916
+    second: Enemy Sprite Sheet One_857
+  - first:
+      213: 984105742001951034
+    second: Enemy Sprite Sheet One_858
+  - first:
+      213: -3260888896886490792
+    second: Enemy Sprite Sheet One_859
+  - first:
+      213: 1452418822510529596
+    second: Enemy Sprite Sheet One_860
+  - first:
+      213: -2613169180773671520
+    second: Enemy Sprite Sheet One_861
+  - first:
+      213: -1290150682875061314
+    second: Enemy Sprite Sheet One_862
+  - first:
+      213: 8653692844110637229
+    second: Enemy Sprite Sheet One_863
+  - first:
+      213: -5805467557360343689
+    second: Enemy Sprite Sheet One_864
+  - first:
+      213: 6122431879376178614
+    second: Enemy Sprite Sheet One_865
+  - first:
+      213: 2626453978847867507
+    second: Enemy Sprite Sheet One_866
+  - first:
+      213: -831550848760167381
+    second: Enemy Sprite Sheet One_867
+  - first:
+      213: -2606887359056447845
+    second: Enemy Sprite Sheet One_868
+  - first:
+      213: 3841074638284491807
+    second: Enemy Sprite Sheet One_869
+  - first:
+      213: 8416111357847848801
+    second: Enemy Sprite Sheet One_870
+  - first:
+      213: 5580885103457906196
+    second: Enemy Sprite Sheet One_871
+  - first:
+      213: 9220650196344405276
+    second: Enemy Sprite Sheet One_872
+  - first:
+      213: 7922314861201140577
+    second: Enemy Sprite Sheet One_873
+  - first:
+      213: 5272266952984621905
+    second: Enemy Sprite Sheet One_874
+  - first:
+      213: 6050940083849137680
+    second: Enemy Sprite Sheet One_875
+  - first:
+      213: 5569380510305163041
+    second: Enemy Sprite Sheet One_876
+  - first:
+      213: -3333537755042458382
+    second: Enemy Sprite Sheet One_877
+  - first:
+      213: -3532511697524721884
+    second: Enemy Sprite Sheet One_878
+  - first:
+      213: -2370698066963524318
+    second: Enemy Sprite Sheet One_879
+  - first:
+      213: 2298091706854039037
+    second: Enemy Sprite Sheet One_880
+  - first:
+      213: 8924804239765115209
+    second: Enemy Sprite Sheet One_881
+  - first:
+      213: 3721624527615569320
+    second: Enemy Sprite Sheet One_882
+  - first:
+      213: 7383647132738481110
+    second: Enemy Sprite Sheet One_883
+  - first:
+      213: -7648591132641357467
+    second: Enemy Sprite Sheet One_884
+  - first:
+      213: 6671420712351842974
+    second: Enemy Sprite Sheet One_885
+  - first:
+      213: 7703787439699862223
+    second: Enemy Sprite Sheet One_886
+  - first:
+      213: 9026746100062704496
+    second: Enemy Sprite Sheet One_887
+  - first:
+      213: -3966313884978309099
+    second: Enemy Sprite Sheet One_888
+  - first:
+      213: -65590892989605438
+    second: Enemy Sprite Sheet One_889
+  - first:
+      213: 48661045206541421
+    second: Enemy Sprite Sheet One_890
+  - first:
+      213: 659722037535823732
+    second: Enemy Sprite Sheet One_891
+  - first:
+      213: -2186853013808271899
+    second: Enemy Sprite Sheet One_892
+  - first:
+      213: -4670051492366755005
+    second: Enemy Sprite Sheet One_893
+  - first:
+      213: 5402897395036995791
+    second: Enemy Sprite Sheet One_894
+  - first:
+      213: 2555021345384284655
+    second: Enemy Sprite Sheet One_895
+  - first:
+      213: -3828142174045407106
+    second: Enemy Sprite Sheet One_896
+  - first:
+      213: 4866544465049830871
+    second: Enemy Sprite Sheet One_897
+  - first:
+      213: -6745560879188014647
+    second: Enemy Sprite Sheet One_898
+  - first:
+      213: 3535301012954156844
+    second: Enemy Sprite Sheet One_899
+  - first:
+      213: 8927214409736406541
+    second: Enemy Sprite Sheet One_900
+  - first:
+      213: 7398495940275906386
+    second: Enemy Sprite Sheet One_901
+  - first:
+      213: 4303519650112415810
+    second: Enemy Sprite Sheet One_902
+  - first:
+      213: -134157279303076626
+    second: Enemy Sprite Sheet One_903
+  - first:
+      213: 3668693761620423974
+    second: Enemy Sprite Sheet One_904
+  - first:
+      213: -18889757236198680
+    second: Enemy Sprite Sheet One_905
+  - first:
+      213: -6989633758145737760
+    second: Enemy Sprite Sheet One_906
+  - first:
+      213: 784611204301482754
+    second: Enemy Sprite Sheet One_907
+  - first:
+      213: -3718131157660936238
+    second: Enemy Sprite Sheet One_908
+  - first:
+      213: -5735571062814231841
+    second: Enemy Sprite Sheet One_909
+  - first:
+      213: -4532252642979492825
+    second: Enemy Sprite Sheet One_910
+  - first:
+      213: 8449760528688290819
+    second: Enemy Sprite Sheet One_911
+  - first:
+      213: 1623217442407847049
+    second: Enemy Sprite Sheet One_912
+  - first:
+      213: 793374854033401290
+    second: Enemy Sprite Sheet One_913
+  - first:
+      213: -4375865360883792308
+    second: Enemy Sprite Sheet One_914
+  - first:
+      213: -6030435799163211885
+    second: Enemy Sprite Sheet One_915
+  - first:
+      213: 1917530540319441909
+    second: Enemy Sprite Sheet One_916
+  - first:
+      213: -6963274000139003755
+    second: Enemy Sprite Sheet One_917
+  - first:
+      213: 9015613629203735792
+    second: Enemy Sprite Sheet One_918
+  - first:
+      213: -2082594629919973693
+    second: Enemy Sprite Sheet One_919
+  - first:
+      213: -7292201071400319871
+    second: Enemy Sprite Sheet One_920
+  - first:
+      213: -7113148459518677647
+    second: Enemy Sprite Sheet One_921
+  - first:
+      213: 3184556356489633572
+    second: Enemy Sprite Sheet One_922
+  - first:
+      213: 8375409553399365477
+    second: Enemy Sprite Sheet One_923
+  - first:
+      213: 8346047551386297705
+    second: Enemy Sprite Sheet One_924
+  - first:
+      213: -6716272468397384208
+    second: Enemy Sprite Sheet One_925
+  - first:
+      213: 510467806358853244
+    second: Enemy Sprite Sheet One_926
+  - first:
+      213: -2957570226058440655
+    second: Enemy Sprite Sheet One_927
+  - first:
+      213: 2878451316319300621
+    second: Enemy Sprite Sheet One_928
+  - first:
+      213: 5496176105519859136
+    second: Enemy Sprite Sheet One_929
+  - first:
+      213: -8014040603038849102
+    second: Enemy Sprite Sheet One_930
+  - first:
+      213: 97280116820895231
+    second: Enemy Sprite Sheet One_931
+  - first:
+      213: 495443540564852894
+    second: Enemy Sprite Sheet One_932
+  - first:
+      213: -8037364209477956747
+    second: Enemy Sprite Sheet One_933
+  - first:
+      213: -7104030457782921766
+    second: Enemy Sprite Sheet One_934
+  - first:
+      213: 4642628559323902934
+    second: Enemy Sprite Sheet One_935
+  - first:
+      213: 2129378246482712623
+    second: Enemy Sprite Sheet One_936
+  - first:
+      213: -3539702768699784463
+    second: Enemy Sprite Sheet One_937
+  - first:
+      213: -8662664308795245149
+    second: Enemy Sprite Sheet One_938
+  - first:
+      213: -7332676893847362337
+    second: Enemy Sprite Sheet One_939
+  - first:
+      213: 2637564414824815610
+    second: Enemy Sprite Sheet One_940
+  - first:
+      213: -7163644787751284409
+    second: Enemy Sprite Sheet One_941
+  - first:
+      213: -2897774239153574179
+    second: Enemy Sprite Sheet One_942
+  - first:
+      213: 8633200242719117120
+    second: Enemy Sprite Sheet One_943
+  - first:
+      213: -3823996072313063526
+    second: Enemy Sprite Sheet One_944
+  - first:
+      213: 3568459768952356106
+    second: Enemy Sprite Sheet One_945
+  - first:
+      213: 2897374372560817961
+    second: Enemy Sprite Sheet One_946
+  - first:
+      213: 5373617416294036780
+    second: Enemy Sprite Sheet One_947
+  - first:
+      213: -1380765323625922924
+    second: Enemy Sprite Sheet One_948
+  - first:
+      213: 7932903301052839281
+    second: Enemy Sprite Sheet One_949
+  - first:
+      213: -3395161546154033092
+    second: Enemy Sprite Sheet One_950
+  - first:
+      213: 423435870270368468
+    second: Enemy Sprite Sheet One_951
+  - first:
+      213: 8977984095463981670
+    second: Enemy Sprite Sheet One_952
+  - first:
+      213: -4175223062539486438
+    second: Enemy Sprite Sheet One_953
+  - first:
+      213: -3695515385023641328
+    second: Enemy Sprite Sheet One_954
+  - first:
+      213: -7563760887601344251
+    second: Enemy Sprite Sheet One_955
+  - first:
+      213: -659319071652434998
+    second: Enemy Sprite Sheet One_956
+  - first:
+      213: 2204311611774046805
+    second: Enemy Sprite Sheet One_957
+  - first:
+      213: 5124607637931181358
+    second: Enemy Sprite Sheet One_958
+  - first:
+      213: -4429825975334899131
+    second: Enemy Sprite Sheet One_959
+  - first:
+      213: 9117498427247910316
+    second: Enemy Sprite Sheet One_960
+  - first:
+      213: -9121252289430448875
+    second: Enemy Sprite Sheet One_961
+  - first:
+      213: -7779502693761033877
+    second: Enemy Sprite Sheet One_962
+  - first:
+      213: 8116785288443786905
+    second: Enemy Sprite Sheet One_963
+  - first:
+      213: 5196482247611155804
+    second: Enemy Sprite Sheet One_964
+  - first:
+      213: -9052273913318398272
+    second: Enemy Sprite Sheet One_965
+  - first:
+      213: 3232953264764440754
+    second: Enemy Sprite Sheet One_966
+  - first:
+      213: -4271705565765878439
+    second: Enemy Sprite Sheet One_967
+  - first:
+      213: 7114001515192425144
+    second: Enemy Sprite Sheet One_968
+  - first:
+      213: -5373640925493703533
+    second: Enemy Sprite Sheet One_969
+  - first:
+      213: -6186912145775501023
+    second: Enemy Sprite Sheet One_970
+  - first:
+      213: 6712317627644672321
+    second: Enemy Sprite Sheet One_971
+  - first:
+      213: 4723639168280622212
+    second: Enemy Sprite Sheet One_972
+  - first:
+      213: -2717542210332732949
+    second: Enemy Sprite Sheet One_973
+  - first:
+      213: -2722192771832936678
+    second: Enemy Sprite Sheet One_974
+  - first:
+      213: 4389648350910448369
+    second: Enemy Sprite Sheet One_975
+  - first:
+      213: 5262716128394222464
+    second: Enemy Sprite Sheet One_976
+  - first:
+      213: 757170130495403290
+    second: Enemy Sprite Sheet One_977
+  - first:
+      213: -871527329514841372
+    second: Enemy Sprite Sheet One_978
+  - first:
+      213: -6828844472517280629
+    second: Enemy Sprite Sheet One_979
+  - first:
+      213: -5892274551898420716
+    second: Enemy Sprite Sheet One_980
+  - first:
+      213: -6696561430207324025
+    second: Enemy Sprite Sheet One_981
+  - first:
+      213: -5629036262396178718
+    second: Enemy Sprite Sheet One_982
+  - first:
+      213: -729781722531849885
+    second: Enemy Sprite Sheet One_983
+  - first:
+      213: 5094610616898109199
+    second: Enemy Sprite Sheet One_984
+  - first:
+      213: 5053001583931174781
+    second: Enemy Sprite Sheet One_985
+  - first:
+      213: 263649966224447421
+    second: Enemy Sprite Sheet One_986
+  - first:
+      213: 8300790958908587781
+    second: Enemy Sprite Sheet One_987
+  - first:
+      213: -7710556742420828955
+    second: Enemy Sprite Sheet One_988
+  - first:
+      213: -8286476839666825765
+    second: Enemy Sprite Sheet One_989
+  - first:
+      213: -9121485811262286882
+    second: Enemy Sprite Sheet One_990
+  - first:
+      213: 3442094709746699411
+    second: Enemy Sprite Sheet One_991
+  - first:
+      213: -8607280855282106573
+    second: Enemy Sprite Sheet One_992
+  - first:
+      213: -794691836891269485
+    second: Enemy Sprite Sheet One_993
+  - first:
+      213: -1035995156674166745
+    second: Enemy Sprite Sheet One_994
+  - first:
+      213: -2225663950256502600
+    second: Enemy Sprite Sheet One_995
+  - first:
+      213: -6369905506039457534
+    second: Enemy Sprite Sheet One_996
+  - first:
+      213: 2650063002571746664
+    second: Enemy Sprite Sheet One_997
+  - first:
+      213: -2527653906042804790
+    second: Enemy Sprite Sheet One_998
+  - first:
+      213: 2512686384876014029
+    second: Enemy Sprite Sheet One_999
+  - first:
+      213: 5587714650809248530
+    second: Enemy Sprite Sheet One_1000
+  - first:
+      213: -8175363379833443973
+    second: Enemy Sprite Sheet One_1001
+  - first:
+      213: 5960427595369260260
+    second: Enemy Sprite Sheet One_1002
+  - first:
+      213: 5596242980878376998
+    second: Enemy Sprite Sheet One_1003
+  - first:
+      213: -4804564647455615369
+    second: Enemy Sprite Sheet One_1004
+  - first:
+      213: -7651690887950577567
+    second: Enemy Sprite Sheet One_1005
+  - first:
+      213: -5642654692462913906
+    second: Enemy Sprite Sheet One_1006
+  - first:
+      213: 4279736316464085116
+    second: Enemy Sprite Sheet One_1007
+  - first:
+      213: 7661246562956771019
+    second: Enemy Sprite Sheet One_1008
+  - first:
+      213: -9213652295235580653
+    second: Enemy Sprite Sheet One_1009
+  - first:
+      213: -5304188968549888069
+    second: Enemy Sprite Sheet One_1010
+  - first:
+      213: -484987562013698939
+    second: Enemy Sprite Sheet One_1011
+  - first:
+      213: 1885162300497557786
+    second: Enemy Sprite Sheet One_1012
+  - first:
+      213: -1116178015118099150
+    second: Enemy Sprite Sheet One_1013
+  - first:
+      213: -226363131553946767
+    second: Enemy Sprite Sheet One_1014
+  - first:
+      213: -1468288862391448813
+    second: Enemy Sprite Sheet One_1015
+  - first:
+      213: 3441457264667315216
+    second: Enemy Sprite Sheet One_1016
+  - first:
+      213: -2664593426669074730
+    second: Enemy Sprite Sheet One_1017
+  - first:
+      213: 30642790383201241
+    second: Enemy Sprite Sheet One_1018
+  - first:
+      213: -4536997604854313247
+    second: Enemy Sprite Sheet One_1019
+  - first:
+      213: 3762690064731579940
+    second: Enemy Sprite Sheet One_1020
+  - first:
+      213: 2746288352869587633
+    second: Enemy Sprite Sheet One_1021
+  - first:
+      213: -3019329606049457698
+    second: Enemy Sprite Sheet One_1022
+  - first:
+      213: 3492290057728041566
+    second: Enemy Sprite Sheet One_1023
+  - first:
+      213: 2023963493684493081
+    second: Enemy Sprite Sheet One_1024
+  - first:
+      213: 8955148707000263409
+    second: Enemy Sprite Sheet One_1025
+  - first:
+      213: -3672059436901258013
+    second: Enemy Sprite Sheet One_1026
+  - first:
+      213: -9088511606344029379
+    second: Enemy Sprite Sheet One_1027
+  - first:
+      213: -4612956672305621125
+    second: Enemy Sprite Sheet One_1028
+  - first:
+      213: 2574689718236014733
+    second: Enemy Sprite Sheet One_1029
+  - first:
+      213: -423916805506394980
+    second: Enemy Sprite Sheet One_1030
+  - first:
+      213: -2653181658959361046
+    second: Enemy Sprite Sheet One_1031
+  - first:
+      213: 542913415818402185
+    second: Enemy Sprite Sheet One_1032
+  - first:
+      213: 6537384392448304747
+    second: Enemy Sprite Sheet One_1033
+  - first:
+      213: 1942634547382773366
+    second: Enemy Sprite Sheet One_1034
+  - first:
+      213: 4575436768857161708
+    second: Enemy Sprite Sheet One_1035
+  - first:
+      213: 5168264753350750626
+    second: Enemy Sprite Sheet One_1036
+  - first:
+      213: 8967429339753194084
+    second: Enemy Sprite Sheet One_1037
+  - first:
+      213: -2541309215151810595
+    second: Enemy Sprite Sheet One_1038
+  - first:
+      213: -5410064277143372620
+    second: Enemy Sprite Sheet One_1039
+  - first:
+      213: -4429325079097655889
+    second: Enemy Sprite Sheet One_1040
+  - first:
+      213: -2978478880931844796
+    second: Enemy Sprite Sheet One_1041
+  - first:
+      213: -4438364752945164700
+    second: Enemy Sprite Sheet One_1042
+  - first:
+      213: 2884754385255116069
+    second: Enemy Sprite Sheet One_1043
+  - first:
+      213: -7217009128760766061
+    second: Enemy Sprite Sheet One_1044
+  - first:
+      213: 5540657222673822413
+    second: Enemy Sprite Sheet One_1045
+  - first:
+      213: -292514707588061077
+    second: Enemy Sprite Sheet One_1046
+  - first:
+      213: 6031320924295470936
+    second: Enemy Sprite Sheet One_1047
+  - first:
+      213: 8278310398913835919
+    second: Enemy Sprite Sheet One_1048
+  - first:
+      213: 956453088240460934
+    second: Enemy Sprite Sheet One_1049
+  - first:
+      213: 7556658749539546397
+    second: Enemy Sprite Sheet One_1050
+  - first:
+      213: -6160699347059983832
+    second: Enemy Sprite Sheet One_1051
+  - first:
+      213: -9011701010652876036
+    second: Enemy Sprite Sheet One_1052
+  - first:
+      213: 58127365277689781
+    second: Enemy Sprite Sheet One_1053
+  - first:
+      213: 8508197788162624717
+    second: Enemy Sprite Sheet One_1054
+  - first:
+      213: -5826745982509838232
+    second: Enemy Sprite Sheet One_1055
+  - first:
+      213: 1423881587783178943
+    second: Enemy Sprite Sheet One_1056
+  - first:
+      213: 8964785163388656009
+    second: Enemy Sprite Sheet One_1057
+  - first:
+      213: 2628545242318295152
+    second: Enemy Sprite Sheet One_1058
+  - first:
+      213: -5892698404316451344
+    second: Enemy Sprite Sheet One_1059
+  - first:
+      213: -3501495516275987704
+    second: Enemy Sprite Sheet One_1060
+  - first:
+      213: -5742583470236428511
+    second: Enemy Sprite Sheet One_1061
+  - first:
+      213: 329488485000454714
+    second: Enemy Sprite Sheet One_1062
+  - first:
+      213: -5671710847030770312
+    second: Enemy Sprite Sheet One_1063
+  - first:
+      213: -8876107205363570980
+    second: Enemy Sprite Sheet One_1064
+  - first:
+      213: 8901999291255462333
+    second: Enemy Sprite Sheet One_1065
+  - first:
+      213: 1929952357192674757
+    second: Enemy Sprite Sheet One_1066
+  - first:
+      213: 8601466369334211016
+    second: Enemy Sprite Sheet One_1067
+  - first:
+      213: 5069502489415392305
+    second: Enemy Sprite Sheet One_1068
+  - first:
+      213: -1567815939337796435
+    second: Enemy Sprite Sheet One_1069
+  - first:
+      213: -7757012062075609750
+    second: Enemy Sprite Sheet One_1070
+  - first:
+      213: -1772999706191581568
+    second: Enemy Sprite Sheet One_1071
+  - first:
+      213: 3543224370179013850
+    second: Enemy Sprite Sheet One_1072
+  - first:
+      213: -1582775575218854560
+    second: Enemy Sprite Sheet One_1073
+  - first:
+      213: 9002314276203620675
+    second: Enemy Sprite Sheet One_1074
+  - first:
+      213: 7014082968058862259
+    second: Enemy Sprite Sheet One_1075
+  - first:
+      213: -7671960101796788533
+    second: Enemy Sprite Sheet One_1076
+  - first:
+      213: 8935703066204964360
+    second: Enemy Sprite Sheet One_1077
+  - first:
+      213: -8134556697502739482
+    second: Enemy Sprite Sheet One_1078
+  - first:
+      213: -1790209896439330798
+    second: Enemy Sprite Sheet One_1079
+  - first:
+      213: -4952623756519800602
+    second: Enemy Sprite Sheet One_1080
+  - first:
+      213: 6560202957381017723
+    second: Enemy Sprite Sheet One_1081
+  - first:
+      213: -481286477138184972
+    second: Enemy Sprite Sheet One_1082
+  - first:
+      213: 8652271090843246452
+    second: Enemy Sprite Sheet One_1083
+  - first:
+      213: 1792175377575486765
+    second: Enemy Sprite Sheet One_1084
+  - first:
+      213: 250298149817621963
+    second: Enemy Sprite Sheet One_1085
+  - first:
+      213: -2324313183732572290
+    second: Enemy Sprite Sheet One_1086
+  - first:
+      213: -2561120512592023670
+    second: Enemy Sprite Sheet One_1087
+  - first:
+      213: 6699808844319206591
+    second: Enemy Sprite Sheet One_1088
+  - first:
+      213: 8836856665318018671
+    second: Enemy Sprite Sheet One_1089
+  - first:
+      213: 7668625608643731936
+    second: Enemy Sprite Sheet One_1090
+  - first:
+      213: 2728106168157935163
+    second: Enemy Sprite Sheet One_1091
+  - first:
+      213: 4758780887961440340
+    second: Enemy Sprite Sheet One_1092
+  - first:
+      213: 3937537047732858578
+    second: Enemy Sprite Sheet One_1093
+  - first:
+      213: -1394625509618038818
+    second: Enemy Sprite Sheet One_1094
+  - first:
+      213: -1957306493796725616
+    second: Enemy Sprite Sheet One_1095
+  - first:
+      213: -3977566193339366112
+    second: Enemy Sprite Sheet One_1096
+  - first:
+      213: 4224453135841530401
+    second: Enemy Sprite Sheet One_1097
+  - first:
+      213: -7590886469124127145
+    second: Enemy Sprite Sheet One_1098
+  - first:
+      213: -8378998715686678101
+    second: Enemy Sprite Sheet One_1099
+  - first:
+      213: 7117556091010723594
+    second: Enemy Sprite Sheet One_1100
+  - first:
+      213: 8213205680893906524
+    second: Enemy Sprite Sheet One_1101
+  - first:
+      213: -1937261094195969461
+    second: Enemy Sprite Sheet One_1102
+  - first:
+      213: 6768063937507141921
+    second: Enemy Sprite Sheet One_1103
+  - first:
+      213: 3998105913315361811
+    second: Enemy Sprite Sheet One_1104
+  - first:
+      213: -8109812923557420168
+    second: Enemy Sprite Sheet One_1105
+  - first:
+      213: 1237528760883038911
+    second: Enemy Sprite Sheet One_1106
+  - first:
+      213: -964948003550135536
+    second: Enemy Sprite Sheet One_1107
+  - first:
+      213: 2393642101636583950
+    second: Enemy Sprite Sheet One_1108
+  - first:
+      213: -2783278083514866054
+    second: Enemy Sprite Sheet One_1109
+  - first:
+      213: 8433578820527126722
+    second: Enemy Sprite Sheet One_1110
+  - first:
+      213: -6445777151869948789
+    second: Enemy Sprite Sheet One_1111
+  - first:
+      213: 2596815288035831961
+    second: Enemy Sprite Sheet One_1112
+  - first:
+      213: 6921506934888177734
+    second: Enemy Sprite Sheet One_1113
+  - first:
+      213: -4433348187707014056
+    second: Enemy Sprite Sheet One_1114
+  - first:
+      213: 1955584845319340384
+    second: Enemy Sprite Sheet One_1115
+  - first:
+      213: 43348834480551703
+    second: Enemy Sprite Sheet One_1116
+  - first:
+      213: 5415007304749723272
+    second: Enemy Sprite Sheet One_1117
+  - first:
+      213: -7707138149618498552
+    second: Enemy Sprite Sheet One_1118
+  - first:
+      213: -4188696199432148617
+    second: Enemy Sprite Sheet One_1119
+  - first:
+      213: 4307429127357246621
+    second: Enemy Sprite Sheet One_1120
+  - first:
+      213: 3794521909088598860
+    second: Enemy Sprite Sheet One_1121
+  - first:
+      213: -2147694417383297878
+    second: Enemy Sprite Sheet One_1122
+  - first:
+      213: 3775166636793155573
+    second: Enemy Sprite Sheet One_1123
+  - first:
+      213: 6432018230581533525
+    second: Enemy Sprite Sheet One_1124
+  - first:
+      213: -5508073026294351520
+    second: Enemy Sprite Sheet One_1125
+  - first:
+      213: 6268462646602548627
+    second: Enemy Sprite Sheet One_1126
+  - first:
+      213: 8566898780857217662
+    second: Enemy Sprite Sheet One_1127
+  - first:
+      213: -4681985889924484307
+    second: Enemy Sprite Sheet One_1128
+  - first:
+      213: -2248493078586472806
+    second: Enemy Sprite Sheet One_1129
+  - first:
+      213: -8685632870927095387
+    second: Enemy Sprite Sheet One_1130
+  - first:
+      213: 1907836181666452731
+    second: Enemy Sprite Sheet One_1131
+  - first:
+      213: -373885170917123871
+    second: Enemy Sprite Sheet One_1132
+  - first:
+      213: -599565285815455075
+    second: Enemy Sprite Sheet One_1133
+  - first:
+      213: 9055316401614637155
+    second: Enemy Sprite Sheet One_1134
+  - first:
+      213: -7113482696586312221
+    second: Enemy Sprite Sheet One_1135
+  - first:
+      213: -6143933707745857449
+    second: Enemy Sprite Sheet One_1136
+  - first:
+      213: -7206573410519490258
+    second: Enemy Sprite Sheet One_1137
+  - first:
+      213: 5965735273876769687
+    second: Enemy Sprite Sheet One_1138
+  - first:
+      213: -2374300986998096810
+    second: Enemy Sprite Sheet One_1139
+  - first:
+      213: -5141624923871549301
+    second: Enemy Sprite Sheet One_1140
+  - first:
+      213: -5729445965175977334
+    second: Enemy Sprite Sheet One_1141
+  - first:
+      213: 6133453187422189213
+    second: Enemy Sprite Sheet One_1142
+  - first:
+      213: -7857547876044040722
+    second: Enemy Sprite Sheet One_1143
+  - first:
+      213: -6744859336231945994
+    second: Enemy Sprite Sheet One_1144
+  - first:
+      213: -1096209510040900611
+    second: Enemy Sprite Sheet One_1145
+  - first:
+      213: -726336611972319229
+    second: Enemy Sprite Sheet One_1146
+  - first:
+      213: -2323945286860290088
+    second: Enemy Sprite Sheet One_1147
+  - first:
+      213: 4737111807720918286
+    second: Enemy Sprite Sheet One_1148
+  - first:
+      213: -5707110850353624273
+    second: Enemy Sprite Sheet One_1149
+  - first:
+      213: 1864993017634786586
+    second: Enemy Sprite Sheet One_1150
+  - first:
+      213: -3804456846486062249
+    second: Enemy Sprite Sheet One_1151
+  - first:
+      213: -3380733183394574415
+    second: Enemy Sprite Sheet One_1152
+  - first:
+      213: -7465800518440464510
+    second: Enemy Sprite Sheet One_1153
+  - first:
+      213: -1914166612059206175
+    second: Enemy Sprite Sheet One_1154
+  - first:
+      213: 21836252905155615
+    second: Enemy Sprite Sheet One_1155
+  - first:
+      213: -7552040652979778026
+    second: Enemy Sprite Sheet One_1156
+  - first:
+      213: -2442523657128012748
+    second: Enemy Sprite Sheet One_1157
+  - first:
+      213: -7220815080516407637
+    second: Enemy Sprite Sheet One_1158
+  - first:
+      213: 6153332569316964939
+    second: Enemy Sprite Sheet One_1159
+  - first:
+      213: -7939850462432893153
+    second: Enemy Sprite Sheet One_1160
+  - first:
+      213: -887783707430679759
+    second: Enemy Sprite Sheet One_1161
+  - first:
+      213: 5880331597433511593
+    second: Enemy Sprite Sheet One_1162
+  - first:
+      213: 5379157139085346941
+    second: Enemy Sprite Sheet One_1163
+  - first:
+      213: -5821593003356657424
+    second: Enemy Sprite Sheet One_1164
+  - first:
+      213: 636526868838436173
+    second: Enemy Sprite Sheet One_1165
+  - first:
+      213: 8955451635440986263
+    second: Enemy Sprite Sheet One_1166
+  - first:
+      213: -6635950685294201587
+    second: Enemy Sprite Sheet One_1167
+  - first:
+      213: 7831606943399412466
+    second: Enemy Sprite Sheet One_1168
+  - first:
+      213: 7024657545456887969
+    second: Enemy Sprite Sheet One_1169
+  - first:
+      213: -3525331828951113617
+    second: Enemy Sprite Sheet One_1170
+  - first:
+      213: 1838422658778595155
+    second: Enemy Sprite Sheet One_1171
+  - first:
+      213: -7828133549816056335
+    second: Enemy Sprite Sheet One_1172
+  - first:
+      213: -5695996510851945124
+    second: Enemy Sprite Sheet One_1173
+  - first:
+      213: 6790696645244423406
+    second: Enemy Sprite Sheet One_1174
+  - first:
+      213: -5214813814374259852
+    second: Enemy Sprite Sheet One_1175
+  - first:
+      213: -5730246385270765580
+    second: Enemy Sprite Sheet One_1176
+  - first:
+      213: 5389707005527082368
+    second: Enemy Sprite Sheet One_1177
+  - first:
+      213: -8645407524663202074
+    second: Enemy Sprite Sheet One_1178
+  - first:
+      213: -1726174498969438484
+    second: Enemy Sprite Sheet One_1179
+  - first:
+      213: -7409774784720666933
+    second: Enemy Sprite Sheet One_1180
+  - first:
+      213: -4522063706847004262
+    second: Enemy Sprite Sheet One_1181
+  - first:
+      213: 2989003096417061857
+    second: Enemy Sprite Sheet One_1182
+  - first:
+      213: -6832466352008509007
+    second: Enemy Sprite Sheet One_1183
+  - first:
+      213: -7942786322732209728
+    second: Enemy Sprite Sheet One_1184
+  - first:
+      213: -8864820817118253798
+    second: Enemy Sprite Sheet One_1185
+  - first:
+      213: 3953391598622403070
+    second: Enemy Sprite Sheet One_1186
+  - first:
+      213: 5029323315717024055
+    second: Enemy Sprite Sheet One_1187
+  - first:
+      213: 3862076136056086901
+    second: Enemy Sprite Sheet One_1188
+  - first:
+      213: -4324487793948508669
+    second: Enemy Sprite Sheet One_1189
+  - first:
+      213: 5161715732967351379
+    second: Enemy Sprite Sheet One_1190
+  - first:
+      213: 4323133048188122555
+    second: Enemy Sprite Sheet One_1191
+  - first:
+      213: -8811665682760501450
+    second: Enemy Sprite Sheet One_1192
+  - first:
+      213: -2268176802495014553
+    second: Enemy Sprite Sheet One_1193
+  - first:
+      213: -948526391237154979
+    second: Enemy Sprite Sheet One_1194
+  - first:
+      213: -8356378203702600996
+    second: Enemy Sprite Sheet One_1195
+  - first:
+      213: -4883076645331536277
+    second: Enemy Sprite Sheet One_1196
+  - first:
+      213: 617337491420681896
+    second: Enemy Sprite Sheet One_1197
+  - first:
+      213: -3839155123326142906
+    second: Enemy Sprite Sheet One_1198
+  - first:
+      213: -5721856478320536094
+    second: Enemy Sprite Sheet One_1199
+  - first:
+      213: -7571919210801790758
+    second: Enemy Sprite Sheet One_1200
+  - first:
+      213: -8181491990223739248
+    second: Enemy Sprite Sheet One_1201
+  - first:
+      213: 2693179270362394426
+    second: Enemy Sprite Sheet One_1202
+  - first:
+      213: 7273052141392694523
+    second: Enemy Sprite Sheet One_1203
+  - first:
+      213: 1749292825116269665
+    second: Enemy Sprite Sheet One_1204
+  - first:
+      213: -5196357772886124225
+    second: Enemy Sprite Sheet One_1205
+  - first:
+      213: -4941131512623774554
+    second: Enemy Sprite Sheet One_1206
+  - first:
+      213: 9216778881510458907
+    second: Enemy Sprite Sheet One_1207
+  - first:
+      213: -7447128188962748639
+    second: Enemy Sprite Sheet One_1208
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a900a03bb4d25f0800000000000000
+      internalID: -779883928126186921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca1e1402a6154150800000000000000
+      internalID: 5856111775574792908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e150352e5a6b1ba20800000000000000
+      internalID: 3076440844053710110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf5be84bd414b910800000000000000
+      internalID: 1852128278809894828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a36a7492b6ac9be0800000000000000
+      internalID: -1469116092504185948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f869409333f4230800000000000000
+      internalID: 3625172545039666966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e4a1cfd55f3d970800000000000000
+      internalID: 8778629882685574667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4959192553271a10800000000000000
+      internalID: 1880010218119190860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2d359489555c0b0800000000000000
+      internalID: -5709062840068615511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98393bd36488b89c0800000000000000
+      internalID: -3923892815058988151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cabbeee162dc6c0800000000000000
+      internalID: -4121596169677984623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6065100ab98f2e0800000000000000
+      internalID: -2091750915394107710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d53b647d5379a30800000000000000
+      internalID: 4221902374403530105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943d3ec693e859390800000000000000
+      internalID: -7812181601313107127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f4f136fc50b64b0800000000000000
+      internalID: -5446252936095117510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef6a7c557a322150800000000000000
+      internalID: 5846299542017437667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ee2fc6dfefaaa10800000000000000
+      internalID: 1921628555434978858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9477c185fdd8d30800000000000000
+      internalID: 4435446777557502400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3cea5c4216baa90800000000000000
+      internalID: -7301635560287845411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf5dafabb4325550800000000000000
+      internalID: 6148034422025052094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e8d547e02eee0f0800000000000000
+      internalID: -1085681908440003066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd197f01461524b60800000000000000
+      internalID: 7728829400744432095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcf31bef5de04850800000000000000
+      internalID: 6359343670068772056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f4c69426d4d2e50800000000000000
+      internalID: 6786165298051174254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_24
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787cb6b4e30e99c40800000000000000
+      internalID: 5519689376477202311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_25
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 413
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e0d73ce18e5bf20800000000000000
+      internalID: 3437909109393657390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de4993cc47b1b2b0800000000000000
+      internalID: -5570469723753591087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7ac7f5d889b1d30800000000000000
+      internalID: 4403280793644607415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec2f88acf3d76020800000000000000
+      internalID: 2335068013928066283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ecb505392db1b30800000000000000
+      internalID: 4259229402759155244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1157ba9d9b01840800000000000000
+      internalID: 5192854714893799894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_31
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54c39e9e9c4cd910800000000000000
+      internalID: 1863448589973570652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_32
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72c6f5d6ed33b140800000000000000
+      internalID: 4734195694938014331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_33
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6942a0c7f3ecbcee0800000000000000
+      internalID: -1239670500351138666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6939d0b3baeb334a0800000000000000
+      internalID: -6614733785037696106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_35
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d4669eb29ffbb00800000000000000
+      internalID: 846669221963648264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417764621edb3a4c0800000000000000
+      internalID: -4277366446364395756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cafe01582940f310800000000000000
+      internalID: 1436728718638643907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_38
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 365
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3688d41a2b66e140800000000000000
+      internalID: 4748600685591299643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bc748170e7de2e0800000000000000
+      internalID: -2094879682720183394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f19080bd1539d80800000000000000
+      internalID: -8245156491610742978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183344dba457e7840800000000000000
+      internalID: 5223741581659747201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_42
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453421575e6c52bc0800000000000000
+      internalID: -3808419221057944748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058ea1febd2e02a90800000000000000
+      internalID: -7340617958376675248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b54ffeaad754b80800000000000000
+      internalID: -8411178555920852090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbaa9b3828e046540800000000000000
+      internalID: 5000137440006613695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_46
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460dfc6d02ca74e00800000000000000
+      internalID: 1028980296920322148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_47
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4c0c5d5e285f6e0800000000000000
+      internalID: -1804392152046713648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_48
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a449c9842c486590800000000000000
+      internalID: -7680805444666178394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_49
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00138c7fd6a16f3a0800000000000000
+      internalID: -6632084341645627136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_50
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3ccb5f1c3ddeea0800000000000000
+      internalID: -5841780311624727626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_51
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 317
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b8bde5c323659d0800000000000000
+      internalID: -2785984084611200107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0453f27b8abe23ca0800000000000000
+      internalID: -6038505040490056384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_53
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813d5b2b4456645b0800000000000000
+      internalID: -5384504958744407272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2750bcdd98aae4c10800000000000000
+      internalID: 2039755190353724786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_55
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cbbc05a6f6a71f0800000000000000
+      internalID: -1046401460997473204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914079464d1738bb0800000000000000
+      internalID: -4934975609633307623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_57
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc9fc305c1110170800000000000000
+      internalID: 8142809139132734707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_58
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed16d513e30df4530800000000000000
+      internalID: 3841517972705075678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_59
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e99f5092363c0ec0800000000000000
+      internalID: -3599442411377419803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_60
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3244afacfcb83d50800000000000000
+      internalID: 6717326637687652922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_61
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c5818a710943a10800000000000000
+      internalID: 1888292575053896777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_62
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af80a28c22458d70800000000000000
+      internalID: 9044708185581064105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_63
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c857ff85140692c0800000000000000
+      internalID: -4425345093188757309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_64
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 269
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db84e653b4ed78b0800000000000000
+      internalID: -5152710939733881903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65fcbab0bb547dc0800000000000000
+      internalID: -3642185384030571154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cd9c1f45e921ac0800000000000000
+      internalID: -3885869440796337031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0314b614ac9b1e440800000000000000
+      internalID: 4963452542671077680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_68
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b0d91fd0ee2c050800000000000000
+      internalID: 5819475412171688769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf789aa521d816a0800000000000000
+      internalID: -6478198104266342436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_70
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec6d2b44fa17c500800000000000000
+      internalID: 416331127090670829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_71
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ac46d41bf7eaf50800000000000000
+      internalID: 6894588479035197995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_72
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddebe44793422db40800000000000000
+      internalID: 5463469127136886493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_73
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8899be3cf4e28f970800000000000000
+      internalID: 8788825592937814408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_74
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328fff6dcffefa1f0800000000000000
+      internalID: -1031341920426657757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_75
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305938245c6dc91e0800000000000000
+      internalID: -2189639176096082685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_76
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fdfb74838ce2d60800000000000000
+      internalID: 7867445743110315888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_77
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 221
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953a5093c74e218e0800000000000000
+      internalID: -1724064485145730215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb03d6407329e2d0800000000000000
+      internalID: -3249026691039556672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_79
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889f24d2b18017730800000000000000
+      internalID: 3994983257270843784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_80
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3af7d5f83ce0cb0800000000000000
+      internalID: -4895760724388764681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_81
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36143be9982920d60800000000000000
+      internalID: 7855001819858288995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d6e188e309a1570800000000000000
+      internalID: 8438215450078113057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_83
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d58cb87777590f80800000000000000
+      internalID: -8139878680857115177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_84
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208a8051098ef2040800000000000000
+      internalID: 4625171047858612226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_85
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657074fbc2a4c8f80800000000000000
+      internalID: -8103020073498245290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_86
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf28f280bc0f01870800000000000000
+      internalID: 8651679638985081596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_87
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55c175145643a190800000000000000
+      internalID: -7952435190055189158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_88
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097d5d81ac7f33010800000000000000
+      internalID: 1167549175791212432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_89
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7450d4ec9c9130a30800000000000000
+      internalID: 4180213233670227271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_90
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 173
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabf1be2f72f1d500800000000000000
+      internalID: 419382868380351405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf92220cf223c6e10800000000000000
+      internalID: 2192182299290905084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_92
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b81814133cfa65e0800000000000000
+      internalID: -1915441395182069582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_93
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c65fc94e95dffb0800000000000000
+      internalID: -4612431604936774643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_94
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affe7bc27d81c2990800000000000000
+      internalID: -7409519974484021254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_95
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45143d54a3ff07a30800000000000000
+      internalID: 4211146277336072532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_96
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ba90da3d18edc30800000000000000
+      internalID: 4386085833246616381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_97
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0561d862aae6250e0800000000000000
+      internalID: -2282640384053143984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_98
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fb551a0f828f7e0800000000000000
+      internalID: -1731589042759942361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c90331ce1ff0ef0800000000000000
+      internalID: -139627067188667334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_100
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9aa1a3c2684dc350800000000000000
+      internalID: 6038562264399850143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_101
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d820d069bf2716880800000000000000
+      internalID: -8619481786930625907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_102
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47da15dbb51e7cde0800000000000000
+      internalID: -1312832982220690060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_103
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 125
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ee0b9965bfa05f0800000000000000
+      internalID: -789542435285832161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95fb37d0715edee0800000000000000
+      internalID: -1234459702763719269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_105
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13299603d15c88bf0800000000000000
+      internalID: -321790644200041935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_106
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd7e3f694b612d30800000000000000
+      internalID: 4404919873688206789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_107
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8734424eaea67a8f0800000000000000
+      internalID: -529336874110270600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_108
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302d7125f006ae300800000000000000
+      internalID: 282143545582146051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_109
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202d0a2c4624fb6d0800000000000000
+      internalID: -2972584228511755774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_110
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce9cb832a5c84640800000000000000
+      internalID: 5064515081505382083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_111
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3705848750e4900800000000000000
+      internalID: 670479408692229116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_112
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30e501fff13921a0800000000000000
+      internalID: -6833875984227901382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_113
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211151527a8c66b30800000000000000
+      internalID: 4280329116069466386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_114
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8c886b9edb176a0800000000000000
+      internalID: -6453167979557762896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_115
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03038e5c86b397c0800000000000000
+      internalID: -4065705324588104947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_116
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 77
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb05884728038030800000000000000
+      internalID: 3495646700583062491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333b15d337d1c6b50800000000000000
+      internalID: 6587672735723402035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_118
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9180fbe4b755df360800000000000000
+      internalID: 7205008966953142297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_119
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562be17e83c867570800000000000000
+      internalID: 8464106725713031781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_120
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7048de60ee759aa90800000000000000
+      internalID: -7302208640974486521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_121
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff50a1afb66e6530800000000000000
+      internalID: 3850127704684781559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_122
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e77375d9fe42770800000000000000
+      internalID: 8585250248727166469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_123
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f466ed9017ddbab0800000000000000
+      internalID: -4990596345688070919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_124
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0368d1c551fd2df40800000000000000
+      internalID: 5751904956938290736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_125
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2607d9bcaf5d53a0800000000000000
+      internalID: -6675073877236316630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_126
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf40bd9e9886c730800000000000000
+      internalID: 4019049932306534365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_127
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e15ca079204bf090800000000000000
+      internalID: -7999729766365376024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_128
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487fcca91f61d3830800000000000000
+      internalID: 4052420466643367812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Sprite Sheet One_129
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 29
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60dbd787d1018a90800000000000000
+      internalID: -7313562294664048530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
