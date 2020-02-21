@@ -12,6 +12,8 @@ public class randomEncounterSpawner : MonoBehaviour
     public GameObject FourThree;
     public GameObject FourFour;
 
+    public GameObject OneOne;
+
     GameObject objectToInstantiate;
 
     public GameObject characterOne;
@@ -19,10 +21,10 @@ public class randomEncounterSpawner : MonoBehaviour
     public GameObject characterThree;
     public GameObject characterFour;
 
-    Vector3 positionOne;
-    Vector3 positionTwo;
-    Vector3 positionThree;
-    Vector3 positionFour;
+    Vector3 positionFourOne;
+    Vector3 positionFourTwo;
+    Vector3 positionFourThree;
+    Vector3 positionFourFour;
 
     Vector3 characterPosOne;
     Vector3 characterPosTwo = new Vector3(7.75f,-0.25f,0);
@@ -33,29 +35,36 @@ public class randomEncounterSpawner : MonoBehaviour
     void Start()
     {
         Instantiate(characterTwo, characterPosTwo, Quaternion.identity);
-        numberOfEnemies = Random.Range(3, 4);
-        if (numberOfEnemies == 3 || numberOfEnemies == 4)
+        numberOfEnemies = Random.Range(1, 4);
+        currentLocation = locationOne;
+
+        if (numberOfEnemies == 1 || numberOfEnemies == 2)
         {
-            positionOne = FourOne.transform.position;
-            positionTwo = FourTwo.transform.position;
-            positionThree = FourThree.transform.position;
-            positionFour = FourFour.transform.position;
+            positionFourOne = OneOne.transform.position;
+
+            objectToInstantiate = currentLocation[Random.Range(0, currentLocation.Length)];
+            Instantiate(objectToInstantiate, positionFourOne, Quaternion.identity);
         }
 
-        currentLocation = locationOne;
+        
         if (numberOfEnemies == 3 || numberOfEnemies == 4)
         {
-            objectToInstantiate = currentLocation[Random.Range(0, currentLocation.Length)];
-            Instantiate(objectToInstantiate, positionOne, Quaternion.identity);
+            positionFourOne = FourOne.transform.position;
+            positionFourTwo = FourTwo.transform.position;
+            positionFourThree = FourThree.transform.position;
+            positionFourFour = FourFour.transform.position;
 
             objectToInstantiate = currentLocation[Random.Range(0, currentLocation.Length)];
-            Instantiate(objectToInstantiate, positionTwo, Quaternion.identity);
+            Instantiate(objectToInstantiate, positionFourOne, Quaternion.identity);
 
             objectToInstantiate = currentLocation[Random.Range(0, currentLocation.Length)];
-            Instantiate(objectToInstantiate, positionThree, Quaternion.identity);
+            Instantiate(objectToInstantiate, positionFourTwo, Quaternion.identity);
 
             objectToInstantiate = currentLocation[Random.Range(0, currentLocation.Length)];
-            Instantiate(objectToInstantiate, positionFour, Quaternion.identity);
+            Instantiate(objectToInstantiate, positionFourThree, Quaternion.identity);
+
+            objectToInstantiate = currentLocation[Random.Range(0, currentLocation.Length)];
+            Instantiate(objectToInstantiate, positionFourFour, Quaternion.identity);
         }
     }
 

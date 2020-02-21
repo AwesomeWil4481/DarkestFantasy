@@ -10,5 +10,4 @@ public class Entity : MonoBehaviour
     public int attack;
     public int defense;
     public int speed;
-
 }

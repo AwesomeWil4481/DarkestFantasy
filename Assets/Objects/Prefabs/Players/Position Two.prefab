@@ -48,9 +48,11 @@ MonoBehaviour:
   MP: 0
   attack: 0
   defense: 0
-  speed: 2147483647
+  speed: 6
   isTurn: 0
   animator: {fileID: 2017796537}
+  Defense: 0
+  Hp: 0
 --- !u!1 &5359062591435993474
 GameObject:
   m_ObjectHideFlags: 0

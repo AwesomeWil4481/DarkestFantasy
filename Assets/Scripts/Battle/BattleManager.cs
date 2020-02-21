@@ -10,10 +10,9 @@ public class BattleManager : MonoBehaviour
 
     public Queue<Entity> fightQueue;
 
-    int viewingEnemy;
-    int viewingCharacter;
     int startListAdd;
 
+    public GameObject TargetObject;
 
     bool neverDone;
     List<Entity> entityList;
@@ -22,8 +21,6 @@ public class BattleManager : MonoBehaviour
         neverDone = true;
         entityList = new List<Entity>();
         fightQueue = new Queue<Entity>();
-        viewingCharacter = 0;
-        viewingEnemy = 0;
     }
     void Awake()
     {
@@ -55,15 +52,15 @@ public class BattleManager : MonoBehaviour
     public void RegisterEnemies(EnemyStats enemy)
     {
         entityList.Add(enemy);
+        enemy.speedMin -= (enemy.speedMin * 2);
+        enemy.speedMax -= enemy.speedMax * 2;
         enemy.speed = Random.Range(enemy.speedMin, enemy.speedMax);
         enemy.level = Random.Range(enemy.lvlMin, enemy.lvlMax);
 
-        
+
     }
     public void RegisterCharacters(characterStats Char)
     {
         entityList.Add(Char);
-
-       
     }
 }

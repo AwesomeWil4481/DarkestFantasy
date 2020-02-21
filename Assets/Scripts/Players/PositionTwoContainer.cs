@@ -6,11 +6,6 @@ public class PositionTwoContainer : characterStats
 {
     public static PositionTwoContainer instance = null;
     public Animator animator;
-    [SerializeField]
-    public int Defense;
-    [SerializeField]
-    int Hp;
-
     bool KOed;
 
     void Awake()
@@ -26,12 +21,12 @@ public class PositionTwoContainer : characterStats
     }
     private void Start()
     {
-        Defense = defense;
-        Hp = HP;
         BattleManager.instance.RegisterCharacters(this);
-        defense = 10;
-        HP = 100;
+        speed -= speed * 2;
     }
+
+    EnemyStats _enemyStats;
+
     private void Update()
     {
         if (HP <= 1)
@@ -41,9 +36,30 @@ public class PositionTwoContainer : characterStats
             KOed = true;
             animator.SetBool("is dead", true);
         }
-        if(BattleManager.instance.fightQueue.Peek() == this)
+
+        if (BattleManager.instance.fightQueue.Peek() == this)
         {
-            print("Hello World");
+            if (Input.GetMouseButtonDown(0))
+            {
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+                if (hit.collider.gameObject.tag == "enemy")
+                {
+                    target = hit.collider.gameObject;
+
+                    _enemyStats = target.GetComponent<EnemyStats>();
+
+                    _enemyStats.pointer.SetActive(true);
+                    print("Hello World");
+                }
+            }
+
+            if (!_enemyStats != null)
+            {
+                // do something here
+            }
+
+            BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());
         }
     }
 }

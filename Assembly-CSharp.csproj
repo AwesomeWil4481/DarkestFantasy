@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\cameraMover.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Scripts\spriteRenderOrder.cs" />
+    <Compile Include="Assets\Target.cs" />
     <None Include="Assets\Tilemaps\Backyard - Free\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/wilhelm/Unity/Darkest Fantasy/Darkest-Fantasy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

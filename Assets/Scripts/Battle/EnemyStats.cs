@@ -22,6 +22,8 @@ public class EnemyStats : Entity
 
     float waitTime = 0.5f;
 
+    public GameObject pointer;
+
     public int speedMax = 5;
     public int speedMin = 1;
     public int allAbilities = 2;
@@ -37,10 +39,8 @@ public class EnemyStats : Entity
     public GameObject PositionFour;
     [HideInInspector]
     public int action;
-    RangeInt Range;
     void Start()
     {
-        Range = new RangeInt(speedMin, speedMax);
         int level = Random.Range(1, 3);
     }
 
@@ -51,6 +51,9 @@ public class EnemyStats : Entity
 
     void Update()
     {
-        print(gameObject.name + speed);
+        if(HP <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
