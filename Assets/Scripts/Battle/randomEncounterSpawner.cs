@@ -27,7 +27,7 @@ public class randomEncounterSpawner : MonoBehaviour
     Vector3 positionFourFour;
 
     Vector3 characterPosOne;
-    Vector3 characterPosTwo = new Vector3(7.75f,-0.25f,0);
+    Vector3 characterPosTwo = new Vector3(6f,1.25f,0);
     Vector3 characterPosThree;
     Vector3 characterPosFour;
 

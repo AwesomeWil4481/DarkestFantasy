@@ -1,0 +1,1198 @@
+fileFormatVersion: 2
+guid: 37e834947a58307478c62d8ba03d2dae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7136170934540447935
+    second: Terra-Trance_0
+  - first:
+      213: -7989212254033627435
+    second: Terra-Trance_1
+  - first:
+      213: -741035803699648675
+    second: Terra-Trance_2
+  - first:
+      213: -2961379388758262078
+    second: Terra-Trance_3
+  - first:
+      213: -2985014244946548274
+    second: Terra-Trance_4
+  - first:
+      213: -8431428911457116470
+    second: Terra-Trance_5
+  - first:
+      213: 6839741583683306751
+    second: Terra-Trance_6
+  - first:
+      213: 2152655265322930950
+    second: Terra-Trance_7
+  - first:
+      213: 5454297707073315901
+    second: Terra-Trance_8
+  - first:
+      213: -4620524772288741999
+    second: Terra-Trance_9
+  - first:
+      213: 689631321360661449
+    second: Terra-Trance_10
+  - first:
+      213: -3535917211852771489
+    second: Terra-Trance_11
+  - first:
+      213: -2983611703636299698
+    second: Terra-Trance_12
+  - first:
+      213: -953081056776380494
+    second: Terra-Trance_13
+  - first:
+      213: 2171996665709518836
+    second: Terra-Trance_14
+  - first:
+      213: -105244105835761483
+    second: Terra-Trance_15
+  - first:
+      213: 4038264108970414388
+    second: Terra-Trance_16
+  - first:
+      213: 3480012529984652025
+    second: Terra-Trance_17
+  - first:
+      213: 7161254827314131463
+    second: Terra-Trance_18
+  - first:
+      213: -737743290728329252
+    second: Terra-Trance_19
+  - first:
+      213: -234073453366218829
+    second: Terra-Trance_20
+  - first:
+      213: 7426575051957220651
+    second: Terra-Trance_21
+  - first:
+      213: 8911243529498198785
+    second: Terra-Trance_22
+  - first:
+      213: -7216197988379963321
+    second: Terra-Trance_23
+  - first:
+      213: 704019553001317717
+    second: Terra-Trance_24
+  - first:
+      213: -2801928825020604221
+    second: Terra-Trance_25
+  - first:
+      213: -5209789040226638147
+    second: Terra-Trance_26
+  - first:
+      213: -8027680459151924073
+    second: Terra-Trance_0
+  - first:
+      213: -6113979192229072176
+    second: Terra-Trance_1
+  - first:
+      213: 4062796997489214846
+    second: Terra-Trance_2
+  - first:
+      213: -4381549969778362157
+    second: Terra-Trance_3
+  - first:
+      213: -7057950778348834885
+    second: Terra-Trance_4
+  - first:
+      213: -4665272587198278457
+    second: Terra-Trance_5
+  - first:
+      213: -3317695919397195081
+    second: Terra-Trance_6
+  - first:
+      213: 5882798552876104062
+    second: Terra-Trance_7
+  - first:
+      213: 4373651635611314059
+    second: Terra-Trance_8
+  - first:
+      213: 359071823615507
+    second: Terra-Trance_9
+  - first:
+      213: 3657981501343120479
+    second: Terra-Trance_10
+  - first:
+      213: -5707575020115421964
+    second: Terra-Trance_11
+  - first:
+      213: -3652322933630903180
+    second: Terra-Trance_12
+  - first:
+      213: 7804519826786144000
+    second: Terra-Trance_13
+  - first:
+      213: -3198804221330215591
+    second: Terra-Trance_14
+  - first:
+      213: -39059491509645930
+    second: Terra-Trance_15
+  - first:
+      213: -2423939829804583202
+    second: Terra-Trance_16
+  - first:
+      213: -2591295452557775233
+    second: Terra-Trance_17
+  - first:
+      213: -1239903602971590784
+    second: Terra-Trance_18
+  - first:
+      213: 5445779209312916229
+    second: Terra-Trance_19
+  - first:
+      213: 6768190741410853049
+    second: Terra-Trance_20
+  - first:
+      213: -2672389083933142770
+    second: Terra-Trance_21
+  - first:
+      213: 5425611107390288052
+    second: Terra-Trance_22
+  - first:
+      213: 8611275474446277981
+    second: Terra-Trance_23
+  - first:
+      213: -6986516378857874807
+    second: Terra-Trance_24
+  - first:
+      213: 7580342538069786163
+    second: Terra-Trance_25
+  - first:
+      213: -70611606203233975
+    second: Terra-Trance_26
+  - first:
+      213: -3993663858833386223
+    second: Terra-Trance_27
+  - first:
+      213: 1124904982835073758
+    second: Terra-Trance_28
+  - first:
+      213: 494070584882437174
+    second: Terra-Trance_29
+  - first:
+      213: -2083698065625424505
+    second: Terra-Trance_30
+  - first:
+      213: -1390662742272859326
+    second: Terra-Trance_31
+  - first:
+      213: -5925147977234445936
+    second: Terra-Trance_32
+  - first:
+      213: 1980735773179929450
+    second: Terra-Trance_33
+  - first:
+      213: 817523792999979846
+    second: Terra-Trance_34
+  - first:
+      213: 3345765095640497561
+    second: Terra-Trance_35
+  - first:
+      213: -20171818647942363
+    second: Terra-Trance_36
+  - first:
+      213: 4301660079640523544
+    second: Terra-Trance_37
+  - first:
+      213: -6280742704093531406
+    second: Terra-Trance_38
+  - first:
+      213: 5048137183553230132
+    second: Terra-Trance_39
+  - first:
+      213: 8870175056317544660
+    second: Terra-Trance_40
+  - first:
+      213: -5680323700241984366
+    second: Terra-Trance_41
+  - first:
+      213: -7510263750869260132
+    second: Terra-Trance_42
+  - first:
+      213: 7186233842766245783
+    second: Terra-Trance_43
+  - first:
+      213: -5414751223024184920
+    second: Terra-Trance_44
+  - first:
+      213: -2232080642586800562
+    second: Terra-Trance_45
+  - first:
+      213: -761446820371816817
+    second: Terra-Trance_46
+  - first:
+      213: -3426555541209502472
+    second: Terra-Trance_47
+  - first:
+      213: 1977262076586375470
+    second: Terra-Trance_48
+  - first:
+      213: 5854887633800633289
+    second: Terra-Trance_49
+  - first:
+      213: -6157247974251343335
+    second: Terra-Trance_50
+  - first:
+      213: -3742832656460885234
+    second: Terra-Trance_51
+  - first:
+      213: -6338375401520091197
+    second: Terra-Trance_52
+  - first:
+      213: 6171100546855733762
+    second: Terra-Trance_53
+  - first:
+      213: 8006086623643164415
+    second: Terra-Trance_54
+  - first:
+      213: -5627079636271573621
+    second: Terra-Trance_55
+  - first:
+      213: -744062461544472826
+    second: Terra-Trance_56
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terra-Trance_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794a7e5a723f79090800000000000000
+      internalID: -8027680459151924073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d27e036158c62ba0800000000000000
+      internalID: -6113979192229072176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 143
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e754ed5f754f16830800000000000000
+      internalID: 4062796997489214846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 143
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8bcb5548b9133c0800000000000000
+      internalID: -4381549969778362157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf6356692f1d0e90800000000000000
+      internalID: -7057950778348834885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_5
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 143
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4dda3bc4f914fb0800000000000000
+      internalID: -4665272587198278457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 144
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b23193a32d25f1d0800000000000000
+      internalID: -3317695919397195081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 144
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79bc5d8d16e3a150800000000000000
+      internalID: 5882798552876104062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_8
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 144
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b872bef6df452bc30800000000000000
+      internalID: 4373651635611314059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_9
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 145
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316de7ce296410000800000000000000
+      internalID: 359071823615507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cb18e6bc2c3c230800000000000000
+      internalID: 3657981501343120479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_11
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 95
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4902d52ce9ac0b0800000000000000
+      internalID: -5707575020115421964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 96
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cdae784a7505dc0800000000000000
+      internalID: -3652322933630903180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_13
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 96
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fc41eae693f4c60800000000000000
+      internalID: 7804519826786144000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 96
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95da79932809b93d0800000000000000
+      internalID: -3198804221330215591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_15
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 99
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dc573799b357ff0800000000000000
+      internalID: -39059491509645930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6b39f319f6c5ed0800000000000000
+      internalID: -2423939829804583202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e6532e38ed90cd0800000000000000
+      internalID: -2591295452557775233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_18
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fb62d0e3afacee0800000000000000
+      internalID: -1239903602971590784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_19
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 96
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503dd40865b439b40800000000000000
+      internalID: 5445779209312916229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0b1e1be917ded50800000000000000
+      internalID: 6768190741410853049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01988e7944c9ead0800000000000000
+      internalID: -2672389083933142770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 47
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b079695e84ab4b40800000000000000
+      internalID: 5425611107390288052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_23
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 48
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d57656b65618770800000000000000
+      internalID: 8611275474446277981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a5abc9e58ea0f90800000000000000
+      internalID: -6986516378857874807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_25
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 48
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ebe614069c23960800000000000000
+      internalID: 7580342538069786163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_26
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 48
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9498c374e13250ff0800000000000000
+      internalID: -70611606203233975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_27
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 50
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1159be531e7a398c0800000000000000
+      internalID: -3993663858833386223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_28
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 48
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed293f33f177c9f00800000000000000
+      internalID: 1124904982835073758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_29
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c13e9449a4bd600800000000000000
+      internalID: 494070584882437174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d5a3336a73513e0800000000000000
+      internalID: -2083698065625424505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243a47c9a9f53bce0800000000000000
+      internalID: -1390662742272859326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0990157be45a5cda0800000000000000
+      internalID: -5925147977234445936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_33
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a636c4af0bcfc7b10800000000000000
+      internalID: 1980735773179929450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_34
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b913dee8d685b00800000000000000
+      internalID: 817523792999979846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_35
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d7d8bb0ab8e6e20800000000000000
+      internalID: 3345765095640497561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_36
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b040b76d558bff0800000000000000
+      internalID: -20171818647942363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_37
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813b37f1d0192bb30800000000000000
+      internalID: 4301660079640523544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra-Trance_38
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 0
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2f0e499c156d8a0800000000000000
+      internalID: -6280742704093531406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

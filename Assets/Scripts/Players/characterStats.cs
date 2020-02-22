@@ -4,10 +4,24 @@ using UnityEngine;
 
 public class characterStats : Entity
 {
-    public bool isTurn;
-    public GameObject target;
+    protected enum Action
+    {
+        nothing,
+        attack,
+        magic,
+        item,
+        defend
+    }
 
+    protected Action _action;
+
+    protected GameObject target;
+
+    protected int _minHp;
+    protected int _maxHP;
     public int enemyHP;
+
+    protected EnemyStats _enemyStats;
 
     void Start()
     {

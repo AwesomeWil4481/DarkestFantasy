@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyStats : Entity
 {
+    GameObject[] potentialTargets;
+
     int strength;
     [HideInInspector]
     int moneyOnDeath;
@@ -22,8 +24,15 @@ public class EnemyStats : Entity
 
     float waitTime = 0.5f;
 
-    public GameObject pointer;
+    public Animator animator;
 
+    float delay;
+    float delayMax;
+
+    bool _hasAttacked;
+
+    public GameObject pointer;
+    protected characterStats _targetStats;
     public int speedMax = 5;
     public int speedMin = 1;
     public int allAbilities = 2;
@@ -34,26 +43,56 @@ public class EnemyStats : Entity
     [HideInInspector]
     public GameObject attackedCharacter;
     public GameObject PositionOne;
-    public GameObject PositionTwo;
+    GameObject PositionTwo;
     public GameObject PositionThree;
     public GameObject PositionFour;
     [HideInInspector]
     public int action;
     void Start()
     {
+        delayMax = 1f;
+        delay = delayMax;
+        BattleManager.instance.RegisterEnemies(this);
+        PositionTwo = GameObject.FindGameObjectWithTag("position2");
         int level = Random.Range(1, 3);
     }
 
-    public IEnumerator Delay()
+    IEnumerator Delay()
     {
-        yield return new WaitForSecondsRealtime(waitTime);
+        animator.SetTrigger("Attack");
+        Target = PositionTwo.GetComponent<Entity>();
+        yield return new WaitForSeconds(0);
+        animator.SetTrigger("Attack");
+        isTurn = true;
+
+        if (!_hasAttacked)
+        {
+            print("blah");
+            Attack();
+            _hasAttacked = true;
+        }
     }
 
     void Update()
     {
-        if(HP <= 0)
+        if (HP <= 0)
         {
             Destroy(gameObject);
+        }
+        if (BattleManager.instance.fightQueue.Peek() == this)
+        {
+            positionToAttack = Random.Range(2, 2);
+            if (positionToAttack == 2 && !isTurn)
+            {
+                StartCoroutine(Delay());
+            }
+            delay -= Time.deltaTime;
+            if (delay <= 0)
+            {
+                delay = delayMax;
+                isTurn = false;
+                BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());
+            }
         }
     }
 }

@@ -58,7 +58,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7, y: 0.7}
   m_EdgeRadius: 0
 --- !u!114 &3903542599147503024
 MonoBehaviour:
@@ -78,11 +78,14 @@ MonoBehaviour:
   attack: 0
   defense: 0
   speed: 0
+  Target: {fileID: 0}
+  pointers: []
   magicPower: 0
   isTurn: 0
   lvlMin: 0
   lvlMax: 0
   positionToAttack: 0
+  animator: {fileID: 0}
   pointer: {fileID: 2544177692518573894}
   speedMax: 5
   speedMin: 1
@@ -91,7 +94,6 @@ MonoBehaviour:
   dmgDvivder: 0
   attackedCharacter: {fileID: 0}
   PositionOne: {fileID: 0}
-  PositionTwo: {fileID: 0}
   PositionThree: {fileID: 0}
   PositionFour: {fileID: 0}
   action: 0
@@ -248,7 +250,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1129534760759138766, guid: c4675e04b10be3448a47ceea3fcdd40e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4675e04b10be3448a47ceea3fcdd40e, type: 3}
 --- !u!1 &2544177692518573894 stripped
 GameObject:

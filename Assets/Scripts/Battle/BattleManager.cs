@@ -10,7 +10,7 @@ public class BattleManager : MonoBehaviour
 
     public Queue<Entity> fightQueue;
 
-    int startListAdd;
+    int startListAdd = 0;
 
     public GameObject TargetObject;
 
@@ -35,6 +35,7 @@ public class BattleManager : MonoBehaviour
     }
     void Update()
     {
+
         if (neverDone == true)
         {
             entityList = entityList
@@ -47,7 +48,10 @@ public class BattleManager : MonoBehaviour
             }
             neverDone = false;
         }
-        print(fightQueue.Peek());
+        if (fightQueue.Peek() == null)
+        {
+            fightQueue.Dequeue();
+        }
     }
     public void RegisterEnemies(EnemyStats enemy)
     {
@@ -57,10 +61,10 @@ public class BattleManager : MonoBehaviour
         enemy.speed = Random.Range(enemy.speedMin, enemy.speedMax);
         enemy.level = Random.Range(enemy.lvlMin, enemy.lvlMax);
 
-
     }
     public void RegisterCharacters(characterStats Char)
     {
         entityList.Add(Char);
+
     }
 }

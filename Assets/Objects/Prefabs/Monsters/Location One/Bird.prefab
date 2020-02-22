@@ -90,9 +90,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1999542896616894838}
-  - component: {fileID: 2158042534171667710}
   - component: {fileID: 2823106411686798058}
   - component: {fileID: 6671022685700609135}
+  - component: {fileID: 1704271371982248984}
   m_Layer: 0
   m_Name: Bird
   m_TagString: enemy
@@ -116,25 +116,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2158042534171667710
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5639821386117039653}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f246705f3b5351b40ba9d818be8bad0f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &2823106411686798058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,7 +140,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7, y: 0.7}
   m_EdgeRadius: 0
 --- !u!114 &6671022685700609135
 MonoBehaviour:
@@ -179,11 +160,14 @@ MonoBehaviour:
   attack: 0
   defense: 0
   speed: 0
+  Target: {fileID: 0}
+  pointers: []
   magicPower: 0
   isTurn: 0
   lvlMin: 0
   lvlMax: 0
   positionToAttack: 0
+  animator: {fileID: 1704271371982248984}
   pointer: {fileID: 6012250550908758473}
   speedMax: 5
   speedMin: 1
@@ -192,11 +176,28 @@ MonoBehaviour:
   dmgDvivder: 0
   attackedCharacter: {fileID: 0}
   PositionOne: {fileID: 0}
-  PositionTwo: {fileID: 5359062591435993474, guid: 93b760fd9e743f7449b4aff4a04a1488,
-    type: 3}
   PositionThree: {fileID: 0}
   PositionFour: {fileID: 0}
   action: 0
+--- !u!95 &1704271371982248984
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5639821386117039653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f246705f3b5351b40ba9d818be8bad0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6678163255416188569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -279,7 +280,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.05
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1129534760759138766, guid: c4675e04b10be3448a47ceea3fcdd40e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4675e04b10be3448a47ceea3fcdd40e, type: 3}
 --- !u!1 &6012250550908758473 stripped
 GameObject:

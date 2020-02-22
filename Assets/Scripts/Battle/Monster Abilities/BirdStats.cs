@@ -20,14 +20,9 @@ public class BirdStats : EnemyStats
     void Action()
     {
         action = (Random.Range(1, allAbilities));
-        positionToAttack = 2; // Random.Range(1,4);
         if (positionToAttack == 1)
         {
             attackedCharacter = PositionOne;
-        }
-        if (positionToAttack == 2)
-        {
-            attackedCharacter = PositionTwo;
         }
         if (positionToAttack == 3)
         {
@@ -46,7 +41,6 @@ public class BirdStats : EnemyStats
             var dmgCalc = (attack * (dmgMultiplier - PositionTwoContainer.instance.defense) / dmgDvivder) + 1;
             PositionTwoContainer.instance.HP -= dmgCalc;
             print(gameObject.name + " Hit for " + dmgCalc);
-            Delay();
         }
         if (action == 2)
         {
