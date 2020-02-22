@@ -89,6 +89,7 @@ public class EnemyStats : Entity
             delay -= Time.deltaTime;
             if (delay <= 0)
             {
+                _hasAttacked = false;
                 delay = delayMax;
                 isTurn = false;
                 BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());

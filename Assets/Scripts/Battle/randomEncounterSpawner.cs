@@ -35,7 +35,7 @@ public class randomEncounterSpawner : MonoBehaviour
     void Start()
     {
         Instantiate(characterTwo, characterPosTwo, Quaternion.identity);
-        numberOfEnemies = Random.Range(1, 4);
+        numberOfEnemies = Random.Range(4, 4);
         currentLocation = locationOne;
 
         if (numberOfEnemies == 1 || numberOfEnemies == 2)
