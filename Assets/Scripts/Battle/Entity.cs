@@ -1,28 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Entity : MonoBehaviour
+public abstract class Entity : MonoBehaviour
 {
+    public string enemyName;
     public int level;
     public int HP;
     public int MP;
-    public int attack;
     public int defense;
     public int speed;
+    public int strength;
+    public int battlePower;
+
     public Entity Target;
 
-
-    public GameObject[] pointers;
+    public bool isCharacter;
 
     private void Start()
-    {
-        pointers = GameObject.FindGameObjectsWithTag("pointer");
+    {        
     }
 
-    public void Attack()
+    public virtual void Attack()
     {
-        Debug.Log(this + "attacking");
-        Target.HP -= 10;
     }
 }

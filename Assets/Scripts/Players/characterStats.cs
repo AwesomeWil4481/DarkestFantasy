@@ -45,4 +45,17 @@ public class characterStats : Entity
             Debug.Log("Target Position: " + hit.collider.gameObject.transform.position);
         }
     }
+
+    public override void Attack()
+    {
+        var strengthCalc = strength >= 128 ? 255 : strength * 2;
+        var attackPower = battlePower + strengthCalc;
+
+        var damage = battlePower + ((level * level * attackPower) / 256) * 3 / 2;
+        damage = (damage * Random.Range(224, 255) / 256) + 1;
+
+        print($"character damage: {damage}");
+
+        Target.HP -= damage;
+    }
 }

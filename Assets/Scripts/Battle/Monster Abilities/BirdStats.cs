@@ -38,9 +38,6 @@ public class BirdStats : EnemyStats
         {
             dmgDvivder = Random.Range(240, 270);
             dmgMultiplier = Random.Range(240, 270);
-            var dmgCalc = (attack * (dmgMultiplier - PositionTwoContainer.instance.defense) / dmgDvivder) + 1;
-            PositionTwoContainer.instance.HP -= dmgCalc;
-            print(gameObject.name + " Hit for " + dmgCalc);
         }
         if (action == 2)
         {

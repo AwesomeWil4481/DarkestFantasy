@@ -69,6 +69,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\LocationManager.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
     <Compile Include="Assets\Scripts\Battle\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\Battle\Entity.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\Scripts\Players\characterStats.cs" />
     <Compile Include="Assets\Scripts\cameraMover.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
+    <Compile Include="Assets\Scripts\something.cs" />
     <Compile Include="Assets\Scripts\spriteRenderOrder.cs" />
     <Compile Include="Assets\Target.cs" />
     <None Include="Assets\Tilemaps\Backyard - Free\Readme.txt" />

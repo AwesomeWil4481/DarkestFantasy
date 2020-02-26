@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
-public class randomEncounterSpawner : MonoBehaviour
+public class randomEncounterSpawner : LocationManager
 {
     public GameObject[] locationOne;
     public GameObject[] currentLocation;
@@ -37,7 +38,6 @@ public class randomEncounterSpawner : MonoBehaviour
         Instantiate(characterTwo, characterPosTwo, Quaternion.identity);
         numberOfEnemies = Random.Range(4, 4);
         currentLocation = locationOne;
-
         if (numberOfEnemies == 1 || numberOfEnemies == 2)
         {
             positionFourOne = OneOne.transform.position;

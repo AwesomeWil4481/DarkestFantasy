@@ -1,0 +1,30 @@
+{
+"Name": "Hillsdale",
+"AvailableEnemies": [
+  {
+    "Name": "Mini Mouse",
+    "Level": 12,
+    "HP": 1223,
+    "MP": 43,
+    "defense": 24,
+    "speed": 10,
+    "strength": 5,
+    "battlepower": 3
+  },
+  {
+    "Name": "Sewer Rat",
+    "Level": 6,
+    "HP": 123,
+    "MP": 0,
+    "defense": 5,
+    "speed": 8,
+    "strength": 2,
+    "battlepower": 1
+  }
+],
+"AvailableItems": [
+],
+"GameEvents": [
+]
+
+}

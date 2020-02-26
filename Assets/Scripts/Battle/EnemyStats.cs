@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class EnemyStats : Entity
 {
     GameObject[] potentialTargets;
 
-    int strength;
     [HideInInspector]
     int moneyOnDeath;
     int expOnDeath;
@@ -54,7 +54,8 @@ public class EnemyStats : Entity
         delay = delayMax;
         BattleManager.instance.RegisterEnemies(this);
         PositionTwo = GameObject.FindGameObjectWithTag("position2");
-        int level = Random.Range(1, 3);
+        level = Random.Range(3, 6);
+        strength = Random.Range(56, 63);
     }
 
     IEnumerator Delay()
@@ -95,5 +96,15 @@ public class EnemyStats : Entity
                 BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());
             }
         }
+    }
+
+    public override void Attack()
+    {
+        var damage = level * level * (battlePower * 4 + strength) / 256;
+        damage = (damage * Random.Range(224, 255) / 256) + 1;
+
+        print($"enemy damage: {damage}");
+
+        Target.HP -= damage;
     }
 }
