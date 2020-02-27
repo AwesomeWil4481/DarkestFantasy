@@ -146,16 +146,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318ce7cb5c4a8c0458c759885e789fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyName: 
   level: 10
   HP: 100
   MP: 0
   defense: 0
-  speed: 6
+  speed: 10
   strength: 70
   battlePower: 34
-  Target: {fileID: 0}
-  isCharacter: 1
+  _target: {fileID: 0}
   enemyHP: 0
   animator: {fileID: 7149825288924469020}
+  bar: {fileID: 0}
   charTwoContainer: {fileID: 0}
   charTwo: {fileID: 0}
+  hitAll: {fileID: 0}

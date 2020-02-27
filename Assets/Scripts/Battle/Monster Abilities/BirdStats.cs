@@ -7,15 +7,9 @@ public class BirdStats : EnemyStats
     private void Start()
     {
         BattleManager.instance.RegisterEnemies(this);
-        speedMin = speedMin -= speedMin;
-        speedMax = speedMax -= speedMax;
     }
     private void Update()
     {
-        if (isTurn == true)
-        {
-            Action();
-        }
     }
     void Action()
     {

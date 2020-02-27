@@ -14,10 +14,19 @@ public class BattleManager : MonoBehaviour
 
     public GameObject TargetObject;
 
+    float startDelay;
+
+    int enemiesLeft;
+    int old = 0;
+    int numberOfCharacters;
+
+    public GameObject bar;
+
     bool neverDone;
     List<Entity> entityList;
     void Start()
     {
+        startDelay = 1;
         neverDone = true;
         entityList = new List<Entity>();
         fightQueue = new Queue<Entity>();
@@ -35,8 +44,13 @@ public class BattleManager : MonoBehaviour
     }
     void Update()
     {
-
-        if (neverDone == true)
+        startDelay -= Time.deltaTime;
+        if (enemiesLeft == 0)
+        {
+            print("you win!");
+            StartCoroutine(SceneTransition.instance.EndScene("SampleScene"));
+        }
+        if (neverDone == true)//&& startDelay <= 0)
         {
             entityList = entityList
            .OrderBy(w => w.speed)
@@ -56,15 +70,12 @@ public class BattleManager : MonoBehaviour
     public void RegisterEnemies(EnemyStats enemy)
     {
         entityList.Add(enemy);
-        enemy.speedMin -= (enemy.speedMin * 2);
-        enemy.speedMax -= enemy.speedMax * 2;
-        enemy.speed = Random.Range(enemy.speedMin, enemy.speedMax);
         enemy.level = Random.Range(enemy.lvlMin, enemy.lvlMax);
-
+        enemiesLeft += 1;
     }
     public void RegisterCharacters(characterStats Char)
     {
         entityList.Add(Char);
-
+        numberOfCharacters += 1;
     }
 }

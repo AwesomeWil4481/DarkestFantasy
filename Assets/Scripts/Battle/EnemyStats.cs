@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class EnemyStats : Entity
+public class EnemyStats : Abilities
 {
     GameObject[] potentialTargets;
 
@@ -15,7 +15,7 @@ public class EnemyStats : Entity
     int magicEvasion;
     int magicDefense;
 
-    public bool isTurn;
+    bool isTurn;
 
     public int lvlMin;
     public int lvlMax;
@@ -33,8 +33,6 @@ public class EnemyStats : Entity
 
     public GameObject pointer;
     protected characterStats _targetStats;
-    public int speedMax = 5;
-    public int speedMin = 1;
     public int allAbilities = 2;
     [HideInInspector]
     public int dmgMultiplier;
@@ -48,11 +46,16 @@ public class EnemyStats : Entity
     public GameObject PositionFour;
     [HideInInspector]
     public int action;
+
+    private void Awake()
+    {
+        BattleManager.instance.RegisterEnemies(this);
+    }
     void Start()
     {
         delayMax = 1f;
         delay = delayMax;
-        BattleManager.instance.RegisterEnemies(this);
+        speed -= speed * 2;
         PositionTwo = GameObject.FindGameObjectWithTag("position2");
         level = Random.Range(3, 6);
         strength = Random.Range(56, 63);
@@ -61,7 +64,7 @@ public class EnemyStats : Entity
     IEnumerator Delay()
     {
         animator.SetTrigger("Attack");
-        Target = PositionTwo.GetComponent<Entity>();
+        _target = PositionTwo.GetComponent<Entity>();
         yield return new WaitForSeconds(0);
         animator.SetTrigger("Attack");
         isTurn = true;
@@ -105,6 +108,6 @@ public class EnemyStats : Entity
 
         print($"enemy damage: {damage}");
 
-        Target.HP -= damage;
+        _target.HP -= damage;
     }
 }

@@ -1,14 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
     public float speed;
 
     bool nextToObject = false;
+    bool firstTime = true;
 
     private Rigidbody2D PCRB;
+
+    public float RETimer;
+    public float RETimerMax;
+    public float REValue;
+    public float REAreaReq;
 
     private Vector3 movement;
     private Vector3 posNeg;
@@ -24,6 +31,10 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
+        REAreaReq = 1f;
+        RETimerMax = 2f;
+        RETimer = RETimerMax;
+        print(RETimer);
         posPos = new Vector3(4, 4, 0);
         posNeg = new Vector3(4, -4, 0);
         negPos = new Vector3(-4, 4, 0);
@@ -41,16 +52,28 @@ public class playerMovement : MonoBehaviour
         var botRight = Vector3.Angle(movement, posNeg);
         var topLeft = Vector3.Angle(movement, negPos);
         var topRight = Vector3.Angle(movement, posPos);
-
-
-
+        RETimer -= Time.deltaTime;
         movement = PCRB.velocity;
         if (movement == zero)
         {
             playerAnimator.SetBool("moving", false);
         }
-        if (nextToObject == false   )
+        if (RETimer <= 0)
         {
+            RETimer = RETimerMax;
+            REValue = Random.value;
+            print("timer done");
+            if(REValue <= REAreaReq && !firstTime)
+            {
+                firstTime = true;
+                print("switching scenes");
+                StartCoroutine(SceneTransition.instance.EndScene("Fighting Scene"));
+            }
+            firstTime = false;
+        }
+        if (nextToObject == false)
+        {
+
             if (botLeft <= 90 && botRight <= 90 && movement != zero)
             {
                 playerAnimator.SetFloat("moveY", -1);

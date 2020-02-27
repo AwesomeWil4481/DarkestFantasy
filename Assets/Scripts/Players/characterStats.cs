@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class characterStats : Entity
+public class characterStats : Abilities
 {
     protected enum Action
     {
@@ -56,6 +56,6 @@ public class characterStats : Entity
 
         print($"character damage: {damage}");
 
-        Target.HP -= damage;
+        _target.HP -= damage;
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 176690271622328612}
   - component: {fileID: 9083078610503465260}
   m_Layer: 0
-  m_Name: Bird
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,24 +154,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad50026db5e238642aac22e403e93594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
-  HP: 49
+  enemyName: Darkwind
+  level: 10
+  HP: 50
   MP: 0
-  defense: 0
-  speed: 0
-  strength: 45
+  defense: 10
+  speed: 4
+  strength: 20
   battlePower: 0
-  Target: {fileID: 0}
-  isCharacter: 0
+  _target: {fileID: 0}
   magicPower: 0
-  isTurn: 0
   lvlMin: 0
   lvlMax: 0
   positionToAttack: 0
   animator: {fileID: 1704271371982248984}
   pointer: {fileID: 6012250550908758473}
-  speedMax: 5
-  speedMin: 1
   allAbilities: 2
   dmgMultiplier: 0
   dmgDvivder: 0

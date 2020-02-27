@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class PositionTwoContainer : characterStats
 {
-    public static PositionTwoContainer instance = null;
     public Animator animator;
     bool KOed;
 
     float _delay;
     float _delayMax = .2f;
+    float _startDelay;
 
     bool _targetSelected;
 
-    public GameObject bar;
+    GameObject bar;
+
     GameObject _textObject;
+
     Text _posTwoText;
 
     public GameObject charTwoContainer;
@@ -25,34 +27,29 @@ public class PositionTwoContainer : characterStats
     public GameObject hitAll;
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        BattleManager.instance.RegisterCharacters(this);
+        _textObject = GameObject.FindGameObjectWithTag("postwotext");
+        _posTwoText = _textObject.GetComponent<Text>();
+        bar = GameObject.FindGameObjectWithTag("postwobar");
+        bar.SetActive(false);
     }
+
     private void Start()
     {
         hitAll = GameObject.FindGameObjectWithTag("hitallbutton");
         hitAll.SetActive(false);
-        bar = GameObject.FindGameObjectWithTag("postwobar");
-        BattleManager.instance.RegisterCharacters(this);
-        _textObject = GameObject.FindGameObjectWithTag("postwotext");
-        _posTwoText = _textObject.GetComponent<Text>();
         _delay = _delayMax;
         _targetSelected = false;
         _maxHP = 100;
         _minHp = _maxHP / 10 + 1;
         speed -= speed * 2;
+        _startDelay = 1f;
     }
 
     private void Update()
     {
-        _posTwoText.text = "HP     "+ HP +" / " +_maxHP;
-        if (HP <= 1)
+        _posTwoText.text = "HP     " + HP + " / " + _maxHP;
+        if (HP <= 0)
         {
             print("silly saurid, ya be dead again");
             HP = 0;
@@ -67,7 +64,11 @@ public class PositionTwoContainer : characterStats
 
         if (BattleManager.instance.fightQueue.Peek() == this)
         {
-            bar.SetActive(true);
+            _startDelay -= Time.deltaTime;
+            if (_startDelay <= 0)
+            {
+                bar.SetActive(true);
+            }
             if (!KOed)
             {
                 if (_action == Action.attack)
@@ -88,7 +89,7 @@ public class PositionTwoContainer : characterStats
                                 target = hit.collider.gameObject;
 
                                 _enemyStats = target.GetComponent<EnemyStats>();
-                                Target = target.GetComponent<EnemyStats>();
+                                _target = target.GetComponent<EnemyStats>();
 
                                 _enemyStats.pointer.SetActive(true);
                                 print("Hello World");

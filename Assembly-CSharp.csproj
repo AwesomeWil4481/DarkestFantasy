@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Players\Position Three Container.cs" />
     <Compile Include="Assets\Scripts\Players\PositionTwoContainer.cs" />
     <Compile Include="Assets\Scripts\Players\characterStats.cs" />
+    <Compile Include="Assets\Scripts\UI\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\cameraMover.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Scripts\something.cs" />
