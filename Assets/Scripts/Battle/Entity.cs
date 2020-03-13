@@ -2,7 +2,7 @@
 
 public class Entity : MonoBehaviour
 {
-    public string enemyName;
+    public string Name;
     public int level;
     public int HP;
     public int MP;

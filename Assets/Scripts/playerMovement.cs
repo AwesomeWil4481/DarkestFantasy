@@ -31,7 +31,7 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
-        REAreaReq = 1f;
+        REAreaReq = 0f;
         RETimerMax = 2f;
         RETimer = RETimerMax;
         print(RETimer);
@@ -63,13 +63,13 @@ public class playerMovement : MonoBehaviour
             RETimer = RETimerMax;
             REValue = Random.value;
             print("timer done");
+            firstTime = false;
             if(REValue <= REAreaReq && !firstTime)
             {
                 firstTime = true;
                 print("switching scenes");
                 StartCoroutine(SceneTransition.instance.EndScene("Fighting Scene"));
             }
-            firstTime = false;
         }
         if (nextToObject == false)
         {
@@ -79,7 +79,6 @@ public class playerMovement : MonoBehaviour
                 playerAnimator.SetFloat("moveY", -1);
                 playerAnimator.SetFloat("moveX", 0);
                 playerAnimator.SetBool("moving", true);
-
             }
 
             if (topRight <= 90 && topLeft <= 90 && movement != zero)

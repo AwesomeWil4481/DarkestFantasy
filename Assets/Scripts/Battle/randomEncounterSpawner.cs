@@ -33,16 +33,23 @@ public class randomEncounterSpawner : LocationManager
     Vector3 characterPosFour;
 
     int numberOfEnemies;
+    int _position;
+    private void Awake()
+    {
+    }
+
     void Start()
     {
         Instantiate(characterTwo, characterPosTwo, Quaternion.identity);
-        numberOfEnemies = Random.Range(4, 4);
+        numberOfEnemies = Random.Range(1, 1);
         currentLocation = locationOne;
         if (numberOfEnemies == 1 || numberOfEnemies == 2)
         {
             positionFourOne = OneOne.transform.position;
 
             objectToInstantiate = currentLocation[Random.Range(0, currentLocation.Length)];
+            var thing = objectToInstantiate.GetComponent<EnemyStats>();
+            thing._position = 1;
             Instantiate(objectToInstantiate, positionFourOne, Quaternion.identity);
         }
 

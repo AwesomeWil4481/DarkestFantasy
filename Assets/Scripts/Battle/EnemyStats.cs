@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class EnemyStats : Abilities
 {
@@ -47,12 +48,30 @@ public class EnemyStats : Abilities
     [HideInInspector]
     public int action;
 
+    public int _position;
+
+    public Text positionOneText;
+    public Text positionTwoText;
+    public Text positionThreeText;
+    public Text positionFourText;
+    public Text positionFiveText;
+    public Text positionSixText;
+    public Text positionSevenText;
+    public GameObject thisTextObject;
     private void Awake()
     {
         BattleManager.instance.RegisterEnemies(this);
     }
     void Start()
     {
+        print(_position);
+        if (_position == 1)
+        {
+            thisTextObject = GameObject.Find("positionOneText");
+            positionOneText = thisTextObject.GetComponent<Text>();
+            positionOneText.text = "hi";
+
+        }
         delayMax = 1f;
         delay = delayMax;
         speed -= speed * 2;
@@ -81,6 +100,7 @@ public class EnemyStats : Abilities
     {
         if (HP <= 0)
         {
+            BattleManager.instance.enemiesLeft -= 1;
             Destroy(gameObject);
         }
         if (BattleManager.instance.fightQueue.Peek() == this)

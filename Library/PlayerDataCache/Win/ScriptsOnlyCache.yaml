@@ -4,8 +4,9 @@ ScriptsOnlyBuild:
     - BattleManager
     - EnemyStats
     - FloatingJoystick
+    - LocationManager
     - PositionTwoContainer
-    - Target
+    - SceneTransition
     - cameraMover
     - conversationManager
     - playerMovement
@@ -86,15 +87,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 12652}
+      Script: {instanceID: 12654}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12744}
     - Class: 114
-      Script: {instanceID: 12872}
+      Script: {instanceID: 12848}
     - Class: 114
-      Script: {instanceID: 13132}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 18768}
+      Script: {instanceID: 13140}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -124,13 +125,21 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 68
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -163,9 +172,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12034}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12744}
     - Class: 114
-      Script: {instanceID: 13132}
+      Script: {instanceID: 12774}
+    - Class: 114
+      Script: {instanceID: 12848}
+    - Class: 114
+      Script: {instanceID: 12880}
+    - Class: 114
+      Script: {instanceID: 13140}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -259,7 +274,7 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: 826048d6f5661e73220dfc201ab019e1
+      Hash: 60dee084e8d91b7e9b54fc12f2fa5887
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: playerMovement
@@ -355,7 +370,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: e6f85f84047ac74486333c1c8c9d3203
+      Hash: e76e37b63beedbba6561b34db597288e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: randomEncounterSpawner
@@ -409,7 +424,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: b7ac07fb480fe9092f83c7868c9004ba
+      Hash: da97633b45c07b657e12e41d149fe7d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BirdStats
@@ -427,7 +442,7 @@ ScriptsOnlyBuild:
     className: conversationManager
   - hash:
       serializedVersion: 2
-      Hash: 1a4afddc8365ca5be1b983f93a3cf51b
+      Hash: 4ca6efa014df86ed5b54237b6edb0f76
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: characterStats
@@ -505,13 +520,13 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 37d6e6e8677ddfd35d41fea7dddc97a5
+      Hash: c762748ac4b7a9aaf26829e174794d37
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Entity
   - hash:
       serializedVersion: 2
-      Hash: 856ae04b1ca126b888106506423f5d8f
+      Hash: 44b9e47cd7e7c567652576d5e3e38b94
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BattleManager
@@ -577,7 +592,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: af1e61e94821173da9ec040b26f95e35
+      Hash: 19a109ce33558eebe156193b2d18a762
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PositionTwoContainer
@@ -607,13 +622,31 @@ ScriptsOnlyBuild:
     className: JoystickPlayerExample
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Target
+  - hash:
+      serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: b7ac07fb480fe9092f83c7868c9004ba
+      Hash: add4a3520efd3e068735ad3a68d739e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocationManager
+  - hash:
+      serializedVersion: 2
+      Hash: 6d16efec13c23d36e436bbd0fa7093b1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneTransition
+  - hash:
+      serializedVersion: 2
+      Hash: da97633b45c07b657e12e41d149fe7d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyStats
@@ -731,12 +764,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Target
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

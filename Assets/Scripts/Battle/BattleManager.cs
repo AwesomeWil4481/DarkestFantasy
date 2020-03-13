@@ -16,7 +16,8 @@ public class BattleManager : MonoBehaviour
 
     float startDelay;
 
-    int enemiesLeft;
+    public int enemiesLeft;
+    int oldEnemies;
     int old = 0;
     int numberOfCharacters;
 
@@ -45,7 +46,12 @@ public class BattleManager : MonoBehaviour
     void Update()
     {
         startDelay -= Time.deltaTime;
-        if (enemiesLeft == 0)
+        if (oldEnemies != enemiesLeft)
+        {
+            oldEnemies = enemiesLeft;
+            print(enemiesLeft);
+        }
+        if (oldEnemies == 0)
         {
             print("you win!");
             StartCoroutine(SceneTransition.instance.EndScene("SampleScene"));
@@ -72,6 +78,7 @@ public class BattleManager : MonoBehaviour
         entityList.Add(enemy);
         enemy.level = Random.Range(enemy.lvlMin, enemy.lvlMax);
         enemiesLeft += 1;
+        oldEnemies += 1;
     }
     public void RegisterCharacters(characterStats Char)
     {
