@@ -81,6 +81,13 @@ MonoBehaviour:
   strength: 40
   battlePower: 0
   _target: {fileID: 0}
+  lootTable:
+  - _itemType: 0
+    description: 
+    name: Sword
+    ID: 0
+    count: 0
+    equipable: 0
   magicPower: 0
   lvlMin: 0
   lvlMax: 0

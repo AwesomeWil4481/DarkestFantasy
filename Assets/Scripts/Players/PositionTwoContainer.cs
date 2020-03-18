@@ -86,6 +86,37 @@ public class PositionTwoContainer : characterStats
                     {
                         _delay -= Time.deltaTime;
                     }
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+                        if (hit.collider.gameObject.tag == "enemy")
+                        {
+                            print("enemy selected");
+                            if (target != hit)
+                            {
+                                target = hit.collider.gameObject;
+
+                                _enemyStats = target.GetComponent<EnemyStats>();
+                                _target = target.GetComponent<EnemyStats>();
+
+                                _enemyStats.pointer.SetActive(true);
+                                print("Hello World");
+                                _targetSelected = true;
+                            }
+                            if (target == hit && _delay <= 0)
+                            {
+                                Attack();
+                                _enemyStats = target.GetComponent<EnemyStats>();
+                                _enemyStats.pointer.SetActive(false);
+                                _action = Action.nothing;
+                                _targetSelected = false;
+                                _delay = _delayMax;
+                                target = null;
+                                BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());
+                            }
+                        }
+                    }
                     foreach (Touch touch in Input.touches)
                     {
                         if (touch.phase == TouchPhase.Began)

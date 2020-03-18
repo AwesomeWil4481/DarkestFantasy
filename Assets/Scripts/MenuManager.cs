@@ -3,14 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class MenuManager : MonoBehaviour
 {
+    public static MenuManager instance;
+
     public GameObject menuPanel;
     public GameObject mainMenuButton;
     public GameObject mainMenuScreen;
     public GameObject inventoryScreen;
     public GameObject selectedItem;
+    public GameObject saveButton;
+
+    public bool canSave;
 
     public List<string> itemNames = new List<string>();
 
@@ -20,12 +26,18 @@ public class MenuManager : MonoBehaviour
 
     public Text[] thing;
 
+    int otherNumber;
     int number;
     int posX = 320;
     int posY = 915;
     int rotationNumber = 1;
 
     bool wantToAdd;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -46,13 +58,14 @@ public class MenuManager : MonoBehaviour
 
     public void ItemScreenEnter()
     {
+        ItemList.SavedItems = SceneItemList.savedItems;
+
+        print("Number of Items: " + ItemList.SavedItems.Count);
         inventoryScreen.SetActive(true);
         mainMenuScreen.SetActive(false);
-
         foreach (Item i in ItemList.SavedItems)
         {
             //Canvas cheat sheet x - 960, y - 540.
-
             GameObject go = Instantiate(ItemBar, new Vector3(posX, posY, 0), Quaternion.identity) as GameObject;
             go.transform.parent = GameObject.Find("Item Screen").transform;
             thing = go.GetComponentsInChildren<Text>();
@@ -69,30 +82,24 @@ public class MenuManager : MonoBehaviour
             }
 
             wantToAdd = true;
-
-            print("Number of Items " + itemNames.Count);
-            foreach (string w in itemNames)
+            if (itemNames != null)
             {
-                print(w);
-                print(i.name);
-                if (w == i.name)
+                foreach (string w in itemNames)
                 {
-                    var currentObject = GameObject.Find(i.name);
-                    var otherThing = currentObject.GetComponent<ScreenItem>();
+                    if (w == i.name)
+                    {
+                        var currentObject = GameObject.Find(i.name);
+                        var otherThing = currentObject.GetComponent<ScreenItem>();
 
-                    otherThing.count += 1;
-                    print("ahhhs count is "+ahhh.count);
-                    print(otherThing.count);
-                    print(thing[1].gameObject.name);
+                        otherThing.count += 1;
+                        Destroy(go);
+                        wantToAdd = false;
+                        break;
+                    }
+                    else
+                    {
 
-                    Destroy(go);
-                    print("destroying" + i.name);
-                    wantToAdd = false;
-                    break;
-                }
-                else
-                {
-
+                    }
                 }
             }
 
@@ -100,11 +107,10 @@ public class MenuManager : MonoBehaviour
             {
                 itemNames.Add(i.name);
             }
-            print(i.description);
+
 
             if (rotationNumber % 3 == 0)
             {
-                print("Rotation Number is  " + rotationNumber);
                 posY += -110;
                 posX = 320;
             }
@@ -114,6 +120,10 @@ public class MenuManager : MonoBehaviour
             }
             rotationNumber += 1;
         }
+        itemNames.Clear();
+        posX = 320;
+        posY = 915;
+        rotationNumber = 1;
     }
 
     public void ItemSelection(GameObject _gameObject)
@@ -143,8 +153,14 @@ public class MenuManager : MonoBehaviour
         {
             Destroy(i);
         }
+        print(ItemList.SavedItems.Count);
         mainMenuScreen.SetActive(true);
         inventoryScreen.SetActive(false);
+    }
+
+    public void SavePressed()
+    {
+        InventoryManager.instance.SaveGame();
     }
 
     public void OnMenuPress()
@@ -152,5 +168,9 @@ public class MenuManager : MonoBehaviour
         mainMenuButton.SetActive(false);
         mainMenuScreen.SetActive(true);
         menuPanel.SetActive(true);
+        if (canSave)
+        {
+            saveButton.SetActive(true);
+        }
     }
 }

@@ -6,6 +6,15 @@ using System.IO;
 
 public class InventoryManager : MonoBehaviour
 {
+    public static InventoryManager instance;
+
+    int number;
+
+    private void Awake()
+    {
+
+        instance = this;
+    }
 
     void Start()
     {
@@ -14,12 +23,6 @@ public class InventoryManager : MonoBehaviour
 
     public void LoadGame()
     {
-        var fileData = File.ReadAllText(Application.persistentDataPath + "/Inventory.json");
-        ItemList deserializedData = JsonUtility.FromJson<ItemList>(fileData);
-
-        ItemList.SavedItems = deserializedData.items;
-        ItemList.instance.items = deserializedData.items;
-
         print(ItemList.SavedItems[0]._itemType);
 
         //var varu = new ItemList() { items = ItemList.SavedItems };
@@ -29,6 +32,8 @@ public class InventoryManager : MonoBehaviour
 
     public void SaveGame()
     {
+        ItemList.SavedItems = SceneItemList.savedItems;
+
         var varu = new ItemList() { items = ItemList.SavedItems };
         string character = JsonUtility.ToJson(varu);
         File.WriteAllText(Application.persistentDataPath + "/Inventory.json", character);
@@ -39,6 +44,10 @@ public class InventoryManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             LoadGame();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            ItemList.SavedItems.Add(new Item {count = 1, description = "",name = "Potion", _itemType = Item.itemType.Consumable });
         }
     }
 }

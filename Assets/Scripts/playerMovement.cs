@@ -15,7 +15,7 @@ public class playerMovement : MonoBehaviour
     public float RETimer;
     public float RETimerMax;
     public float REValue;
-    public float REAreaReq;
+    public float REAreaReq = 0.2f;
 
     private Vector3 movement;
     private Vector3 posNeg;
@@ -31,7 +31,6 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
-        REAreaReq = 0.2f;
         RETimerMax = 2f;
         RETimer = RETimerMax;
 

@@ -147,13 +147,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Terra
-  level: 10
-  HP: 100
-  MP: 0
+  level: 0
+  HP: 15
+  MP: 10
   defense: 0
-  speed: 10
-  strength: 70
-  battlePower: 34
+  speed: 0
+  strength: 0
+  battlePower: 0
   _target: {fileID: 0}
   enemyHP: 0
   animator: {fileID: 7149825288924469020}

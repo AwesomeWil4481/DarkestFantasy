@@ -23,7 +23,7 @@ public class CharacterStatisticsSerializer : MonoBehaviour
 
     void Start()
     {
-    
+
     }
 
     void Update()
@@ -31,41 +31,6 @@ public class CharacterStatisticsSerializer : MonoBehaviour
         if (!neverDone)
         {
             LoadCharacter();
-            //var openScene = SceneManager.GetActiveScene();
-            //sceneName = openScene.name;
-            //var nameData = File.ReadAllText(Application.persistentDataPath + "/SavedCharacters.json");
-            //psc deserilizedNames = JsonUtility.FromJson<psc>(nameData);
-
-            //if (sceneName == "Fighting Scene")
-            //{
-            //    otherNumber = characterNumber + 1;
-            //    print("character Starting");
-            //    print(deserilizedNames.pps[0].characterName);
-            //    print(nameNumber);
-            //    print("Position " + otherNumber + "(Clone)");
-            //    print(deserilizedNames.pps[nameNumber].characterName);
-
-            //    characterObject = GameObject.FindGameObjectWithTag("position2");
-            //    var sdsds = characterObject.GetComponent<PositionTwoContainer>();
-            //    var sdaw = sdsds.Name;
-            //    foreach (ActiveCharacters i in deserilizedNames.pps)
-            //    {
-            //        if (deserilizedNames.pps[nameNumber].characterName == sdaw)
-            //        {
-            //            var fileData = File.ReadAllText(Application.persistentDataPath + "/"+ deserilizedNames.pps[nameNumber].characterName+".json");
-            //            SavedCharacters deserilizedData = JsonUtility.FromJson<SavedCharacters>(fileData);
-            //            SavedCharacters.savedStats = deserilizedData.currentStats;
-            //            sdsds.HP = deserilizedData.currentStats[characterNumber].HP;
-            //            print("character loaded" + characterNumber);
-            //            var characterStats = characters[characterNumber].GetComponent<characterStats>();
-
-            //        }
-            //        else
-            //        {
-            //            nameNumber += 1;
-            //        }
-            //    }
-            //}
             neverDone = true;
         }
 
@@ -83,47 +48,43 @@ public class CharacterStatisticsSerializer : MonoBehaviour
         var nameData = File.ReadAllText(Application.persistentDataPath + "/SavedCharacters.json");
         psc deserilizedNames = JsonUtility.FromJson<psc>(nameData);
 
-        
 
-        if (sceneName == "Fighting Scene")
+
+        otherNumber = characterNumber + 1;
+        print("character Starting");
+        print(deserilizedNames.pps[0].characterName);
+        print(nameNumber);
+        print("Position " + otherNumber + "(Clone)");
+        print(deserilizedNames.pps[nameNumber].characterName);
+
+        var sdsds = characterPrefab.GetComponent<PositionTwoContainer>();
+        var sdaw = sdsds.Name;
+        foreach (ActiveCharacters i in deserilizedNames.pps)
         {
-            otherNumber = characterNumber + 1;
-            print("character Starting");
-            print(deserilizedNames.pps[0].characterName);
-            print(nameNumber);
-            print("Position " + otherNumber + "(Clone)");
-            print(deserilizedNames.pps[nameNumber].characterName);
-
-            characterObject = GameObject.FindGameObjectWithTag("position2");
-            var sdsds = characterObject.GetComponent<PositionTwoContainer>();
-            var sdaw = sdsds.Name;
-            foreach (ActiveCharacters i in deserilizedNames.pps)
+            if (deserilizedNames.pps[nameNumber].characterName == sdaw)
             {
-                if (deserilizedNames.pps[nameNumber].characterName == sdaw)
-                {
-                    var fileData = File.ReadAllText(Application.persistentDataPath + "/" + deserilizedNames.pps[nameNumber].characterName + ".json");
-                    SavedCharacters deserilizedData = JsonUtility.FromJson<SavedCharacters>(fileData);
+                var fileData = File.ReadAllText(Application.persistentDataPath + "/" + deserilizedNames.pps[nameNumber].characterName + ".json");
+                SavedCharacters deserilizedData = JsonUtility.FromJson<SavedCharacters>(fileData);
 
-                    var characterPrefabStats = characterPrefab.GetComponent<PositionTwoContainer>();
-                    characterPrefabStats.level = deserilizedData.currentStats[characterNumber].level;
-                    characterPrefabStats.HP = deserilizedData.currentStats[characterNumber].HP;
-                    characterPrefabStats.MP = deserilizedData.currentStats[characterNumber].MP;
-                    characterPrefabStats.defense = deserilizedData.currentStats[characterNumber].defense;
-                    characterPrefabStats.speed = deserilizedData.currentStats[characterNumber].speed;
-                    characterPrefabStats.strength = deserilizedData.currentStats[characterNumber].strength;
-                    characterPrefabStats.battlePower = deserilizedData.currentStats[characterNumber].battlePower;
+                var characterPrefabStats = characterPrefab.GetComponent<PositionTwoContainer>();
+                characterPrefabStats.level = deserilizedData.currentStats[characterNumber].level;
+                characterPrefabStats.HP = deserilizedData.currentStats[characterNumber].HP;
+                characterPrefabStats.MP = deserilizedData.currentStats[characterNumber].MP;
+                characterPrefabStats.defense = deserilizedData.currentStats[characterNumber].defense;
+                characterPrefabStats.speed = deserilizedData.currentStats[characterNumber].speed;
+                characterPrefabStats.strength = deserilizedData.currentStats[characterNumber].strength;
+                characterPrefabStats.battlePower = deserilizedData.currentStats[characterNumber].battlePower;
 
-                    SavedCharacters.savedStats = deserilizedData.currentStats;
+                SavedCharacters.savedStats = deserilizedData.currentStats;
 
-                    sdsds.HP = deserilizedData.currentStats[characterNumber].HP;
-                    print("character loaded" + characterNumber);
-                    var characterStats = characters[characterNumber].GetComponent<characterStats>();
+                sdsds.HP = deserilizedData.currentStats[characterNumber].HP;
+                print("character loaded " + characterNumber);
+                var characterStats = characters[characterNumber].GetComponent<characterStats>();
 
-                }
-                else
-                {
-                    nameNumber += 1;
-                }
+            }
+            else
+            {
+                nameNumber += 1;
             }
         }
     }

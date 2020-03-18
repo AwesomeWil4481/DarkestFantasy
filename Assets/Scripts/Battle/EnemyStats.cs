@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class EnemyStats : Abilities
 {
     GameObject[] potentialTargets;
-    Item[] lootTable;
+    public List<Item> lootTable = new List<Item>();
 
     [HideInInspector]
     int moneyOnDeath;
@@ -102,7 +102,14 @@ public class EnemyStats : Abilities
         if (HP <= 0)
         {
             BattleManager.instance.enemiesLeft -= 1;
-            
+            int random = Random.Range(1, 8);
+            int change = lootTable.Count - 1;
+            int loot =  Random.Range(0, change);
+            if (random != 9)
+            {
+                SceneItemList.savedItems.Add(lootTable[loot]);
+                print(lootTable[loot].name);
+            }
             Destroy(gameObject);
         }
         if (BattleManager.instance.fightQueue.Peek() == this)

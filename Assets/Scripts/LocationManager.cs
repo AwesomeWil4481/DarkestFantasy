@@ -65,6 +65,8 @@ public class LocationManager : MonoBehaviour
             enemyStats.speed = deserializedData.savedEnemies[enemyNumber].speed;
             enemyStats.strength = deserializedData.savedEnemies[enemyNumber].strength;
             enemyStats.battlePower = deserializedData.savedEnemies[enemyNumber].battlePower;
+            enemyStats.lootTable = deserializedData.savedEnemies[enemyNumber].lootTable;
+            print(enemyStats.lootTable[0].name);
 
             foreach(Sprite w in Backrounds)
             {
@@ -126,6 +128,7 @@ public class Enemy
     public int strength;
     public int battlePower;
     public Vector3 HPText;
+    public List<Item> lootTable = new List<Item>();
 }
 
 public class InventoryItem
