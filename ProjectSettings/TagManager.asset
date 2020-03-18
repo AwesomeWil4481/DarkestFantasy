@@ -10,6 +10,7 @@ TagManager:
   - postwotext
   - postwobar
   - hitallbutton
+  - item bar
   layers:
   - Default
   - TransparentFX

@@ -2,11 +2,16 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BattleManager
+    - CharacterStatisticsSerializer
     - EnemyStats
     - FloatingJoystick
+    - InventoryManager
+    - LocationChanger
     - LocationManager
+    - MenuManager
     - PositionTwoContainer
     - SceneTransition
+    - ScreenItem
     - cameraMover
     - conversationManager
     - playerMovement
@@ -79,23 +84,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11630}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 12216}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12404}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 12654}
+      Script: {instanceID: 12414}
     - Class: 114
-      Script: {instanceID: 12744}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12848}
+      Script: {instanceID: 12756}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12860}
     - Class: 114
-      Script: {instanceID: 13140}
+      Script: {instanceID: 12892}
+    - Class: 114
+      Script: {instanceID: 13154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -164,23 +171,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 11930}
+      Script: {instanceID: 11594}
     - Class: 114
-      Script: {instanceID: 11962}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 12034}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 12744}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12774}
+      Script: {instanceID: 12038}
     - Class: 114
-      Script: {instanceID: 12848}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 13140}
+      Script: {instanceID: 12272}
+    - Class: 114
+      Script: {instanceID: 12568}
+    - Class: 114
+      Script: {instanceID: 12666}
+    - Class: 114
+      Script: {instanceID: 12756}
+    - Class: 114
+      Script: {instanceID: 12786}
+    - Class: 114
+      Script: {instanceID: 12860}
+    - Class: 114
+      Script: {instanceID: 12892}
+    - Class: 114
+      Script: {instanceID: 13154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -346,6 +367,12 @@ ScriptsOnlyBuild:
     className: JoystickSetterExample
   - hash:
       serializedVersion: 2
+      Hash: d11a1c6dcbc1ca0acf8096a33bdc74f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocationChanger
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -362,6 +389,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 234691483f9560626b48833f966183a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenItem
   - hash:
       serializedVersion: 2
       Hash: 4e9333594897a1fb8b136ad2eae996c7
@@ -424,7 +457,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: da97633b45c07b657e12e41d149fe7d6
+      Hash: 496fc19efa46ce5b4da1cd9417bab831
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BirdStats
@@ -442,7 +475,7 @@ ScriptsOnlyBuild:
     className: conversationManager
   - hash:
       serializedVersion: 2
-      Hash: 4ca6efa014df86ed5b54237b6edb0f76
+      Hash: 96f8f7e9a5b801496633faba0fb91f3a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: characterStats
@@ -485,6 +518,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InventoryManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
@@ -514,16 +553,28 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 4be8767192f0f26f127232d29ec5b5a5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterStatisticsSerializer
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: c762748ac4b7a9aaf26829e174794d37
+      Hash: ae2d79fefe08238eb60856ec12abc887
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Entity
+  - hash:
+      serializedVersion: 2
+      Hash: 19e596e8dbe1d8d54400b9cd6c68577d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocationContainer
   - hash:
       serializedVersion: 2
       Hash: 2bee71b53ab6b6b85be37eafbd1bb9e0
@@ -592,7 +643,13 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 19a109ce33558eebe156193b2d18a762
+      Hash: fd1c191b7ececeab28e9405329cd0386
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8121ce88d51c888460d7992fa118edb2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PositionTwoContainer
@@ -646,7 +703,7 @@ ScriptsOnlyBuild:
     className: SceneTransition
   - hash:
       serializedVersion: 2
-      Hash: da97633b45c07b657e12e41d149fe7d6
+      Hash: 496fc19efa46ce5b4da1cd9417bab831
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyStats

@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\Battle\randomEncounterSpawner.cs" />
     <Compile Include="Assets\Scripts\CharacterStatisticsSerializer.cs" />
     <Compile Include="Assets\Scripts\InventoryManager.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\LocationChanger.cs" />
     <Compile Include="Assets\Scripts\LocationContainer.cs" />
     <Compile Include="Assets\Scripts\LocationManager.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\Players\Position Three Container.cs" />
     <Compile Include="Assets\Scripts\Players\PositionTwoContainer.cs" />
     <Compile Include="Assets\Scripts\Players\characterStats.cs" />
+    <Compile Include="Assets\Scripts\ScreenItem.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\UI\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\cameraMover.cs" />

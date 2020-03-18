@@ -51,7 +51,7 @@ public class LocationManager : MonoBehaviour
             var enemyStats = _enemies[enemyNumber].GetComponent<EnemyStats>();
             GameArea deserializedData = JsonUtility.FromJson<GameArea>(fileData);
 
-            print("saved position = "+ deserializedData.savedEnemies[0]);
+
 
             texObject = GameObject.Find("");
 
@@ -70,8 +70,8 @@ public class LocationManager : MonoBehaviour
             {
                 if (deserializedData.Backround == Backrounds[backroundNumber].name)
                 {
-                    print("W"+ w.name);
-                    print("Saved Name"+ deserializedData.Backround);
+
+
                     backround.sprite = Backrounds[backroundNumber];
                 }
                 else
@@ -81,14 +81,14 @@ public class LocationManager : MonoBehaviour
             }
             _enemies[enemyNumber].name = deserializedData.savedEnemies[enemyNumber].enemyName;
             enemySpriteNumber = 0; enemySprite = _enemies[enemyNumber].GetComponentInChildren<SpriteRenderer>();
-            print(_enemies[enemyNumber].name);
+
             foreach (Sprite a in enemySprites)
             {
-                print(a);
+
                 if (deserializedData.savedEnemies[enemyNumber].enemyName == enemySprites[enemySpriteNumber].name)
                 {
                     enemySprite.sprite = enemySprites[enemySpriteNumber];
-                    print("found sprite");
+
                     
                     break;
                 }
@@ -98,13 +98,13 @@ public class LocationManager : MonoBehaviour
                     enemySpriteNumber += 1;
                 }
             }
-            print(deserializedData.savedEnemies.Count);
-            print(enemyNumber);
+
+
             _areaMap[deserializedData.savedName] = deserializedData;
             enemyNumber += 1;
             if (enemyNumber >= deserializedData.savedEnemies.Count)
             {
-                print("Breaking");
+
                 break;
             }
         }

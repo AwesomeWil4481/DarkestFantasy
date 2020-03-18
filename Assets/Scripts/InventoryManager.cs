@@ -27,6 +27,13 @@ public class InventoryManager : MonoBehaviour
         //File.WriteAllText(Application.persistentDataPath + "/Inventory.json", character);
     }
 
+    public void SaveGame()
+    {
+        var varu = new ItemList() { items = ItemList.SavedItems };
+        string character = JsonUtility.ToJson(varu);
+        File.WriteAllText(Application.persistentDataPath + "/Inventory.json", character);
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -50,22 +57,4 @@ public class ItemList
 
     public List<Item> items = new List<Item>();
     public static List<Item> SavedItems = new List<Item>();
-}
-[Serializable]
-public class Item
-{
-    public enum itemType
-    {
-        Key,
-        Weapon,
-        Consumable,
-        Armor,
-        Relic
-    }
-    public itemType _itemType;
-
-    public string name;
-    public int ID;
-    public int count;
-    public bool equipable;
 }

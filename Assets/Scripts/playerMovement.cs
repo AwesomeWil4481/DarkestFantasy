@@ -31,10 +31,10 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
-        REAreaReq = 0f;
+        REAreaReq = 0.2f;
         RETimerMax = 2f;
         RETimer = RETimerMax;
-        print(RETimer);
+
         posPos = new Vector3(4, 4, 0);
         posNeg = new Vector3(4, -4, 0);
         negPos = new Vector3(-4, 4, 0);

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class EnemyStats : Abilities
 {
     GameObject[] potentialTargets;
+    Item[] lootTable;
 
     [HideInInspector]
     int moneyOnDeath;
@@ -101,6 +102,7 @@ public class EnemyStats : Abilities
         if (HP <= 0)
         {
             BattleManager.instance.enemiesLeft -= 1;
+            
             Destroy(gameObject);
         }
         if (BattleManager.instance.fightQueue.Peek() == this)
