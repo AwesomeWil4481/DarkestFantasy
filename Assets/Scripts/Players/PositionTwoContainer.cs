@@ -101,7 +101,7 @@ public class PositionTwoContainer : characterStats
                                 _target = target.GetComponent<EnemyStats>();
 
                                 _enemyStats.pointer.SetActive(true);
-                                print("Hello World");
+                                print("hello world");
                                 _targetSelected = true;
                             }
                             if (target == hit && _delay <= 0)

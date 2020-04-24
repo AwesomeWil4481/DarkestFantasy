@@ -9,12 +9,15 @@ public class MenuManager : MonoBehaviour
 {
     public static MenuManager instance;
 
+    public Vector3 savePointPos;
+
     public GameObject menuPanel;
     public GameObject mainMenuButton;
     public GameObject mainMenuScreen;
     public GameObject inventoryScreen;
     public GameObject selectedItem;
     public GameObject saveButton;
+    public GameObject equipScreen;
 
     public bool canSave;
 
@@ -161,6 +164,7 @@ public class MenuManager : MonoBehaviour
     public void SavePressed()
     {
         InventoryManager.instance.SaveGame();
+        characterPosition.instance.CharacterPositionSave(savePointPos);
     }
 
     public void OnMenuPress()
@@ -170,7 +174,27 @@ public class MenuManager : MonoBehaviour
         menuPanel.SetActive(true);
         if (canSave)
         {
-            saveButton.SetActive(true);
+            var _button = saveButton.GetComponent<Button>();
+
+            _button.interactable = true;
         }
+        if (!canSave)
+        {
+            var _button = saveButton.GetComponent<Button>();
+
+            _button.interactable = false;
+        }
+    }
+
+    public void OnEquipPress()
+    {
+        equipScreen.SetActive(true);
+        mainMenuScreen.SetActive(false);
+    }
+
+    public void OnEquipExit()
+    {
+        equipScreen.SetActive(false);
+        mainMenuScreen.SetActive(true);
     }
 }

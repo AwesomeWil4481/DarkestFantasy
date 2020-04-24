@@ -24,6 +24,7 @@ public class playerMovement : MonoBehaviour
     private Vector3 negNeg;
     private Vector3 change;
     private Vector3 zero = new Vector3(0,0,0);
+    Vector3 Pos;
 
     Joystick joyStick;
 
@@ -31,7 +32,7 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
-        RETimerMax = 2f;
+        RETimerMax = 5f;
         RETimer = RETimerMax;
 
         posPos = new Vector3(4, 4, 0);
@@ -42,6 +43,10 @@ public class playerMovement : MonoBehaviour
         joyStick = FindObjectOfType<Joystick>();
         playerAnimator = GetComponent<Animator>();
         PCRB = GetComponent<Rigidbody2D>();
+
+        Pos = characterPosition.instance.CharacterPositionLoad();
+        print(Pos);
+        PCRB.gameObject.transform.position = Pos;
     }
 
     // Update is called once per frame
@@ -51,12 +56,19 @@ public class playerMovement : MonoBehaviour
         var botRight = Vector3.Angle(movement, posNeg);
         var topLeft = Vector3.Angle(movement, negPos);
         var topRight = Vector3.Angle(movement, posPos);
-        RETimer -= Time.deltaTime;
+
         movement = PCRB.velocity;
+
         if (movement == zero)
         {
             playerAnimator.SetBool("moving", false);
         }
+        else
+        {
+            RETimer -= Time.deltaTime;
+        }
+
+
         if (RETimer <= 0)
         {
             RETimer = RETimerMax;
@@ -70,6 +82,7 @@ public class playerMovement : MonoBehaviour
                 StartCoroutine(SceneTransition.instance.EndScene("Fighting Scene"));
             }
         }
+
         if (nextToObject == false)
         {
 

@@ -36,6 +36,7 @@ public class randomEncounterSpawner : LocationManager
     int _position;
     private void Awake()
     {
+
     }
 
     void Start()

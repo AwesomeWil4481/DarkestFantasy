@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\Battle\positionOneStats.cs" />
     <Compile Include="Assets\Scripts\Battle\randomEncounterSpawner.cs" />
     <Compile Include="Assets\Scripts\CharacterStatisticsSerializer.cs" />
+    <Compile Include="Assets\Scripts\EquipmentManager.cs" />
     <Compile Include="Assets\Scripts\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\LocationChanger.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Scripts\something.cs" />
     <Compile Include="Assets\Scripts\spriteRenderOrder.cs" />
+    <Compile Include="Assets\characterPosition.cs" />
     <None Include="Assets\Tilemaps\Backyard - Free\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/wilhelm/Unity/Darkest Fantasy/Darkest-Fantasy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

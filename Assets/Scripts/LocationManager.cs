@@ -48,10 +48,8 @@ public class LocationManager : MonoBehaviour
         foreach (GameObject i in _enemies)
         {
             var fileData = File.ReadAllText(Application.persistentDataPath + "/" + lojson);
-            var enemyStats = _enemies[enemyNumber].GetComponent<EnemyStats>();
             GameArea deserializedData = JsonUtility.FromJson<GameArea>(fileData);
-
-
+            var enemyStats = _enemies[enemyNumber].GetComponent<EnemyStats>();
 
             texObject = GameObject.Find("");
 
@@ -72,8 +70,6 @@ public class LocationManager : MonoBehaviour
             {
                 if (deserializedData.Backround == Backrounds[backroundNumber].name)
                 {
-
-
                     backround.sprite = Backrounds[backroundNumber];
                 }
                 else
@@ -90,7 +86,6 @@ public class LocationManager : MonoBehaviour
                 if (deserializedData.savedEnemies[enemyNumber].enemyName == enemySprites[enemySpriteNumber].name)
                 {
                     enemySprite.sprite = enemySprites[enemySpriteNumber];
-
                     
                     break;
                 }
