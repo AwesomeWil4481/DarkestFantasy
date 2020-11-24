@@ -4,8 +4,10 @@ ScriptsOnlyBuild:
     - BattleManager
     - CharacterStatisticsSerializer
     - EnemyStats
+    - EquipmentManager
     - FloatingJoystick
     - InventoryManager
+    - LoadCharacterStats
     - LocationChanger
     - LocationManager
     - MenuManager
@@ -22,8 +24,6 @@ ScriptsOnlyBuild:
     - spriteRenderOrder
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -87,27 +87,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11638}
     - Class: 114
-      Script: {instanceID: 11796}
+      Script: {instanceID: 11798}
     - Class: 114
-      Script: {instanceID: 12224}
+      Script: {instanceID: 12228}
     - Class: 114
-      Script: {instanceID: 12274}
+      Script: {instanceID: 12278}
     - Class: 114
-      Script: {instanceID: 12418}
+      Script: {instanceID: 12424}
     - Class: 114
-      Script: {instanceID: 12656}
+      Script: {instanceID: 12662}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12678}
     - Class: 114
-      Script: {instanceID: 12762}
+      Script: {instanceID: 12768}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 12872}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12904}
     - Class: 114
-      Script: {instanceID: 13160}
+      Script: {instanceID: 13166}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -164,8 +164,6 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 574}
-    - Class: 114
       Script: {instanceID: 11156}
     - Class: 114
       Script: {instanceID: 11198}
@@ -176,43 +174,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11454}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 11544}
     - Class: 114
-      Script: {instanceID: 11596}
+      Script: {instanceID: 11558}
     - Class: 114
-      Script: {instanceID: 11796}
+      Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 11936}
+      Script: {instanceID: 11798}
     - Class: 114
-      Script: {instanceID: 11968}
+      Script: {instanceID: 11938}
     - Class: 114
-      Script: {instanceID: 12040}
+      Script: {instanceID: 11970}
     - Class: 114
-      Script: {instanceID: 12076}
+      Script: {instanceID: 11976}
     - Class: 114
-      Script: {instanceID: 12224}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12274}
+      Script: {instanceID: 12080}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 12228}
     - Class: 114
-      Script: {instanceID: 12572}
+      Script: {instanceID: 12278}
     - Class: 114
-      Script: {instanceID: 12656}
+      Script: {instanceID: 12336}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12578}
     - Class: 114
-      Script: {instanceID: 12762}
+      Script: {instanceID: 12662}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 12678}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 12768}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12798}
     - Class: 114
-      Script: {instanceID: 13160}
+      Script: {instanceID: 12872}
+    - Class: 114
+      Script: {instanceID: 12904}
+    - Class: 114
+      Script: {instanceID: 13166}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -230,12 +232,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 156049354
-      Script: {instanceID: 0}
-    - Class: 483693784
-      Script: {instanceID: 0}
-    - Class: 1839735485
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -346,6 +342,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 2b44fa6fa84a4fd2b9a20f570323b3d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadCharacterStats
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -474,7 +476,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: c8f00ad111cc806880d393d09b131aba
+      Hash: 40c06ebb4295f7bb749b361438dad6e5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BirdStats
@@ -492,7 +494,7 @@ ScriptsOnlyBuild:
     className: conversationManager
   - hash:
       serializedVersion: 2
-      Hash: 96f8f7e9a5b801496633faba0fb91f3a
+      Hash: 0f647d2541c58ea0706b3b35d413efee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: characterStats
@@ -502,6 +504,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 53c1fe7db05f1dda916f67fd3b31b3d8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EquipmentManager
   - hash:
       serializedVersion: 2
       Hash: 666802ec5df3fa65d732c1119b65b4be
@@ -570,7 +578,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: daa1b29553516a55d802d214b3d737ac
+      Hash: a6079e04eb7e242896d5b5ff4d723645
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterStatisticsSerializer
@@ -588,10 +596,16 @@ ScriptsOnlyBuild:
     className: characterPosition
   - hash:
       serializedVersion: 2
-      Hash: ae2d79fefe08238eb60856ec12abc887
+      Hash: 8a39ab9391719004073d981b3e421f7f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Entity
+  - hash:
+      serializedVersion: 2
+      Hash: bfed62b2fd553edb9883f80ffb524f50
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EquipableItem
   - hash:
       serializedVersion: 2
       Hash: 19e596e8dbe1d8d54400b9cd6c68577d
@@ -600,7 +614,7 @@ ScriptsOnlyBuild:
     className: LocationContainer
   - hash:
       serializedVersion: 2
-      Hash: 2bee71b53ab6b6b85be37eafbd1bb9e0
+      Hash: 8812559eac920d200bb00364174a861d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BattleManager
@@ -666,19 +680,19 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: a6cb293bdc0c32040d77c5a2a231edbe
+      Hash: b515ce54636ac3860e47ca514dc36f2e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuManager
   - hash:
       serializedVersion: 2
-      Hash: 26d75e1d55736a86c24f8b42a693aad7
+      Hash: a5f1fd6de2f041dfd8e0e46463ddf9a9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneItemList
   - hash:
       serializedVersion: 2
-      Hash: 8121ce88d51c888460d7992fa118edb2
+      Hash: 5c5379f78c6480a07cb25ecf598cde7f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PositionTwoContainer
@@ -732,7 +746,7 @@ ScriptsOnlyBuild:
     className: SceneTransition
   - hash:
       serializedVersion: 2
-      Hash: c8f00ad111cc806880d393d09b131aba
+      Hash: 40c06ebb4295f7bb749b361438dad6e5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyStats
@@ -772,6 +786,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: b3ef0039c37739130be7c9fc52649fa7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Item
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268

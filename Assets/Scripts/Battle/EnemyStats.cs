@@ -49,8 +49,6 @@ public class EnemyStats : Abilities
     [HideInInspector]
     public int action;
 
-    public int _position;
-
     public Text positionOneText;
     public Text positionTwoText;
     public Text positionThreeText;
@@ -76,7 +74,7 @@ public class EnemyStats : Abilities
         delayMax = 1f;
         delay = delayMax;
         speed -= speed * 2;
-        PositionTwo = GameObject.FindGameObjectWithTag("position2");
+        PositionTwo = GameObject.Find("Position " + 1 + "(Clone)");
         level = Random.Range(3, 6);
         strength = Random.Range(56, 63);
     }
@@ -108,7 +106,7 @@ public class EnemyStats : Abilities
             if (random != 9)
             {
                 SceneItemList.savedItems.Add(lootTable[loot]);
-                print(lootTable[loot].name);
+                print(lootTable[loot].Name);
             }
             Destroy(gameObject);
         }

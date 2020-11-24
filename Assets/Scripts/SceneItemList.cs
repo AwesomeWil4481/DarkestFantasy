@@ -25,15 +25,5 @@ public class SceneItemList : MonoBehaviour
 
     private void Start()
     {
-        var fileData = File.ReadAllText(Application.persistentDataPath + "/Inventory.json");
-        ItemList deserializedData = JsonUtility.FromJson<ItemList>(fileData);
-
-        ItemList.SavedItems = deserializedData.items;
-        SceneItemList.savedItems = ItemList.SavedItems;
-    }
-
-    private void Update()
-    {
-        ts = savedItems;
     }
 }

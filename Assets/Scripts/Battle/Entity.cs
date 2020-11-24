@@ -10,6 +10,7 @@ public class Entity : MonoBehaviour
     public int speed;
     public int strength;
     public int battlePower;
+    public int _position;
 }
 
 public abstract class Abilities : Entity 

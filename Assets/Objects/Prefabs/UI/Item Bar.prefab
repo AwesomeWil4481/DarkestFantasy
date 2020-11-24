@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemType: 0
   description: Filler
-  name: 
+  _name: 
   ID: 0
   count: 0
   equipable: 0

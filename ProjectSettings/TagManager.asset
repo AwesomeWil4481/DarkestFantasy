@@ -11,6 +11,10 @@ TagManager:
   - postwobar
   - hitallbutton
   - item bar
+  - battlecharacter
+  - statblockvalue
+  - portrait
+  - GameManagement
   layers:
   - Default
   - TransparentFX

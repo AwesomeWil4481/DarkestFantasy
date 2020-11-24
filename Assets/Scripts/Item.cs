@@ -1,23 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
 
-[System.Serializable]
-public class Item
+public enum ItemType
 {
-    public enum itemType
-    {
-        Key,
-        Weapon,
-        Consumable,
-        Armor,
-        Relic
-    }
-    public itemType _itemType;
+    Key,
+    Consumable,
+    EquipableItem
+}
 
-    public string description;
-    public string name;
+[Serializable]
+public class Item 
+{
+
+    public ItemType ItemType;
+    public string Description;
     public int ID;
-    public int count;
-    public bool equipable;
+    public int Count;
+    public string Name;
 }

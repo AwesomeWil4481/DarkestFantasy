@@ -40,6 +40,7 @@ public class PositionTwoContainer : characterStats
 
     private void Start()
     {
+        charTwoContainer = GameObject.Find(gameObject.name);
         Name = "Terra";
         hitAll = GameObject.Find("Hit All Button");
         hitAll.SetActive(false);
@@ -80,7 +81,7 @@ public class PositionTwoContainer : characterStats
                 {
                     if (Input.GetKeyDown(KeyCode.Escape))
                     {
-                        StartCoroutine(SceneTransition.instance.EndScene("SampleScene"));
+                        StartCoroutine(SceneTransition.instance.EndScene(ActiveScene.Instance().Scene));
                     }
                     if (_targetSelected == true)
                     {
@@ -168,14 +169,15 @@ public class PositionTwoContainer : characterStats
 
     public void AtttackButtonPressed()
     {
-        charTwoContainer = GameObject.FindGameObjectWithTag("position2");
+        charTwoContainer = BattleManager.instance.fightQueue.Peek().gameObject;
         charTwo = charTwoContainer.GetComponent<PositionTwoContainer>();
         charTwo._action = Action.attack;
         print("Attack Button Pressed");
     }
+
     public void waitButtonPressed()
     {
-        charTwoContainer = GameObject.FindGameObjectWithTag("position2");
+        charTwoContainer = GameObject.Find("Position "+BattleManager.instance.fightQueue.Peek()._position + "(Clone)");
         charTwo = charTwoContainer.GetComponent<PositionTwoContainer>();
         charTwo._action = Action.nothing;
         BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());

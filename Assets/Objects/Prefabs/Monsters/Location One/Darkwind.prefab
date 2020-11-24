@@ -181,6 +181,7 @@ MonoBehaviour:
   speed: 4
   strength: 30
   battlePower: 0
+  _position: 1
   _target: {fileID: 0}
   lootTable:
   - _itemType: 0
@@ -188,7 +189,6 @@ MonoBehaviour:
     name: Potion
     ID: 0
     count: 0
-    equipable: 0
   magicPower: 0
   lvlMin: 0
   lvlMax: 0

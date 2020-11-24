@@ -228,6 +228,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterObject: {fileID: 0}
+  posOnePrefab: {fileID: 6711394010181142591, guid: 7fc60fbeaee4daf418fda7ed1757d086,
+    type: 3}
+  posTwoPrefab: {fileID: 0}
+  posThreePrefab: {fileID: 0}
+  posFourPrefab: {fileID: 0}
   characterPrefab: {fileID: 6711394010181142591, guid: 7fc60fbeaee4daf418fda7ed1757d086,
     type: 3}
   characters:
@@ -377,6 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d87b2ab5aade6744aa6fb71c53f8e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ts: []
 --- !u!4 &169127799
 Transform:
   m_ObjectHideFlags: 0
@@ -1427,6 +1433,7 @@ MonoBehaviour:
   TargetObject: {fileID: 299840483}
   enemiesLeft: 0
   bar: {fileID: 273333868}
+  activeCharacterList: []
 --- !u!4 &835028107
 Transform:
   m_ObjectHideFlags: 0

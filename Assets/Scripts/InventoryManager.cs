@@ -23,20 +23,15 @@ public class InventoryManager : MonoBehaviour
 
     public void LoadGame()
     {
-        print(ItemList.SavedItems[0]._itemType);
-
         //var varu = new ItemList() { items = ItemList.SavedItems };
         //string character = JsonUtility.ToJson(varu);
         //File.WriteAllText(Application.persistentDataPath + "/Inventory.json", character);
     }
 
-    public void SaveGame()
+    public void SaveGame(string SaveSelected)
     {
-        ItemList.SavedItems = SceneItemList.savedItems;
-
-        var varu = new ItemList() { items = ItemList.SavedItems };
-        string character = JsonUtility.ToJson(varu);
-        File.WriteAllText(Application.persistentDataPath + "/Inventory.json", character);
+        string character = JsonUtility.ToJson(ItemList.Instance());
+        File.WriteAllText(Application.persistentDataPath + "/Save "+SaveSelected+"/Inventory.json", character);
     }
 
     void Update()
@@ -47,14 +42,37 @@ public class InventoryManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            ItemList.SavedItems.Add(new Item {count = 1, description = "",name = "Potion", _itemType = Item.itemType.Consumable });
+            ItemList.Instance().Items.Add(new Item { Count = 1, Description = "", Name = "Potion", ItemType = ItemType.Consumable });
         }
     }
 }
+
 [Serializable]
 public class ItemList
 {
-    public static ItemList instance;
+    private ItemList()
+    {
+    }
+
+    private static ItemList _instance { get; set; }
+
+    public static ItemList Instance()
+    {
+        if (_instance == null)
+        {
+            _instance = new ItemList();
+        }
+        return _instance;
+    }
+
+    [SerializeField]
+    private List<Item> items = new List<Item>();
+    public List<Item> Items { get { return items; } }
+}
+
+public class EquipmentList
+{
+    public static EquipmentList instance;
 
     void Awake()
     {
@@ -64,6 +82,6 @@ public class ItemList
         }
     }
 
-    public List<Item> items = new List<Item>();
-    public static List<Item> SavedItems = new List<Item>();
+    public List<EquipableItem> equipableItems = new List<EquipableItem>();
 }
+

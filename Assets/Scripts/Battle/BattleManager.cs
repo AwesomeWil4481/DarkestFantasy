@@ -24,7 +24,10 @@ public class BattleManager : MonoBehaviour
     public GameObject bar;
 
     bool neverDone;
+
     List<Entity> entityList;
+    public List<characterStats> activeCharacterList;
+
     void Start()
     {
         startDelay = 1;
@@ -54,7 +57,8 @@ public class BattleManager : MonoBehaviour
         if (oldEnemies == 0)
         {
             print("you win!");
-            StartCoroutine(SceneTransition.instance.EndScene("SampleScene"));
+            StartCoroutine(SceneTransition.instance.EndScene(ActiveScene.Instance().Scene));
+            CharacterStatisticsSerializer._instance.SaveToPrefab();
         }
         if (neverDone == true)//&& startDelay <= 0)
         {

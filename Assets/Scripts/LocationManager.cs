@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LocationManager : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class LocationManager : MonoBehaviour
     
     void Start()
     {
+        if (SceneManager.GetActiveScene().name == "Fighting Scene") { 
         lojson = location+".json";
 
         var dir = new DirectoryInfo(Application.persistentDataPath);
@@ -45,64 +47,65 @@ public class LocationManager : MonoBehaviour
             fileNames.Add(file.FullName);
         }
 
-        foreach (GameObject i in _enemies)
-        {
-            var fileData = File.ReadAllText(Application.persistentDataPath + "/" + lojson);
-            GameArea deserializedData = JsonUtility.FromJson<GameArea>(fileData);
-            var enemyStats = _enemies[enemyNumber].GetComponent<EnemyStats>();
-
-            texObject = GameObject.Find("");
-
-            GameArea.Name = deserializedData.savedName;
-            GameArea.availableEnemies = deserializedData.savedEnemies;
-            enemyStats.Name = deserializedData.savedEnemies[enemyNumber].enemyName;
-            enemyStats.HP = deserializedData.savedEnemies[enemyNumber].HP;
-            enemyStats.level = deserializedData.savedEnemies[enemyNumber].level;
-            enemyStats.MP = deserializedData.savedEnemies[enemyNumber].MP;
-            enemyStats.defense = deserializedData.savedEnemies[enemyNumber].defense;
-            enemyStats.speed = deserializedData.savedEnemies[enemyNumber].speed;
-            enemyStats.strength = deserializedData.savedEnemies[enemyNumber].strength;
-            enemyStats.battlePower = deserializedData.savedEnemies[enemyNumber].battlePower;
-            enemyStats.lootTable = deserializedData.savedEnemies[enemyNumber].lootTable;
-            print(enemyStats.lootTable[0].name);
-
-            foreach(Sprite w in Backrounds)
+            foreach (GameObject i in _enemies)
             {
-                if (deserializedData.Backround == Backrounds[backroundNumber].name)
-                {
-                    backround.sprite = Backrounds[backroundNumber];
-                }
-                else
-                {
-                    backroundNumber += 1;
-                }
-            }
-            _enemies[enemyNumber].name = deserializedData.savedEnemies[enemyNumber].enemyName;
-            enemySpriteNumber = 0; enemySprite = _enemies[enemyNumber].GetComponentInChildren<SpriteRenderer>();
+                var fileData = File.ReadAllText(Application.persistentDataPath + "/" + lojson);
+                GameArea deserializedData = JsonUtility.FromJson<GameArea>(fileData);
+                var enemyStats = _enemies[enemyNumber].GetComponent<EnemyStats>();
 
-            foreach (Sprite a in enemySprites)
-            {
+                texObject = GameObject.Find("");
 
-                if (deserializedData.savedEnemies[enemyNumber].enemyName == enemySprites[enemySpriteNumber].name)
+                GameArea.Name = deserializedData.savedName;
+                GameArea.availableEnemies = deserializedData.savedEnemies;
+                enemyStats.Name = deserializedData.savedEnemies[enemyNumber].enemyName;
+                enemyStats.HP = deserializedData.savedEnemies[enemyNumber].HP;
+                enemyStats.level = deserializedData.savedEnemies[enemyNumber].level;
+                enemyStats.MP = deserializedData.savedEnemies[enemyNumber].MP;
+                enemyStats.defense = deserializedData.savedEnemies[enemyNumber].defense;
+                enemyStats.speed = deserializedData.savedEnemies[enemyNumber].speed;
+                enemyStats.strength = deserializedData.savedEnemies[enemyNumber].strength;
+                enemyStats.battlePower = deserializedData.savedEnemies[enemyNumber].battlePower;
+                enemyStats.lootTable = deserializedData.savedEnemies[enemyNumber].lootTable;
+                print(enemyStats.lootTable[0].Name);
+
+                foreach (Sprite w in Backrounds)
                 {
-                    enemySprite.sprite = enemySprites[enemySpriteNumber];
-                    
+                    if (deserializedData.Backround == Backrounds[backroundNumber].name)
+                    {
+                        backround.sprite = Backrounds[backroundNumber];
+                    }
+                    else
+                    {
+                        backroundNumber += 1;
+                    }
+                }
+                _enemies[enemyNumber].name = deserializedData.savedEnemies[enemyNumber].enemyName;
+                enemySpriteNumber = 0; enemySprite = _enemies[enemyNumber].GetComponentInChildren<SpriteRenderer>();
+
+                foreach (Sprite a in enemySprites)
+                {
+
+                    if (deserializedData.savedEnemies[enemyNumber].enemyName == enemySprites[enemySpriteNumber].name)
+                    {
+                        enemySprite.sprite = enemySprites[enemySpriteNumber];
+
+                        break;
+                    }
+
+                    else
+                    {
+                        enemySpriteNumber += 1;
+                    }
+                }
+
+
+                _areaMap[deserializedData.savedName] = deserializedData;
+                enemyNumber += 1;
+                if (enemyNumber >= deserializedData.savedEnemies.Count)
+                {
+
                     break;
                 }
-
-                else
-                {
-                    enemySpriteNumber += 1;
-                }
-            }
-
-
-            _areaMap[deserializedData.savedName] = deserializedData;
-            enemyNumber += 1;
-            if (enemyNumber >= deserializedData.savedEnemies.Count)
-            {
-
-                break;
             }
         }
     }

@@ -80,6 +80,7 @@ MonoBehaviour:
   speed: 6
   strength: 40
   battlePower: 0
+  _position: 1
   _target: {fileID: 0}
   lootTable:
   - _itemType: 0
@@ -87,7 +88,6 @@ MonoBehaviour:
     name: Sword
     ID: 0
     count: 0
-    equipable: 0
   magicPower: 0
   lvlMin: 0
   lvlMax: 0

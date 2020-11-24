@@ -24,7 +24,7 @@ public class playerMovement : MonoBehaviour
     private Vector3 negNeg;
     private Vector3 change;
     private Vector3 zero = new Vector3(0,0,0);
-    Vector3 Pos;
+    Vector3 Pos { get; set; }
 
     Joystick joyStick;
 
@@ -43,10 +43,12 @@ public class playerMovement : MonoBehaviour
         joyStick = FindObjectOfType<Joystick>();
         playerAnimator = GetComponent<Animator>();
         PCRB = GetComponent<Rigidbody2D>();
-
-        Pos = characterPosition.instance.CharacterPositionLoad();
-        print(Pos);
-        PCRB.gameObject.transform.position = Pos;
+        PCRB.gameObject.transform.position = LoadCharacterPosition();
+    }
+    public static Vector3 LoadCharacterPosition()
+    {
+        Vector3 pos = VPos.savedPlayerPos;
+        return pos;
     }
 
     // Update is called once per frame

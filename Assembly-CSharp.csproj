@@ -69,7 +69,6 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\SavePoint.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
     <Compile Include="Assets\Scripts\Battle\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\Battle\Entity.cs" />
@@ -77,12 +76,16 @@
     <Compile Include="Assets\Scripts\Battle\positionOneStats.cs" />
     <Compile Include="Assets\Scripts\Battle\randomEncounterSpawner.cs" />
     <Compile Include="Assets\Scripts\CharacterStatisticsSerializer.cs" />
-    <Compile Include="Assets\Scripts\EquipmentManager.cs" />
+    <Compile Include="Assets\Scripts\EquipableItem.cs" />
+    <Compile Include="Assets\Scripts\EquipmentBarScript.cs" />
+    <Compile Include="Assets\Scripts\EquipmentDictionary.cs" />
     <Compile Include="Assets\Scripts\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\LoadCharacterStats.cs" />
     <Compile Include="Assets\Scripts\LocationChanger.cs" />
     <Compile Include="Assets\Scripts\LocationContainer.cs" />
     <Compile Include="Assets\Scripts\LocationManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\Npc\conversationManager.cs" />
     <Compile Include="Assets\Scripts\Npc\dialogueHouse.cs" />
@@ -92,15 +95,16 @@
     <Compile Include="Assets\Scripts\Players\Position Three Container.cs" />
     <Compile Include="Assets\Scripts\Players\PositionTwoContainer.cs" />
     <Compile Include="Assets\Scripts\Players\characterStats.cs" />
+    <Compile Include="Assets\Scripts\SavePoint.cs" />
     <Compile Include="Assets\Scripts\SceneItemList.cs" />
     <Compile Include="Assets\Scripts\ScreenItem.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\UI\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\cameraMover.cs" />
+    <Compile Include="Assets\Scripts\characterPosition.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Scripts\something.cs" />
     <Compile Include="Assets\Scripts\spriteRenderOrder.cs" />
-    <Compile Include="Assets\characterPosition.cs" />
     <None Include="Assets\Tilemaps\Backyard - Free\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/wilhelm/Unity/Darkest Fantasy/Darkest-Fantasy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
