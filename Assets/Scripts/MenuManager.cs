@@ -29,6 +29,9 @@ public class MenuManager : MonoBehaviour
     public GameObject namePlate;
     public GameObject SaveSelectionScreen;
     public GameObject EquipmentBar;
+    public GameObject Joystick;
+
+    public Sprite[] characterPortraits;
 
     public bool canSave;
 
@@ -46,6 +49,7 @@ public class MenuManager : MonoBehaviour
     int posX = 320;
     int posY = 915;
     int rotationNumber = 1;
+
 
     bool wantToAdd;
 
@@ -69,6 +73,7 @@ public class MenuManager : MonoBehaviour
         menuPanel.SetActive(false);
         mainMenuButton.SetActive(true);
         mainMenuScreen.SetActive(false);
+        Joystick.SetActive(true);
     }
 
     public void AddItemToMasterEquipmentList(EquipableItem equipableItem)
@@ -219,9 +224,8 @@ public class MenuManager : MonoBehaviour
             Num += 1;
         }
 
-        int VectorX = 960;
+        int VectorX = 1060;
         int VectorY = 540;
-        int VectorZ = 0;
 
         var t = ItemList.Instance().Items
             .Where(x => x.ItemType == ItemType.EquipableItem)
@@ -230,7 +234,7 @@ public class MenuManager : MonoBehaviour
             {
                 var g = new GameObject(x.Name);
                 print(g);
-                GameObject go = Instantiate(EquipmentBar, new Vector3(VectorX, VectorY, VectorZ), Quaternion.identity) as GameObject;
+                GameObject go = Instantiate(EquipmentBar, new Vector3(VectorX, VectorY, 0), Quaternion.identity) as GameObject;
                 go.transform.parent = GameObject.Find("Equip Screen").transform;
                 thing = go.GetComponentsInChildren<Text>();
 
@@ -292,6 +296,7 @@ public class MenuManager : MonoBehaviour
 
     public void OnMenuPress()
     {
+        Joystick.SetActive(false);
         mainMenuButton.SetActive(false);
         mainMenuScreen.SetActive(true);
         menuPanel.SetActive(true);
@@ -309,9 +314,48 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void onMemberEquipSelect(GameObject thisObject)
+    public void onMemberEquipSelect(int Position)
     {
+        int position = Position -= 1;
+
         selectionScreen.SetActive(true);
+        equipScreen.SetActive(false);
+        statBlocks.SetActive(false);
+
+        var selectedCharacter = GameObject.Find("Character Statistics").GetComponentsInChildren<Text>();
+
+        int currentSprite = 0;
+        foreach (Sprite o in characterPortraits)
+        {
+            print("Times looped " + currentSprite);
+            print("Current Sprite Name " + characterPortraits[currentSprite].name);
+            print("Name to Search For : " + SavedCharacters.Instance().currentStats[position].characterName);
+            print(position);
+
+            selectedCharacter[9].text = SavedCharacters.Instance().currentStats[position].strength.ToString();
+
+            if (characterPortraits[currentSprite].name == SavedCharacters.Instance().currentStats[position].characterName)
+            {
+                var portrait = GameObject.Find("Character Portrait");
+                if (portrait == null)
+                {
+                    Debug.LogError("portrait was null");
+                }
+
+                var portraitSprite = portrait.GetComponent<Image>();
+                if (portraitSprite == null)
+                {
+                    Debug.LogError("component was null");
+                }
+                portraitSprite.sprite = o;
+                break;
+            }
+            else
+            {
+                currentSprite += 1;
+            }
+        }
+
         //print(thisObject.GetComponent<LoadCharacterStats>().myTiedObject.Name);
         //namePlate.GetComponentInChildren<Text>().text = thisObject.GetComponent<LoadCharacterStats>().myTiedObject.Name;
     }
@@ -323,13 +367,15 @@ public class MenuManager : MonoBehaviour
             Destroy(o);
         }
         selectionScreen.SetActive(false);
+        mainMenuScreen.SetActive(true);
+        statBlocks.SetActive(true);
     }
 
     public void OnEquipPress()
     {
         equipScreen.SetActive(true);
         mainMenuScreen.SetActive(false);
-
+        
         foreach (PositionTwoContainer i in GameObject.Find("Character Scriptobject").GetComponent<CharacterStatisticsSerializer>().currentParty)
         {
             equipButtons[i._position].SetActive(true);

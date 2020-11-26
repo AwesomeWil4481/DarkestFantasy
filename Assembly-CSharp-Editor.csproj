@@ -670,6 +670,14 @@
       <Project>{354B368C-DEB3-6397-19A7-7D0873DDC1CF}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="yaSingleton.csproj">
+      <Project>{852AEF21-ECFB-E337-9EA8-65DE915402AD}</Project>
+      <Name>yaSingleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="yaSingletonEditor.csproj">
+      <Project>{4C8883F9-D2A0-9296-F199-AB26949B7D70}</Project>
+      <Name>yaSingletonEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

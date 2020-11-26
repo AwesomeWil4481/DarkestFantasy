@@ -671,6 +671,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="yaSingleton.csproj">
+      <Project>{852AEF21-ECFB-E337-9EA8-65DE915402AD}</Project>
+      <Name>yaSingleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="yaSingletonEditor.csproj">
+      <Project>{4C8883F9-D2A0-9296-F199-AB26949B7D70}</Project>
+      <Name>yaSingletonEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

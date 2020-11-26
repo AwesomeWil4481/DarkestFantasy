@@ -5,6 +5,21 @@ using UnityEngine.UI;
 
 public class PositionTwoContainer : characterStats
 {
+    private static PositionTwoContainer instance;
+
+    public static PositionTwoContainer Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new PositionTwoContainer();
+            }
+            return instance;
+        }
+    }
+
+
     RaycastHit2D hit;
 
     Vector2[] touches = new Vector2[5];
@@ -36,6 +51,19 @@ public class PositionTwoContainer : characterStats
         _posTwoText = _textObject.GetComponent<Text>();
         bar = GameObject.FindGameObjectWithTag("postwobar");
         bar.SetActive(false);
+    }
+
+    public void UpdateCharacter(PositionTwoContainer Prefab, string position)
+    {
+        GameObject PrefabToLoad = (GameObject)Resources.Load("Objects/Prefabs/Players/Battle/"+ "Position"+position);
+        var LoadedPrefab = PrefabToLoad.GetComponent<PositionTwoContainer>();
+        LoadedPrefab.HP = Prefab.HP;
+        LoadedPrefab.MP = Prefab.MP;
+        LoadedPrefab.defense = Prefab.defense;
+        LoadedPrefab.level = Prefab.level;
+        LoadedPrefab.battlePower = Prefab.battlePower;
+        LoadedPrefab.strength = Prefab.strength;
+        LoadedPrefab.speed = Prefab.speed;
     }
 
     private void Start()

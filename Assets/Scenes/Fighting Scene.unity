@@ -235,8 +235,9 @@ MonoBehaviour:
   posFourPrefab: {fileID: 0}
   characterPrefab: {fileID: 6711394010181142591, guid: 7fc60fbeaee4daf418fda7ed1757d086,
     type: 3}
-  characters:
-  - {fileID: 6711394010181142591, guid: 7fc60fbeaee4daf418fda7ed1757d086, type: 3}
+  activePartyMembers: []
+  characterPortraits: []
+  statBlocks: []
 --- !u!4 &97112136
 Transform:
   m_ObjectHideFlags: 0
@@ -3713,6 +3714,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Backround-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609609235665660587, guid: dabea8bfea51a8f41833dcec316c4515,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 210239983
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609609235665660587, guid: dabea8bfea51a8f41833dcec316c4515,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dabea8bfea51a8f41833dcec316c4515, type: 3}

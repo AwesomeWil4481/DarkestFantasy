@@ -9,8 +9,18 @@ using UnityEngine.UI;
 
 public class CharacterStatisticsSerializer : MonoBehaviour
 {
-    public static CharacterStatisticsSerializer _instance;
-
+    private static CharacterStatisticsSerializer instance;
+    public static CharacterStatisticsSerializer Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new CharacterStatisticsSerializer();
+            }
+            return instance;
+        }
+    }
     public List<PositionTwoContainer> currentParty { get; set; } = new List<PositionTwoContainer>();
 
     public GameObject characterObject;
@@ -190,11 +200,11 @@ public class CharacterStatisticsSerializer : MonoBehaviour
         foreach (GameObject s in GameObject.FindGameObjectsWithTag("battlecharacter"))
         {
             battlecharnumber = +1;
-            print("battlecharacternumbewr = " + battlecharnumber);
+            print("battlecharacternumber = " + battlecharnumber);
             var currentchar = GameObject.Find("Position " + battlecharnumber + "(Clone)").GetComponent<PositionTwoContainer>();
             if (battlecharnumber == 1)
             {
-                posOnePrefab.GetComponent<PositionTwoContainer>().HP = currentchar.HP;
+                posOnePrefab.GetComponent<PositionTwoContainer>().UpdateCharacter(currentchar, battlecharnumber.ToString()) ;
             }
         }
     }

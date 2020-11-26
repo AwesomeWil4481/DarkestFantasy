@@ -58,7 +58,7 @@ public class BattleManager : MonoBehaviour
         {
             print("you win!");
             StartCoroutine(SceneTransition.instance.EndScene(ActiveScene.Instance().Scene));
-            CharacterStatisticsSerializer._instance.SaveToPrefab();
+            CharacterStatisticsSerializer.Instance.SaveToPrefab();
         }
         if (neverDone == true)//&& startDelay <= 0)
         {

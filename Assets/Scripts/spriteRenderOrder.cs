@@ -1,39 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-public class spriteRenderOrder : MonoBehaviour
+﻿using UnityEngine;
+using yaSingleton;
+
+[CreateAssetMenu(fileName ="SpriteRenderOrderSystem", menuName ="Systems/SpriteRenderOrderSystem")]
+public class spriteRenderOrder : Singleton<spriteRenderOrder>
 {
-    [SerializeField]
-    private int sortingOrderBase = 500;
-    [SerializeField]
-    public int offset = 0;
-    [SerializeField]
-    private bool runOnlyOnce = true;
 
-    public bool isPlayer = false;
-    private float timer;
-    private float timerMax = .5f;
-    private Renderer myRenderer;
+   public override void OnUpdate()
+    {
+        SpriteRenderer[] renderers = FindObjectsOfType<SpriteRenderer>();
 
-    private void Awake()
-    {
-        myRenderer = gameObject.GetComponent<Renderer>();
-    }
-    private void LateUpdate()
-    {
-        if (isPlayer == true)
+        foreach(SpriteRenderer renderer in renderers)
         {
-            myRenderer.sortingOrder = (int)(sortingOrderBase - transform.position.y - offset);
-        }
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
-        {
-            timer = timerMax;
-            myRenderer.sortingOrder = (int)(sortingOrderBase - transform.position.y - offset);
-            if (runOnlyOnce)
-            {
-                Destroy(this);
-            }
+            renderer.sortingOrder = (int)(renderer.transform.position.y * -100);
         }
     }
 }
