@@ -47,7 +47,7 @@ public class SaveTheBooks
     {
         InventoryManager.instance.SaveGame(SaveSelected);
 
-        characterPosition.instance.CharacterPositionSave(MenuManager.instance.savePointPos, SaveSelected);
+        characterPosition.instance.CharacterPositionSave(MenuManager.Instance.savePointPos, SaveSelected);
 
         CharacterStatisticsSerializer.SaveGame(SaveSelected);
 
@@ -63,7 +63,6 @@ public class SaveTheBooks
         { // Loading the scene
             var fileData = File.ReadAllText(Application.persistentDataPath + "/Save " + SaveSelected + "/SavedScene.json");
             ActiveScene deserializedData = JsonUtility.FromJson<ActiveScene>(fileData);
-            Debug.Log(deserializedData);
             ActiveScene.Instance().Scene = deserializedData.Scene;
             SceneManager.LoadScene(deserializedData.Scene);
         }
@@ -74,6 +73,8 @@ public class SaveTheBooks
 
             ItemList.Instance().Items.Clear();
             ItemList.Instance().Items.AddRange(deserializedData.Items);
+
+            Debug.Log(ItemList.Instance().Items[1].Name+" of "+ItemList.Instance().Items[1].Count);
         }
 
         { // Loading the start position
@@ -86,6 +87,12 @@ public class SaveTheBooks
 
             SavedCharacters.Instance().currentStats.Clear();
             SavedCharacters.Instance().currentStats.AddRange(deserializedData.currentStats);
+
+            foreach(Stats i in SavedCharacters.Instance().currentStats)
+            {
+                SavedCharacters.Instance().DcurrentStats[i._position] = i;
+                Debug.Log(SavedCharacters.Instance().DcurrentStats[i._position]._position+" is the loaded position of "+SavedCharacters.Instance().DcurrentStats[i._position].characterName);
+            }
         }
 
         { // Loading the Equiment Dictionary

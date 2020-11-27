@@ -6,7 +6,7 @@ public class SavePoint : MonoBehaviour
 {
     void Start()
     {
-        print(MenuManager.instance.canSave);
+
     }
 
     // Update is called once per frame
@@ -17,14 +17,14 @@ public class SavePoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        MenuManager.instance.canSave = true;
-        MenuManager.instance.savePointPos = transform.position;
-        print(MenuManager.instance.canSave);
+        MenuManager.Instance.canSave = true;
+        MenuManager.Instance.savePointPos = transform.position;
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        MenuManager.instance.canSave = false;
-        print(MenuManager.instance.canSave);
+        MenuManager.Instance.canSave = false;
+        print(MenuManager.Instance.canSave);
     }
 }

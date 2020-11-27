@@ -38,8 +38,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -475, y: -174}
-  m_SizeDelta: {x: 157.5, y: 25}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 289.92, y: 57.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7266309683762293057
 CanvasRenderer:
@@ -144,6 +144,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5621816d377dccb4e9421af590a65fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Armor: 0
+  HPBonus: 0
+  STBonus: 0
+  HPPercentBonus: 0
+  STPercentBonus: 0
+  EquipmentType: 0
+  canEquip: []
 --- !u!1 &3291341686145467559
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,8 +185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.02, y: 0}
-  m_SizeDelta: {x: 121.97, y: 30}
+  m_AnchoredPosition: {x: -30.6, y: 0.24}
+  m_SizeDelta: {x: 214.92, y: 31.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7426349837812663856
 CanvasRenderer:
@@ -209,7 +216,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -220,7 +227,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Leather Chestplate
 --- !u!1 &7722109899542280483
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,8 +262,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.69, y: 0}
-  m_SizeDelta: {x: 29.45, y: 30}
+  m_AnchoredPosition: {x: 110.6, y: 0.23999}
+  m_SizeDelta: {x: 43.42, y: 31.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3169146945121681912
 CanvasRenderer:
@@ -286,7 +293,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -297,4 +304,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 999

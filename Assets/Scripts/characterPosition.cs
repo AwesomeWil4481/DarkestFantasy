@@ -25,7 +25,7 @@ public class characterPosition: MonoBehaviour
 
     public static Vector3 CharacterPositionLoad()
     {
-        print(Application.persistentDataPath);
+
         if (!File.Exists(Application.persistentDataPath + "/savedPosition.json"))
         {
             print("File Created");
@@ -37,10 +37,10 @@ public class characterPosition: MonoBehaviour
         var fileData = File.ReadAllText(Application.persistentDataPath + "/savedPosition.json");
         VPos deserializedData = JsonUtility.FromJson<VPos>(fileData);
 
-        print(deserializedData.playerPos);
+
         VPos.savedPlayerPos = deserializedData.playerPos;
         var value = VPos.savedPlayerPos;
-        print("Value = " + value);
+
         return value;
     }
 }

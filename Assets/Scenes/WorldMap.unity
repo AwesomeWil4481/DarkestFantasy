@@ -1300,7 +1300,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2320,7 +2320,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 517710171}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546224726}
+        m_MethodName: EquipmentSelectionScreenPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Gloves
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &517710171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2573,7 +2584,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 529839365}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546224726}
+        m_MethodName: EquipmentSelectionScreenPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Chest
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &529839365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2691,7 +2713,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 530361573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546224726}
+        m_MethodName: EquipmentSelectionScreenPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Relic
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &530361573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5159,7 +5192,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 0
 --- !u!222 &1021735600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5980,7 +6013,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1049655267}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546224726}
+        m_MethodName: EquipmentSelectionScreenPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Relic
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1049655267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6259,7 +6303,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6396,13 +6440,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 546224726}
         m_MethodName: EquipmentSelectionScreenPress
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Boots
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1167597253
@@ -7657,14 +7701,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 546224726}
-        m_MethodName: onHandClick
-        m_Mode: 1
+        m_MethodName: EquipmentSelectionScreenPress
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Hand
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1421788561
@@ -7720,7 +7764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1436251526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8353,7 +8397,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1598357458}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546224726}
+        m_MethodName: EquipmentSelectionScreenPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Legs
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1598357458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9148,7 +9203,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1754983121}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546224726}
+        m_MethodName: EquipmentSelectionScreenPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Head
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1754983121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9268,14 +9334,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 546224726}
-        m_MethodName: onHandClick
-        m_Mode: 1
+        m_MethodName: EquipmentSelectionScreenPress
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Hand
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1761411113
@@ -9596,7 +9662,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10643,7 +10709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1986023721}
   m_Layer: 5
-  m_Name: MainMenuScreen
+  m_Name: Main Menu Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11042,7 +11108,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11163,7 +11229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 0
 --- !u!222 &2025192328
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12014,7 +12080,7 @@ PrefabInstance:
         type: 3}
       propertyPath: descriptionBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1033528438}
     - target: {fileID: 2940884818624834176, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
         type: 3}
       propertyPath: saveButton
@@ -12034,7 +12100,7 @@ PrefabInstance:
         type: 3}
       propertyPath: equipmentSelectionScreen
       value: 
-      objectReference: {fileID: 212305873}
+      objectReference: {fileID: 210595921}
     - target: {fileID: 2940884818624834176, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
         type: 3}
       propertyPath: equipButton
@@ -12082,16 +12148,6 @@ PrefabInstance:
       objectReference: {fileID: 307783071}
     - target: {fileID: 2940884818624834176, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
         type: 3}
-      propertyPath: selectionScreen
-      value: 
-      objectReference: {fileID: 210595921}
-    - target: {fileID: 2940884818624834176, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
-        type: 3}
-      propertyPath: namePlate
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2940884818624834176, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
-        type: 3}
       propertyPath: itemEquipBar
       value: 
       objectReference: {fileID: 250423560448827493, guid: f4ae219aba75f504495a66e41c58eb7c,
@@ -12121,14 +12177,25 @@ PrefabInstance:
         type: 3}
       propertyPath: characterPortraits.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 0b8d906c7fb3b914ba423658256344be,
+      objectReference: {fileID: 21300000, guid: 0186beab5ba02d8409453faf7742f222,
         type: 3}
     - target: {fileID: 2940884818624834176, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
         type: 3}
       propertyPath: characterPortraits.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 0186beab5ba02d8409453faf7742f222,
+      objectReference: {fileID: 21300000, guid: 0b8d906c7fb3b914ba423658256344be,
         type: 3}
+    - target: {fileID: 2940884818624834176, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
+        type: 3}
+      propertyPath: ItemBar
+      value: 
+      objectReference: {fileID: 2093764357022429411, guid: 9799bf1e61b9d064db3b3a8f9f598d53,
+        type: 3}
+    - target: {fileID: 2940884818624834176, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
+        type: 3}
+      propertyPath: selectionScreen
+      value: 
+      objectReference: {fileID: 210595921}
     - target: {fileID: 2940884818624834178, guid: 9c34e0eb3fc2e0f4bb1465df877c0e62,
         type: 3}
       propertyPath: m_Name

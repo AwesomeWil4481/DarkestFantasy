@@ -7,42 +7,30 @@ using System.Linq;
 
 public class MenuManager : MonoBehaviour
 {
-
-
-    public static MenuManager instance;
+    public static MenuManager Instance;
 
     public Vector3 savePointPos;
 
+    public GameObject statBlocks;
+    public GameObject[] _statBlocks;
+    [Space]
     public GameObject menuPanel;
     public GameObject mainMenuButton;
     public GameObject mainMenuScreen;
-    public GameObject inventoryScreen;
-    public GameObject selectedItem;
     public GameObject saveButton;
-    public GameObject equipScreen;
     public GameObject equipButton;
-    public GameObject statBlocks;
+    [Space]
+    public GameObject inventoryScreen;
+    public GameObject descriptionBar;
+    [Space]
+    public GameObject equipScreen;
     public GameObject equipmentSelectionScreen;
     public GameObject[] equipButtons;
-    public GameObject[] _statBlocks;
-    public GameObject selectionScreen;
-    public GameObject namePlate;
-    public GameObject SaveSelectionScreen;
-    public GameObject EquipmentBar;
-    public GameObject Joystick;
-
     public Sprite[] characterPortraits;
-
-    public bool canSave;
-
-    public List<string> itemNames = new List<string>();
-
-    public GameObject descriptionBar;
-    public GameObject ItemBar;
-    public GameObject itemEquipBar;
-    public GameObject[] itemBars;
-
-    public Text[] thing;
+    [Space]
+    public GameObject selectionScreen;
+    [Space]
+    public GameObject SaveSelectionScreen;
 
     int otherNumber;
     int number;
@@ -50,24 +38,54 @@ public class MenuManager : MonoBehaviour
     int posY = 915;
     int rotationNumber = 1;
 
-
     bool wantToAdd;
+    [Space]
+    public GameObject EquipmentBar;
+    public GameObject ItemBar;
+    public GameObject Joystick;
+    [Space]
+    public bool canSave;
+    public GameObject selectedItem;
+    public Text[] thing;
+    public GameObject[] itemBars;
+    public List<string> itemNames = new List<string>();
 
-    private void Awake()
-    {
-        instance = this;
-    }
-
+    int selectedPos;
     void Start()
     {
-
     }
-
-    void Update()
+    private void Awake()
     {
-
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else { Destroy(gameObject); };
     }
 
+    // Entering the main menu
+    public void OnMenuPress()
+    {
+        mainMenuButton.SetActive(false);
+        mainMenuScreen.SetActive(true);
+        menuPanel.SetActive(true);
+        Joystick.SetActive(false);
+        if (canSave)
+        {
+            var _button = saveButton.GetComponent<Button>();
+
+            _button.interactable = true;
+        }
+        if (!canSave)
+        {
+            var _button = saveButton.GetComponent<Button>();
+
+            _button.interactable = false;
+        }
+        CharacterStatisticsSerializer.Instance.LoadCharacter();
+    }
+
+    // Exiting the main menu
     public void BackToScene()
     {
         menuPanel.SetActive(false);
@@ -76,11 +94,7 @@ public class MenuManager : MonoBehaviour
         Joystick.SetActive(true);
     }
 
-    public void AddItemToMasterEquipmentList(EquipableItem equipableItem)
-    {
-        MasterEquipmentContainer.Instance.Equipment.Add(equipableItem);
-    }
-
+    // Entering the item screen
     public void ItemScreenEnter()
     {
         print("Number of Items: " + ItemList.Instance().Items.Count);
@@ -172,6 +186,7 @@ public class MenuManager : MonoBehaviour
         rotationNumber = 1;
     }
 
+    // When you click on an item in the menu
     public void ItemSelection(GameObject _gameObject)
     {
         descriptionBar = GameObject.Find("Description Bar");
@@ -187,11 +202,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void ItemPress()
-    {
-        //descriptionBar.text = button.gameObject.GetComponent<ScreenItem>().description;
-    }
-
+    //Exiting the item screen
     public void ItemScreenExit()
     {
         statBlocks.SetActive(true);
@@ -205,68 +216,78 @@ public class MenuManager : MonoBehaviour
         inventoryScreen.SetActive(false);
     }
 
-    public void EquipmentSelectionScreenPress()
+    // This is when you select a place to put the equipment
+    public void EquipmentSelectionScreenPress(string Place)
     {
+        foreach (GameObject o in GameObject.FindGameObjectsWithTag("item bar"))
+        {
+            Destroy(o);
+        }
+
         equipmentSelectionScreen.SetActive(true);
         statBlocks.SetActive(false);
         equipScreen.SetActive(false);
 
-        List<Foo> f = new List<Foo> { new Bar(), new Baz() };
-        var f1 = f.OfType<Bar>();
-
-        print(ItemList.Instance().Items[0].Name);
-
         int Num = 0;
 
-        foreach (EquipableItem j in MasterEquipmentContainer.Instance.Equipment)
-        {
-            print(MasterEquipmentContainer.Instance.Equipment[Num]);
-            Num += 1;
-        }
-
-        int VectorX = 1060;
-        int VectorY = 540;
+        int VectorX = 840;
+        int VectorY = 582;
 
         var t = ItemList.Instance().Items
             .Where(x => x.ItemType == ItemType.EquipableItem)
             .Select(x => MasterEquipmentContainer.Instance.Equipment.First(e => e.Name == x.Name))
             .Select(x =>
             {
-                var g = new GameObject(x.Name);
-                print(g);
                 GameObject go = Instantiate(EquipmentBar, new Vector3(VectorX, VectorY, 0), Quaternion.identity) as GameObject;
-                go.transform.parent = GameObject.Find("Equip Screen").transform;
-                thing = go.GetComponentsInChildren<Text>();
+                go.transform.parent = GameObject.Find("Equipment Selection").transform;
 
-                        go.GetComponent<EquipmentBarScript>().Armor = x.Armor;
-                        go.GetComponent<EquipmentBarScript>().HPBonus = x.HPBonus;
-                        go.GetComponent<EquipmentBarScript>().STBonus = x.STBonus;
-                        go.GetComponent<EquipmentBarScript>().HPPercentBonus = x.HPPercentBonus;
-                        go.GetComponent<EquipmentBarScript>().STPercentBonus = x.STPercentBonus;
+                bool delete = true;
+                foreach (string s in x.canEquip)
+                {
+                    print(s);
+                    if (s == SavedCharacters.Instance().DcurrentStats[selectedPos].characterName && Place == x.EquipmentType.ToString())
+                    {
+                        thing = go.GetComponentsInChildren<Text>();
 
-                go.GetComponentsInChildren<Text>()[0].text = x.Name;
+                        var goo = go.GetComponent<EquipmentBarScript>();
 
-                return g;
+                        goo.Armor = x.Armor;
+                        goo.HPBonus = x.HPBonus;
+                        goo.STBonus = x.STBonus;
+                        goo.HPPercentBonus = x.HPPercentBonus;
+                        goo.STPercentBonus = x.STPercentBonus;
+                        goo.canEquip.Clear();
+                        goo.canEquip.AddRange(x.canEquip);
+                        goo.EquipmentType = x.EquipmentType;
+                        foreach(Item i in ItemList.Instance().Items)
+                        {
+                            if(i.Name == x.Name)
+                            {
+                                goo.Count = i.Count;
+                            }
+                        }
+                        goo.Description = x.Description;
+                        go.name = x.Name;
+                        go.GetComponentsInChildren<Text>()[0].text = x.Name;
+                        go.GetComponentsInChildren<Text>()[1].text = goo.Count.ToString();
+                        delete = false;
+
+                        VectorX += 300;
+                    }
+                }
+
+                if (delete)
+                {
+                    Destroy(go);
+                }
+
+                return go;
             })
             .ToList();
 
     }
 
-    abstract class Foo
-    {
-        public List<string> Blah { get; }
-    }
-
-    class Bar : Foo
-    {
-
-    }
-
-    class Baz : Foo
-    {
-
-    }
-
+    // When you exit the character to equip screen
     public void EquipmentSelectionScreenExit()
     {
         equipmentSelectionScreen.SetActive(false);
@@ -275,6 +296,7 @@ public class MenuManager : MonoBehaviour
         mainMenuScreen.SetActive(true);
     }
 
+    // When you press the save button
     public void SavePressed()
     {
         statBlocks.SetActive(false);
@@ -282,6 +304,7 @@ public class MenuManager : MonoBehaviour
         SaveSelectionScreen.SetActive(true);
     }
 
+    // When you press the back button on the save screen
     public void SaveBack()
     {
         statBlocks.SetActive(true);
@@ -289,34 +312,16 @@ public class MenuManager : MonoBehaviour
         SaveSelectionScreen.SetActive(false);
     }
 
+    // When you select a save file to save to
     public void SaveSelected(string SaveSelected)
     {
         SaveTheBooks.SaveGame(SaveSelected);
     }
 
-    public void OnMenuPress()
-    {
-        Joystick.SetActive(false);
-        mainMenuButton.SetActive(false);
-        mainMenuScreen.SetActive(true);
-        menuPanel.SetActive(true);
-        if (canSave)
-        {
-            var _button = saveButton.GetComponent<Button>();
-
-            _button.interactable = true;
-        }
-        if (!canSave)
-        {
-            var _button = saveButton.GetComponent<Button>();
-
-            _button.interactable = false;
-        }
-    }
-
+    // This is called when you select a statblock to equip
     public void onMemberEquipSelect(int Position)
     {
-        int position = Position -= 1;
+        selectedPos = Position;
 
         selectionScreen.SetActive(true);
         equipScreen.SetActive(false);
@@ -324,17 +329,20 @@ public class MenuManager : MonoBehaviour
 
         var selectedCharacter = GameObject.Find("Character Statistics").GetComponentsInChildren<Text>();
 
+        selectedCharacter[9].text = SavedCharacters.Instance().DcurrentStats[Position].strength.ToString();
+        selectedCharacter[10].text = SavedCharacters.Instance().DcurrentStats[Position].speed.ToString();
+        selectedCharacter[11].text = SavedCharacters.Instance().DcurrentStats[Position].stamina.ToString();
+        selectedCharacter[12].text = SavedCharacters.Instance().DcurrentStats[Position].magic.ToString();
+        selectedCharacter[13].text = SavedCharacters.Instance().DcurrentStats[Position].attack.ToString();
+        selectedCharacter[14].text = SavedCharacters.Instance().DcurrentStats[Position].defense.ToString();
+        selectedCharacter[15].text = SavedCharacters.Instance().DcurrentStats[Position].evasion.ToString();
+        selectedCharacter[16].text = SavedCharacters.Instance().DcurrentStats[Position].magicDefense.ToString();
+        selectedCharacter[17].text = SavedCharacters.Instance().DcurrentStats[Position].magicEvasion.ToString();
+
         int currentSprite = 0;
-        foreach (Sprite o in characterPortraits)
+        foreach (Sprite o in CharacterStatisticsSerializer.Instance.characterPortraits)
         {
-            print("Times looped " + currentSprite);
-            print("Current Sprite Name " + characterPortraits[currentSprite].name);
-            print("Name to Search For : " + SavedCharacters.Instance().currentStats[position].characterName);
-            print(position);
-
-            selectedCharacter[9].text = SavedCharacters.Instance().currentStats[position].strength.ToString();
-
-            if (characterPortraits[currentSprite].name == SavedCharacters.Instance().currentStats[position].characterName)
+            if (CharacterStatisticsSerializer.Instance.characterPortraits[currentSprite].name == SavedCharacters.Instance().DcurrentStats[Position].characterName)
             {
                 var portrait = GameObject.Find("Character Portrait");
                 if (portrait == null)
@@ -355,11 +363,11 @@ public class MenuManager : MonoBehaviour
                 currentSprite += 1;
             }
         }
-
         //print(thisObject.GetComponent<LoadCharacterStats>().myTiedObject.Name);
         //namePlate.GetComponentInChildren<Text>().text = thisObject.GetComponent<LoadCharacterStats>().myTiedObject.Name;
     }
 
+    // When you exit the actual equipment view screen
     public void onMemberEquipExit()
     {
         foreach (GameObject o in GameObject.FindGameObjectsWithTag("item bar"))
@@ -371,30 +379,16 @@ public class MenuManager : MonoBehaviour
         statBlocks.SetActive(true);
     }
 
+    // This one activates when you press the equip button
     public void OnEquipPress()
     {
         equipScreen.SetActive(true);
         mainMenuScreen.SetActive(false);
         
-        foreach (PositionTwoContainer i in GameObject.Find("Character Scriptobject").GetComponent<CharacterStatisticsSerializer>().currentParty)
+        foreach (Stats s in SavedCharacters.Instance().currentStats)
         {
-            equipButtons[i._position].SetActive(true);
+            equipButtons[s._position].SetActive(true);
             //equipButtons[i._position].GetComponent<LoadCharacterStats>().myTiedObject = i;
-        }
-    }
-
-    public void OnEquipButtonClick()
-    {
-        foreach (EquipableItem i in EquipmentList.instance.equipableItems)
-        {
-            if (i.EquipmentType.ToString() == gameObject.name)
-            {
-                print("It's a match");
-            }
-            else
-            {
-                print("No match");
-            }
         }
     }
 
@@ -473,6 +467,7 @@ public class MenuManager : MonoBehaviour
     //    }
     //}
 
+    // i think this is when you havent selected a character to equip and go back
     public void OnEquipExit()
     {
         equipScreen.SetActive(false);
