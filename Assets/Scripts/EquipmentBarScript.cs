@@ -5,11 +5,32 @@ using UnityEngine;
 public class EquipmentBarScript : MonoBehaviour
 {
     public int Count;
-    public int Armor;
+    [Space]
     public int HPBonus;
-    public int STBonus;
+    public int MPBonus;
+    public int BTLPWRBonus;
+    public int STRBonus;
+    public int SPDBonus;
+    public int DEFBonus;
+    public int STMNABonus;
+    public int MAGBonus;
+    public int ATKBonus;
+    public int EVSINBonus;
+    public int MagEVSINBonus;
+    public int MagDefBonus;
+   [Space]
     public int HPPercentBonus;
-    public int STPercentBonus;
+    public int MPPercentBonus;
+    public int BTLPWRPercentBonus;
+    public int STRPercentBonus;
+    public int SPDPercentBonus;
+    public int DEFPercentBonus;
+    public int STMNAPercentBonus;
+    public int MAGPercentBonus;
+    public int ATKPercentBonus;
+    public int EVSINPercentBonus;
+    public int MagEVSINPercentBonus;
+    public int MagDefPercentBonus;
     [Space]
     public EquipmentType EquipmentType;
     [Space]

@@ -27,6 +27,8 @@ public class MenuManager : MonoBehaviour
     public GameObject equipmentSelectionScreen;
     public GameObject[] equipButtons;
     public Sprite[] characterPortraits;
+    public GameObject equipmentDescriptionBar;
+    public GameObject SelectedEquipment;
     [Space]
     public GameObject selectionScreen;
     [Space]
@@ -251,15 +253,35 @@ public class MenuManager : MonoBehaviour
 
                         var goo = go.GetComponent<EquipmentBarScript>();
 
-                        goo.Armor = x.Armor;
                         goo.HPBonus = x.HPBonus;
-                        goo.STBonus = x.STBonus;
+                        goo.MPBonus = x.MPBonus;
+                        goo.BTLPWRBonus = x.BTLPWRBonus;
+                        goo.STRBonus = x.STRBonus;
+                        goo.SPDBonus = x.SPDBonus;
+                        goo.DEFBonus = x.DEFBonus;
+                        goo.STMNABonus = x.STMNABonus;
+                        goo.MAGBonus = x.MAGBonus;
+                        goo.ATKBonus = x.ATKBonus;
+                        goo.EVSINBonus = x.EVSINBonus;
+                        goo.MagEVSINBonus = x.MagEVSINBonus;
+                        goo.MagDefBonus = x.MagDefBonus;
                         goo.HPPercentBonus = x.HPPercentBonus;
-                        goo.STPercentBonus = x.STPercentBonus;
+                        goo.MPPercentBonus = x.MPPercentBonus;
+                        goo.BTLPWRPercentBonus = x.BTLPWRPercentBonus;
+                        goo.STRPercentBonus = x.STRPercentBonus;
+                        goo.SPDPercentBonus = x.SPDPercentBonus;
+                        goo.DEFPercentBonus = x.DEFPercentBonus;
+                        goo.STMNAPercentBonus = x.STMNAPercentBonus;
+                        goo.MAGPercentBonus = x.MAGPercentBonus;
+                        goo.ATKPercentBonus = x.EVSINPercentBonus;
+                        goo.MagEVSINPercentBonus= x.MagEVSINPercentBonus;
+                        goo.MagDefPercentBonus = x.MagDefPercentBonus;
+
                         goo.canEquip.Clear();
                         goo.canEquip.AddRange(x.canEquip);
                         goo.EquipmentType = x.EquipmentType;
                         foreach(Item i in ItemList.Instance().Items)
+                        
                         {
                             if(i.Name == x.Name)
                             {
@@ -285,6 +307,31 @@ public class MenuManager : MonoBehaviour
             })
             .ToList();
 
+    }
+
+    // When you click on a piece of equipment while in the equipment screen
+    public void EquipmentClick(GameObject thisButton)
+    {
+        GameObject.Find("Equipment Description Bar").GetComponentsInChildren<Text>()[0].text = thisButton.GetComponent<EquipmentBarScript>().Description;
+
+        var goo = thisButton.GetComponent<EquipmentBarScript>();
+
+        if (Instance.SelectedEquipment == thisButton)
+        {
+            SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense += goo.DEFBonus;
+        }
+        else
+        {
+            var selectedCharacter = GameObject.Find("Character Statistics").GetComponentsInChildren<Text>();
+
+            selectedCharacter[23].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus).ToString();
+        }
+        Instance.SelectedEquipment = thisButton;
+    }
+
+    public int AddedValue(int Int1, int Int2)
+    {
+        return (Int1 + Int2);
     }
 
     // When you exit the character to equip screen
