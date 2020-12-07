@@ -256,4 +256,10 @@ public class Stats
     public int evasion;
     public int magicDefense;
     public int magicEvasion;
+    public EquipableItem BodySlot = new EquipableItem {Name = "Empty" };
+    public EquipableItem HeadSlot = new EquipableItem { Name = "Empty" };
+    public EquipableItem Relic1Slot = new EquipableItem { Name = "Empty" };
+    public EquipableItem Relic2Slot = new EquipableItem { Name = "Empty" };
+    public EquipableItem LeftHandSlot = new EquipableItem { Name = "Empty" };
+    public EquipableItem RightHandSlot = new EquipableItem {Name = "Empty" };
 }
