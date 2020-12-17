@@ -2027,27 +2027,36 @@ public class MenuManager : MonoBehaviour
     public void LeftArrowButton()
     {
         int NewSelectedPos = selectedPos - 1;
+        int Num = 1;
+        bool Done = false;
+        while (!Done)
         {
             if (SavedCharacters.Instance().DcurrentStats.ContainsKey(NewSelectedPos))
             {
                 OnMemberEquipSelect(NewSelectedPos);
+                Done = true;
             }
             else
             {
+                if(Num >= 4)
+                {
+                    OnMemberEquipSelect(selectedPos);
+                    Done = true;
+                }
                 if (NewSelectedPos == selectedPos)
                 {
                     OnMemberEquipSelect(selectedPos);
+                    Done = true;
                 }
                 if (NewSelectedPos <= 1)
                 {
                     NewSelectedPos = 4;
-                    LeftArrowButton();
                 }
                 else
                 {
                     NewSelectedPos -= 1;
-                    LeftArrowButton();
                 }
+                Num += 1;
             }
         }
     }
@@ -2055,26 +2064,35 @@ public class MenuManager : MonoBehaviour
     public void RightArrowButton()
     {
         int NewSelectedPos = selectedPos + 1;
-
-        if (SavedCharacters.Instance().DcurrentStats.ContainsKey(NewSelectedPos))
-        {
-            OnMemberEquipSelect(NewSelectedPos);
-        }
-        else
-        {
-            if (NewSelectedPos == selectedPos)
+        int Num = 1;
+        bool Done = false;
+        while (!Done) {
+            if (SavedCharacters.Instance().DcurrentStats.ContainsKey(NewSelectedPos))
             {
-                OnMemberEquipSelect(selectedPos);
-            }
-            if (NewSelectedPos >= 4)
-            {
-                NewSelectedPos = 1;
-                RightArrowButton();
+                OnMemberEquipSelect(NewSelectedPos);
+                Done = true;
             }
             else
             {
-                NewSelectedPos += 1;
-                RightArrowButton();
+                if (Num >= 4)
+                {
+                    OnMemberEquipSelect(selectedPos);
+                    Done = true;
+                }
+                if (NewSelectedPos == selectedPos)
+                {
+                    OnMemberEquipSelect(selectedPos);
+                    Done = true;
+                }
+                if (NewSelectedPos >= 4)
+                {
+                    NewSelectedPos = 1;
+                }
+                else
+                {
+                    NewSelectedPos += 1;
+                }
+                Num += 1;
             }
         }
     }
@@ -2125,6 +2143,20 @@ public class MenuManager : MonoBehaviour
     // This is called when you select a statblock to equip
     public void OnMemberEquipSelect(int Position)
     {
+        foreach(GameObject gameObject in GameObject.FindGameObjectsWithTag("item bar"))
+        {
+            Destroy(gameObject);
+        }
+
+        BodyUnequip.SetActive(false);
+        HeadUnequip.SetActive(false);
+        Relic1Unequip.SetActive(false);
+        Relic2Unequip.SetActive(false);
+        LeftHandUnequip.SetActive(false);
+        RightHandUnequip.SetActive(false);
+
+        equipmentDescriptionBar.GetComponentsInChildren<Text>()[0].text = "";
+
         selectedPos = Position;
 
         selectionScreen.SetActive(true);
