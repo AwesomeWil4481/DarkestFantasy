@@ -83,7 +83,7 @@ public class CharacterStatisticsSerializer : MonoBehaviour
 
             if (SavedCharacters.Instance().DcurrentStats.ContainsKey(number))
             {
-                var thing = SavedCharacters.Instance().DcurrentStats[number]._position -= 1;
+                var thing = SavedCharacters.Instance().DcurrentStats[number]._position -= 1 ;
 
                 statBlocks[thing].SetActive(true);
 

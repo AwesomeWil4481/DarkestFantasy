@@ -738,7 +738,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 74cfe4e6fd73452fec46c915b31bac8f
+      Hash: 69977d5946ca869fb49457f30a748056
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuManager
@@ -804,7 +804,7 @@ ScriptsOnlyBuild:
     className: SceneTransition
   - hash:
       serializedVersion: 2
-      Hash: 93ccb10fc108a06a6fcdb88b89658f28
+      Hash: 3db99eea52a5af04a05763c2fb8825c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EquipmentBarScript
