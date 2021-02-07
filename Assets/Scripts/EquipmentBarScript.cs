@@ -19,18 +19,18 @@ public class EquipmentBarScript : MonoBehaviour
     public int MagEVSINBonus;
     public int MagDefBonus;
    [Space]
-    public int HPPercentBonus;
-    public int MPPercentBonus;
-    public int BTLPWRPercentBonus;
-    public int STRPercentBonus;
-    public int SPDPercentBonus;
-    public int DEFPercentBonus;
-    public int STMNAPercentBonus;
-    public int MAGPercentBonus;
-    public int ATKPercentBonus;
-    public int EVSINPercentBonus;
-    public int MagEVSINPercentBonus;
-    public int MagDefPercentBonus;
+    public double HPPercentBonus;
+    public double MPPercentBonus;
+    public double BTLPWRPercentBonus;
+    public double STRPercentBonus;
+    public double SPDPercentBonus;
+    public double DEFPercentBonus;
+    public double STMNAPercentBonus;
+    public double MAGPercentBonus;
+    public double ATKPercentBonus;
+    public double EVSINPercentBonus;
+    public double MagEVSINPercentBonus;
+    public double MagDefPercentBonus;
     [Space]
     public EquipmentType EquipmentType;
     [Space]

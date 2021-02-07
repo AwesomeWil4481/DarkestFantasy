@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using System;
 
 public class MenuManager : MonoBehaviour
 {
@@ -249,15 +250,15 @@ public class MenuManager : MonoBehaviour
             {
                 if (go.BodySlot.Name != "Empty")
                 {
-                    go.strength -= gb.STRBonus;
-                    go.speed -= gb.SPDBonus;
-                    go.defense -= gb.DEFBonus;
-                    go.stamina -= gb.STMNABonus;
-                    go.magic -= gb.MAGBonus;
-                    go.attack -= gb.ATKBonus;
-                    go.evasion -= gb.EVSINBonus;
-                    go.magicEvasion -= gb.MagEVSINBonus;
-                    go.magicDefense -= gb.MagDefBonus;
+                    go.strength -= Convert.ToInt32(gb.STRBonus);
+                    go.speed -= Convert.ToInt32(gb.SPDBonus);
+                    go.defense -= Convert.ToInt32(gb.DEFBonus);
+                    go.stamina -= Convert.ToInt32(gb.STMNABonus);
+                    go.magic -= Convert.ToInt32(gb.MAGBonus);
+                    go.attack -= Convert.ToInt32(gb.ATKBonus);
+                    go.evasion -= Convert.ToInt32(gb.EVSINBonus);
+                    go.magicEvasion -= Convert.ToInt32(gb.MagEVSINBonus);
+                    go.magicDefense -= Convert.ToInt32(gb.MagDefBonus);
 
                 }
                 foreach (Item i in ItemList.Instance().Items)
@@ -278,15 +279,15 @@ public class MenuManager : MonoBehaviour
                 }
                 GameObject.Find("Body").GetComponentInChildren<Text>().text = goo.name;
 
-                go.strength += goo.STRBonus;
-                go.speed += goo.SPDBonus;
-                go.defense += goo.DEFBonus;
-                go.stamina += goo.STMNABonus;
-                go.magic += goo.MAGBonus;
-                go.attack += goo.ATKBonus;
-                go.evasion += goo.EVSINBonus;
-                go.magicEvasion += goo.MagEVSINBonus;
-                go.magicDefense += goo.MagDefBonus;
+                go.strength = Convert.ToInt32(Math.Floor((go.strength + goo.STRBonus) * goo.STRPercentBonus));
+                go.speed = Convert.ToInt32(Math.Floor((go.speed+ goo.SPDBonus) * goo.SPDPercentBonus));
+                go.stamina = Convert.ToInt32(Math.Floor((go.stamina + goo.STMNABonus) * goo.STMNAPercentBonus));
+                go.magic = Convert.ToInt32(Math.Floor((go.magic+ goo.MAGBonus) * goo.MAGPercentBonus));
+                go.defense = Convert.ToInt32(Math.Floor((go.defense + goo.DEFBonus) * goo.DEFPercentBonus));
+                go.attack = Convert.ToInt32(Math.Floor((go.attack + goo.ATKBonus) * goo.ATKPercentBonus));
+                go.evasion = Convert.ToInt32(Math.Floor((go.evasion + goo.EVSINBonus) * goo.EVSINPercentBonus));
+                go.magicEvasion = Convert.ToInt32(Math.Floor((go.magicEvasion + goo.MagEVSINBonus) * goo.MagEVSINPercentBonus));
+                go.magicDefense = Convert.ToInt32(Math.Floor((go.magicDefense + goo.MagDefBonus) * goo.MagDefPercentBonus));
 
                 selectedCharacter[9].text = go.strength.ToString();
                 selectedCharacter[10].text = go.speed.ToString();
@@ -381,15 +382,15 @@ public class MenuManager : MonoBehaviour
                     }
                     GameObject.Find("Left Hand").GetComponentInChildren<Text>().text = goo.name;
 
-                    go.strength += goo.STRBonus;
-                    go.speed += goo.SPDBonus;
-                    go.defense += goo.DEFBonus;
-                    go.stamina += goo.STMNABonus;
-                    go.magic += goo.MAGBonus;
-                    go.attack += goo.ATKBonus;
-                    go.evasion += goo.EVSINBonus;
-                    go.magicEvasion += goo.MagEVSINBonus;
-                    go.magicDefense += goo.MagDefBonus;
+                    go.strength = Convert.ToInt32(Math.Floor((go.strength + goo.STRBonus) * goo.STRPercentBonus));
+                    go.speed = Convert.ToInt32(Math.Floor((go.speed + goo.SPDBonus) * goo.SPDPercentBonus));
+                    go.stamina = Convert.ToInt32(Math.Floor((go.stamina + goo.STMNABonus) * goo.STMNAPercentBonus));
+                    go.magic = Convert.ToInt32(Math.Floor((go.magic + goo.MAGBonus) * goo.MAGPercentBonus));
+                    go.defense = Convert.ToInt32(Math.Floor((go.defense + goo.DEFBonus) * goo.DEFPercentBonus));
+                    go.attack = Convert.ToInt32(Math.Floor((go.attack + goo.ATKBonus) * goo.ATKPercentBonus));
+                    go.evasion = Convert.ToInt32(Math.Floor((go.evasion + goo.EVSINBonus) * goo.EVSINPercentBonus));
+                    go.magicEvasion = Convert.ToInt32(Math.Floor((go.magicEvasion + goo.MagEVSINBonus) * goo.MagEVSINPercentBonus));
+                    go.magicDefense = Convert.ToInt32(Math.Floor((go.magicDefense + goo.MagDefBonus) * goo.MagDefPercentBonus));
 
                     selectedCharacter[9].text = go.strength.ToString();
                     selectedCharacter[10].text = go.speed.ToString();
@@ -481,15 +482,15 @@ public class MenuManager : MonoBehaviour
                     }
                     GameObject.Find("Right Hand").GetComponentInChildren<Text>().text = goo.name;
 
-                    go.strength += goo.STRBonus;
-                    go.speed += goo.SPDBonus;
-                    go.defense += goo.DEFBonus;
-                    go.stamina += goo.STMNABonus;
-                    go.magic += goo.MAGBonus;
-                    go.attack += goo.ATKBonus;
-                    go.evasion += goo.EVSINBonus;
-                    go.magicEvasion += goo.MagEVSINBonus;
-                    go.magicDefense += goo.MagDefBonus;
+                    go.strength = Convert.ToInt32(Math.Floor((go.strength + goo.STRBonus) * goo.STRPercentBonus));
+                    go.speed = Convert.ToInt32(Math.Floor((go.speed + goo.SPDBonus) * goo.SPDPercentBonus));
+                    go.stamina = Convert.ToInt32(Math.Floor((go.stamina + goo.STMNABonus) * goo.STMNAPercentBonus));
+                    go.magic = Convert.ToInt32(Math.Floor((go.magic + goo.MAGBonus) * goo.MAGPercentBonus));
+                    go.defense = Convert.ToInt32(Math.Floor((go.defense + goo.DEFBonus) * goo.DEFPercentBonus));
+                    go.attack = Convert.ToInt32(Math.Floor((go.attack + goo.ATKBonus) * goo.ATKPercentBonus));
+                    go.evasion = Convert.ToInt32(Math.Floor((go.evasion + goo.EVSINBonus) * goo.EVSINPercentBonus));
+                    go.magicEvasion = Convert.ToInt32(Math.Floor((go.magicEvasion + goo.MagEVSINBonus) * goo.MagEVSINPercentBonus));
+                    go.magicDefense = Convert.ToInt32(Math.Floor((go.magicDefense + goo.MagDefBonus) * goo.MagDefPercentBonus));
 
                     selectedCharacter[9].text = go.strength.ToString();
                     selectedCharacter[10].text = go.speed.ToString();
@@ -587,15 +588,15 @@ public class MenuManager : MonoBehaviour
                     }
                     GameObject.Find("Relic 1").GetComponentInChildren<Text>().text = goo.name;
 
-                    go.strength += goo.STRBonus;
-                    go.speed += goo.SPDBonus;
-                    go.defense += goo.DEFBonus;
-                    go.stamina += goo.STMNABonus;
-                    go.magic += goo.MAGBonus;
-                    go.attack += goo.ATKBonus;
-                    go.evasion += goo.EVSINBonus;
-                    go.magicEvasion += goo.MagEVSINBonus;
-                    go.magicDefense += goo.MagDefBonus;
+                    go.strength = Convert.ToInt32(Math.Floor((go.strength + goo.STRBonus) * goo.STRPercentBonus));
+                    go.speed = Convert.ToInt32(Math.Floor((go.speed + goo.SPDBonus) * goo.SPDPercentBonus));
+                    go.stamina = Convert.ToInt32(Math.Floor((go.stamina + goo.STMNABonus) * goo.STMNAPercentBonus));
+                    go.magic = Convert.ToInt32(Math.Floor((go.magic + goo.MAGBonus) * goo.MAGPercentBonus));
+                    go.defense = Convert.ToInt32(Math.Floor((go.defense + goo.DEFBonus) * goo.DEFPercentBonus));
+                    go.attack = Convert.ToInt32(Math.Floor((go.attack + goo.ATKBonus) * goo.ATKPercentBonus));
+                    go.evasion = Convert.ToInt32(Math.Floor((go.evasion + goo.EVSINBonus) * goo.EVSINPercentBonus));
+                    go.magicEvasion = Convert.ToInt32(Math.Floor((go.magicEvasion + goo.MagEVSINBonus) * goo.MagEVSINPercentBonus));
+                    go.magicDefense = Convert.ToInt32(Math.Floor((go.magicDefense + goo.MagDefBonus) * goo.MagDefPercentBonus));
 
                     selectedCharacter[9].text = go.strength.ToString();
                     selectedCharacter[10].text = go.speed.ToString();
@@ -789,15 +790,15 @@ public class MenuManager : MonoBehaviour
                 }
                 GameObject.Find("Helmet").GetComponentInChildren<Text>().text = goo.name;
 
-                go.strength += goo.STRBonus;
-                go.speed += goo.SPDBonus;
-                go.defense += goo.DEFBonus;
-                go.stamina += goo.STMNABonus;
-                go.magic += goo.MAGBonus;
-                go.attack += goo.ATKBonus;
-                go.evasion += goo.EVSINBonus;
-                go.magicEvasion += goo.MagEVSINBonus;
-                go.magicDefense += goo.MagDefBonus;
+                go.strength = Convert.ToInt32(Math.Floor((go.strength + goo.STRBonus) * goo.STRPercentBonus));
+                go.speed = Convert.ToInt32(Math.Floor((go.speed + goo.SPDBonus) * goo.SPDPercentBonus));
+                go.stamina = Convert.ToInt32(Math.Floor((go.stamina + goo.STMNABonus) * goo.STMNAPercentBonus));
+                go.magic = Convert.ToInt32(Math.Floor((go.magic + goo.MAGBonus) * goo.MAGPercentBonus));
+                go.defense = Convert.ToInt32(Math.Floor((go.defense + goo.DEFBonus) * goo.DEFPercentBonus));
+                go.attack = Convert.ToInt32(Math.Floor((go.attack + goo.ATKBonus) * goo.ATKPercentBonus));
+                go.evasion = Convert.ToInt32(Math.Floor((go.evasion + goo.EVSINBonus) * goo.EVSINPercentBonus));
+                go.magicEvasion = Convert.ToInt32(Math.Floor((go.magicEvasion + goo.MagEVSINBonus) * goo.MagEVSINPercentBonus));
+                go.magicDefense = Convert.ToInt32(Math.Floor((go.magicDefense + goo.MagDefBonus) * goo.MagDefPercentBonus));
 
                 selectedCharacter[9].text = go.strength.ToString();
                 selectedCharacter[10].text = go.speed.ToString();
@@ -862,27 +863,27 @@ public class MenuManager : MonoBehaviour
             {
                 if (go.BodySlot.Name == "Empty")
                 {
-                    selectedCharacter[18].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus).ToString();
-                    selectedCharacter[19].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus).ToString();
-                    selectedCharacter[20].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus).ToString();
-                    selectedCharacter[21].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus).ToString();
-                    selectedCharacter[22].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus).ToString();
-                    selectedCharacter[23].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus).ToString();
-                    selectedCharacter[24].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus).ToString();
-                    selectedCharacter[25].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus).ToString();
-                    selectedCharacter[26].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus).ToString();
+                    selectedCharacter[18].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus) * goo.STRPercentBonus).ToString();
+                    selectedCharacter[19].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus) * goo.SPDPercentBonus).ToString();
+                    selectedCharacter[20].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus) * goo.STMNAPercentBonus).ToString();
+                    selectedCharacter[21].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus) * goo.MAGPercentBonus).ToString();
+                    selectedCharacter[22].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus) * goo.ATKPercentBonus).ToString();
+                    selectedCharacter[23].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus) * goo.DEFPercentBonus).ToString();
+                    selectedCharacter[24].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus) * goo.EVSINPercentBonus).ToString();
+                    selectedCharacter[25].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus) * goo.MagDefPercentBonus).ToString();
+                    selectedCharacter[26].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus) * goo.MagEVSINPercentBonus).ToString();
                 }
                 else
                 {
-                    selectedCharacter[18].text = Instance.AddTriValue(go.strength, goo.STRBonus, -gb.STRBonus).ToString();
-                    selectedCharacter[19].text = Instance.AddTriValue(go.speed, goo.SPDBonus, -gb.SPDBonus).ToString();
-                    selectedCharacter[20].text = Instance.AddTriValue(go.stamina, goo.SPDBonus, -gb.STMNABonus).ToString();
-                    selectedCharacter[21].text = Instance.AddTriValue(go.magic, goo.MAGBonus, -gb.MAGBonus).ToString();
-                    selectedCharacter[22].text = Instance.AddTriValue(go.attack, goo.ATKBonus, -gb.ATKBonus).ToString();
-                    selectedCharacter[23].text = Instance.AddTriValue(go.defense, goo.DEFBonus, -gb.DEFBonus).ToString();
-                    selectedCharacter[24].text = Instance.AddTriValue(go.evasion, goo.EVSINBonus, -gb.EVSINBonus).ToString();
-                    selectedCharacter[25].text = Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -gb.STRBonus).ToString();
-                    selectedCharacter[26].text = Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -gb.MagEVSINBonus).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.strength, goo.STRBonus, -gb.STRBonus) * (-gb.STRPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.speed, goo.SPDBonus, -gb.SPDBonus) * (-gb.SPDPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.stamina, goo.STMNABonus, -gb.STMNABonus) * (-gb.STMNAPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.magic, goo.MAGBonus, -gb.MAGBonus) * (-gb.MAGPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.attack, goo.ATKBonus, -gb.ATKBonus) * (-gb.ATKPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.defense, goo.DEFBonus, -gb.DEFBonus) * (-gb.DEFPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.evasion, goo.EVSINBonus, -gb.EVSINBonus) * (-gb.EVSINPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -gb.MagDefBonus) * (-gb.MagDefPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -gb.MagEVSINBonus) * (-gb.MagEVSINPercentBonus)).ToString();
                 }
             }
 
@@ -892,27 +893,27 @@ public class MenuManager : MonoBehaviour
                 {
                     if (go.LeftHandSlot.Name == "Empty")
                     {
-                        selectedCharacter[18].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus).ToString();
-                        selectedCharacter[19].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus).ToString();
-                        selectedCharacter[20].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus).ToString();
-                        selectedCharacter[21].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus).ToString();
-                        selectedCharacter[22].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus).ToString();
-                        selectedCharacter[23].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus).ToString();
-                        selectedCharacter[24].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus).ToString();
-                        selectedCharacter[25].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus).ToString();
-                        selectedCharacter[26].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus).ToString();
+                        selectedCharacter[18].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus) * goo.STRPercentBonus).ToString();
+                        selectedCharacter[19].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus) * goo.SPDPercentBonus).ToString();
+                        selectedCharacter[20].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus) * goo.STMNAPercentBonus).ToString();
+                        selectedCharacter[21].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus) * goo.MAGPercentBonus).ToString();
+                        selectedCharacter[22].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus) * goo.ATKPercentBonus).ToString();
+                        selectedCharacter[23].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus) * goo.DEFPercentBonus).ToString();
+                        selectedCharacter[24].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus) * goo.EVSINPercentBonus).ToString();
+                        selectedCharacter[25].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus) * goo.MagDefPercentBonus).ToString();
+                        selectedCharacter[26].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus) * goo.MagEVSINPercentBonus).ToString();
                     }
                     else
                     {
-                        selectedCharacter[18].text = Instance.AddTriValue(go.strength, goo.STRBonus, -glh.STRBonus).ToString();
-                        selectedCharacter[19].text = Instance.AddTriValue(go.speed, goo.SPDBonus, -glh.SPDBonus).ToString();
-                        selectedCharacter[20].text = Instance.AddTriValue(go.stamina, goo.SPDBonus, -glh.STMNABonus).ToString();
-                        selectedCharacter[21].text = Instance.AddTriValue(go.magic, goo.MAGBonus, -glh.MAGBonus).ToString();
-                        selectedCharacter[22].text = Instance.AddTriValue(go.attack, goo.ATKBonus, -glh.ATKBonus).ToString();
-                        selectedCharacter[23].text = Instance.AddTriValue(go.defense, goo.DEFBonus, -glh.DEFBonus).ToString();
-                        selectedCharacter[24].text = Instance.AddTriValue(go.evasion, goo.EVSINBonus, -glh.EVSINBonus).ToString();
-                        selectedCharacter[25].text = Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -glh.STRBonus).ToString();
-                        selectedCharacter[26].text = Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -glh.MagEVSINBonus).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.strength, goo.STRBonus, -glh.STRBonus) * (-glh.STRPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.speed, goo.SPDBonus, -glh.SPDBonus) * (-glh.SPDPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.stamina, goo.STMNABonus, -glh.STMNABonus) * (-glh.STMNAPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magic, goo.MAGBonus, -glh.MAGBonus) * (-glh.MAGPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.attack, goo.ATKBonus, -glh.ATKBonus) * (-glh.ATKPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.defense, goo.DEFBonus, -glh.DEFBonus) * (-glh.DEFPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.evasion, goo.EVSINBonus, -glh.EVSINBonus) * (-glh.EVSINPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -glh.MagDefBonus) * (-glh.MagDefPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -glh.MagEVSINBonus) * (-glh.MagEVSINPercentBonus)).ToString();
                     }
                 }
 
@@ -920,27 +921,27 @@ public class MenuManager : MonoBehaviour
                 {
                     if (go.RightHandSlot.Name == "Empty")
                     {
-                        selectedCharacter[18].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus).ToString();
-                        selectedCharacter[19].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus).ToString();
-                        selectedCharacter[20].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus).ToString();
-                        selectedCharacter[21].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus).ToString();
-                        selectedCharacter[22].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus).ToString();
-                        selectedCharacter[23].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus).ToString();
-                        selectedCharacter[24].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus).ToString();
-                        selectedCharacter[25].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus).ToString();
-                        selectedCharacter[26].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus).ToString();
+                        selectedCharacter[18].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus) * goo.STRPercentBonus).ToString();
+                        selectedCharacter[19].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus) * goo.SPDPercentBonus).ToString();
+                        selectedCharacter[20].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus) * goo.STMNAPercentBonus).ToString();
+                        selectedCharacter[21].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus) * goo.MAGPercentBonus).ToString();
+                        selectedCharacter[22].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus) * goo.ATKPercentBonus).ToString();
+                        selectedCharacter[23].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus) * goo.DEFPercentBonus).ToString();
+                        selectedCharacter[24].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus) * goo.EVSINPercentBonus).ToString();
+                        selectedCharacter[25].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus) * goo.MagDefPercentBonus).ToString();
+                        selectedCharacter[26].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus) * goo.MagEVSINPercentBonus).ToString();
                     }
                     else
                     {
-                        selectedCharacter[18].text = Instance.AddTriValue(go.strength, goo.STRBonus, -grh.STRBonus).ToString();
-                        selectedCharacter[19].text = Instance.AddTriValue(go.speed, goo.SPDBonus, -grh.SPDBonus).ToString();
-                        selectedCharacter[20].text = Instance.AddTriValue(go.stamina, goo.SPDBonus, -grh.STMNABonus).ToString();
-                        selectedCharacter[21].text = Instance.AddTriValue(go.magic, goo.MAGBonus, -grh.MAGBonus).ToString();
-                        selectedCharacter[22].text = Instance.AddTriValue(go.attack, goo.ATKBonus, -grh.ATKBonus).ToString();
-                        selectedCharacter[23].text = Instance.AddTriValue(go.defense, goo.DEFBonus, -grh.DEFBonus).ToString();
-                        selectedCharacter[24].text = Instance.AddTriValue(go.evasion, goo.EVSINBonus, -grh.EVSINBonus).ToString();
-                        selectedCharacter[25].text = Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -grh.STRBonus).ToString();
-                        selectedCharacter[26].text = Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -grh.MagEVSINBonus).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.strength, goo.STRBonus, -grh.STRBonus) * (-grh.STRPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.speed, goo.SPDBonus, -grh.SPDBonus) * (-grh.SPDPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.stamina, goo.STMNABonus, -grh.STMNABonus) * (-grh.STMNAPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magic, goo.MAGBonus, -grh.MAGBonus) * (-grh.MAGPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.attack, goo.ATKBonus, -grh.ATKBonus) * (-grh.ATKPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.defense, goo.DEFBonus, -grh.DEFBonus) * (-grh.DEFPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.evasion, goo.EVSINBonus, -grh.EVSINBonus) * (-grh.EVSINPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -grh.MagDefBonus) * (-grh.MagDefPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -grh.MagEVSINBonus) * (-grh.MagEVSINPercentBonus)).ToString();
                     }
                 }
             }
@@ -949,56 +950,57 @@ public class MenuManager : MonoBehaviour
             {
                 if (go.HeadSlot.Name == "Empty")
                 {
-                    selectedCharacter[18].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus).ToString();
-                    selectedCharacter[19].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus).ToString();
-                    selectedCharacter[20].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus).ToString();
-                    selectedCharacter[21].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus).ToString();
-                    selectedCharacter[22].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus).ToString();
-                    selectedCharacter[23].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus).ToString();
-                    selectedCharacter[24].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus).ToString();
-                    selectedCharacter[25].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus).ToString();
-                    selectedCharacter[26].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus).ToString();
+                    selectedCharacter[18].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus) * goo.STRPercentBonus).ToString();
+                    selectedCharacter[19].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus) * goo.SPDPercentBonus).ToString();
+                    selectedCharacter[20].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus) * goo.STMNAPercentBonus).ToString();
+                    selectedCharacter[21].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus) * goo.MAGPercentBonus).ToString();
+                    selectedCharacter[22].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus) * goo.ATKPercentBonus).ToString();
+                    selectedCharacter[23].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus) * goo.DEFPercentBonus).ToString();
+                    selectedCharacter[24].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus) * goo.EVSINPercentBonus).ToString();
+                    selectedCharacter[25].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus) * goo.MagDefPercentBonus).ToString();
+                    selectedCharacter[26].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus) * goo.MagEVSINPercentBonus).ToString();
                 }
                 else
                 {
-                    selectedCharacter[18].text = Instance.AddTriValue(go.strength, goo.STRBonus, -gh.STRBonus).ToString();
-                    selectedCharacter[19].text = Instance.AddTriValue(go.speed, goo.SPDBonus, -gh.SPDBonus).ToString();
-                    selectedCharacter[20].text = Instance.AddTriValue(go.stamina, goo.SPDBonus, -gh.STMNABonus).ToString();
-                    selectedCharacter[21].text = Instance.AddTriValue(go.magic, goo.MAGBonus, -gh.MAGBonus).ToString();
-                    selectedCharacter[22].text = Instance.AddTriValue(go.attack, goo.ATKBonus, -gh.ATKBonus).ToString();
-                    selectedCharacter[23].text = Instance.AddTriValue(go.defense, goo.DEFBonus, -gh.DEFBonus).ToString();
-                    selectedCharacter[24].text = Instance.AddTriValue(go.evasion, goo.EVSINBonus, -gh.EVSINBonus).ToString();
-                    selectedCharacter[25].text = Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -gh.STRBonus).ToString();
-                    selectedCharacter[26].text = Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -gh.MagEVSINBonus).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.strength, goo.STRBonus, -gh.STRBonus) * (-gh.STRPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.speed, goo.SPDBonus, -gh.SPDBonus) * (-gh.SPDPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.stamina, goo.STMNABonus, -gh.STMNABonus) * (-gh.STMNAPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.magic, goo.MAGBonus, -gh.MAGBonus) * (-gh.MAGPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.attack, goo.ATKBonus, -gh.ATKBonus) * (-gh.ATKPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.defense, goo.DEFBonus, -gh.DEFBonus) * (-gh.DEFPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.evasion, goo.EVSINBonus, -gh.EVSINBonus) * (-gh.EVSINPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -gh.MagDefBonus) * (-gh.MagDefPercentBonus)).ToString();
+                    selectedCharacter[18].text = (Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -gh.MagEVSINBonus) * (-gh.MagEVSINPercentBonus)).ToString();
                 }
             }
-            if(goo.EquipmentType == EquipmentType.Relic)
+
+            if (goo.EquipmentType == EquipmentType.Relic)
             {
                 if (Instance.LeftRelicSelected)
                 {
                     if (go.Relic1Slot.Name == "Empty")
                     {
-                        selectedCharacter[18].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus).ToString();
-                        selectedCharacter[19].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus).ToString();
-                        selectedCharacter[20].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus).ToString();
-                        selectedCharacter[21].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus).ToString();
-                        selectedCharacter[22].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus).ToString();
-                        selectedCharacter[23].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus).ToString();
-                        selectedCharacter[24].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus).ToString();
-                        selectedCharacter[25].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus).ToString();
-                        selectedCharacter[26].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus).ToString();
+                        selectedCharacter[18].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus) * goo.STRPercentBonus).ToString();
+                        selectedCharacter[19].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus) * goo.SPDPercentBonus).ToString();
+                        selectedCharacter[20].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus) * goo.STMNAPercentBonus).ToString();
+                        selectedCharacter[21].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus) * goo.MAGPercentBonus).ToString();
+                        selectedCharacter[22].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus) * goo.ATKPercentBonus).ToString();
+                        selectedCharacter[23].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus) * goo.DEFPercentBonus).ToString();
+                        selectedCharacter[24].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus) * goo.EVSINPercentBonus).ToString();
+                        selectedCharacter[25].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus) * goo.MagDefPercentBonus).ToString();
+                        selectedCharacter[26].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus) * goo.MagEVSINPercentBonus).ToString();
                     }
                     else
                     {
-                        selectedCharacter[18].text = Instance.AddTriValue(go.strength, goo.STRBonus, -glr.STRBonus).ToString();
-                        selectedCharacter[19].text = Instance.AddTriValue(go.speed, goo.SPDBonus, -glr.SPDBonus).ToString();
-                        selectedCharacter[20].text = Instance.AddTriValue(go.stamina, goo.SPDBonus, -glr.STMNABonus).ToString();
-                        selectedCharacter[21].text = Instance.AddTriValue(go.magic, goo.MAGBonus, -glr.MAGBonus).ToString();
-                        selectedCharacter[22].text = Instance.AddTriValue(go.attack, goo.ATKBonus, -glr.ATKBonus).ToString();
-                        selectedCharacter[23].text = Instance.AddTriValue(go.defense, goo.DEFBonus, -glr.DEFBonus).ToString();
-                        selectedCharacter[24].text = Instance.AddTriValue(go.evasion, goo.EVSINBonus, -glr.EVSINBonus).ToString();
-                        selectedCharacter[25].text = Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -glr.STRBonus).ToString();
-                        selectedCharacter[26].text = Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -glr.MagEVSINBonus).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.strength, goo.STRBonus, -glr.STRBonus) * (-glr.STRPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.speed, goo.SPDBonus, -glr.SPDBonus) * (-glr.SPDPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.stamina, goo.STMNABonus, -glr.STMNABonus) * (-glr.STMNAPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magic, goo.MAGBonus, -glr.MAGBonus) * (-glr.MAGPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.attack, goo.ATKBonus, -glr.ATKBonus) * (-glr.ATKPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.defense, goo.DEFBonus, -glr.DEFBonus) * (-glr.DEFPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.evasion, goo.EVSINBonus, -glr.EVSINBonus) * (-glr.EVSINPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -glr.MagDefBonus) * (-glr.MagDefPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -glr.MagEVSINBonus) * (-glr.MagEVSINPercentBonus)).ToString();
                     }
                 }
 
@@ -1006,27 +1008,27 @@ public class MenuManager : MonoBehaviour
                 {
                     if (go.Relic2Slot.Name == "Empty")
                     {
-                        selectedCharacter[18].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus).ToString();
-                        selectedCharacter[19].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus).ToString();
-                        selectedCharacter[20].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus).ToString();
-                        selectedCharacter[21].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus).ToString();
-                        selectedCharacter[22].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus).ToString();
-                        selectedCharacter[23].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus).ToString();
-                        selectedCharacter[24].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus).ToString();
-                        selectedCharacter[25].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus).ToString();
-                        selectedCharacter[26].text = Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus).ToString();
+                        selectedCharacter[18].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].strength, goo.STRBonus)*goo.STRPercentBonus).ToString();
+                        selectedCharacter[19].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].speed, goo.SPDBonus)*goo.SPDPercentBonus).ToString();
+                        selectedCharacter[20].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].stamina, goo.STMNABonus)*goo.STMNAPercentBonus).ToString();
+                        selectedCharacter[21].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magic, goo.MAGBonus)*goo.MAGPercentBonus).ToString();
+                        selectedCharacter[22].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].attack, goo.ATKBonus)*goo.ATKPercentBonus).ToString();
+                        selectedCharacter[23].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].defense, goo.DEFBonus)*goo.DEFPercentBonus).ToString();
+                        selectedCharacter[24].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].evasion, goo.EVSINBonus)*goo.EVSINPercentBonus).ToString();
+                        selectedCharacter[25].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicDefense, goo.MagDefBonus)*goo.MagDefPercentBonus).ToString();
+                        selectedCharacter[26].text = (Instance.AddedValue(SavedCharacters.Instance().DcurrentStats[Instance.selectedPos].magicEvasion, goo.MagEVSINBonus)*goo.MagEVSINPercentBonus).ToString();
                     }
                     else
                     {
-                        selectedCharacter[18].text = Instance.AddTriValue(go.strength, goo.STRBonus, -grr.STRBonus).ToString();
-                        selectedCharacter[19].text = Instance.AddTriValue(go.speed, goo.SPDBonus, -grr.SPDBonus).ToString();
-                        selectedCharacter[20].text = Instance.AddTriValue(go.stamina, goo.SPDBonus, -grr.STMNABonus).ToString();
-                        selectedCharacter[21].text = Instance.AddTriValue(go.magic, goo.MAGBonus, -grr.MAGBonus).ToString();
-                        selectedCharacter[22].text = Instance.AddTriValue(go.attack, goo.ATKBonus, -grr.ATKBonus).ToString();
-                        selectedCharacter[23].text = Instance.AddTriValue(go.defense, goo.DEFBonus, -grr.DEFBonus).ToString();
-                        selectedCharacter[24].text = Instance.AddTriValue(go.evasion, goo.EVSINBonus, -grr.EVSINBonus).ToString();
-                        selectedCharacter[25].text = Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -grr.STRBonus).ToString();
-                        selectedCharacter[26].text = Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -grr.MagEVSINBonus).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.strength, goo.STRBonus, -grr.STRBonus) * (-grr.STRPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.speed, goo.SPDBonus, -grr.SPDBonus) * (-grr.SPDPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.stamina, goo.STMNABonus, -grr.STMNABonus) * (-grr.STMNAPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magic, goo.MAGBonus, -grr.MAGBonus) * (-grr.MAGPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.attack, goo.ATKBonus, -grr.ATKBonus) * (-grr.ATKPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.defense, goo.DEFBonus, -grr.DEFBonus) * (-grr.DEFPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.evasion, goo.EVSINBonus, -grr.EVSINBonus) * (-grr.EVSINPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magicDefense, goo.MagDefBonus, -grr.MagDefBonus) * (-grr.MagDefPercentBonus)).ToString();
+                        selectedCharacter[18].text = (Instance.AddTriValue(go.magicEvasion, goo.MagEVSINBonus, -grr.MagEVSINBonus) * (-grr.MagEVSINPercentBonus)).ToString();
                     }
                 }
             }
@@ -1211,15 +1213,16 @@ public class MenuManager : MonoBehaviour
                         go.name = x.Name;
                         go.GetComponentsInChildren<Text>()[0].text = x.Name;
                         go.GetComponentsInChildren<Text>()[1].text = goo.Count.ToString();
-
-
-                        VectorX += 300;
                     }
                 }
 
                 if (delete)
                 {
                     Destroy(go);
+                }
+                else
+                {
+                    VectorX += 300;
                 }
 
                 return go;
@@ -2098,15 +2101,15 @@ public class MenuManager : MonoBehaviour
     }
 
     // Simply adds two ints
-    public int AddedValue(int Int1, int Int2)
+    public int AddedValue(decimal Int1, decimal Int2)
     {
-        return (Int1 + Int2);
+        return decimal.ToInt32(Int1 + Int2);
     }
 
     // Simply adds three ints
-    public int AddTriValue(int Int1,int Int2, int Int3)
+    public int AddTriValue(decimal Int1, decimal Int2, decimal Int3)
     {
-        return (Int1 + Int2 + Int3);
+        return decimal.ToInt32(Int1 + Int2 + Int3);
     }
 
     // When you exit the character to equip screen
@@ -2208,6 +2211,16 @@ public class MenuManager : MonoBehaviour
                 currentSprite += 1;
             }
         }
+
+        selectedCharacter[18].text = 0.ToString();
+        selectedCharacter[19].text = 0.ToString();
+        selectedCharacter[20].text = 0.ToString();
+        selectedCharacter[21].text = 0.ToString();
+        selectedCharacter[22].text = 0.ToString();
+        selectedCharacter[23].text = 0.ToString();
+        selectedCharacter[24].text = 0.ToString();
+        selectedCharacter[25].text = 0.ToString();
+        selectedCharacter[26].text = 0.ToString();
         //print(thisObject.GetComponent<LoadCharacterStats>().myTiedObject.Name);
         //namePlate.GetComponentInChildren<Text>().text = thisObject.GetComponent<LoadCharacterStats>().myTiedObject.Name;
     }

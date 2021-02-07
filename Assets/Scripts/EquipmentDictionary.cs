@@ -92,6 +92,7 @@ public class SaveTheBooks
             {
                 SavedCharacters.Instance().DcurrentStats[i._position] = i;
                 Debug.Log(SavedCharacters.Instance().DcurrentStats[i._position]._position+" is the loaded position of "+SavedCharacters.Instance().DcurrentStats[i._position].characterName);
+                Debug.Log(SavedCharacters.Instance().DcurrentStats[i._position].strength+" is the loaded strength of "+SavedCharacters.Instance().DcurrentStats[i._position].characterName);
             }
         }
 
@@ -101,6 +102,8 @@ public class SaveTheBooks
 
             MasterEquipmentContainer.Instance.Equipment.Clear();
             MasterEquipmentContainer.Instance.Equipment.AddRange(deserializedData.Equipment);
+
+            Debug.Log(MasterEquipmentContainer.Instance.Equipment[0].STRPercentBonus.ToString());
         }
     }
 }

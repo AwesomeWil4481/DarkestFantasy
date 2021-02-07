@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 16 22:12:30 MST 2020
+#Sun Feb 07 15:16:55 MST 2021
 2.path=bin/Data/Managed/UnityEngine.GameCenterModule.pdb
 14.set=ASSET
 107.baseType=DIRECTORY

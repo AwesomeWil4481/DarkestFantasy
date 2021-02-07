@@ -13,11 +13,11 @@
                         "endOffsets": "103,170"
                     },
                     "to": {
-                        "startLines": "2,3",
+                        "startLines": "3,4",
                         "startColumns": "4,4",
-                        "startOffsets": "55,108",
+                        "startOffsets": "101,154",
                         "endColumns": "52,67",
-                        "endOffsets": "103,171"
+                        "endOffsets": "149,217"
                     }
                 },
                 {
@@ -31,12 +31,29 @@
                         "endOffsets": "286,188,513"
                     },
                     "to": {
-                        "startLines": "4,6,9",
+                        "startLines": "5,7,10",
                         "startColumns": "4,4,4",
-                        "startOffsets": "176,276,414",
-                        "endLines": "5,8,12",
+                        "startOffsets": "222,322,460",
+                        "endLines": "6,9,13",
                         "endColumns": "8,8,8",
-                        "endOffsets": "271,409,636"
+                        "endOffsets": "317,455,682"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\wilhelm\\Unity\\Darkest Fantasy\\Darkest-Fantasy\\Temp\\gradleOut\\launcher\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
                     }
                 }
             ]

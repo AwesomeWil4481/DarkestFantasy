@@ -1,4 +1,4 @@
-#Wed Dec 16 22:12:30 MST 2020
+#Sun Feb 07 15:16:54 MST 2021
 base.0=C\:\\Users\\wilhelm\\Unity\\Darkest Fantasy\\Darkest-Fantasy\\Temp\\gradleOut\\launcher\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

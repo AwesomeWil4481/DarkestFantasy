@@ -8,7 +8,7 @@
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="28" />
+        android:targetSdkVersion="29" />
 
     <uses-feature android:glEsVersion="0x00030000" />
     <uses-feature
@@ -60,7 +60,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="2cc75653-45bb-4944-b199-f03af433d257" />
+            android:value="92ff4757-a73e-4d93-a736-269165efb4e2" />
     </application>
 
 </manifest>

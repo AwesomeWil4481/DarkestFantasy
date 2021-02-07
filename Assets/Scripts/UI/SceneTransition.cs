@@ -20,6 +20,7 @@ public class SceneTransition : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
         StartCoroutine(StartScene());
     }
     void Start()
@@ -30,6 +31,7 @@ public class SceneTransition : MonoBehaviour
     public IEnumerator StartScene()
     {
         yield return new WaitForSecondsRealtime(1.5f);
+
     }
     public IEnumerator EndScene(string SceneName)
     {
