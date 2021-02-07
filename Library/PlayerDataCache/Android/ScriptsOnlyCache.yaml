@@ -570,7 +570,7 @@ ScriptsOnlyBuild:
     className: positionOneStats
   - hash:
       serializedVersion: 2
-      Hash: 34fbaede6c0cf3cbf7de6ec26ceedbd1
+      Hash: c41bfd0ea8a097afc2ae498b6d67e1df
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: conversationManager

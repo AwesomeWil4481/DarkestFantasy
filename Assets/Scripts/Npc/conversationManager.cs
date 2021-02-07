@@ -17,9 +17,9 @@ public class conversationManager : MonoBehaviour
     public GameObject TopBox;
     public GameObject BottomBox;
 
-    public Text textBoxText;
+    Text textBoxText;
 
-    int numberOfLines = -1;
+    int CurrentLine = -1;
     int numberOfDialogues = 1;
 
     bool playerNextTo = false;
@@ -33,10 +33,7 @@ public class conversationManager : MonoBehaviour
 
     void Start()
     {
-        foreach (string i in npcDialogues)
-        {
-            numberOfLines += 1;
-        }
+        textBoxText = textBox.GetComponentInChildren<Text>();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -50,6 +47,9 @@ public class conversationManager : MonoBehaviour
         speechBubble.SetActive(false);
         canEncounter = true;
         playerNextTo = false;
+
+        NewPosition = Vector3.zero;
+        SavedPosition = Vector3.zero;
     }
 
     void Update()
@@ -62,6 +62,19 @@ public class conversationManager : MonoBehaviour
 
     void onPlayerInteraction()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            SavedPosition = playerBody.transform.position;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            NewPosition = playerBody.transform.position;
+            if(SavedPosition == NewPosition)
+            {
+                BasicTextProgression();
+            }
+        }
+
         foreach (Touch touch in Input.touches)
         {
             if (touch.phase == TouchPhase.Began)
@@ -73,40 +86,50 @@ public class conversationManager : MonoBehaviour
                 NewPosition = playerBody.transform.position;
                 if (NewPosition == SavedPosition)
                 {
-                    if (firstCall == true)
-                    {
-                        joyStick.SetActive(false);
-                        textBox.SetActive(true);
-                        speechBubble.SetActive(false);
-
-                        textBoxText.text = "" + npcDialogues[0];
-                        firstCall = false;
-                    }
-                    if (firstCall == false && numberOfLines != 0)
-                    {
-                        textBoxText.text = "" + npcDialogues[numberOfDialogues];
-                        numberOfDialogues += 1;
-                        numberOfLines -= 1;
-                    }
-                    else
-                    {
-                        joyStick.SetActive(true);
-                        textBox.SetActive(false);
-                        canEncounter = false;
-                        firstCall = true;
-                        Reset();
-                    }
+                    BasicTextProgression();    
                 }
             }
         }
     }
-    private void Reset()
+
+    public void BasicTextProgression()
     {
-        numberOfLines = -1;
-        foreach (string i in npcDialogues)
+        while (firstCall)
         {
-            numberOfLines += 1;
+            joyStick.SetActive(false);
+            speechBubble.SetActive(false);
+            textBox.SetActive(true);
+            firstCall = false;
+
+            textBoxText.text = "" + npcDialogues[0];
+            CurrentLine = 0;
+
+            numberOfDialogues = (npcDialogues.Count - 1);
+
+            return;
         }
-        numberOfDialogues = 1;
+        while (!firstCall)
+        {
+            while (numberOfDialogues != CurrentLine)
+            {
+                CurrentLine += 1;
+                textBoxText.text = "" + npcDialogues[CurrentLine];
+
+                return;
+            }
+            
+            if (numberOfDialogues == CurrentLine)
+            {
+                textBoxText.text = "";
+
+                canEncounter = false;
+                textBox.SetActive(false);
+                joyStick.SetActive(true);
+
+                firstCall = true;
+
+                return;
+            }
+        }
     }
 }
