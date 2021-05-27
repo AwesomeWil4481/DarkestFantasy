@@ -58,6 +58,11 @@ public class SaveTheBooks
         File.WriteAllText(Application.persistentDataPath + "/Save " + SaveSelected + "/SavedScene.json", character);
     }
 
+    public static void NewGame()
+    {
+        SceneManager.LoadScene("");
+    }
+
     public static void LoadGame(string SaveSelected)
     {
         { // Loading the scene
@@ -78,7 +83,7 @@ public class SaveTheBooks
         }
 
         { // Loading the start position
-            characterPosition.CharacterPositionLoad();
+            characterPosition.CharacterPositionLoad(int.Parse(SaveSelected));
         }
 
         { // Loading Character Stats

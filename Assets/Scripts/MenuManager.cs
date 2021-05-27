@@ -50,8 +50,9 @@ public class MenuManager : MonoBehaviour
     public GameObject EquipmentBar;
     public GameObject ItemBar;
     public GameObject Joystick;
+    public bool canSave = true;
+    public bool cantSave;
     [Space]
-    public bool canSave;
     public GameObject selectedItem;
     public Text[] TextArray;
     public GameObject[] itemBars;
@@ -81,19 +82,23 @@ public class MenuManager : MonoBehaviour
         mainMenuButton.SetActive(false);
         mainMenuScreen.SetActive(true);
         menuPanel.SetActive(true);
+        Joystick = GameObject.FindGameObjectWithTag("Joystick");
         Joystick.SetActive(false);
+
         if (canSave)
         {
             var _button = saveButton.GetComponent<Button>();
 
             _button.interactable = true;
         }
+
         if (!canSave)
         {
             var _button = saveButton.GetComponent<Button>();
 
             _button.interactable = false;
         }
+
         CharacterStatisticsSerializer.Instance.LoadCharacter();
     }
 
@@ -2140,6 +2145,8 @@ public class MenuManager : MonoBehaviour
     // When you select a save file to save to
     public void SaveSelected(string SaveSelected)
     {
+        savePointPos = GameObject.Find("Player").transform.position;
+        print(GameObject.Find("Player").transform.position);
         SaveTheBooks.SaveGame(SaveSelected);
     }
 

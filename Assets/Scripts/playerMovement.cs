@@ -26,7 +26,7 @@ public class playerMovement : MonoBehaviour
     private Vector3 zero = new Vector3(0,0,0);
     Vector3 Pos { get; set; }
 
-    Joystick joyStick;
+    public Joystick joyStick;
 
     public Animator playerAnimator;
 
@@ -129,7 +129,7 @@ public class playerMovement : MonoBehaviour
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
         playerMove();
-        PCRB.velocity = new Vector2(joyStick.Horizontal * 4, joyStick.Vertical * 4);
+        PCRB.velocity = new Vector2(joyStick.Horizontal * speed, joyStick.Vertical * speed);
 
     }
     private void OnCollisionEnter2D(Collision2D collision)

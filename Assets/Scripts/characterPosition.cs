@@ -23,18 +23,18 @@ public class characterPosition: MonoBehaviour
         File.WriteAllText(Application.persistentDataPath + "/Save "+SaveSelected+"/savedPosition.json", saveableData);
     }
 
-    public static Vector3 CharacterPositionLoad()
+    public static Vector3 CharacterPositionLoad(int SaveNumber)
     {
 
-        if (!File.Exists(Application.persistentDataPath + "/savedPosition.json"))
+        if (!File.Exists(Application.persistentDataPath + "/Save "+SaveNumber+"/savedPosition.json"))
         {
             print("File Created");
 
             var varu = new VPos {playerPos = new Vector3(4,0,0)};
             var saveableData = JsonUtility.ToJson(varu);
-            File.WriteAllText(Application.persistentDataPath + "/savedPosition.json", saveableData);
+            File.WriteAllText(Application.persistentDataPath + "/Save "+SaveNumber+"/savedPosition.json", saveableData);
         }
-        var fileData = File.ReadAllText(Application.persistentDataPath + "/savedPosition.json");
+        var fileData = File.ReadAllText(Application.persistentDataPath + "/Save "+SaveNumber+"/savedPosition.json");
         VPos deserializedData = JsonUtility.FromJson<VPos>(fileData);
 
 

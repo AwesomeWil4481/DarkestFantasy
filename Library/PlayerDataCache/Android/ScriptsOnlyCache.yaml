@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BackroundManager
     - BattleManager
     - CharacterStatisticsSerializer
     - EnemyStats
@@ -13,10 +14,15 @@ ScriptsOnlyBuild:
     - MainMenu
     - MenuManager
     - PositionTwoContainer
-    - SavePoint
+    - QueriedInterior
     - SceneItemList
     - SceneTransition
     - ScreenItem
+    - StairCollisionManager
+    - StairCollisionManagerEnter
+    - Tiled2Unity.SortingLayerExposed
+    - Tiled2Unity.TileLayer
+    - Tiled2Unity.TiledMap
     - cameraMover
     - characterPosition
     - conversationManager
@@ -25,8 +31,6 @@ ScriptsOnlyBuild:
     - spriteRenderOrder
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -84,33 +88,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11264}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11746}
+      Script: {instanceID: 11786}
     - Class: 114
-      Script: {instanceID: 11914}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12402}
+      Script: {instanceID: 12460}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12610}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 12862}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12878}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12970}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 13082}
     - Class: 114
-      Script: {instanceID: 13038}
+      Script: {instanceID: 13116}
     - Class: 114
-      Script: {instanceID: 13304}
+      Script: {instanceID: 13396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -155,23 +159,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11264}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11914}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12468}
+      Script: {instanceID: 12526}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12970}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 13082}
     - Class: 114
-      Script: {instanceID: 13304}
+      Script: {instanceID: 13396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -209,6 +213,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 68
@@ -224,55 +230,67 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11264}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11454}
+      Script: {instanceID: 11428}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 11652}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11666}
+      Script: {instanceID: 11690}
     - Class: 114
-      Script: {instanceID: 11706}
+      Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 11914}
+      Script: {instanceID: 11896}
     - Class: 114
-      Script: {instanceID: 12054}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12090}
+      Script: {instanceID: 12104}
     - Class: 114
-      Script: {instanceID: 12164}
+      Script: {instanceID: 12140}
     - Class: 114
-      Script: {instanceID: 12202}
+      Script: {instanceID: 12146}
     - Class: 114
-      Script: {instanceID: 12402}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12462}
+      Script: {instanceID: 12218}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 12460}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12520}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12772}
     - Class: 114
-      Script: {instanceID: 12928}
+      Script: {instanceID: 12862}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 12878}
     - Class: 114
-      Script: {instanceID: 13036}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 13038}
+      Script: {instanceID: 12970}
     - Class: 114
-      Script: {instanceID: 13304}
+      Script: {instanceID: 13002}
+    - Class: 114
+      Script: {instanceID: 13016}
+    - Class: 114
+      Script: {instanceID: 13082}
+    - Class: 114
+      Script: {instanceID: 13114}
+    - Class: 114
+      Script: {instanceID: 13116}
+    - Class: 114
+      Script: {instanceID: 13202}
+    - Class: 114
+      Script: {instanceID: 13396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -354,6 +372,12 @@ ScriptsOnlyBuild:
     className: SingletonUpdater
   - hash:
       serializedVersion: 2
+      Hash: e638ca1d2e4e7700b60c75479fd1f873
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: GPUInstancing
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -364,6 +388,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 020d0b1343255d4377eee43df4959b3f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StairCollisionManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -414,10 +444,28 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: f32d1d61e48bba08149fd1b81df8d6f5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: GroupLayer
+  - hash:
+      serializedVersion: 2
+      Hash: a2037a6d3d69e2ae4365852f05289f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: RectangleObject
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: a2037a6d3d69e2ae4365852f05289f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: PolylineObject
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -522,6 +570,24 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BackroundManager
+  - hash:
+      serializedVersion: 2
+      Hash: 402fe7c4d8d67fc0a9fd522de5776f07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: TileObject
+  - hash:
+      serializedVersion: 2
+      Hash: 36942a71cbbf409e9f2f444461330179
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: ImportBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: 5f170942ee57c7a568f5bcfc7521adea
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -588,6 +654,12 @@ ScriptsOnlyBuild:
     className: FloatingJoystick
   - hash:
       serializedVersion: 2
+      Hash: 02645cd2809521863e990f79b565042a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: TiledMap
+  - hash:
+      serializedVersion: 2
       Hash: 666802ec5df3fa65d732c1119b65b4be
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -604,6 +676,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 020d0b1343255d4377eee43df4959b3f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StairCollisionManagerEnter
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -640,6 +718,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 0da0a5340966572e26bc4cc14ac3db56
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: TileAnimator
   - hash:
       serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
@@ -738,6 +822,18 @@ ScriptsOnlyBuild:
     className: DynamicJoystick
   - hash:
       serializedVersion: 2
+      Hash: a2037a6d3d69e2ae4365852f05289f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: PolygonObject
+  - hash:
+      serializedVersion: 2
+      Hash: a2037a6d3d69e2ae4365852f05289f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: CircleObject
+  - hash:
+      serializedVersion: 2
       Hash: ce669872a2be11bc686ea22961d8a3bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -750,7 +846,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 364bd09cff756fbca488004d5d087f28
+      Hash: 7400ea41ed3bba4a63e30646eef5fa63
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuManager
@@ -766,6 +862,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PositionTwoContainer
+  - hash:
+      serializedVersion: 2
+      Hash: f32d1d61e48bba08149fd1b81df8d6f5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: TileLayer
   - hash:
       serializedVersion: 2
       Hash: 8001a5f7502aab37e42206da015e6914
@@ -810,6 +912,18 @@ ScriptsOnlyBuild:
     className: LocationManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: SortingLayerExposed
+  - hash:
+      serializedVersion: 2
+      Hash: abfeaa19a5e14ce8c74f0ff2cea9ab9f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: SpriteDepthInMap
+  - hash:
+      serializedVersion: 2
       Hash: 6d16efec13c23d36e436bbd0fa7093b1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -828,6 +942,12 @@ ScriptsOnlyBuild:
     className: EnemyStats
   - hash:
       serializedVersion: 2
+      Hash: de29e83626a7b4b16ae1ca0b09863ed6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: ObjectLayer
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -844,6 +964,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 0268f5c29846a4efaefa3c29a53da9f8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QueriedInterior
   - hash:
       serializedVersion: 2
       Hash: 21d73eda81c18eacd2c91ad5dfaf2e32
@@ -886,6 +1012,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: a2037a6d3d69e2ae4365852f05289f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tiled2Unity
+    className: TmxObject
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -951,4 +1083,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/WorldMap.unity
   - Assets/Scenes/Fighting Scene.unity
-  playerPath: C:/Users/wilhelm/Unity/Darkest Fantasy/Darkest-Fantasy/Build-2.apk
+  playerPath: C:/Users/wilhelm/Unity/Darkest-Fantasy/Build-2.apk
