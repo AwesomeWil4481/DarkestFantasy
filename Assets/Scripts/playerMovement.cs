@@ -9,6 +9,7 @@ public class playerMovement : MonoBehaviour
 
     bool nextToObject = false;
     bool firstTime = true;
+    bool inCutscene;
 
     private Rigidbody2D PCRB;
 
@@ -27,6 +28,8 @@ public class playerMovement : MonoBehaviour
     Vector3 Pos { get; set; }
 
     public Joystick joyStick;
+    public GameObject JoystickContainer { get; set; }
+    public GameObject NewJoystick;
 
     public Animator playerAnimator;
 
@@ -54,6 +57,12 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            JoystickContainer = GameObject.Find("Joystick");
+            StartCoroutine(CutsceneEnter(5));
+        }
+
         var botLeft = Vector3.Angle(movement, negNeg);
         var botRight = Vector3.Angle(movement, posNeg);
         var topLeft = Vector3.Angle(movement, negPos);
@@ -128,8 +137,11 @@ public class playerMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        playerMove();
-        PCRB.velocity = new Vector2(joyStick.Horizontal * speed, joyStick.Vertical * speed);
+        if (inCutscene != true)
+        {
+            PlayerMove();
+            PCRB.velocity = new Vector2(joyStick.Horizontal * speed, joyStick.Vertical * speed);
+        }
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -141,7 +153,7 @@ public class playerMovement : MonoBehaviour
     {
         nextToObject = false;
     }
-    private void playerMove()
+    private void PlayerMove()
     {
         if (change != Vector3.zero)
         {
@@ -160,6 +172,55 @@ public class playerMovement : MonoBehaviour
             PCRB.MovePosition(transform.position + change * speed * Time.deltaTime);
         }
 
+    }
+
+    public IEnumerator CutsceneEnter(int Length)
+    {
+        int CutsceneSpeedY = -50;
+        Vector3 JoystickPos = new Vector3(300,300,0);
+        PCRB.velocity = zero;
+        var gameObjects = GameObject.FindGameObjectsWithTag("Joystick");
+
+        for (var i = 0; i < gameObjects.Length; i++)
+        {
+            JoystickPos = gameObjects[i].transform.position;
+            Destroy(gameObjects[i]);
+        }
+        inCutscene = true;
+        while (inCutscene == true)
+        {
+            CutsceneMovement(CutsceneSpeedY);
+            yield return new WaitForSeconds(Length);
+            print("fase two starting");
+            while (inCutscene == true)
+            {
+                PCRB.velocity = zero;
+                CutsceneMovement(100);
+                yield return new WaitForSeconds(2);
+                print("fase 2 complete");
+                print("fase 3 starting");
+
+                while (inCutscene == true)
+                {
+                    PCRB.velocity = zero;
+                    CutsceneSpeedY = -300;
+                    CutsceneMovement(CutsceneSpeedY);
+                    yield return new WaitForSeconds(Length);
+                    print("fase 3 complete");
+                    inCutscene = false;
+                }
+            }
+        }
+        if (inCutscene == false)
+        {
+            GameObject go = Instantiate(NewJoystick, JoystickPos, Quaternion.identity, transform.parent = GameObject.FindGameObjectWithTag("Canvas").transform) as GameObject; //327, 87, 0, 600, 50     \     327, 26, 0, 600, 50
+            joyStick = go.GetComponentInChildren<Joystick>();
+        }
+    }
+
+    public void CutsceneMovement(int Speed)
+    {
+        PCRB.AddForce(new Vector2(0, Speed));
     }
 }
 

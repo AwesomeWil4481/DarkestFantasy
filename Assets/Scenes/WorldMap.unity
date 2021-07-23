@@ -3991,18 +3991,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8663785123257993746, guid: d312e6eb7960cff4da537ce596350005,
         type: 3}
-      propertyPath: REAreaReq
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: NewJoystick
+      value: 
+      objectReference: {fileID: 8612365479058891530, guid: 162d0d751263c64499a2eb7b9efc9cc4,
+        type: 3}
     - target: {fileID: 8663785123257993756, guid: d312e6eb7960cff4da537ce596350005,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8663785123257993756, guid: d312e6eb7960cff4da537ce596350005,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8663785123257993757, guid: d312e6eb7960cff4da537ce596350005,
         type: 3}
@@ -4012,12 +4008,12 @@ PrefabInstance:
     - target: {fileID: 8663785123257993757, guid: d312e6eb7960cff4da537ce596350005,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.93
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8663785123257993757, guid: d312e6eb7960cff4da537ce596350005,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8663785123257993757, guid: d312e6eb7960cff4da537ce596350005,
         type: 3}

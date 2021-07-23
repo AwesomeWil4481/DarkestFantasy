@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BackroundManager.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
@@ -70,7 +69,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\QueriedInterior.cs" />
+    <Compile Include="Assets\Scripts\BackroundManager.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
     <Compile Include="Assets\Scripts\Battle\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\Battle\Entity.cs" />
@@ -92,22 +91,24 @@
     <Compile Include="Assets\Scripts\Npc\conversationManager.cs" />
     <Compile Include="Assets\Scripts\Npc\dialogueHouse.cs" />
     <Compile Include="Assets\Scripts\Npc\dialogueList.cs" />
+    <Compile Include="Assets\Scripts\PlayerCutscene.cs" />
     <Compile Include="Assets\Scripts\Players\Position Four Container.cs" />
     <Compile Include="Assets\Scripts\Players\Position One Container.cs" />
     <Compile Include="Assets\Scripts\Players\Position Three Container.cs" />
     <Compile Include="Assets\Scripts\Players\PositionTwoContainer.cs" />
     <Compile Include="Assets\Scripts\Players\characterStats.cs" />
+    <Compile Include="Assets\Scripts\QueriedInterior.cs" />
     <Compile Include="Assets\Scripts\SavePoint.cs" />
     <Compile Include="Assets\Scripts\SceneItemList.cs" />
     <Compile Include="Assets\Scripts\ScreenItem.cs" />
+    <Compile Include="Assets\Scripts\StairCollisionManager.cs" />
+    <Compile Include="Assets\Scripts\StairCollisionManagerEnter.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\UI\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\cameraMover.cs" />
     <Compile Include="Assets\Scripts\characterPosition.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Scripts\spriteRenderOrder.cs" />
-    <Compile Include="Assets\StairCollisionManager.cs" />
-    <Compile Include="Assets\StairCollisionManagerEnter.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GPUInstancing.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
