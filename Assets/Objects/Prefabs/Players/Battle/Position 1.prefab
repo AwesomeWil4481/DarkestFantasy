@@ -47,6 +47,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -148,16 +149,214 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Terra
   level: 3
-  HP: 92
+  HP: 87
   MP: 10
-  defense: 20
-  speed: 10
-  strength: 18
+  defense: 10
+  speed: 20
+  strength: 10
   battlePower: 34
   _position: 1
+  stamina: 0
+  attack: 0
+  magic: 0
+  evasion: 0
+  magicEvasion: 0
+  magicDefense: 0
+  BodySlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 1
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  HeadSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 0
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  LeftRelicSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 1
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  RightRelicSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 0
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  LeftHandSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 1
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  RightHandSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 1
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
   _target: {fileID: 0}
   enemyHP: 0
   animator: {fileID: 7149825288924469020}
-  charTwoContainer: {fileID: 0}
-  charTwo: {fileID: 0}
+  charTwoContainer: {fileID: 6711394010181142591}
+  charTwo: {fileID: 2916903671183625550}
   hitAll: {fileID: 0}

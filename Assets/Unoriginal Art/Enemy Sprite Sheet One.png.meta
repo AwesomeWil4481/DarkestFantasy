@@ -3633,7 +3633,7 @@ TextureImporter:
       213: -7447128188962748639
     second: Enemy Sprite Sheet One_1208
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -3653,6 +3653,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -3662,8 +3664,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -3684,9 +3686,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -3755,7 +3761,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 75a900a03bb4d25f0800000000000000
-      internalID: -779883928126186921
+      internalID: 8677651782299659894
       vertices: []
       indices: 
       edges: []
@@ -6479,6 +6485,137 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Enemy Sprite Sheet One_121: 3850127704684781559
+      Enemy Sprite Sheet One_101: -8619481786930625907
+      Enemy Sprite Sheet One_85: -8103020073498245290
+      Enemy Sprite Sheet One_95: 4211146277336072532
+      Enemy Sprite Sheet One_30: 5192854714893799894
+      Enemy Sprite Sheet One_15: 5846299542017437667
+      Enemy Sprite Sheet One_0: 8677651782299659894
+      Enemy Sprite Sheet One_29: 4259229402759155244
+      Enemy Sprite Sheet One_66: -3885869440796337031
+      Enemy Sprite Sheet One_44: -8411178555920852090
+      Enemy Sprite Sheet One_105: -321790644200041935
+      Enemy Sprite Sheet One_64: -5152710939733881903
+      Enemy Sprite Sheet One_75: -2189639176096082685
+      Enemy Sprite Sheet One_114: -6453167979557762896
+      Enemy Sprite Sheet One_88: 1167549175791212432
+      Enemy Sprite Sheet One_49: -6632084341645627136
+      Enemy Sprite Sheet One_94: -7409519974484021254
+      Enemy Sprite Sheet One_4: -1469116092504185948
+      Enemy Sprite Sheet One_57: 8142809139132734707
+      Enemy Sprite Sheet One_61: 1888292575053896777
+      Enemy Sprite Sheet One_99: -139627067188667334
+      Enemy Sprite Sheet One_58: 3841517972705075678
+      Enemy Sprite Sheet One_106: 4404919873688206789
+      Enemy Sprite Sheet One_110: 5064515081505382083
+      Enemy Sprite Sheet One_77: -1724064485145730215
+      Enemy Sprite Sheet One_2: 3076440844053710110
+      Enemy Sprite Sheet One_37: 1436728718638643907
+      Enemy Sprite Sheet One_103: -789542435285832161
+      Enemy Sprite Sheet One_53: -5384504958744407272
+      Enemy Sprite Sheet One_70: 416331127090670829
+      Enemy Sprite Sheet One_118: 7205008966953142297
+      Enemy Sprite Sheet One_47: -1804392152046713648
+      Enemy Sprite Sheet One_32: 4734195694938014331
+      Enemy Sprite Sheet One_91: 2192182299290905084
+      Enemy Sprite Sheet One_127: -7999729766365376024
+      Enemy Sprite Sheet One_20: -1085681908440003066
+      Enemy Sprite Sheet One_80: -4895760724388764681
+      Enemy Sprite Sheet One_83: -8139878680857115177
+      Enemy Sprite Sheet One_21: 7728829400744432095
+      Enemy Sprite Sheet One_96: 4386085833246616381
+      Enemy Sprite Sheet One_22: 6359343670068772056
+      Enemy Sprite Sheet One_84: 4625171047858612226
+      Enemy Sprite Sheet One_82: 8438215450078113057
+      Enemy Sprite Sheet One_115: -4065705324588104947
+      Enemy Sprite Sheet One_26: -5570469723753591087
+      Enemy Sprite Sheet One_41: 5223741581659747201
+      Enemy Sprite Sheet One_117: 6587672735723402035
+      Enemy Sprite Sheet One_104: -1234459702763719269
+      Enemy Sprite Sheet One_92: -1915441395182069582
+      Enemy Sprite Sheet One_42: -3808419221057944748
+      Enemy Sprite Sheet One_18: -7301635560287845411
+      Enemy Sprite Sheet One_90: 419382868380351405
+      Enemy Sprite Sheet One_129: -7313562294664048530
+      Enemy Sprite Sheet One_40: -8245156491610742978
+      Enemy Sprite Sheet One_107: -529336874110270600
+      Enemy Sprite Sheet One_36: -4277366446364395756
+      Enemy Sprite Sheet One_11: -2091750915394107710
+      Enemy Sprite Sheet One_14: -5446252936095117510
+      Enemy Sprite Sheet One_56: -4934975609633307623
+      Enemy Sprite Sheet One_46: 1028980296920322148
+      Enemy Sprite Sheet One_128: 4052420466643367812
+      Enemy Sprite Sheet One_24: 5519689376477202311
+      Enemy Sprite Sheet One_28: 2335068013928066283
+      Enemy Sprite Sheet One_34: -6614733785037696106
+      Enemy Sprite Sheet One_81: 7855001819858288995
+      Enemy Sprite Sheet One_116: 3495646700583062491
+      Enemy Sprite Sheet One_39: -2094879682720183394
+      Enemy Sprite Sheet One_13: -7812181601313107127
+      Enemy Sprite Sheet One_43: -7340617958376675248
+      Enemy Sprite Sheet One_93: -4612431604936774643
+      Enemy Sprite Sheet One_12: 4221902374403530105
+      Enemy Sprite Sheet One_5: 3625172545039666966
+      Enemy Sprite Sheet One_122: 8585250248727166469
+      Enemy Sprite Sheet One_8: -5709062840068615511
+      Enemy Sprite Sheet One_100: 6038562264399850143
+      Enemy Sprite Sheet One_124: 5751904956938290736
+      Enemy Sprite Sheet One_31: 1863448589973570652
+      Enemy Sprite Sheet One_112: -6833875984227901382
+      Enemy Sprite Sheet One_27: 4403280793644607415
+      Enemy Sprite Sheet One_113: 4280329116069466386
+      Enemy Sprite Sheet One_60: 6717326637687652922
+      Enemy Sprite Sheet One_78: -3249026691039556672
+      Enemy Sprite Sheet One_50: -5841780311624727626
+      Enemy Sprite Sheet One_67: 4963452542671077680
+      Enemy Sprite Sheet One_10: -4121596169677984623
+      Enemy Sprite Sheet One_25: 3437909109393657390
+      Enemy Sprite Sheet One_68: 5819475412171688769
+      Enemy Sprite Sheet One_97: -2282640384053143984
+      Enemy Sprite Sheet One_98: -1731589042759942361
+      Enemy Sprite Sheet One_102: -1312832982220690060
+      Enemy Sprite Sheet One_123: -4990596345688070919
+      Enemy Sprite Sheet One_1: 5856111775574792908
+      Enemy Sprite Sheet One_6: 8778629882685574667
+      Enemy Sprite Sheet One_7: 1880010218119190860
+      Enemy Sprite Sheet One_72: 5463469127136886493
+      Enemy Sprite Sheet One_38: 4748600685591299643
+      Enemy Sprite Sheet One_63: -4425345093188757309
+      Enemy Sprite Sheet One_65: -3642185384030571154
+      Enemy Sprite Sheet One_69: -6478198104266342436
+      Enemy Sprite Sheet One_74: -1031341920426657757
+      Enemy Sprite Sheet One_59: -3599442411377419803
+      Enemy Sprite Sheet One_17: 4435446777557502400
+      Enemy Sprite Sheet One_108: 282143545582146051
+      Enemy Sprite Sheet One_19: 6148034422025052094
+      Enemy Sprite Sheet One_125: -6675073877236316630
+      Enemy Sprite Sheet One_89: 4180213233670227271
+      Enemy Sprite Sheet One_45: 5000137440006613695
+      Enemy Sprite Sheet One_35: 846669221963648264
+      Enemy Sprite Sheet One_120: -7302208640974486521
+      Enemy Sprite Sheet One_79: 3994983257270843784
+      Enemy Sprite Sheet One_51: -2785984084611200107
+      Enemy Sprite Sheet One_76: 7867445743110315888
+      Enemy Sprite Sheet One_48: -7680805444666178394
+      Enemy Sprite Sheet One_54: 2039755190353724786
+      Enemy Sprite Sheet One_119: 8464106725713031781
+      Enemy Sprite Sheet One_109: -2972584228511755774
+      Enemy Sprite Sheet One_87: -7952435190055189158
+      Enemy Sprite Sheet One_3: 1852128278809894828
+      Enemy Sprite Sheet One_126: 4019049932306534365
+      Enemy Sprite Sheet One_9: -3923892815058988151
+      Enemy Sprite Sheet One_33: -1239670500351138666
+      Enemy Sprite Sheet One_86: 8651679638985081596
+      Enemy Sprite Sheet One_73: 8788825592937814408
+      Enemy Sprite Sheet One_52: -6038505040490056384
+      Enemy Sprite Sheet One_111: 670479408692229116
+      Enemy Sprite Sheet One_16: 1921628555434978858
+      Enemy Sprite Sheet One_23: 6786165298051174254
+      Enemy Sprite Sheet One_71: 6894588479035197995
+      Enemy Sprite Sheet One_62: 9044708185581064105
+      Enemy Sprite Sheet One_55: -1046401460997473204
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

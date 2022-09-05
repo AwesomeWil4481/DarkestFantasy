@@ -1443,7 +1443,7 @@ TextureImporter:
       213: -6409022337043579314
     second: Celes_479
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1463,6 +1463,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1472,8 +1474,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -1494,9 +1496,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2399,6 +2405,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Celes_11: 6268283058530265708
+      Celes_33: -435732788552113231
+      Celes_25: 8892761302924369927
+      Celes_32: 1060668383229335061
+      Celes_2: 6164665756860419252
+      Celes_7: -1915688464521478108
+      Celes_10: -1185724092085387836
+      Celes_8: -6844837504053179972
+      Celes_24: 7642970211991197211
+      Celes_20: -3289514945668435418
+      Celes_22: -4300101578449215715
+      Celes_37: -1991019340244116565
+      Celes_1: 2442749725939521249
+      Celes_13: -7732424431436075286
+      Celes_23: 9220152462533960501
+      Celes_17: 4509175650491702780
+      Celes_30: 8537641352574076609
+      Celes_15: 7661675884634955979
+      Celes_31: -1234127040976583142
+      Celes_12: 3484399022601344942
+      Celes_34: 6480438234223250874
+      Celes_9: 126815188573695437
+      Celes_18: 3975178174198758292
+      Celes_36: -3436106401406810268
+      Celes_35: 6740271209850423962
+      Celes_27: 3856193015222029871
+      Celes_6: -6451518542508258310
+      Celes_39: 3799349786686931226
+      Celes_16: -6366990072818610464
+      Celes_26: 7424724416127959068
+      Celes_21: 1148840656099088158
+      Celes_14: 2562509842465458020
+      Celes_5: -4743229659291865058
+      Celes_19: 8817365364526855124
+      Celes_28: 3788536689330234637
+      Celes_0: 7695746932125575530
+      Celes_3: 4338379150381970943
+      Celes_4: 2086791137623913101
+      Celes_38: -4560513720817615791
+      Celes_29: 1686951187950179213
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -67,6 +67,9 @@ public class ItemList
     [SerializeField]
     private List<Item> items = new List<Item>();
     public List<Item> Items { get { return items; } }
+
+    [SerializeField]
+    public int GP;
 }
 
 public class EquipmentList

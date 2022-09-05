@@ -2,6 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor.UIElements;
+using UnityEngine.UIElements;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(conversationManager))]
+public class NPC_Editor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+
+        conversationManager script = (conversationManager)target;
+
+        script.Moving = EditorGUILayout.Toggle("Moving", script.Moving);
+        if (script.Moving)
+        {
+            script.speed = EditorGUILayout.ObjectField("speed", script.speed, typeof(InputField), true) as InputField;
+            script.startPos = EditorGUILayout.ObjectField("start position", script.startPos, typeof(InputField), true) as InputField;
+            script.targetPos = EditorGUILayout.ObjectField("target position", script.targetPos, typeof(InputField), true) as InputField;
+        }
+    }
+}
+#endif
 
 public class conversationManager : MonoBehaviour
 {
@@ -12,13 +39,17 @@ public class conversationManager : MonoBehaviour
     public GameObject joyStick;
     public GameObject textBox;
 
-    public GameObject LeftBox;
-    public GameObject RightBox;
-    public GameObject TopBox;
-    public GameObject BottomBox;
+    [HideInInspector]
+    public bool Moving;
+
+    [HideInInspector]
+    public InputField speed;
+    [HideInInspector]
+    public InputField startPos;
+    [HideInInspector]
+    public InputField targetPos;
 
     Text textBoxText;
-
     int CurrentLine = -1;
     int numberOfDialogues = 1;
 
@@ -41,6 +72,8 @@ public class conversationManager : MonoBehaviour
         speechBubble.SetActive(true);
         playerNextTo = true;
     }
+
+    
 
     private void OnTriggerExit2D(Collider2D collider)
     {

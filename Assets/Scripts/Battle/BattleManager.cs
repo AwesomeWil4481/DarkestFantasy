@@ -25,7 +25,7 @@ public class BattleManager : MonoBehaviour
 
     bool neverDone;
 
-    List<Entity> entityList;
+    public List<Entity> entityList = new List<Entity>();
     public List<characterStats> activeCharacterList;
 
     void Start()
@@ -57,16 +57,20 @@ public class BattleManager : MonoBehaviour
         if (oldEnemies == 0)
         {
             print("you win!");
+            ActiveScene.Instance().Scene = GameObject.Find("Game Management").GetComponent<LoadCharacterStats>().TargetScene;
             StartCoroutine(SceneTransition.instance.EndScene(ActiveScene.Instance().Scene));
             CharacterStatisticsSerializer.Instance.SaveToPrefab();
         }
         if (neverDone == true)//&& startDelay <= 0)
         {
             entityList = entityList
-           .OrderBy(w => w.speed)
+           .OrderBy(w => -w.speed)
            .ToList();
+
+
             foreach (Entity i in entityList)
             {
+                print(i.Name + "'s speed is " + i.speed);
                 fightQueue.Enqueue(entityList[startListAdd]);
                 startListAdd += 1;
             }

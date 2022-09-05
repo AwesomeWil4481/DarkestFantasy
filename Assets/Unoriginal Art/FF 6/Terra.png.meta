@@ -1641,7 +1641,7 @@ TextureImporter:
       213: 3051303703721953408
     second: Terra_545
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1661,6 +1661,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1670,8 +1672,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -1692,9 +1694,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -3269,6 +3275,79 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Terra_0: -2729100089752611879
+      Terra_21: -2092591608679867162
+      Terra_24: 3614072439956396053
+      Terra_6: 3109052365782537280
+      Terra_53: -4342068301775685978
+      Terra_57: -3412027016827730917
+      Terra_50: -6897671235262709387
+      Terra_59: -1356358704032659483
+      Terra_35: 8905698216892698830
+      Terra_14: 2353547961673561256
+      Terra_26: -1774424344379543194
+      Terra_33: -4226060609809147050
+      Terra_68: 2437528647526855337
+      Terra_47: 5807872256777529230
+      Terra_67: 5819512209181930337
+      Terra_29: -5220557605863932393
+      Terra_34: -8245720149235522667
+      Terra_46: -5637177041239560830
+      Terra_41: -898811303081779486
+      Terra_71: -1544066644141391834
+      Terra_49: 2176856483243545515
+      Terra_56: 8648673216377238995
+      Terra_36: 4927892311770872590
+      Terra_60: -5077979279979451265
+      Terra_58: -3418937127981673121
+      Terra_7: -9161440939300080587
+      Terra_18: -1718782356730267772
+      Terra_62: -1093106432391182333
+      Terra_12: 1672787819226258719
+      Terra_55: 3347640983867405217
+      Terra_39: -7203269471059558779
+      Terra_38: -487556201039389571
+      Terra_31: 7043794815506831830
+      Terra_16: -7937880799957452575
+      Terra_44: -6463078259270418821
+      Terra_19: 4527970457324001483
+      Terra_10: -191446351818564227
+      Terra_51: -2086292883295998839
+      Terra_2: -7502188655488776152
+      Terra_5: -6028741523267669790
+      Terra_32: -6885317798458198089
+      Terra_15: 7795281998620532628
+      Terra_63: -5303810292269325629
+      Terra_30: -6907213982143444227
+      Terra_61: -9191569608120917317
+      Terra_45: -3543758097489050535
+      Terra_40: 3324323401000575326
+      Terra_17: 2451748023198596767
+      Terra_22: -3911643182446169650
+      Terra_27: -3697673798838465512
+      Terra_48: 2016564386748010684
+      Terra_66: 2959920190048455186
+      Terra_11: -7963583734419294290
+      Terra_43: -5214687970339173933
+      Terra_65: -7419582547994379692
+      Terra_70: 6508466459020181620
+      Terra_8: -5898495511994465935
+      Terra_1: -58138833921955329
+      Terra_42: 5410374436386419333
+      Terra_28: -4021921977177322638
+      Terra_54: 7469775297737627813
+      Terra_9: -3383578625082846243
+      Terra_37: -5295122157187820919
+      Terra_3: -1362188826421583976
+      Terra_20: -1232509698239057731
+      Terra_25: -7225964698852253090
+      Terra_23: -3292417010936190818
+      Terra_52: -547384064040937535
+      Terra_4: 9152400735896816316
+      Terra_13: -8833539023181984036
+      Terra_69: 571778779854075506
+      Terra_64: -2780119389738937513
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class LoadCharacterStats : MonoBehaviour { }
+public class LoadCharacterStats : MonoBehaviour { public string TargetScene; public Vector3 SavedPosition; }
 //{
 //    public PositionTwoContainer myTiedObject = new PositionTwoContainer() ;
 

@@ -81,19 +81,21 @@ public class CharacterStatisticsSerializer : MonoBehaviour
                 done = true;
             }
 
-            if (SavedCharacters.Instance().DcurrentStats.ContainsKey(number))
+            foreach (GameObject i in activePartyMembers)
             {
-                var thing = SavedCharacters.Instance().DcurrentStats[number]._position -= 1 ;
+                PositionTwoContainer currentChar = i.GetComponent<PositionTwoContainer>();
+                var currentNum = currentChar._position - 1;
+                
+                statBlocks[currentNum].SetActive(true);
 
-                statBlocks[thing].SetActive(true);
-
-                MenuManager.Instance._statBlocks[thing].GetComponentsInChildren<Text>()[0].text = SavedCharacters.Instance().DcurrentStats[number].characterName;
+                MenuManager.Instance._statBlocks[currentNum].GetComponentsInChildren<Text>()[0].text = currentChar.Name; //SavedCharacters.Instance().DcurrentStats[number].characterName;
                 //currentMember.HP = SavedCharacters.Instance().currentStats[number].HP;
-                MenuManager.Instance._statBlocks[thing].GetComponentsInChildren<Text>()[5].text = SavedCharacters.Instance().DcurrentStats[number].HP.ToString();
+                MenuManager.Instance._statBlocks[currentNum].GetComponentsInChildren<Text>()[5].text = currentChar.HP.ToString();//SavedCharacters.Instance().DcurrentStats[number].HP.ToString();
                 //currentMember.MP = SavedCharacters.Instance().currentStats[number].MP;
-                MenuManager.Instance._statBlocks[thing].GetComponentsInChildren<Text>()[6].text = SavedCharacters.Instance().DcurrentStats[number].MP.ToString();
+                MenuManager.Instance._statBlocks[currentNum].GetComponentsInChildren<Text>()[6].text = currentChar.MP.ToString();//SavedCharacters.Instance().DcurrentStats[number].MP.ToString();
                 //currentMember.level = SavedCharacters.Instance().currentStats[number].level;
-                MenuManager.Instance._statBlocks[thing].GetComponentsInChildren<Text>()[4].text = SavedCharacters.Instance().DcurrentStats[number].level.ToString();
+                MenuManager.Instance._statBlocks[currentNum].GetComponentsInChildren<Text>()[4].text = currentChar.level.ToString();//SavedCharacters.Instance().DcurrentStats[number].level.ToString();
+                
                 //currentMember.defense = SavedCharacters.Instance().currentStats[number].defense;
                 //currentMember.speed = SavedCharacters.Instance().currentStats[number].speed;
                 //currentMember.strength = SavedCharacters.Instance().currentStats[number].strength;
@@ -103,9 +105,10 @@ public class CharacterStatisticsSerializer : MonoBehaviour
                 int currentSprite = 0;
                 foreach (Sprite o in characterPortraits)
                 {
-                    if (characterPortraits[currentSprite].name == SavedCharacters.Instance().DcurrentStats[number].characterName)
+                    if (characterPortraits[currentSprite].name == currentChar.GetComponent<PositionTwoContainer>().Name)
                     {
-                        var portrait = MenuManager.Instance._statBlocks[thing];
+
+                        var portrait = MenuManager.Instance._statBlocks[currentNum];
                         if (portrait == null)
                         {
                             Debug.LogError("portrait was null");
@@ -125,10 +128,6 @@ public class CharacterStatisticsSerializer : MonoBehaviour
                     }
                 }
             }
-            else
-            {
-            }
-            
         }
 
     }

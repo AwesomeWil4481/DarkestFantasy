@@ -42,7 +42,6 @@ public class PositionTwoContainer : characterStats
     public GameObject charTwoContainer;
     public PositionTwoContainer charTwo;
 
-
     public GameObject hitAll;
     void Awake()
     {
@@ -55,8 +54,11 @@ public class PositionTwoContainer : characterStats
 
     public void UpdateCharacter(PositionTwoContainer Prefab, string position)
     {
-        GameObject PrefabToLoad = (GameObject)Resources.Load("Objects/Prefabs/Players/Battle/"+ "Position"+position);
-        var LoadedPrefab = PrefabToLoad.GetComponent<PositionTwoContainer>();
+        charTwoContainer = gameObject;
+        charTwo = charTwoContainer.GetComponent<PositionTwoContainer>();
+        //GameObject PrefabToLoad = (GameObject)Resources.Load("Objects/Prefabs/Players/Battle/"+ "Position "+position);
+        //var LoadedPrefab = PrefabToLoad.GetComponent<PositionTwoContainer>();
+        var LoadedPrefab = charTwo;
         LoadedPrefab.HP = Prefab.HP;
         LoadedPrefab.MP = Prefab.MP;
         LoadedPrefab.defense = Prefab.defense;
@@ -85,7 +87,7 @@ public class PositionTwoContainer : characterStats
         _posTwoText.text = "HP     " + HP + " / " + _maxHP;
         if (HP <= 0)
         {
-            print("silly saurid, ya be dead again");
+            print("You Died");
             HP = 0;
             KOed = true;
             animator.SetBool("is dead", true);

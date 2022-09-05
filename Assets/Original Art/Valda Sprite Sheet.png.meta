@@ -59,6 +59,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -68,8 +70,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 0
     wrapV: 0
     wrapW: 0
@@ -90,9 +92,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -408,6 +413,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Valda Sprite Sheet_9: -5858826848868579447
+      Valda Sprite Sheet_5: 4049651248610553231
+      Valda Sprite Sheet_3: -6347924121593743789
+      Valda Sprite Sheet_2: 495350230640418781
+      Valda Sprite Sheet_8: 5786746367983905071
+      Valda Sprite Sheet_0: 1069983338496793698
+      Valda Sprite Sheet_7: 1863024235595189666
+      Valda Sprite Sheet_11: 7750462071021833622
+      Valda Sprite Sheet_4: -513021897339494857
+      Valda Sprite Sheet_6: 4066723219458127589
+      Valda Sprite Sheet_10: 4828920305899142180
+      Valda Sprite Sheet_1: 8611526906462469987
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

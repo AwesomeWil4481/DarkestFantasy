@@ -51,25 +51,48 @@ public class SaveTheBooks
 
         CharacterStatisticsSerializer.SaveGame(SaveSelected);
 
+        WorldStateManager.Instance().StateSave(SaveSelected);
+
         string character = JsonUtility.ToJson(MasterEquipmentContainer.Instance);
         File.WriteAllText(Application.persistentDataPath + "/Save " + SaveSelected + "/EquipmentDictionary.json", character);
 
         character = JsonUtility.ToJson(ActiveScene.Instance());
         File.WriteAllText(Application.persistentDataPath + "/Save " + SaveSelected + "/SavedScene.json", character);
+
+        character = JsonUtility.ToJson(WorldStateList.Instance());
+        File.WriteAllText(Application.persistentDataPath + "/Save " + SaveSelected + ActiveScene.Instance().Scene, character);
     }
 
     public static void NewGame()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("World Map");
     }
 
     public static void LoadGame(string SaveSelected)
     {
+        string currentScene;
+
         { // Loading the scene
             var fileData = File.ReadAllText(Application.persistentDataPath + "/Save " + SaveSelected + "/SavedScene.json");
             ActiveScene deserializedData = JsonUtility.FromJson<ActiveScene>(fileData);
             ActiveScene.Instance().Scene = deserializedData.Scene;
+            currentScene = deserializedData.Scene;
+
             SceneManager.LoadScene(deserializedData.Scene);
+        }
+
+        { // Loading the World State
+            var fileData = File.ReadAllText(Application.persistentDataPath + "/Save " + SaveSelected +"/"+ currentScene + ".json");
+            SaveWorldState deserializedData = JsonUtility.FromJson<SaveWorldState>(fileData);
+
+            if (deserializedData.list.Count != 0)
+            {
+                WorldStateList.Instance().Edits = new List<WorldObject>();
+                foreach (WorldStateSerilization s in deserializedData.list)
+                {
+                    WorldStateList.Instance().Edits.Add(new WorldObject { ID = s.ID, interacted = s.interacted });
+                }
+            }
         }
 
         { // Loading the Items
@@ -80,6 +103,9 @@ public class SaveTheBooks
             ItemList.Instance().Items.AddRange(deserializedData.Items);
 
             Debug.Log(ItemList.Instance().Items[1].Name+" of "+ItemList.Instance().Items[1].Count);
+
+            ItemList.Instance().GP = deserializedData.GP;
+            Debug.Log("Current GP = " + ItemList.Instance().GP.ToString());
         }
 
         { // Loading the start position
@@ -126,5 +152,5 @@ public class ActiveScene
         return _instance;
     }
 
-    public string Scene = SceneManager.GetActiveScene().name;
+    public string Scene;
 }

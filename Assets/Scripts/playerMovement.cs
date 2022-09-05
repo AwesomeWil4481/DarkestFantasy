@@ -18,6 +18,11 @@ public class playerMovement : MonoBehaviour
     public float REValue;
     public float REAreaReq = 0.2f;
 
+    public GameObject TopTrigger;
+    public GameObject BottomTrigger;
+    public GameObject LeftTrigger;
+    public GameObject RightTrigger;
+
     private Vector3 movement;
     private Vector3 posNeg;
     private Vector3 posPos;
@@ -47,11 +52,22 @@ public class playerMovement : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         PCRB = GetComponent<Rigidbody2D>();
         PCRB.gameObject.transform.position = LoadCharacterPosition();
+
     }
     public static Vector3 LoadCharacterPosition()
     {
         Vector3 pos = VPos.savedPlayerPos;
         return pos;
+    }
+
+    public void ChangeActiveTrigger(GameObject G)
+    {
+        TopTrigger.SetActive(false);
+        BottomTrigger.SetActive(false);
+        LeftTrigger.SetActive(false);
+        RightTrigger.SetActive(false);
+
+        G.SetActive(true);
     }
 
     // Update is called once per frame
@@ -90,6 +106,11 @@ public class playerMovement : MonoBehaviour
             {
                 firstTime = true;
                 print("switching scenes");
+
+                var GM = GameObject.Find("Game Management").GetComponent<LoadCharacterStats>();
+                GM.TargetScene = ActiveScene.Instance().Scene;
+                VPos.savedPlayerPos = PCRB.transform.position;
+
                 StartCoroutine(SceneTransition.instance.EndScene("Fighting Scene"));
             }
         }
@@ -97,36 +118,42 @@ public class playerMovement : MonoBehaviour
         if (nextToObject == false)
         {
 
-            if (botLeft <= 90 && botRight <= 90 && movement != zero)
+            if (botLeft <= 90 && botRight <= 90 && movement != zero)  // This code triggers when the player moves down
             {
                 playerAnimator.SetFloat("moveY", -1);
                 playerAnimator.SetFloat("moveX", 0);
                 playerAnimator.SetBool("moving", true);
+
+                ChangeActiveTrigger(BottomTrigger);
             }
 
-            if (topRight <= 90 && topLeft <= 90 && movement != zero)
+            if (topRight <= 90 && topLeft <= 90 && movement != zero)  // This code triggers when the player moves up
             {
                 playerAnimator.SetFloat("moveY", 1);
                 playerAnimator.SetFloat("moveX", 0);
                 playerAnimator.SetBool("moving", true);
 
+                ChangeActiveTrigger(TopTrigger);
             }
 
-            if (botLeft <= 90 && topLeft <= 90 && movement != zero)
+            if (botLeft <= 90 && topLeft <= 90 && movement != zero)  // This code triggers when the player moves left
             {
                 playerAnimator.SetFloat("moveX", -1);
                 playerAnimator.SetFloat("moveY", 0);
                 playerAnimator.SetBool("moving", true);
 
+                ChangeActiveTrigger(LeftTrigger);
             }
 
-            if (topRight <= 90 && botRight <= 90 && movement != zero)
+            if (topRight <= 90 && botRight <= 90 && movement != zero)  // This code triggers when the player moves right
             {
                 playerAnimator.SetFloat("moveX", 1);
                 playerAnimator.SetFloat("moveY", 0);
                 playerAnimator.SetBool("moving", true);
 
+                ChangeActiveTrigger(RightTrigger);
             }
+
         }
 
         if (PCRB.transform.rotation.y != 0)
@@ -144,6 +171,7 @@ public class playerMovement : MonoBehaviour
         }
 
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         nextToObject = true;   
@@ -191,14 +219,14 @@ public class playerMovement : MonoBehaviour
         {
             CutsceneMovement(CutsceneSpeedY);
             yield return new WaitForSeconds(Length);
-            print("fase two starting");
+            print("phase two starting");
             while (inCutscene == true)
             {
                 PCRB.velocity = zero;
                 CutsceneMovement(100);
                 yield return new WaitForSeconds(2);
-                print("fase 2 complete");
-                print("fase 3 starting");
+                print("phase 2 complete");
+                print("phase 3 starting");
 
                 while (inCutscene == true)
                 {
@@ -206,7 +234,7 @@ public class playerMovement : MonoBehaviour
                     CutsceneSpeedY = -300;
                     CutsceneMovement(CutsceneSpeedY);
                     yield return new WaitForSeconds(Length);
-                    print("fase 3 complete");
+                    print("phase 3 complete");
                     inCutscene = false;
                 }
             }

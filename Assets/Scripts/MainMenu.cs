@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
+        Debug.Log(Application.persistentDataPath);
 
     }
 
@@ -46,6 +47,6 @@ public class MainMenu : MonoBehaviour
 
     public void ExitGame()
     {
-
+        Application.Quit();
     }
 }
