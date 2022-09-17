@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//public class BackroundManager : MonoBehaviour
-//{
+public class BackroundManager : MonoBehaviour
+{
 //    void Start()
 //    {
 //        if (GameObject.FindGameObjectsWithTag("Floor Layer") != null)
@@ -23,4 +23,4 @@ using UnityEngine;
 //    {
         
 //    }
-//}
+}
