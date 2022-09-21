@@ -1618,6 +1618,8 @@ public class MenuManager : MonoBehaviour
     // This is called when you select a statblock to equip
     public void OnMemberEquipSelect(int Position)
     {
+        mainMenuScreen.SetActive(false);
+
         int charPos = 0;
         PositionTwoContainer currentChar = null;
 
