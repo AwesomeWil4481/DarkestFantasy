@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.UIElements;
-using UnityEngine.UIElements;
 
 #if UNITY_EDITOR
 using UnityEditor;

@@ -363,7 +363,7 @@ TextureImporter:
       213: 2449858619087298703
     second: treasure_chests_32x32_119
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -380,10 +380,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -422,6 +424,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -449,6 +453,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2992,9 +3020,129 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      treasure_chests_32x32_23: 4125178992085125905
+      treasure_chests_32x32_15: 1714904728975303676
+      treasure_chests_32x32_19: -803216420989876146
+      treasure_chests_32x32_21: 9085229301738304396
+      treasure_chests_32x32_53: 6138232443365534277
+      treasure_chests_32x32_75: 3903295072093279894
+      treasure_chests_32x32_10: -3352826204484653237
+      treasure_chests_32x32_106: -9065777633640556572
+      treasure_chests_32x32_45: -310552836014729324
+      treasure_chests_32x32_47: 4838379932101190180
+      treasure_chests_32x32_115: -4945389689820884338
+      treasure_chests_32x32_95: -5977714548359105740
+      treasure_chests_32x32_14: 2960125662926475363
+      treasure_chests_32x32_18: 5336613868530342500
+      treasure_chests_32x32_27: 2475458157528960471
+      treasure_chests_32x32_82: 3380388974918645779
+      treasure_chests_32x32_57: -7353750467570272819
+      treasure_chests_32x32_78: 720471976070478899
+      treasure_chests_32x32_42: 1418178260875465775
+      treasure_chests_32x32_8: -4465528598904503472
+      treasure_chests_32x32_104: -2274419713917301096
+      treasure_chests_32x32_4: 6053150261446788724
+      treasure_chests_32x32_76: -443837494734946771
+      treasure_chests_32x32_64: 9222261598579866532
+      treasure_chests_32x32_100: 1252427888271864395
+      treasure_chests_32x32_12: 2335931820244368932
+      treasure_chests_32x32_70: -31975320611941762
+      treasure_chests_32x32_25: -6357521297072918885
+      treasure_chests_32x32_20: -4328410195369950342
+      treasure_chests_32x32_41: -8658802179749345265
+      treasure_chests_32x32_91: -3979863005699380394
+      treasure_chests_32x32_0: -7284063915931485354
+      treasure_chests_32x32_35: 4941789756054824158
+      treasure_chests_32x32_69: 6181700912015501419
+      treasure_chests_32x32_36: 435076373042196888
+      treasure_chests_32x32_83: 1559734782167865953
+      treasure_chests_32x32_98: -4655940219535723896
+      treasure_chests_32x32_89: 4259176223788279774
+      treasure_chests_32x32_11: 5293177621993391864
+      treasure_chests_32x32_37: -4634552749125572569
+      treasure_chests_32x32_105: -963780168737738348
+      treasure_chests_32x32_22: 3072312402414063419
+      treasure_chests_32x32_54: 4454075373563638286
+      treasure_chests_32x32_116: 3714203999094943417
+      treasure_chests_32x32_56: 5849157815843243110
+      treasure_chests_32x32_65: 4109055029752793267
+      treasure_chests_32x32_72: -8751772256365210523
+      treasure_chests_32x32_34: 1784514799080414083
+      treasure_chests_32x32_29: -8353506181150140174
+      treasure_chests_32x32_94: -4768072529576587279
+      treasure_chests_32x32_59: -4904045897264965076
+      treasure_chests_32x32_39: 2363247877104002181
+      treasure_chests_32x32_48: -3540339166461750891
+      treasure_chests_32x32_110: -120327264408570297
+      treasure_chests_32x32_113: -6150953264909193656
+      treasure_chests_32x32_92: 8158740417372651251
+      treasure_chests_32x32_112: 1145793752410353934
+      treasure_chests_32x32_84: 4760293575418169449
+      treasure_chests_32x32_96: 3915643136071555701
+      treasure_chests_32x32_26: 5440967318053988655
+      treasure_chests_32x32_3: -2338884902671687731
+      treasure_chests_32x32_38: -7912494033639425461
+      treasure_chests_32x32_87: -6133936821896696058
+      treasure_chests_32x32_103: -1939746273763889267
+      treasure_chests_32x32_88: -4203132527818282295
+      treasure_chests_32x32_28: -4493707333543220303
+      treasure_chests_32x32_13: -5228711876327711278
+      treasure_chests_32x32_9: -4497909845949687223
+      treasure_chests_32x32_108: 789412065943815049
+      treasure_chests_32x32_111: 3547610025777481497
+      treasure_chests_32x32_79: 8723420206629629137
+      treasure_chests_32x32_17: 3845420388936484952
+      treasure_chests_32x32_118: -2505236173044012134
+      treasure_chests_32x32_101: 351147477252413763
+      treasure_chests_32x32_85: -4648038668045436229
+      treasure_chests_32x32_51: 9219702928579675111
+      treasure_chests_32x32_67: -7592868184951422411
+      treasure_chests_32x32_71: 2853515504241225566
+      treasure_chests_32x32_109: 1811977328556432748
+      treasure_chests_32x32_16: -562094659890188216
+      treasure_chests_32x32_66: -7210877058363136368
+      treasure_chests_32x32_30: -1197562423235802895
+      treasure_chests_32x32_80: 4118480095071884045
+      treasure_chests_32x32_62: 9158675422177699870
+      treasure_chests_32x32_114: -7237130796258789700
+      treasure_chests_32x32_2: -8767521389828274737
+      treasure_chests_32x32_40: 5784958349729279468
+      treasure_chests_32x32_43: -3677013500323731022
+      treasure_chests_32x32_58: 8821305672406247567
+      treasure_chests_32x32_86: 6776369605634193706
+      treasure_chests_32x32_52: 7732112071137848772
+      treasure_chests_32x32_49: 2333683832420564741
+      treasure_chests_32x32_1: 3583762077886900124
+      treasure_chests_32x32_81: 7169724124015638559
+      treasure_chests_32x32_33: -5893531217932984300
+      treasure_chests_32x32_74: 4745643241228195816
+      treasure_chests_32x32_102: -8678530856408596715
+      treasure_chests_32x32_77: 7557799523860794471
+      treasure_chests_32x32_117: -6711602534005618910
+      treasure_chests_32x32_63: 8526688542659126066
+      treasure_chests_32x32_60: -2693957992218809118
+      treasure_chests_32x32_99: 3942454713585009584
+      treasure_chests_32x32_119: 2449858619087298703
+      treasure_chests_32x32_90: -2974018776600895920
+      treasure_chests_32x32_73: -4363623565553636919
+      treasure_chests_32x32_46: 8394127079224457795
+      treasure_chests_32x32_68: -6002029171880757308
+      treasure_chests_32x32_31: -5977012168126322039
+      treasure_chests_32x32_61: 7922950841599272457
+      treasure_chests_32x32_44: -7387690285135836483
+      treasure_chests_32x32_97: -5121869495549277423
+      treasure_chests_32x32_24: -488927542904956626
+      treasure_chests_32x32_50: -1759662361214170032
+      treasure_chests_32x32_55: -6168199448522833425
+      treasure_chests_32x32_5: -1628760724479039859
+      treasure_chests_32x32_7: -4214750111111041346
+      treasure_chests_32x32_93: 2070739733417082760
+      treasure_chests_32x32_107: 1584466680048107880
+      treasure_chests_32x32_6: -6641200158302306091
+      treasure_chests_32x32_32: -1673328356154015048
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

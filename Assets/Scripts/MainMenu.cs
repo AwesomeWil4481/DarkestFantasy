@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
         print($"Save Loaded: {LoadSelected}");
         SaveSelected = LoadSelected;
         SaveTheBooks.LoadGame(LoadSelected);
+        print(Application.persistentDataPath);
     }
 
     public static string SelectedSaveLoad()

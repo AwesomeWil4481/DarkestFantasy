@@ -10,16 +10,12 @@ public class BattleManager : MonoBehaviour
 
     public Queue<Entity> fightQueue;
 
-    int startListAdd = 0;
+    int startListAdd {get;set;}
 
     public GameObject TargetObject;
 
-    float startDelay;
-
     public int enemiesLeft;
     int oldEnemies;
-    int old = 0;
-    int numberOfCharacters;
 
     public GameObject bar;
 
@@ -30,7 +26,7 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
-        startDelay = 1;
+        startListAdd = 0;
         neverDone = true;
         entityList = new List<Entity>();
         fightQueue = new Queue<Entity>();
@@ -48,7 +44,6 @@ public class BattleManager : MonoBehaviour
     }
     void Update()
     {
-        startDelay -= Time.deltaTime;
         if (oldEnemies != enemiesLeft)
         {
             oldEnemies = enemiesLeft;
@@ -91,6 +86,5 @@ public class BattleManager : MonoBehaviour
     public void RegisterCharacters(characterStats Char)
     {
         entityList.Add(Char);
-        numberOfCharacters += 1;
     }
 }
