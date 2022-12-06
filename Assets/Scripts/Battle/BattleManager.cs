@@ -8,28 +8,28 @@ public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance = null;
 
-    public Queue<Entity> fightQueue;
+    public Queue<Entity> ActionQueue;
+    public List<PositionTwoContainer> playerQueue = new List<PositionTwoContainer>();
 
     int startListAdd {get;set;}
 
     public GameObject TargetObject;
+    public GameObject battleMenu;
+
+    public bool battleWait = false;
 
     public int enemiesLeft;
     int oldEnemies;
 
     public GameObject bar;
 
-    bool neverDone;
 
     public List<Entity> entityList = new List<Entity>();
-    public List<characterStats> activeCharacterList;
 
     void Start()
     {
         startListAdd = 0;
-        neverDone = true;
         entityList = new List<Entity>();
-        fightQueue = new Queue<Entity>();
     }
     void Awake()
     {
@@ -44,6 +44,15 @@ public class BattleManager : MonoBehaviour
     }
     void Update()
     {
+        if (playerQueue.Count == 0)
+        {
+
+        }
+        else
+        {
+            
+        }
+        
         if (oldEnemies != enemiesLeft)
         {
             oldEnemies = enemiesLeft;
@@ -56,25 +65,6 @@ public class BattleManager : MonoBehaviour
             StartCoroutine(SceneTransition.instance.EndScene(ActiveScene.Instance().Scene));
             CharacterStatisticsSerializer.Instance.SaveToPrefab();
         }
-        if (neverDone == true)//&& startDelay <= 0)
-        {
-            entityList = entityList
-           .OrderBy(w => -w.speed)
-           .ToList();
-
-
-            foreach (Entity i in entityList)
-            {
-                print(i.Name + "'s speed is " + i.speed);
-                fightQueue.Enqueue(entityList[startListAdd]);
-                startListAdd += 1;
-            }
-            neverDone = false;
-        }
-        if (fightQueue.Peek() == null)
-        {
-            fightQueue.Dequeue();
-        }
     }
     public void RegisterEnemies(EnemyStats enemy)
     {
@@ -83,8 +73,8 @@ public class BattleManager : MonoBehaviour
         enemiesLeft += 1;
         oldEnemies += 1;
     }
-    public void RegisterCharacters(characterStats Char)
+    public void RegisterCharacters(PositionTwoContainer Char)
     {
-        entityList.Add(Char);
+        var charPos = Char._position;
     }
 }

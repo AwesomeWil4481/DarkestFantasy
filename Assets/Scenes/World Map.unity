@@ -69969,6 +69969,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8663785123257993746, guid: d312e6eb7960cff4da537ce596350005,
+        type: 3}
+      propertyPath: DebugEncounters
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8663785123257993756, guid: d312e6eb7960cff4da537ce596350005,
         type: 3}
       propertyPath: m_Name

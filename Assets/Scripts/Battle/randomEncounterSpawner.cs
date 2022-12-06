@@ -27,10 +27,10 @@ public class randomEncounterSpawner : LocationManager
     Vector3 positionFourThree;
     Vector3 positionFourFour;
 
-    Vector3 characterPosOne;
-    Vector3 characterPosTwo = new Vector3(6f,1.25f,0);
-    Vector3 characterPosThree;
-    Vector3 characterPosFour;
+    public GameObject characterPosOne;
+    public GameObject characterPosTwo;
+    public GameObject characterPosThree;
+    public GameObject characterPosFour;
 
     int numberOfEnemies;
     int _position;
@@ -41,7 +41,9 @@ public class randomEncounterSpawner : LocationManager
 
     void Start()
     {
-        Instantiate(characterTwo, characterPosTwo, Quaternion.identity);
+        var t =  Instantiate(characterTwo, characterPosTwo.transform.position, Quaternion.identity);
+        t.transform.parent = GameObject.Find("Position "+ t.GetComponent<PositionTwoContainer>()._position).transform;
+
         numberOfEnemies = Random.Range(1, 1);
         currentLocation = locationOne;
         if (numberOfEnemies == 1 || numberOfEnemies == 2)

@@ -23,6 +23,8 @@ public class playerMovement : MonoBehaviour
     public GameObject LeftTrigger;
     public GameObject RightTrigger;
 
+    public bool DebugEncounters = false;
+
     private Vector3 movement;
     private Vector3 posNeg;
     private Vector3 posPos;
@@ -89,6 +91,11 @@ public class playerMovement : MonoBehaviour
         if (movement == zero)
         {
             playerAnimator.SetBool("moving", false);
+        }
+        else if (DebugEncounters)
+        {
+            RETimer = 0;
+            firstTime = false;
         }
         else
         {

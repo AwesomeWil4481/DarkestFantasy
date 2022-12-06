@@ -15,8 +15,6 @@ public class characterStats : Abilities
 
     protected Action _action;
 
-    protected GameObject target;
-
     protected int _minHp;
     protected int _maxHP;
     public int enemyHP;
@@ -33,18 +31,6 @@ public class characterStats : Abilities
     {
 
     }
-    public void SelectTarget()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-        if (hit.collider != null)
-        {
-            target =hit.collider.gameObject;
-            var targetStats = target.GetComponent<EnemyStats>();
-            enemyHP = targetStats.HP;
-            Debug.Log("Target Position: " + hit.collider.gameObject.transform.position);
-        }
-    }
 
     public override void Attack()
     {
@@ -57,5 +43,7 @@ public class characterStats : Abilities
         print($"character damage: {damage}");
 
         _target.HP -= damage;
+
+        _target = null;
     }
 }

@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Players\Position One Container.cs" />
     <Compile Include="Assets\Scripts\EquipmentBarScript.cs" />
     <Compile Include="Assets\Scripts\PlayerCutscene.cs" />
+    <Compile Include="Assets\CharacterContainer.cs" />
     <Compile Include="Assets\Scripts\characterPosition.cs" />
     <Compile Include="Assets\Scripts\Battle\Monster Abilities\BirdStats.cs" />
     <Compile Include="Assets\Scripts\Game State Object.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Scripts\LocationChanger.cs" />
     <Compile Include="Assets\Scripts\StairCollisionManager.cs" />
+    <Compile Include="Assets\BattleMenu.cs" />
     <Compile Include="Assets\Scripts\Players\characterStats.cs" />
     <Compile Include="Assets\Scripts\Players\Position Four Container.cs" />
     <Compile Include="Assets\Scripts\LocationManager.cs" />
@@ -116,15 +118,36 @@
     <Compile Include="Assets\Scripts\Players\Position Three Container.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
     <None Include="Assets\Fonts\Dogma Pixel\dogica_license.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow.shader" />
     <None Include="Assets\Fonts\Dogma Pixel\dogica_pixel_license.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Tilemaps\Backyard - Free\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Tilesets\Houses_Pack\public-license.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Fonts\Dogma Pixel\info.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow Mask.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Tilesets\RPGW_Caves_v2.1\_license.txt" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Tilesets\RF_Catacombs_v1.0\public-license.txt" />
   </ItemGroup>
   <ItemGroup>

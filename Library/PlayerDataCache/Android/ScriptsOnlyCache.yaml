@@ -109,31 +109,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2034}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2038}
     - Class: 114
-      Script: {instanceID: 3070}
+      Script: {instanceID: 2668}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 2988}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3572}
+      Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 3888}
+      Script: {instanceID: 3594}
     - Class: 114
-      Script: {instanceID: 3978}
+      Script: {instanceID: 3774}
     - Class: 114
-      Script: {instanceID: 4022}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 4164}
+      Script: {instanceID: 4000}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4044}
     - Class: 114
-      Script: {instanceID: 4972}
+      Script: {instanceID: 4186}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -182,21 +182,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2668}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2988}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3070}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 3572}
+      Script: {instanceID: 3594}
     - Class: 114
-      Script: {instanceID: 3888}
+      Script: {instanceID: 3910}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -255,61 +255,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 2502}
+      Script: {instanceID: 2034}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2526}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2668}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2924}
     - Class: 114
-      Script: {instanceID: 3070}
+      Script: {instanceID: 2988}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3416}
+      Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3572}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 3700}
+      Script: {instanceID: 3594}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 3888}
+      Script: {instanceID: 3774}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 4022}
+      Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 4034}
+      Script: {instanceID: 4044}
     - Class: 114
-      Script: {instanceID: 4042}
+      Script: {instanceID: 4056}
     - Class: 114
-      Script: {instanceID: 4102}
+      Script: {instanceID: 4064}
     - Class: 114
-      Script: {instanceID: 4164}
-    - Class: 114
-      Script: {instanceID: 4182}
+      Script: {instanceID: 4124}
     - Class: 114
       Script: {instanceID: 4186}
     - Class: 114
-      Script: {instanceID: 4202}
+      Script: {instanceID: 4204}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4208}
     - Class: 114
-      Script: {instanceID: 4516}
+      Script: {instanceID: 4224}
     - Class: 114
-      Script: {instanceID: 4586}
+      Script: {instanceID: 4536}
     - Class: 114
-      Script: {instanceID: 4664}
+      Script: {instanceID: 4606}
     - Class: 114
-      Script: {instanceID: 4836}
+      Script: {instanceID: 4684}
     - Class: 114
-      Script: {instanceID: 5020}
+      Script: {instanceID: 4856}
     - Class: 114
-      Script: {instanceID: 5232}
+      Script: {instanceID: 5038}
+    - Class: 114
+      Script: {instanceID: 5250}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -343,6 +343,24 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: bba83624f8b1456515142b494e1c1958
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PositionTwoContainer
+  - hash:
+      serializedVersion: 2
+      Hash: ec89c0546fb5c6ca7e3a02846dba2ec7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BattleManager
+  - hash:
+      serializedVersion: 2
+      Hash: 608fdfc4f7bcca314bfd5c50dc926dd5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Entity
   - hash:
       serializedVersion: 2
       Hash: 2b89a577309ee23972c502ecef0aac43
@@ -681,12 +699,6 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 608fdfc4f7bcca314bfd5c50dc926dd5
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Entity
-  - hash:
-      serializedVersion: 2
       Hash: aa3abe62679eed605debfa89a32fd294
     assemblyName: Unity.AI.Navigation
     namespaceName: Unity.AI.Navigation
@@ -915,12 +927,6 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: bba83624f8b1456515142b494e1c1958
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PositionTwoContainer
-  - hash:
-      serializedVersion: 2
       Hash: b18151310f999106767addd7177d1a99
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1047,12 +1053,6 @@ ScriptsOnlyBuild:
     className: LayerTrigger
   - hash:
       serializedVersion: 2
-      Hash: ec89c0546fb5c6ca7e3a02846dba2ec7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: BattleManager
-  - hash:
-      serializedVersion: 2
       Hash: 52f7ce6cf660fc77dc6518e3dba700b0
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1116,4 +1116,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/World Map.unity
   - Assets/Scenes/Fighting Scene.unity
-  playerPath: D:/frogs/dev/Darkest Fantasy
+  playerPath: D:/frogs/dev/Darkest Fantasy/GPBuild.aab

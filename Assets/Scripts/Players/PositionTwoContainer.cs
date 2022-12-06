@@ -5,35 +5,21 @@ using UnityEngine.UI;
 
 public class PositionTwoContainer : characterStats
 {
-    private static PositionTwoContainer instance;
-
-    public static PositionTwoContainer Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = new PositionTwoContainer();
-            }
-            return instance;
-        }
-    }
-
-
     RaycastHit2D hit;
 
     Vector2[] touches = new Vector2[5];
 
     public Animator animator;
     bool KOed;
+    public bool Active = false;
 
     float _delay;
     float _delayMax = .2f;
     float _startDelay;
 
-    bool _targetSelected;
+    public float timeProgress;
 
-    GameObject bar;
+    bool _targetSelected;
 
     GameObject _textObject;
 
@@ -46,10 +32,7 @@ public class PositionTwoContainer : characterStats
     void Awake()
     {
         BattleManager.instance.RegisterCharacters(this);
-        _textObject = GameObject.FindGameObjectWithTag("postwotext");
-        _posTwoText = _textObject.GetComponent<Text>();
-        bar = GameObject.FindGameObjectWithTag("postwobar");
-        bar.SetActive(false);
+        GameObject.Find("Select " + _position).GetComponent<CharacterContainer>().thisCharacter = this;
     }
 
     public void UpdateCharacter(PositionTwoContainer Prefab, string position)
@@ -72,8 +55,6 @@ public class PositionTwoContainer : characterStats
     {
         charTwoContainer = GameObject.Find(gameObject.name);
         Name = "Terra";
-        hitAll = GameObject.Find("Hit All Button");
-        hitAll.SetActive(false);
         _delay = _delayMax;
         _targetSelected = false;
         _maxHP = 100;
@@ -84,7 +65,6 @@ public class PositionTwoContainer : characterStats
 
     private void Update()
     {
-        _posTwoText.text = "HP     " + HP + " / " + _maxHP;
         if (HP <= 0)
         {
             print("You Died");
@@ -98,119 +78,18 @@ public class PositionTwoContainer : characterStats
             animator.SetBool("Wounded", true);
         }
 
-        if (BattleManager.instance.fightQueue.Peek() == this)
+        if (!BattleManager.instance.battleWait)
         {
-            _startDelay -= Time.deltaTime;
-            if (_startDelay <= 0)
+            if (!Active)
             {
-                bar.SetActive(true);
+                timeProgress = (timeProgress + Time.deltaTime) + speed / 100;
             }
-            if (!KOed)
+
+            if (timeProgress >= 10)
             {
-                if (_action == Action.attack)
-                {
-                    if (Input.GetKeyDown(KeyCode.Escape))
-                    {
-                        StartCoroutine(SceneTransition.instance.EndScene(ActiveScene.Instance().Scene));
-                    }
-                    if (_targetSelected == true)
-                    {
-                        _delay -= Time.deltaTime;
-                    }
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-                        if (hit.collider.gameObject.tag == "enemy")
-                        {
-                            print("enemy selected");
-                            if (target != hit)
-                            {
-                                target = hit.collider.gameObject;
-
-                                _enemyStats = target.GetComponent<EnemyStats>();
-                                _target = target.GetComponent<EnemyStats>();
-
-                                _enemyStats.pointer.SetActive(true);
-                                print("hello world");
-                                _targetSelected = true;
-                            }
-                            if (target == hit && _delay <= 0)
-                            {
-                                Attack();
-                                _enemyStats = target.GetComponent<EnemyStats>();
-                                _enemyStats.pointer.SetActive(false);
-                                _action = Action.nothing;
-                                _targetSelected = false;
-                                _delay = _delayMax;
-                                target = null;
-                                BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());
-                            }
-                        }
-                    }
-                    foreach (Touch touch in Input.touches)
-                    {
-                        if (touch.phase == TouchPhase.Began)
-                        {
-                            touches[touch.fingerId] = Camera.main.ScreenToWorldPoint(Input.GetTouch(touch.fingerId).position);
-
-                            hit = Physics2D.Raycast(touches[touch.fingerId], Vector2.zero);
-
-                            if (hit.collider.gameObject.tag == "enemy")
-                            {
-                                print("enemy selected");
-                                if (target != hit)
-                                {
-                                    target = hit.collider.gameObject;
-
-                                    _enemyStats = target.GetComponent<EnemyStats>();
-                                    _target = target.GetComponent<EnemyStats>();
-
-                                    _enemyStats.pointer.SetActive(true);
-                                    print("Hello World");
-                                    _targetSelected = true;
-                                }
-                                if (target == hit && _delay <= 0)
-                                {
-                                    Attack();
-                                    _enemyStats = target.GetComponent<EnemyStats>();
-                                    _enemyStats.pointer.SetActive(false);
-                                    _action = Action.nothing;
-                                    _targetSelected = false;
-                                    _delay = _delayMax;
-                                    target = null;
-                                    BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());
-                                }
-                            }
-                            else
-                            {
-                                print("Didn't hit touch an enemy");
-                            }
-                        }
-                    }
-                }
+                Active = true;
+                BattleManager.instance.RegisterCharacters(this);
             }
         }
-        else
-        {
-            bar.SetActive(false);
-        }
-    }
-
-    public void AtttackButtonPressed()
-    {
-        charTwoContainer = BattleManager.instance.fightQueue.Peek().gameObject;
-        charTwo = charTwoContainer.GetComponent<PositionTwoContainer>();
-        charTwo._action = Action.attack;
-        print("Attack Button Pressed");
-    }
-
-    public void waitButtonPressed()
-    {
-        charTwoContainer = GameObject.Find("Position "+BattleManager.instance.fightQueue.Peek()._position + "(Clone)");
-        charTwo = charTwoContainer.GetComponent<PositionTwoContainer>();
-        charTwo._action = Action.nothing;
-        BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());
-        print("Wait Button Pressed");
     }
 }

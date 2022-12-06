@@ -12,10 +12,7 @@ public class EnemyStats : Abilities
     [HideInInspector]
     int moneyOnDeath;
     int expOnDeath;
-    int evasion;
     public int magicPower;
-    int magicEvasion;
-    int magicDefense;
 
     bool isTurn;
 
@@ -110,22 +107,7 @@ public class EnemyStats : Abilities
             }
             Destroy(gameObject);
         }
-        if (BattleManager.instance.fightQueue.Peek() == this)
-        {
-            positionToAttack = Random.Range(2, 2);
-            if (positionToAttack == 2 && !isTurn)
-            {
-                StartCoroutine(Delay());
-            }
-            delay -= Time.deltaTime;
-            if (delay <= 0)
-            {
-                _hasAttacked = false;
-                delay = delayMax;
-                isTurn = false;
-                BattleManager.instance.fightQueue.Enqueue(BattleManager.instance.fightQueue.Dequeue());
-            }
-        }
+        
     }
 
     public override void Attack()
