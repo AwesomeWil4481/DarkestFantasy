@@ -79,10 +79,6 @@ public class BattleManager : MonoBehaviour
     public IEnumerator ExcecuteAction(Action action)
     {
         // Start Animation
-        if (action.animName != null)
-        {
-            action.actor.animator.SetTrigger(action.animName);
-        }
         yield return new WaitForSecondsRealtime(action.timer);
         action.actor.Invoke(action.actionName, 0f);
         action.actor.storedAction = false;

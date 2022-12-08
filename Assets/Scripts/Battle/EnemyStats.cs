@@ -75,16 +75,8 @@ public class EnemyStats : Abilities
     IEnumerator Delay()
     {
         animator.SetTrigger("Attack");
-        _target = PositionTwo.GetComponent<Entity>();
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds(0.1f);
         animator.SetTrigger("Attack");
-
-        if (!_hasAttacked)
-        {
-            print("blah");
-            Attack();
-            _hasAttacked = true;
-        }
     }
 
     void Update()
@@ -107,14 +99,14 @@ public class EnemyStats : Abilities
         {
             if (!Active && !storedAction)
             {
-                timeProgress = (timeProgress + Time.deltaTime) + speed / 100;
+                timeProgress = (timeProgress + Time.deltaTime) + ((float)speed) / 5000;
             }
 
             if (timeProgress >= 10f)
             {
                 Active = true;
                 _target = TargetFinder();
-                BattleManager.instance.actionQueue.Enqueue (new Action { actionName = "Attack", actor = this, timer = 5f, animName = "Attack" });
+                BattleManager.instance.actionQueue.Enqueue (new Action { actionName = "Attack", actor = this, timer = 1f, animName = "Attack" });
                 Active = false;
                 storedAction = true;
                 timeProgress = 0;
@@ -133,6 +125,7 @@ public class EnemyStats : Abilities
 
     public override void Attack()
     {
+        StartCoroutine(Delay());
         var damage = level * level * (battlePower * 4 + strength) / 256;
         damage = (damage * Random.Range(224, 255) / 256) + 1;
 

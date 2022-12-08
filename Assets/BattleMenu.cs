@@ -176,7 +176,7 @@ public class BattleMenu : MonoBehaviour
         }
         else
         {
-            storedAction = new Action { actionName = "Attack", actor = actor, timer = 5f};
+            storedAction = new Action { actionName = "Attack", actor = actor, timer = 1f};
             Instance.state = ActionState.attack;
             Target();
         }

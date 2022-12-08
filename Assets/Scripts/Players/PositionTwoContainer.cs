@@ -72,7 +72,7 @@ public class PositionTwoContainer : characterStats
         {
             if (!Active && !storedAction)
             {
-                timeProgress = (timeProgress + Time.deltaTime) + speed / 100;
+                timeProgress = (timeProgress + Time.deltaTime) + ((float) speed) / 5000;
             }
 
             if (timeProgress >= 10)
