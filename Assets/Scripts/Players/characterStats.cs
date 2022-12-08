@@ -23,7 +23,7 @@ public class characterStats : Abilities
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,7 +31,6 @@ public class characterStats : Abilities
     {
 
     }
-
     public override void Attack()
     {
         var strengthCalc = strength >= 128 ? 255 : strength * 2;

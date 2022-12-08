@@ -8,7 +8,6 @@ public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance = null;
 
-    public Queue<Entity> ActionQueue;
     public List<PositionTwoContainer> playerQueue = new List<PositionTwoContainer>();
 
     int startListAdd {get;set;}
@@ -23,8 +22,10 @@ public class BattleManager : MonoBehaviour
 
     public GameObject bar;
 
-
+    public Queue<Action> actionQueue = new Queue<Action>();
     public List<Entity> entityList = new List<Entity>();
+
+    bool AQactive = false;
 
     void Start()
     {
@@ -53,6 +54,14 @@ public class BattleManager : MonoBehaviour
             
         }
         
+        if (actionQueue.Count > 0 && !AQactive)
+        {
+            var t = actionQueue.Peek();
+            AQactive = true;
+            StartCoroutine( ExcecuteAction(t));
+            print("activated action");
+        }
+
         if (oldEnemies != enemiesLeft)
         {
             oldEnemies = enemiesLeft;
@@ -66,6 +75,21 @@ public class BattleManager : MonoBehaviour
             CharacterStatisticsSerializer.Instance.SaveToPrefab();
         }
     }
+
+    public IEnumerator ExcecuteAction(Action action)
+    {
+        // Start Animation
+        if (action.animName != null)
+        {
+            action.actor.animator.SetTrigger(action.animName);
+        }
+        yield return new WaitForSecondsRealtime(action.timer);
+        action.actor.Invoke(action.actionName, 0f);
+        action.actor.storedAction = false;
+        actionQueue.Dequeue();
+        AQactive = false;
+    }
+
     public void RegisterEnemies(EnemyStats enemy)
     {
         entityList.Add(enemy);
@@ -77,4 +101,12 @@ public class BattleManager : MonoBehaviour
     {
         var charPos = Char._position;
     }
+}
+
+public class Action
+{
+    public string actionName;
+    public string animName;
+    public Entity actor;
+    public float timer;
 }

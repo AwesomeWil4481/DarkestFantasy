@@ -17,6 +17,12 @@ public class Entity : MonoBehaviour
     public int evasion;
     public int magicEvasion;
     public int magicDefense;
+
+    public Animator animator;
+    public float timeProgress;
+    public bool Active = false;
+    public bool storedAction = false;
+
     public EquipableItem BodySlot = new EquipableItem { Name = "Empty" };
     public EquipableItem HeadSlot = new EquipableItem { Name = "Empty" };
     public EquipableItem LeftRelicSlot = new EquipableItem { Name = "Empty" };
@@ -29,4 +35,5 @@ public abstract class Abilities : Entity
 {
     public Entity _target;
     public abstract void Attack();
+        
 }

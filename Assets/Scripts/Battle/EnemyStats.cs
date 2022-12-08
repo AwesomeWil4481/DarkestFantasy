@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -14,16 +16,10 @@ public class EnemyStats : Abilities
     int expOnDeath;
     public int magicPower;
 
-    bool isTurn;
-
     public int lvlMin;
     public int lvlMax;
 
     public int positionToAttack;
-
-    float waitTime = 0.5f;
-
-    public Animator animator;
 
     float delay;
     float delayMax;
@@ -54,6 +50,7 @@ public class EnemyStats : Abilities
     public Text positionSixText;
     public Text positionSevenText;
     public GameObject thisTextObject;
+
     private void Awake()
     {
         BattleManager.instance.RegisterEnemies(this);
@@ -70,7 +67,6 @@ public class EnemyStats : Abilities
         }
         delayMax = 1f;
         delay = delayMax;
-        speed -= speed * 2;
         PositionTwo = GameObject.Find("Position " + 1 + "(Clone)");
         level = Random.Range(3, 6);
         strength = Random.Range(56, 63);
@@ -82,7 +78,6 @@ public class EnemyStats : Abilities
         _target = PositionTwo.GetComponent<Entity>();
         yield return new WaitForSeconds(0);
         animator.SetTrigger("Attack");
-        isTurn = true;
 
         if (!_hasAttacked)
         {
@@ -107,7 +102,33 @@ public class EnemyStats : Abilities
             }
             Destroy(gameObject);
         }
-        
+
+        if (!BattleManager.instance.battleWait)
+        {
+            if (!Active && !storedAction)
+            {
+                timeProgress = (timeProgress + Time.deltaTime) + speed / 100;
+            }
+
+            if (timeProgress >= 10f)
+            {
+                Active = true;
+                _target = TargetFinder();
+                BattleManager.instance.actionQueue.Enqueue (new Action { actionName = "Attack", actor = this, timer = 5f, animName = "Attack" });
+                Active = false;
+                storedAction = true;
+                timeProgress = 0;
+                print(Name + " is active");
+            }
+        }
+    }
+
+    Entity TargetFinder()
+    {
+        var newT = GameObject.FindGameObjectsWithTag("battlecharacter");
+        var num = Random.Range (0, newT.Count() -1);
+
+        return newT[num].GetComponent<Entity>();
     }
 
     public override void Attack()

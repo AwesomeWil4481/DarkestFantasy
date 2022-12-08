@@ -9,17 +9,10 @@ public class PositionTwoContainer : characterStats
 
     Vector2[] touches = new Vector2[5];
 
-    public Animator animator;
     bool KOed;
-    public bool Active = false;
 
     float _delay;
     float _delayMax = .2f;
-    float _startDelay;
-
-    public float timeProgress;
-
-    bool _targetSelected;
 
     GameObject _textObject;
 
@@ -56,11 +49,8 @@ public class PositionTwoContainer : characterStats
         charTwoContainer = GameObject.Find(gameObject.name);
         Name = "Terra";
         _delay = _delayMax;
-        _targetSelected = false;
         _maxHP = 100;
         _minHp = _maxHP / 10 + 1;
-        speed -= speed * 2;
-        _startDelay = 1f;
     }
 
     private void Update()
@@ -80,7 +70,7 @@ public class PositionTwoContainer : characterStats
 
         if (!BattleManager.instance.battleWait)
         {
-            if (!Active)
+            if (!Active && !storedAction)
             {
                 timeProgress = (timeProgress + Time.deltaTime) + speed / 100;
             }

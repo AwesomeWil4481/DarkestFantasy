@@ -40,7 +40,7 @@ public class BattleMenu : MonoBehaviour
 
     bool aquireTarget = false;
 
-    string storedAction;
+    Action storedAction;
 
     private void Awake()
     {
@@ -119,26 +119,28 @@ public class BattleMenu : MonoBehaviour
         {
             if (hit.tag == "enemy")
             {
-                var currentTarget = AquireTarget(hit.gameObject);
+                var currentTarget = AquireTarget(hit.gameObject, storedAction);
 
                 if (currentTarget != null)
                 {
                     actor._target = currentTarget.GetComponent<Entity>();
                     selectedTarget = null;
-                    actor.timeProgress = 0;
-                    actor.Active = false;
+                    
                 }
             }
         }
     }
 
-    GameObject AquireTarget(GameObject t)
+    GameObject AquireTarget(GameObject t, Action a)
     {
         if (t == selectedTarget)
         {
             print("Same Target");
-            actor.Invoke(storedAction, 0f);
 
+            BattleManager.instance.actionQueue.Enqueue(a);
+            actor.storedAction = true;
+            actor.Active = false;
+            actor.timeProgress = 0;
             state = ActionState.searching;
             return t;
         }
@@ -174,7 +176,7 @@ public class BattleMenu : MonoBehaviour
         }
         else
         {
-            storedAction = "Attack";
+            storedAction = new Action { actionName = "Attack", actor = actor, timer = 5f};
             Instance.state = ActionState.attack;
             Target();
         }
