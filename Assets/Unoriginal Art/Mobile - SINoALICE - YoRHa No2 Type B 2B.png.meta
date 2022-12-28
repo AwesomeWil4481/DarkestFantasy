@@ -1,0 +1,1402 @@
+fileFormatVersion: 2
+guid: 9f48ad9af8abbcd449655e96b50f2f58
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1892
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0239d38b21e0cb448a992be7e554c625
+      internalID: -98820252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1802
+        width: 118
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26a9f539cff47641b2abb1f7b1924cc
+      internalID: -589633078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1794
+        width: 98
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072c172221168dd4582a07fc129c2f9f
+      internalID: 2060975634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1542
+        width: 246
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1491f4a1b5674b54c889de9923277f9d
+      internalID: -1057976104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1507
+        width: 76
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d781f245ce962448b2a7d854d9977cb
+      internalID: 429865355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1508
+        width: 61
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcba5ddb9322a84d995a90f110bdb9c
+      internalID: -1403647902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1400
+        width: 286
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299f2acaa1d5db04580ada70e3889e60
+      internalID: -1043698417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_7
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1399
+        width: 94
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dd68aae2b28e341a38ff62302fd29b
+      internalID: 416321896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_8
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1401
+        width: 103
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0422b977aed51d3418537096240c848a
+      internalID: 316915717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_9
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1400
+        width: 64
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f0364ac47750843a76e7baba6a9d40
+      internalID: -1124019868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_10
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1439
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a746870532db9f4c87e3cb6efaab195
+      internalID: -1133280249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1470
+        width: 250
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473f7266ce51fa54aa492638fe08f148
+      internalID: -142427339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_12
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1397
+        width: 48
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dc094c5c1b0b74eb146d824afe88d8
+      internalID: 361368854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1423
+        width: 154
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abf6643ac41f5948b568c345f6470da
+      internalID: 1193906003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1234
+        width: 109
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded3e4910f64de743b49976cbdfe4196
+      internalID: -405639995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_15
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1214
+        width: 261
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b7ace4e8b931f4589a767441e157e0
+      internalID: -1003881720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_16
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1333
+        width: 83
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410a4a39173604d49a88d8d6dc4ca113
+      internalID: -993892555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_17
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1301
+        width: 102
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4b323f70f9c2347bf051c2a46b939d
+      internalID: -1197269897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_18
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1301
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa19ad99e65bb0b4d93f6d96bc69b9f9
+      internalID: -262901777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 517
+        width: 400
+        height: 709
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67948a09249bf34c9b84ea8a5ae1464
+      internalID: -1247419050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_20
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1214
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405d245c172d1c649b35721fcd0711e7
+      internalID: 1965416580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_21
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1189
+        width: 113
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5beccff512ccb6745af8a848416cb82c
+      internalID: -1356300315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_22
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 600
+        width: 160
+        height: 699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d0e64a2846bf147bae5f13fa4d18e5
+      internalID: 131943719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_23
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 607
+        width: 145
+        height: 669
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7aaf552405f9941af275e5cacb21a7
+      internalID: -1236183173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_24
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 965
+        width: 211
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47f8e43af1f7034a9f0988ca89bfddd
+      internalID: 1197171587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_25
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1189
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0caa3a8a1eb494fa83e3cb081150f0
+      internalID: 1090296450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_26
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 948
+        width: 217
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd624ec2b7faf849b8ecf60ffa7a359
+      internalID: -1579201112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_27
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1134
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d285079c430d0e41b25a68e020d2847
+      internalID: -1136810090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_28
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 946
+        width: 30
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80d65b58b62d14408705017483be5d9
+      internalID: 2059413579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_29
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 970
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7018c63fe2a06545ae0370fce2aa43c
+      internalID: -1802199245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_30
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 518
+        width: 424
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1ac19b22d8fdf48b0fda695d4f3db5
+      internalID: -931296216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_31
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 876
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d44c1869eae384cbef7fb0b6c27895
+      internalID: 1396802009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_32
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 879
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b775102241edbfd408011a69c4a30c4b
+      internalID: 1139210543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_33
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 639
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d267a927e5b50fc48bbae4cf7559ffc4
+      internalID: -1813394016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_34
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 652
+        width: 231
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903018ca2f20fc145a1d27173b701622
+      internalID: 1773735893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_35
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 652
+        width: 112
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ae65a9628a0dc44a7b886769f75a2d
+      internalID: 1605449809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_36
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 593
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0612f5be644b243a511c00fe52260a
+      internalID: -1660954110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_37
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 605
+        width: 145
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae9c3e38add9e545bb948cccc7183bb
+      internalID: -757523351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_38
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 605
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0079cf81383e43b439eb3a70d4996155
+      internalID: 316217705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 516
+        width: 22
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d10f8368c248e84794b954e1def671b
+      internalID: 681583685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_40
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 442
+        width: 22
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955b8568901501640b66276469987a9c
+      internalID: 2082777002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_41
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 382
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d10ba06ee4b134abf0f3a7d92f0791
+      internalID: -2142230438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_42
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 336
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44f7e58c2be4bd4f8b94a2b97c0118e
+      internalID: -498354415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_43
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 318
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64d1fcf4b05b8d42aa75f0bb113f2ff
+      internalID: 1235559652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_44
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 282
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaad0a17f5ca6d419ace8a46e16e9e5
+      internalID: -735733453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_45
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 228
+        width: 45
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8839579427ca0449f660ee72e2ec95
+      internalID: 32429897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 175
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047979c22d71a0a48870533b3466acd6
+      internalID: -1474521031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_47
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 173
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc214e03749b61d42803804e0b899286
+      internalID: -109948428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_48
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 193
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a5785c3003d8f47874898e43d53dbe
+      internalID: -355715527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_49
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 216
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317ceb1cf464f774590f5fd1894a7a13
+      internalID: -2031781903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_50
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 196
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844abb69d16327b4f9576cf813eb930f
+      internalID: 1303850343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_51
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 59
+        width: 37
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b086c10435267419a945278e422d14
+      internalID: -1564153010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_52
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 80
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed0c3fed40db1847bb3851d6a5c5891
+      internalID: 584905826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_53
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 65
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3749bd2ecbdcc74ab184e0b0c72159a
+      internalID: -408764162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_54
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 38
+        width: 37
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293203159d8184e42b651f1086994284
+      internalID: -2016267255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_55
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 10
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75604b5e1402b064fa847c69fbcbf65b
+      internalID: 123987862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - SINoALICE - YoRHa No2 Type B 2B_56
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 20
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5de51e683144e4fa7bc83b44266e9e
+      internalID: -1936576393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_3: -1057976104
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_16: -993892555
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_49: -2031781903
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_5: -1403647902
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_4: 429865355
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_19: -1247419050
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_18: -262901777
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_0: -98820252
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_30: -931296216
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_43: 1235559652
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_36: -1660954110
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_46: -1474521031
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_6: -1043698417
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_47: -109948428
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_42: -498354415
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_40: 2082777002
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_51: -1564153010
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_41: -2142230438
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_14: -405639995
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_45: 32429897
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_12: 361368854
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_32: 1139210543
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_52: 584905826
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_17: -1197269897
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_9: -1124019868
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_50: 1303850343
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_26: -1579201112
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_55: 123987862
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_11: -142427339
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_23: -1236183173
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_53: -408764162
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_7: 416321896
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_39: 681583685
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_1: -589633078
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_15: -1003881720
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_24: 1197171587
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_31: 1396802009
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_2: 2060975634
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_37: -757523351
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_8: 316915717
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_22: 131943719
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_48: -355715527
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_20: 1965416580
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_27: -1136810090
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_21: -1356300315
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_29: -1802199245
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_38: 316217705
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_54: -2016267255
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_25: 1090296450
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_56: -1936576393
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_13: 1193906003
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_35: 1605449809
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_34: 1773735893
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_10: -1133280249
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_44: -735733453
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_28: 2059413579
+      Mobile - SINoALICE - YoRHa No2 Type B 2B_33: -1813394016
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
