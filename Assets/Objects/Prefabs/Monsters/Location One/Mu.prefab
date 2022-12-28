@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5086497842153758916}
   - {fileID: 6978589051016234735}
@@ -44,6 +45,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -81,18 +101,219 @@ MonoBehaviour:
   strength: 50
   battlePower: 0
   _position: 1
+  stamina: 0
+  attack: 0
+  magic: 0
+  evasion: 0
+  magicEvasion: 0
+  magicDefense: 0
+  animator: {fileID: 1801816452945120992}
+  timeProgress: 0
+  Active: 0
+  storedAction: 0
+  BodySlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 0
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  HeadSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 0
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  LeftRelicSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 0
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  RightRelicSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 0
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  LeftHandSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 0
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
+  RightHandSlot:
+    ItemType: 0
+    Description: 
+    ID: 0
+    Count: 0
+    Name: Empty
+    HPBonus: 0
+    MPBonus: 0
+    BTLPWRBonus: 0
+    STRBonus: 0
+    SPDBonus: 0
+    DEFBonus: 0
+    STMNABonus: 0
+    MAGBonus: 0
+    ATKBonus: 0
+    EVSINBonus: 0
+    MagEVSINBonus: 0
+    MagDefBonus: 0
+    HPPercentBonus: 0
+    MPPercentBonus: 0
+    BTLPWRPercentBonus: 0
+    STRPercentBonus: 0
+    SPDPercentBonus: 0
+    DEFPercentBonus: 0
+    STMNAPercentBonus: 0
+    MAGPercentBonus: 0
+    ATKPercentBonus: 0
+    EVSINPercentBonus: 0
+    MagEVSINPercentBonus: 0
+    MagDefPercentBonus: 0
+    EquipmentType: 0
+    canEquip: []
   _target: {fileID: 0}
   lootTable:
-  - _itemType: 0
-    description: 
-    name: Potion
+  - ItemType: 0
+    Description: 
     ID: 0
-    count: 0
+    Count: 0
+    Name: 
   magicPower: 0
   lvlMin: 0
   lvlMax: 0
   positionToAttack: 0
-  animator: {fileID: 1801816452945120992}
   pointer: {fileID: 2544177692518573894}
   allAbilities: 2
   dmgMultiplier: 0
@@ -102,7 +323,6 @@ MonoBehaviour:
   PositionThree: {fileID: 0}
   PositionFour: {fileID: 0}
   action: 0
-  _position: 1
   positionOneText: {fileID: 0}
   positionTwoText: {fileID: 0}
   positionThreeText: {fileID: 0}
@@ -139,6 +359,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1672400353776227283}
   m_RootOrder: 0
@@ -154,10 +375,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -195,7 +418,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &1801816452945120992
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -208,6 +431,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -217,6 +441,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1672400353776227283}
     m_Modifications:
     - target: {fileID: 1135562538452633424, guid: c4675e04b10be3448a47ceea3fcdd40e,
@@ -228,6 +453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500027614347126521, guid: c4675e04b10be3448a47ceea3fcdd40e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5500027614347126521, guid: c4675e04b10be3448a47ceea3fcdd40e,
         type: 3}
@@ -246,6 +476,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5500027614347126521, guid: c4675e04b10be3448a47ceea3fcdd40e,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500027614347126521, guid: c4675e04b10be3448a47ceea3fcdd40e,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -258,16 +493,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5500027614347126521, guid: c4675e04b10be3448a47ceea3fcdd40e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5500027614347126521, guid: c4675e04b10be3448a47ceea3fcdd40e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5500027614347126521, guid: c4675e04b10be3448a47ceea3fcdd40e,
         type: 3}
@@ -286,6 +511,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1129534760759138766, guid: c4675e04b10be3448a47ceea3fcdd40e, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4675e04b10be3448a47ceea3fcdd40e, type: 3}
 --- !u!1 &2544177692518573894 stripped
 GameObject:

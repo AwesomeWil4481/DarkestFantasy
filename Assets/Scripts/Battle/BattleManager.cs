@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 public class BattleManager : MonoBehaviour
 {
+    public float actionDelay;
+
     public static BattleManager instance = null;
 
     public List<PositionTwoContainer> playerQueue = new List<PositionTwoContainer>();
 
+    public GameObject DMGIndicator;
     int startListAdd {get;set;}
 
     public GameObject TargetObject;
     public GameObject battleMenu;
+    public GameObject TopCanvas;
+    public GameObject abilityMenu;
 
     public bool battleWait = false;
 
@@ -45,15 +51,6 @@ public class BattleManager : MonoBehaviour
     }
     void Update()
     {
-        if (playerQueue.Count == 0)
-        {
-
-        }
-        else
-        {
-            
-        }
-        
         if (actionQueue.Count > 0 && !AQactive)
         {
             var t = actionQueue.Peek();
@@ -78,11 +75,19 @@ public class BattleManager : MonoBehaviour
 
     public IEnumerator ExcecuteAction(Action action)
     {
-        // Start Animation
+        actionQueue.Peek().actor.animator.SetTrigger(actionQueue.Peek().actionName);
+
         yield return new WaitForSecondsRealtime(action.timer);
         action.actor.Invoke(action.actionName, 0f);
         action.actor.storedAction = false;
         actionQueue.Dequeue();
+
+        StartCoroutine(QueueDelay());
+    }
+
+    public IEnumerator QueueDelay()
+    {
+        yield return new WaitForSecondsRealtime(actionDelay);
         AQactive = false;
     }
 
@@ -96,6 +101,14 @@ public class BattleManager : MonoBehaviour
     public void RegisterCharacters(PositionTwoContainer Char)
     {
         var charPos = Char._position;
+    }
+
+    public void RegisterHit(int incomingDMG, Entity target)
+    {
+        var showDMG = Instantiate(instance.DMGIndicator);
+        showDMG.transform.SetParent(instance.TopCanvas.transform, false);
+        showDMG.transform.position = new Vector3(target.transform.position.x + 1f, target.transform.position.y - 0.5f, target.transform.position.z - 1);
+        showDMG.GetComponentInChildren<Text>().text = incomingDMG.ToString();
     }
 }
 

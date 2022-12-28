@@ -1,0 +1,72 @@
+{
+  "savedName": "Narshe",
+  "Backround": "Narshe",
+  "textPosition": 
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+  "savedEnemies": [
+    {
+      "enemyName": "Goregias",
+      "level": 5,
+      "HP": 75,
+      "MP": 0,
+      "defense": 30,
+      "speed": 2,
+      "strength": 50,
+      "battlepower": 60,
+      "lootTable": [
+        {
+          "name": "Potion"
+        }
+      ],
+      "HPText": {
+        "x": -165,
+        "y": -60,
+        "z":  0
+      }
+    },
+    {
+      "enemyName": "Guard",
+      "level": 5,
+      "HP": 50,
+      "MP": 0,
+      "defense": 40,
+      "speed": 6,
+      "strength": 40,
+      "battlepower": 50,
+      "lootTable": [
+        {
+          "name": "Sword"
+        }
+      ]
+    },
+    {
+      "enemyName": "Silver Lobo",
+      "level": 5,
+      "HP": 50,
+      "MP": 10,
+      "defense": 20,
+      "speed": 4,
+      "strength": 30,
+      "battlepower": 60,
+      "lootTable": [
+        {
+          "name": "Potion"
+        }
+      ]
+    }
+  ],
+  "AvailableItems": [
+    {
+
+    }
+  ],
+  "GameEvents": [
+    {
+
+    }
+  ]
+}

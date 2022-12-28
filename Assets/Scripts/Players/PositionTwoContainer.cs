@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class PositionTwoContainer : characterStats
 {
+    public 
+
+
     RaycastHit2D hit;
 
     Vector2[] touches = new Vector2[5];
@@ -46,7 +49,8 @@ public class PositionTwoContainer : characterStats
 
     private void Start()
     {
-        charTwoContainer = GameObject.Find(gameObject.name);
+        animator = gameObject.GetComponentInChildren<Animator>();
+        charTwoContainer = gameObject;
         Name = "Terra";
         _delay = _delayMax;
         _maxHP = 100;

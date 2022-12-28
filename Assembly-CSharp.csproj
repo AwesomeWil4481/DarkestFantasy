@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Game State Object.cs" />
     <Compile Include="Assets\WorldStateManager.cs" />
     <Compile Include="Assets\WorldObjectState.cs" />
+    <Compile Include="Assets\EnemyContainer.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
     <Compile Include="Assets\Scripts\SavePoint.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
@@ -87,10 +88,12 @@
     <Compile Include="Assets\Scripts\Battle\positionOneStats.cs" />
     <Compile Include="Assets\Scripts\Npc\conversationManager.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
+    <Compile Include="Assets\SelfDestruct.cs" />
     <Compile Include="Assets\Scripts\Npc\dialogueList.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
     <Compile Include="Assets\Scripts\BackroundManager.cs" />
+    <Compile Include="Assets\Scripts\FirstLoad.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\EquipableItem.cs" />
     <Compile Include="Assets\Scripts\Npc\dialogueHouse.cs" />
@@ -105,6 +108,7 @@
     <Compile Include="Assets\Scripts\Players\Position Four Container.cs" />
     <Compile Include="Assets\Scripts\LocationManager.cs" />
     <Compile Include="Assets\Scripts\EquipmentDictionary.cs" />
+    <Compile Include="Assets\Scripts\JsonPreloader.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Scripts\Battle\EnemyStats.cs" />
     <Compile Include="Assets\Scripts\CharacterStatisticsSerializer.cs" />

@@ -1,0 +1,46 @@
+{
+  "savedName": "HillsDale",
+  "Backround": "Forest_WOB",
+  "savedEnemies": [
+    {
+      "enemyName": "Mu",
+      "level": 10,
+      "HP": 50,
+      "MP": 0,
+      "defense": 10,
+      "speed": 4,
+      "strength": 20,
+      "battlepower": 10
+    },
+    {
+      "enemyName": "Leaf Bunny",
+      "level": 10,
+      "HP": 50,
+      "MP": 0,
+      "defense": 10,
+      "speed": 4,
+      "strength": 20,
+      "battlepower": 10
+    },
+    {
+      "enemyName": "Darkwind",
+      "level": 10,
+      "HP": 50,
+      "MP": 0,
+      "defense": 10,
+      "speed": 4,
+      "strength": 20,
+      "battlepower": 10
+    }
+  ],
+  "AvailableItems": [
+    {
+
+    }
+  ],
+  "GameEvents": [
+    {
+
+    }
+  ]
+}

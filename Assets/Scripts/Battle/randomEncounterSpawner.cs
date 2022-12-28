@@ -53,7 +53,8 @@ public class randomEncounterSpawner : LocationManager
             objectToInstantiate = currentLocation[Random.Range(0, currentLocation.Length)];
             var thing = objectToInstantiate.GetComponent<EnemyStats>();
             thing._position = 1;
-            Instantiate(objectToInstantiate, positionFourOne, Quaternion.identity);
+            var OTI = Instantiate(objectToInstantiate, positionFourOne, Quaternion.identity);
+            OTI.transform.parent = OneOne.transform;
         }
 
         

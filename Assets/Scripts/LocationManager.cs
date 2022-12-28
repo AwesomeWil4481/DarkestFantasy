@@ -6,6 +6,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class LocationManager : MonoBehaviour
 {
     GameObject texObject;
@@ -23,33 +24,35 @@ public class LocationManager : MonoBehaviour
 
     SpriteRenderer enemySprite;
 
-    string json = ".json";
     string lojson;
 
     Dictionary<string, GameArea> _areaMap = new Dictionary<string, GameArea>();
 
-    public SpriteRenderer backround;
+    public Image backround;
     public List<Sprite> Backrounds = new List<Sprite>();
     int backroundNumber;
 
     public List<Sprite> enemySprites = new List<Sprite>();
     List<string> fileNames = new List<string>();
-    
+
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Fighting Scene") { 
-        lojson = location+".json";
-
-        var dir = new DirectoryInfo(Application.persistentDataPath);
-        var info = dir.GetFiles();
-        foreach (FileInfo file in info)
+        SceneManager.activeSceneChanged += ChangedActiveScene;
+        DontDestroyOnLoad(this);
+        if (SceneManager.GetActiveScene().name == "Fighting Scene")
         {
-            fileNames.Add(file.FullName);
-        }
+            lojson = location + ".json";
+
+            var dir = new DirectoryInfo(Application.streamingAssetsPath + "/.Json");
+            var info = dir.GetFiles();
+            foreach (FileInfo file in info)
+            {
+                fileNames.Add(file.FullName);
+            }
 
             foreach (GameObject i in _enemies)
             {
-                var fileData = File.ReadAllText(Application.persistentDataPath + "/" + lojson);
+                var fileData = File.ReadAllText(Application.streamingAssetsPath + "/.Json/" + lojson);
                 GameArea deserializedData = JsonUtility.FromJson<GameArea>(fileData);
                 var enemyStats = _enemies[enemyNumber].GetComponent<EnemyStats>();
 
@@ -109,6 +112,86 @@ public class LocationManager : MonoBehaviour
             }
         }
     }
+
+    void ChangedActiveScene(Scene current, Scene Next)
+    {
+        string currentName = current.name;
+        backround = GameObject.Find("Image").GetComponent<Image>();
+
+        if (currentName == null)
+        {
+
+        }
+
+        if (SceneManager.GetActiveScene().name == "Fighting Scene")
+        {
+            lojson = location + ".json";
+
+            var dir = new DirectoryInfo(Application.streamingAssetsPath + "/" + "Json");
+            var info = dir.GetFiles();
+            foreach (FileInfo file in info)
+            {
+                fileNames.Add(file.FullName);
+            }
+
+            foreach (GameObject i in _enemies)
+            {
+                var fileData = File.ReadAllText(Application.streamingAssetsPath + "/Json/" + lojson);
+                GameArea deserializedData = JsonUtility.FromJson<GameArea>(fileData);
+                var enemyStats = _enemies[enemyNumber].GetComponent<EnemyStats>();
+
+                texObject = GameObject.Find("");
+
+                GameArea.Name = deserializedData.savedName;
+                GameArea.availableEnemies = deserializedData.savedEnemies;
+                enemyStats.Name = deserializedData.savedEnemies[enemyNumber].enemyName;
+                enemyStats.HP = deserializedData.savedEnemies[enemyNumber].HP;
+                enemyStats.level = deserializedData.savedEnemies[enemyNumber].level;
+                enemyStats.MP = deserializedData.savedEnemies[enemyNumber].MP;
+                enemyStats.defense = deserializedData.savedEnemies[enemyNumber].defense;
+                enemyStats.speed = deserializedData.savedEnemies[enemyNumber].speed;
+                enemyStats.strength = deserializedData.savedEnemies[enemyNumber].strength;
+                enemyStats.battlePower = deserializedData.savedEnemies[enemyNumber].battlePower;
+                enemyStats.lootTable = deserializedData.savedEnemies[enemyNumber].lootTable;
+
+                foreach (Sprite w in Backrounds)
+                {
+                    if (deserializedData.Backround == w.name)
+                    {
+                        backround.sprite = w;
+                    }
+                }
+                _enemies[enemyNumber].name = deserializedData.savedEnemies[enemyNumber].enemyName;
+                enemySpriteNumber = 0; enemySprite = _enemies[enemyNumber].GetComponentInChildren<SpriteRenderer>();
+
+                foreach (Sprite a in enemySprites)
+                {
+
+                    if (deserializedData.savedEnemies[enemyNumber].enemyName == enemySprites[enemySpriteNumber].name)
+                    {
+                        enemySprite.sprite = enemySprites[enemySpriteNumber];
+
+                        break;
+                    }
+
+                    else
+                    {
+                        enemySpriteNumber += 1;
+                    }
+                }
+
+
+                _areaMap[deserializedData.savedName] = deserializedData;
+                enemyNumber += 1;
+                if (enemyNumber >= deserializedData.savedEnemies.Count)
+                {
+
+                    break;
+                }
+            }
+        }
+    }
+
     void Update()
     {
         //_gameArea = _areaMap.ContainsKey(LocationContainer.instance._currentLocation) ? _areaMap[location] : throw new Exception($"unknown location: {LocationContainer.instance._currentLocation}");

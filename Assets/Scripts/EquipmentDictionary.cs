@@ -65,8 +65,77 @@ public class SaveTheBooks
 
     public static void NewGame()
     {
-        SceneManager.LoadScene("World Map");
+        string currentScene;
+        { // Loading the scene
+            var fileData = File.ReadAllText(Application.streamingAssetsPath + "/Json/Prefab Save" + "/SavedScene.json");
+            ActiveScene deserializedData = JsonUtility.FromJson<ActiveScene>(fileData);
+            ActiveScene.Instance().Scene = deserializedData.Scene;
+            currentScene = deserializedData.Scene;
+
+            SceneManager.LoadScene(deserializedData.Scene);
+        }
+
+        { // Loading the World State
+            var fileData = File.ReadAllText(Application.streamingAssetsPath + "/Json/Prefab Save/" + currentScene + ".json");
+            SaveWorldState deserializedData = JsonUtility.FromJson<SaveWorldState>(fileData);
+
+            if (deserializedData.list.Count != 0)
+            {
+                WorldStateList.Instance().Edits = new List<WorldObject>();
+                foreach (WorldStateSerilization s in deserializedData.list)
+                {
+                    WorldStateList.Instance().Edits.Add(new WorldObject { ID = s.ID, interacted = s.interacted });
+                }
+            }
+        }
+
+        { // Loading the Items
+            var fileData = File.ReadAllText(Application.streamingAssetsPath + "/Json/Prefab Save" + "/Inventory.json");
+            ItemList deserializedData = JsonUtility.FromJson<ItemList>(fileData);
+
+            ItemList.Instance().Items.Clear();
+            ItemList.Instance().Items.AddRange(deserializedData.Items);
+
+            Debug.Log(ItemList.Instance().Items[1].Name + " of " + ItemList.Instance().Items[1].Count);
+
+            ItemList.Instance().GP = deserializedData.GP;
+            Debug.Log("Current GP = " + ItemList.Instance().GP.ToString());
+        }
+
+        { // Loading the start position
+            var fileData = File.ReadAllText(Application.streamingAssetsPath + "/Json/Prefab Save" + "/savedPosition.json");
+            VPos deserializedData = JsonUtility.FromJson<VPos>(fileData);
+
+            VPos.savedPlayerPos = deserializedData.playerPos;
+            var value = VPos.savedPlayerPos;
+        }
+
+        { // Loading Character Stats
+            var fileData = File.ReadAllText(Application.streamingAssetsPath + "/Json/Prefab Save" + "/SavedCharacters.json");
+            SavedCharacters deserializedData = JsonUtility.FromJson<SavedCharacters>(fileData);
+
+            SavedCharacters.Instance().currentStats.Clear();
+            SavedCharacters.Instance().currentStats.AddRange(deserializedData.currentStats);
+
+            foreach (Stats i in SavedCharacters.Instance().currentStats)
+            {
+                SavedCharacters.Instance().DcurrentStats[i._position] = i;
+                Debug.Log(SavedCharacters.Instance().DcurrentStats[i._position]._position + " is the loaded position of " + SavedCharacters.Instance().DcurrentStats[i._position].characterName);
+                Debug.Log(SavedCharacters.Instance().DcurrentStats[i._position].strength + " is the loaded strength of " + SavedCharacters.Instance().DcurrentStats[i._position].characterName);
+            }
+        }
+
+        { // Loading the Equiment Dictionary
+            var fileData = File.ReadAllText(Application.streamingAssetsPath+ "/Json" + "/EquipmentDictionary.json");
+            MasterEquipmentContainer deserializedData = JsonUtility.FromJson<MasterEquipmentContainer>(fileData);
+
+            MasterEquipmentContainer.Instance.Equipment.Clear();
+            MasterEquipmentContainer.Instance.Equipment.AddRange(deserializedData.Equipment);
+
+            Debug.Log(MasterEquipmentContainer.Instance.Equipment[0].STRPercentBonus.ToString());
+        }
     }
+
 
     public static void LoadGame(string SaveSelected)
     {
@@ -128,7 +197,7 @@ public class SaveTheBooks
         }
 
         { // Loading the Equiment Dictionary
-            var fileData = File.ReadAllText(Application.persistentDataPath + "/EquipmentDictionary.json");
+            var fileData = File.ReadAllText(Application.streamingAssetsPath + "/Json" + "/EquipmentDictionary.json");
             MasterEquipmentContainer deserializedData = JsonUtility.FromJson<MasterEquipmentContainer>(fileData);
 
             MasterEquipmentContainer.Instance.Equipment.Clear();

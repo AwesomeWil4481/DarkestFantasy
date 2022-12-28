@@ -13,8 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        Debug.Log(Application.persistentDataPath);
-
+        SaveTheBooks.NewGame();
     }
 
     public void LoadScreenChange()

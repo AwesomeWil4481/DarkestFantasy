@@ -1,14 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditorInternal;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class EnemyStats : Abilities
 {
-    GameObject[] potentialTargets;
     public List<Item> lootTable = new List<Item>();
 
     [HideInInspector]
@@ -71,14 +68,6 @@ public class EnemyStats : Abilities
         level = Random.Range(3, 6);
         strength = Random.Range(56, 63);
     }
-
-    IEnumerator Delay()
-    {
-        animator.SetTrigger("Attack");
-        yield return new WaitForSeconds(0.1f);
-        animator.SetTrigger("Attack");
-    }
-
     void Update()
     {
         if (HP <= 0)
@@ -89,8 +78,11 @@ public class EnemyStats : Abilities
             int loot =  Random.Range(0, change);
             if (random != 9)
             {
-                SceneItemList.savedItems.Add(lootTable[loot]);
-                print(lootTable[loot].Name);
+                if (lootTable.Count != 0)
+                {
+                    SceneItemList.savedItems.Add(lootTable[loot]);
+                    print(lootTable[loot].Name);
+                }
             }
             Destroy(gameObject);
         }
@@ -125,11 +117,12 @@ public class EnemyStats : Abilities
 
     public override void Attack()
     {
-        StartCoroutine(Delay());
         var damage = level * level * (battlePower * 4 + strength) / 256;
         damage = (damage * Random.Range(224, 255) / 256) + 1;
 
         print($"enemy damage: {damage}");
+
+        BattleManager.instance.RegisterHit(damage, _target);
 
         _target.HP -= damage;
     }
