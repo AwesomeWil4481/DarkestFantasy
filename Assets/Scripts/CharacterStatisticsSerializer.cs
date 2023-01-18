@@ -154,10 +154,10 @@ public class CharacterStatisticsSerializer : MonoBehaviour
 
     public static void SaveGame(string SaveSelected)
     {
-        foreach(Stats s in SavedCharacters.Instance().currentStats)
-        {
-            s._position += 1;
-        }
+        //foreach(Stats s in SavedCharacters.Instance().currentStats)
+        //{
+        //    s._position += 1;
+        //}
 
         string character = JsonUtility.ToJson(SavedCharacters.Instance());
         
@@ -165,10 +165,10 @@ public class CharacterStatisticsSerializer : MonoBehaviour
         Debug.Log($"{Application.persistentDataPath}/Save {SaveSelected}/SavedCharacters.json, {character}");
         File.WriteAllText(Application.persistentDataPath + "/Save " + SaveSelected + "/SavedCharacters.json", character);
 
-        foreach (Stats s in SavedCharacters.Instance().currentStats)
-        {
-            s._position -= 1;
-        }
+        //foreach (Stats s in SavedCharacters.Instance().currentStats)
+        //{
+        //    s._position -= 1;
+        //}
     }
 
     //public void SaveToJson()

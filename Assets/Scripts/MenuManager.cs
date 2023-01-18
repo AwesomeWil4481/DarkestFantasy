@@ -20,6 +20,7 @@ public class MenuManager : MonoBehaviour
     public GameObject mainMenuScreen;
     public GameObject saveButton;
     public GameObject equipButton;
+    public GameObject exitConfirm;
     [Space]
     public GameObject inventoryScreen;
     public GameObject descriptionBar;
@@ -45,6 +46,7 @@ public class MenuManager : MonoBehaviour
     int posY = 915;
     int rotationNumber = 1;
 
+    bool savedThisCycle;
     bool wantToAdd;
     [Space]
     public GameObject EquipmentBar;
@@ -82,6 +84,7 @@ public class MenuManager : MonoBehaviour
     // Entering the main menu
     public void OnMenuPress()
     {
+        savedThisCycle = false;
         mainMenuButton.SetActive(false);
         mainMenuScreen.SetActive(true);
         menuPanel.SetActive(true);
@@ -112,6 +115,33 @@ public class MenuManager : MonoBehaviour
         mainMenuButton.SetActive(true);
         mainMenuScreen.SetActive(false);
         Joystick.SetActive(true);
+
+        savedThisCycle = false;
+    }
+
+    // Exiting to the title screen.
+    public void ReturnToMainMenu()
+    {
+        if (savedThisCycle)
+        {
+            StartCoroutine(SceneTransition.instance.EndScene("MainMenu"));
+        }
+        else
+        {
+            exitConfirm.SetActive(true);
+        }
+    }
+
+    // Open the confirm exit menu
+    public void ConfirmReturnToMainMenu()
+    {
+        StartCoroutine(SceneTransition.instance.EndScene("MainMenu"));
+    }
+
+    // Closing the confirm exit menu
+    public void CancelReturnToMainMenu()
+    {
+        exitConfirm.SetActive(false);
     }
 
     // Entering the item screen
@@ -1613,6 +1643,7 @@ public class MenuManager : MonoBehaviour
         savePointPos = GameObject.Find("Player").transform.position;
         print(GameObject.Find("Player").transform.position);
         SaveTheBooks.SaveGame(SaveSelected);
+        savedThisCycle = true;
     }
 
     // This is called when you select a statblock to equip

@@ -83,6 +83,7 @@
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Scripts\ScreenItem.cs" />
+    <Compile Include="Assets\DisplaySave.cs" />
     <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\LocationContainer.cs" />
     <Compile Include="Assets\Scripts\Battle\positionOneStats.cs" />

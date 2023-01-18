@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System.Globalization;
 
 [Serializable]
 public class MasterEquipmentContainer
@@ -43,6 +44,29 @@ public class SaveTheBooks
         return _instance;
     }
 
+    public List<characterStats> DisplayStats(int saveNum)
+    {
+        if (File.ReadAllText(Application.persistentDataPath + "/Save " + saveNum + "/SavedCharacters.json") != null)
+        {
+            var fileData = File.ReadAllText(Application.persistentDataPath + "/Save " + saveNum + "/SavedCharacters.json");
+            SavedCharacters deserializedData = JsonUtility.FromJson<SavedCharacters>(fileData);
+
+            List<characterStats> stats = new List<characterStats>();
+
+            foreach (Stats s in deserializedData.currentStats)
+            {
+                characterStats newStats = new characterStats();
+
+                newStats.Name = s.characterName;
+                newStats._position = s._position;
+
+                stats.Add(newStats);
+            }
+
+            return stats;
+        }
+        return null;
+    }
     public static void SaveGame(string SaveSelected)
     {
         InventoryManager.instance.SaveGame(SaveSelected);
